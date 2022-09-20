@@ -1,0 +1,588 @@
+@font-face {
+	font-family: 'Love';
+	src: url(fonts/Love_Light/LoveLight-Regular.ttf);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body
+{	
+	background-color: lightgray;
+	font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Love';
+}
+
+h1 { /* brand on index */
+	font-size: 8rem;
+	margin-top: 8rem;
+}
+h2 { /* brand on index */
+	font-size: 4rem;
+	margin-top: -4rem;
+	margin-left: 4rem;
+}
+h3 { /* brand on pages expat, voyages, maison */
+	font-size: 3rem;
+	margin-top: 1rem;
+}
+h4 { /* title on carousel index */
+	font-size: 8rem;
+}
+h5 { /* title on pages expat, voyages, maison */
+	font-size: 4rem;
+}
+h6 { /* title on pages destinations */
+	font-size: 3.5rem;
+	color: #0E8A88;
+}
+
+
+
+
+/* ########### header nav ########### */
+li {
+	list-style: none;
+}
+a {
+	color: white;
+	text-decoration: none;
+}
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 24px;
+	height: 70px;
+}
+.pages {
+	background-image: url(images/header.png);	
+}
+.index {
+	background-image: none;
+}
+.header a.active {
+	font-family: 'Love';
+	font-size: 4rem;
+	color: #0E8A88;
+}
+.header-right {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 40px;
+	margin-top: 10px;
+}
+.menu-link {
+	font-size: 1.25rem;
+	cursor: pointer;
+}
+.menu-link, .brand {
+	transition: 0.7s ease;
+}
+.menu-link:hover, .brand:hover {
+	color: #0E8A88
+}
+.header a.active:hover {
+	color: white;
+}
+
+.hamburger {
+	display: none;
+	cursor: pointer;
+}
+.bar {
+	display: block;
+	width: 25px;
+	height: 3px;
+	margin: 5px auto;
+	-webkit-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+	background-color: white;
+}
+
+
+
+/* ########### modal form ########### */
+.modal-header {
+	height: 60px;
+}
+.modal-title {
+	font-family: 'Love';
+	font-size: 3rem;
+	color: #0E8A88;
+}
+form {
+	display: table;
+}
+.modal-body label, .modal-body input, .modal-body textarea {
+	display: table-cell;
+	width: 465px;
+	margin-bottom: 10px;
+}
+textarea {
+	height: 200px;
+}
+.send {
+	background-color: black;
+	border: none;
+	border-radius: 3px;
+	padding: 5px;
+	color: white;
+}
+.send:hover {
+	background-color: #0E8A88;
+}
+
+
+
+/* ########### carousel ########### */
+.carousel-caption { 
+	top: 30%;
+	bottom: auto;
+}
+.carousel-indicators { 
+	top: 70%;
+}
+
+
+
+/* ########### ribbon image ########### */
+.panel_page {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 30rem;
+}
+.expat {
+	background-image: url(photos/ribbon/expat.jpg);
+}
+.voyages {
+	background-image: url(photos/ribbon/voyages.jpg);
+}
+.maison {
+	background-image: url(photos/ribbon/maison.jpg);
+}
+.montreal {
+	background-image: url(photos/ribbon/montreal.jpg);
+}
+.washington {
+	background-image: url(photos/ribbon/washington.jpg);
+}
+.newyork {
+	background-image: url(photos/ribbon/newyork.jpg);
+}
+.japon {
+	background-image: url(photos/ribbon/japon.jpg);
+}
+.quebec {
+	background-image: url(photos/ribbon/quebec.jpg);
+}
+.boston {
+	background-image: url(photos/ribbon/boston.jpg);
+}
+.sanfrancisco {
+	background-image: url(photos/ribbon/sanfrancisco.jpg);
+}
+.chicago {
+	background-image: url(photos/ribbon/chicago.jpg);
+}
+.charlevoix {
+	background-image: url(photos/ribbon/charlevoix.jpg);
+}
+.utah {
+	background-image: url(photos/ribbon/utah.jpg);
+}
+.ireland {
+	background-image: url(photos/ribbon/ireland.jpg);
+}
+.scotland {
+	background-image: url(photos/ribbon/scotland.jpg);
+}
+.paris2016 {
+	background-image: url(photos/ribbon/paris2016.jpg);
+}
+.italia {
+	background-image: url(photos/ribbon/italia.jpg);
+}
+.london {
+	background-image: url(photos/ribbon/london.jpg);
+}
+.ottawa {
+	background-image: url(photos/ribbon/ottawa.jpg);
+}
+.bic {
+	background-image: url(photos/ribbon/bic.jpg);
+}
+.alberta {
+	background-image: url(photos/ribbon/alberta.jpg);
+}
+.toronto {
+	background-image: url(photos/ribbon/toronto.jpg);
+}
+.barcelona {
+	background-image: url(photos/ribbon/barcelona.jpg);
+}
+.monttremblant {
+	background-image: url(photos/ribbon/monttremblant.jpg);
+}
+.leeds {
+	background-image: url(photos/ribbon/leeds.jpg);
+}
+.gaspesie {
+	background-image: url(photos/ribbon/gaspesie.jpg);
+}
+.bordeaux {
+	background-image: url(photos/ribbon/bordeaux.jpg);
+}
+.gironde {
+	background-image: url(photos/ribbon/gironde.jpg);
+}
+.lormont {
+	background-image: url(photos/ribbon/lormont.jpg);
+}
+.taillanmedoc {
+	background-image: url(photos/ribbon/taillanmedoc.jpg);
+}
+.arcachon {
+	background-image: url(photos/ribbon/arcachon.jpg);
+}
+.angouleme {
+	background-image: url(photos/ribbon/angouleme.jpg);
+}
+.capferret {
+	background-image: url(photos/ribbon/capferret.jpg);
+}
+.saintemilion {
+	background-image: url(photos/ribbon/saintemilion.jpg);
+}
+.bretagne {
+	background-image: url(photos/ribbon/bretagne.jpg);
+}
+.blanquefort {
+	background-image: url(photos/ribbon/blanquefort.jpg);
+}
+.graves {
+	background-image: url(photos/ribbon/graves.jpg);
+}
+.dordogne {
+	background-image: url(photos/ribbon/dordogne.jpg);
+}
+.alsace {
+	background-image: url(photos/ribbon/alsace.jpg);
+}
+.biarritz {
+	background-image: url(photos/ribbon/biarritz.jpg);
+}
+.paris2022 {
+	background-image: url(photos/ribbon/paris2022.jpg);
+}
+.toulouse {
+	background-image: url(photos/ribbon/toulouse.jpg);
+}
+.pyrenees {
+	background-image: url(photos/ribbon/pyrenees.jpg);
+}
+.lacanau {
+	background-image: url(photos/ribbon/lacanau.jpg);
+}
+.portugal {
+	background-image: url(photos/ribbon/portugal.jpg);
+}
+
+
+
+/* ########### Responsive image gallery ########### */
+.heading-text {
+  margin-top: 2rem;
+	margin-bottom: 2rem;
+	text-align: center;
+	color: #0E8A88;
+}
+ul {
+  list-style: none;
+}
+
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.image-gallery > li {
+  flex: 1 1 auto; 
+  height: 200px;
+  cursor: pointer;
+  position: relative;
+}
+.image-gallery::after {
+  content: "";
+  flex-grow: 999;
+}
+.image-gallery li img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+  border-radius: 5px;
+}
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;  
+  top: 0;
+  left: 0;  
+  color: white;
+  border-radius: 5px;
+  /* center overlay content */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+	text-align: center;
+}
+.image-gallery li:hover .overlay {  
+	background: rgba(57, 57, 57, 0.502);
+	transition: all 0.2s 0.1s ease-in-out;
+	font-size: 1.25rem;
+}
+
+
+
+/* ########### pages destinations ########### */
+section { 
+	margin-top: 20px;
+	margin-left: 20px;
+	margin-right: 20px;	
+}
+.titre_section {
+	text-align: center;
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;	
+}
+.titre_section span {
+	font-size: 2rem;	
+}
+.titre_section a {
+	cursor: pointer;
+	text-decoration: underline;
+}
+.titre_section a:hover {
+	color: #0E8A88;
+}
+
+.image-gallery-destination {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.image-gallery-destination > li {
+  flex: 1 1 auto; 
+  height: 200px;
+  position: relative;
+}
+.image-gallery-destination::after {
+  content: "";
+  flex-grow: 999;
+}
+.image-gallery-destination li img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+	vertical-align: middle;
+  border-radius: 5px;
+}
+.image-gallery-destination li:hover {  
+	transition: all 0.2s 0.1s ease-in-out;
+  width: 40%;
+  height: 40%;
+}
+
+.photoModal .modal-body {
+	background-color: lightgray;
+}
+.slider {	
+	margin: 0px 20px;
+	text-align: center;	
+}
+.slider img {
+	height: 700px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+
+/* ########### comment box ########### 
+.container {
+	width: 600px;
+	border: 1px solid black;
+	padding: 15px 10px;
+	margin: 15px;
+	border-radius: 5px;
+}
+.container h6 {
+	text-align: left;
+	margin-bottom: 15px;
+}
+.container textarea {
+	height: 30px;
+	width: 100%;
+	border: none;
+	border-bottom: 2px solid #aaa;
+	background-color: transparent;
+	margin-bottom: 10px;
+	resize: none;
+	outline: none;
+	transition: .5s;
+}
+.container input[type="submit"], .container button {
+	padding: 10px 15px;
+	border: none;
+	outline: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+.container input[type="submit"] {
+	color: #fff;
+	background-color: #0E8A88;
+}
+.container button {
+	color: #333;
+	background-color: transparent;
+}
+.container .btn {
+	display: none;
+}
+*/
+
+
+
+/* ########### tablet ########### */
+@media screen and (max-width: 780px) {
+	/* #### menu hamburger #### */
+	.hamburger {
+		display: block;
+	}
+	.hamburger.active .bar:nth-child(2) {
+		opacity: 0;
+	}
+	.hamburger.active .bar:nth-child(1) {
+		transform: translateY(8px) rotate(45deg);
+	}
+	.hamburger.active .bar:nth-child(3) {
+		transform: translateY(-8px) rotate(-45deg);
+	}
+	.header-right {
+		position: fixed;
+		left: -100%;
+		top: 70px;
+		gap: 0;
+		flex-direction: column;		
+		width: 100%;
+		transition: 0.3s;
+		margin-top: inherit;
+	}
+	.hr-index {
+		background-color: rgba(255, 255, 255, 0.3);
+	}
+	.hr-pages {
+	  background-image: url(images/header.png);
+	}
+	.hr-index .menu-item {
+		margin-bottom: 10px;
+		margin-left: 250px;
+	}
+	.hr-pages .menu-item {
+		margin-bottom: 10px;
+		margin-left: -40px;
+	}
+	.header-right.active {
+		left: 0;
+	}
+
+}
+/* ########### mobile phone ########### */
+@media screen and (max-width: 576px) {
+	h1, h4 {
+		font-size: 4rem;
+		margin-top: 4rem;
+	}
+	h2 {
+		font-size: 3rem;
+		margin-top: -2rem;
+		margin-left: 0.25rem;
+	} 
+	h5 {
+		font-size: 3rem;
+	}
+	h6 {
+		font-size: 2.5rem;
+	}
+
+	/* #### form #### */
+	label, input, textarea {
+		width: 340px;
+	}
+
+	/* #### carousel on index #### */
+	.carousel-caption p { 
+		font-size: 1.25rem;
+	}
+	.carousel-caption { 
+		top: 10rem;
+		bottom: auto;
+	}
+	.carousel-indicators { 
+		top: 85%;
+	}
+
+	/* #### ribbon image on pages #### */
+	.panel_page {
+		background-image: none;
+		height: 4rem;
+	}
+
+	/* #### image gallery on pages #### */
+	.image-gallery {
+		padding-right: 8%;
+	}
+	.heading-text {
+		margin-top: inherit;
+		margin-bottom: inherit;
+	}
+	.image-gallery::after {
+		content: inherit;
+		flex-grow: inherit;
+	}
+
+	/* #### image gallery on destinations #### */
+	.titre_section {
+		width: inherit;
+	}
+	.image-gallery-destination {
+		padding-right: 8%;
+	}
+	.image-gallery-destination::after {
+		content: inherit;
+		flex-grow: inherit;
+	}
+	.image-gallery-destination li:hover {  
+		transition: inherit;
+		width: inherit;
+		height: inherit;
+	}
+
+	/* #### slider on destinations #### */
+	.slider img {
+		object-fit: cover;
+  	width: 100%;
+  	height: 100%;
+	}
+
+}
