@@ -1,0 +1,25 @@
+{
+  "name": "eleventy-forestry",
+  "version": "1.0.0",
+  "description": "Eleventy + Forestry",
+  "main": "index.js",
+  "scripts": {
+    "build": "eleventy",
+    "watch": "eleventy --watch",
+    "start": "eleventy --serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LeVillageDuCode/eleventy-forestry.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LeVillageDuCode/eleventy-forestry/issues"
+  },
+  "homepage": "https://github.com/LeVillageDuCode/eleventy-forestry#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.0"
+  }
+}
