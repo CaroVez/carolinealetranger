@@ -1,22 +1,38 @@
 ---
 layout: layout.njk
-title: maison
 dot: ../.
+title: maison
+nav: pages
 activeMaison: active
+
+destination: quebec
 ---
 
-<div class="panel_page quebec">
+<div class="panel_page {{destination}}">
 	<p></p>	
 </div>
 
 <section>
 
-	<div class="titre_section">
-		<h6>Québec</h6>
-		<p>région de la <i>Capitale-Nationale</i></p> 
+  <div class="titre_section">
+		<h4>Québec</h4>
+		<p>région de la <i>Capitale-Nationale</i></p>
+	</div>
 
-		<p>plusieurs escapades de <b>2012</b> à <b>2005</b></p> 
-		<a>à venir</a>
-	</div>				
+	<section>
+		<div class="date_section">
+      <p>plusieurs escapades de <b>2012</b> à <b>2005</b><br>
+		  texte à venir<br>
+		  photos à venir</p> 
+	  </div>
 
+	  <div class="container">
+	    <div class="image-gallery-destination">
+      <img src="../../photos/" alt="">
+      <img src="../../photos/" alt="">
+      <img src="../../photos/" alt="">
+	    </div>
+	  </div>
+	</section>
+	
 </section>

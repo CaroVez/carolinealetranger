@@ -2,6 +2,7 @@
 layout: layout.njk
 title: publications
 dot: .
+nav: pages
 activePublications: active
 ---
 
@@ -12,7 +13,7 @@ activePublications: active
 			</div>
 
 			<div class="container">
-				<h5 class="heading-text">publications</h5>
+				<h3 class="heading-text">publications</h3>
 				
 				<!-- Grid Card -->
 				<div class="row row-cols-1 row-cols-md-3 g-4">
@@ -22,7 +23,7 @@ activePublications: active
 						<div class="card h-100">
 							<img src="../photos/minis/34_Lacanau.jpg" class="card-img-top" alt="...">
 							<div class="card-body">
-								<h7 class="card-title">plages</h7>
+								<h5 class="card-title">plages</h5>
 								<p class="card-text">Lacanau, Vendays-Montalivet, Soulac-sur-mer | Gironde 33 | France</p>
 								<!-- post button trigger modal -->
 								<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -40,17 +41,17 @@ activePublications: active
   						<div class="modal-dialog modal-xl">
   						  <div class="modal-content">
   						    <div class="modal-header">
-  						      <h7 class="modal-title" id="exampleModalLabel">plages</h7>
+  						      <h5 class="modal-title" id="exampleModalLabel">plages</h5>
   						      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       						</div>
       						<div class="modal-body">
        							
 										<!-- post carousel -->
-										<div id="carouselExampleCaptions" class="carousel slide">
+										<div id="carouselPublicationCaptions" class="carousel publications slide">
 											<div class="carousel-indicators">
-												<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-												<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-												<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+												<button type="button" data-bs-target="#carouselPublicationCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+												<button type="button" data-bs-target="#carouselPublicationCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+												<button type="button" data-bs-target="#carouselPublicationCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
 											</div>
 											<div class="carousel-inner">
 												<div class="carousel-item active">
@@ -72,11 +73,11 @@ activePublications: active
 													</div>
 												</div>
 											</div>
-											<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+											<button class="carousel-control-prev" type="button" data-bs-target="#carouselPublicationCaptions" data-bs-slide="prev">
 												<span class="carousel-control-prev-icon" aria-hidden="true"></span>
 												<span class="visually-hidden">Previous</span>
 											</button>
-											<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+											<button class="carousel-control-next" type="button" data-bs-target="#carouselPublicationCaptions" data-bs-slide="next">
 												<span class="carousel-control-next-icon" aria-hidden="true"></span>
 												<span class="visually-hidden">Next</span>
 											</button>
@@ -93,7 +94,7 @@ activePublications: active
 						<div class="card h-100">
 							<img src="../photos/minis/24_Bordeaux.jpg" class="card-img-top" alt="...">
 							<div class="card-body">
-								<h7 class="card-title">bassins à flots</h7>
+								<h5 class="card-title">bassins à flots</h5>
 								<p class="card-text">Bordeaux | Gironde 33 | France</p>
 								<!-- Button trigger modal 
 									<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -115,7 +116,7 @@ activePublications: active
 						<div class="card h-100">
 							<img src="..." class="card-img-top" alt="...">
 							<div class="card-body">
-								<h7 class="card-title">pays Basque</h7>
+								<h5 class="card-title">pays Basque</h5>
 								<p class="card-text">Saint-Jean-de-Luz, Saint-Sebastien, Bilbao | France & España</p>
 								<!-- Button trigger modal 
 									<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -137,7 +138,7 @@ activePublications: active
 						<div class="card h-100">
 							<img src="../photos/minis/01_Montreal.jpg" class="card-img-top" alt="...">
 							<div class="card-body">
-								<h7 class="card-title">séjour chez nous</h7>
+								<h5 class="card-title">séjour chez nous</h5>
 								<p class="card-text">Québec | Canada</p>
 								<!-- Button trigger modal 
 									<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -159,7 +160,7 @@ activePublications: active
 						<div class="card h-100">
 							<img src="..." class="card-img-top" alt="...">
 							<div class="card-body">
-								<h7 class="card-title">escapade</h7>
+								<h5 class="card-title">escapade</h5>
 								<p class="card-text"> | Rhône 69 | France</p>
 								<!-- Button trigger modal 
 									<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -181,7 +182,7 @@ activePublications: active
 						<div class="card h-100">
 							<img src="../photos/minis/25-7_Graves.jpg" class="card-img-top" alt="...">
 							<div class="card-body">
-								<h7 class="card-title">la vie de château</h7>
+								<h5 class="card-title">la vie de château</h5>
 								<p class="card-text">château de la Brède, domaine de Montesquieu | Gironde 33 | France</p>
 								<!-- Button trigger modal 
 									<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -203,7 +204,7 @@ activePublications: active
 						<div class="card h-100">
 							<img src="../photos/minis/25-7_Graves.jpg" class="card-img-top" alt="...">
 							<div class="card-body">
-								<h7 class="card-title">portes ouvertes de vignobles</h7>
+								<h5 class="card-title">portes ouvertes de vignobles</h5>
 								<p class="card-text">les Graves | Gironde 33 | France</p>
 								<!-- Button trigger modal 
 									<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -225,7 +226,7 @@ activePublications: active
 						<div class="card h-100">
 							<img src="..." class="card-img-top" alt="...">
 							<div class="card-body">
-								<h7 class="card-title">attention à la vague</h7>
+								<h5 class="card-title">attention à la vague</h5>
 								<p class="card-text">le mascaret, Portets | Gironde 33 | France</p>
 								<!-- Button trigger modal 
 									<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -247,7 +248,7 @@ activePublications: active
 						<div class="card h-100">
 							<img src="../photos/minis/27_Bretagne.jpg" class="card-img-top" alt="...">
 							<div class="card-body">
-								<h7 class="card-title">escapade</h7>
+								<h5 class="card-title">escapade</h5>
 								<p class="card-text">Larochelle, Le Mans | Charente-Maritime 17, Sarthe 72 | France</p>
 								<!-- Button trigger modal 
 									<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -269,7 +270,7 @@ activePublications: active
 						<div class="card h-100">
 							<img src="../photos/minis/34_Lacanau.jpg" class="card-img-top" alt="...">
 							<div class="card-body">
-								<h7 class="card-title">beaucoup de sable</h7>
+								<h5 class="card-title">beaucoup de sable</h5>
 								<p class="card-text">Dune du Pilat, Arcachon, Cap-Ferret, Lacanau | Gironde 33 | France</p>
 								<!-- Button trigger modal 
 									<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -291,7 +292,7 @@ activePublications: active
 						<div class="card h-100">
 							<img src="../photos/minis/25-5_Saintemilion.jpg" class="card-img-top" alt="...">
 							<div class="card-body">
-								<h7 class="card-title">du vin</h7>
+								<h5 class="card-title">du vin</h5>
 								<p class="card-text">Saint-Émilion | Gironde 33 | France</p>
 								<!-- Button trigger modal 
 									<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -313,7 +314,7 @@ activePublications: active
 						<div class="card h-100">
 							<img src="../photos/minis/35_Portugal.jpg" class="card-img-top" alt="...">
 							<div class="card-body">
-								<h7 class="card-title">voyage</h7>
+								<h5 class="card-title">voyage</h5>
 								<p class="card-text">Portugal</p>
 								<!-- Button trigger modal 
 									<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -335,7 +336,7 @@ activePublications: active
 						<div class="card h-100">
 							<img src="../photos/minis/34_Lacanau.jpg" class="card-img-top" alt="...">
 							<div class="card-body">
-								<h7 class="card-title">une journée à la plage</h7>
+								<h5 class="card-title">une journée à la plage</h5>
 								<p class="card-text">Lacanau | Gironde 33 | France</p>
 								<!-- Button trigger modal 
 									<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -357,7 +358,7 @@ activePublications: active
 						<div class="card h-100">
 							<img src="../photos/minis/33_Pyrenees.jpg" class="card-img-top" alt="...">
 							<div class="card-body">
-								<h7 class="card-title">escapade</h7>
+								<h5 class="card-title">escapade</h5>
 								<p class="card-text">Pyrénées-Atlantiques 64 & Hautes-Pyrénées 65 | France</p>
 								<!-- Button trigger modal 
 									<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -379,7 +380,7 @@ activePublications: active
 						<div class="card h-100">
 							<img src="../photos/minis/28_Dordogne.jpg" class="card-img-top" alt="...">
 							<div class="card-body">
-								<h7 class="card-title">escapade</h7>
+								<h5 class="card-title">escapade</h5>
 								<p class="card-text">Dordogne 24 & Lot 46 | France</p>
 								<!-- Button trigger modal 
 									<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -401,7 +402,7 @@ activePublications: active
 						<div class="card h-100">
 							<img src="../photos/minis/25-5_Saintemilion.jpg" class="card-img-top" alt="...">
 							<div class="card-body">
-								<h7 class="card-title">promenade</h7>
+								<h5 class="card-title">promenade</h5>
 								<p class="card-text">Saint-Émilion | Gironde 33 | France</p>
 								<!-- Button trigger modal 
 									<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -423,7 +424,7 @@ activePublications: active
 						<div class="card h-100">
 							<img src="../photos/minis/32_Toulouse.jpg" class="card-img-top" alt="...">
 							<div class="card-body">
-								<h7 class="card-title">escapade</h7>
+								<h5 class="card-title">escapade</h5>
 								<p class="card-text">Toulouse | Haute-Garonne 31 | France</p>
 								<!-- Button trigger modal 
 									<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -445,7 +446,7 @@ activePublications: active
 						<div class="card h-100">
 							<img src="../photos/minis/28_Dordogne.jpg" class="card-img-top" alt="...">
 							<div class="card-body">
-								<h7 class="card-title">promenade</h7>
+								<h5 class="card-title">promenade</h5>
 								<p class="card-text">Dordogne 24 | France</p>
 								<!-- Button trigger modal 
 									<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -467,7 +468,7 @@ activePublications: active
 						<div class="card h-100">
 							<img src="../photos/minis/25-5_Saintemilion.jpg" class="card-img-top" alt="...">
 							<div class="card-body">
-								<h7 class="card-title">promenade</h7>
+								<h5 class="card-title">promenade</h5>
 								<p class="card-text">Saint-Émilion | Gironde 33 | France</p>
 								<!-- Button trigger modal 
 									<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -489,7 +490,7 @@ activePublications: active
 						<div class="card h-100">
 							<img src="../photos/minis/31_Paris.jpg" class="card-img-top" alt="...">
 							<div class="card-body">
-								<h7 class="card-title">escapade</h7>
+								<h5 class="card-title">escapade</h5>
 								<p class="card-text">Paris 75 | France</p>
 								<!-- Button trigger modal 
 									<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -511,7 +512,7 @@ activePublications: active
 						<div class="card h-100">
 							<img src="../photos/minis/30_Biarritz.jpg" class="card-img-top" alt="...">
 							<div class="card-body">
-								<h7 class="card-title">escapade</h7>
+								<h5 class="card-title">escapade</h5>
 								<p class="card-text">Biarritz & Bayonne | Pyrénées-Atlantiques 64 | France</p>
 								<!-- Button trigger modal 
 									<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -533,7 +534,7 @@ activePublications: active
 						<div class="card h-100">
 							<img src="../photos/minis/29_Alsace.jpg" class="card-img-top" alt="...">
 							<div class="card-body">
-								<h7 class="card-title">séjour</h7>
+								<h5 class="card-title">séjour</h5>
 								<p class="card-text">Alsace | Bas-Rhin 67 & Haut-Rhin 68 | France</p>
 								<!-- Button trigger modal 
 									<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -555,7 +556,7 @@ activePublications: active
 						<div class="card h-100">
 							<img src="../photos/minis/28_Dordogne.jpg" class="card-img-top" alt="...">
 							<div class="card-body">
-								<h7 class="card-title">promenade</h7>
+								<h5 class="card-title">promenade</h5>
 								<p class="card-text">Dordogne 24 | France</p>
 								<!-- Button trigger modal 
 									<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -577,7 +578,7 @@ activePublications: active
 						<div class="card h-100">
 							<img src="../photos/minis/25-7_Graves.jpg" class="card-img-top" alt="...">
 							<div class="card-body">
-								<h7 class="card-title">portes ouvertes de vignobles</h7>
+								<h5 class="card-title">portes ouvertes de vignobles</h5>
 								<p class="card-text">les Graves | Gironde 33 | France</p>
 								<!-- Button trigger modal 
 									<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -599,7 +600,7 @@ activePublications: active
 						<div class="card h-100">
 							<img src="../photos/minis/25-5_Saintemilion.jpg" class="card-img-top" alt="...">
 							<div class="card-body">
-								<h7 class="card-title">promenade</h7>
+								<h5 class="card-title">promenade</h5>
 								<p class="card-text">Saint-Émilion | Gironde 33 | Gironde 33 | France</p>
 								<!-- Button trigger modal 
 									<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -621,7 +622,7 @@ activePublications: active
 						<div class="card h-100">
 							<img src="../photos/minis/25-6_Blanquefort.jpg" class="card-img-top" alt="...">
 							<div class="card-body">
-								<h7 class="card-title">promenade</h7>
+								<h5 class="card-title">promenade</h5>
 								<p class="card-text">parc Majolan, Blanquefort | Gironde 33 | France</p>
 								<!-- Button trigger modal 
 									<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -643,7 +644,7 @@ activePublications: active
 						<div class="card h-100">
 							<img src="../photos/minis/27_Bretagne.jpg" class="card-img-top" alt="...">
 							<div class="card-body">
-								<h7 class="card-title">premier road trip</h7>
+								<h5 class="card-title">premier road trip</h5>
 								<p class="card-text">Larochelle, Île-de-Noirmoutier, Bretagne | Charente-Maritime 17, Vendée 85, Loire-Atlantique 44, Morbihan 56, Finistère 29 | France</p>
 								<!-- Button trigger modal 
 									<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -665,7 +666,7 @@ activePublications: active
 						<div class="card h-100">
 							<img src="../photos/minis/25-5_Saintemilion.jpg" class="card-img-top" alt="...">
 							<div class="card-body">
-								<h7 class="card-title">promenade</h7>
+								<h5 class="card-title">promenade</h5>
 								<p class="card-text">Saint-Émilion | Gironde 33 | France</p>
 								<!-- Button trigger modal 
 									<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -687,7 +688,7 @@ activePublications: active
 						<div class="card h-100">
 							<img src="../photos/minis/25-4_Capferret.jpg" class="card-img-top" alt="...">
 							<div class="card-body">
-								<h7 class="card-title">promenade</h7>
+								<h5 class="card-title">promenade</h5>
 								<p class="card-text">Cap Ferret | Gironde 33 | France</p>
 								<!-- Button trigger modal 
 									<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -709,7 +710,7 @@ activePublications: active
 						<div class="card h-100">
 							<img src="../photos/minis/26_Angouleme.jpg" class="card-img-top" alt="...">
 							<div class="card-body">
-								<h7 class="card-title">la ville de la bande-dessiné</h7>
+								<h5 class="card-title">la ville de la bande-dessiné</h5>
 								<p class="card-text">Angoulême | Charente 16 | France</p>
 								<!-- Button trigger modal 
 									<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -731,7 +732,7 @@ activePublications: active
 						<div class="card h-100">
 							<img src="../photos/minis/25-3_Arcachon.jpg" class="card-img-top" alt="...">
 							<div class="card-body">
-								<h7 class="card-title">promenade</h7>
+								<h5 class="card-title">promenade</h5>
 								<p class="card-text">Arcachon | Gironde 33 | France</p>
 								<!-- Button trigger modal 
 									<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -753,7 +754,7 @@ activePublications: active
 						<div class="card h-100">
 							<img src="../photos/minis/25-2_Taillanmedoc.jpg" class="card-img-top" alt="...">
 							<div class="card-body">
-								<h7 class="card-title">première visite d'un vignoble</h7>
+								<h5 class="card-title">première visite d'un vignoble</h5>
 								<p class="card-text">château du Taillan, le Taillan-Médoc | Gironde 33 | France</p>
 								<!-- Button trigger modal 
 									<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -775,7 +776,7 @@ activePublications: active
 						<div class="card h-100">
 							<img src="../photos/minis/25-1_Lormont.jpg" class="card-img-top" alt="...">
 							<div class="card-body">
-								<h7 class="card-title">promenade</h7>
+								<h5 class="card-title">promenade</h5>
 								<p class="card-text">parc de l'Ermitage Sainte-Catherine, Lormont | Gironde 33 | France</p>
 								<!-- Button trigger modal 
 									<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
