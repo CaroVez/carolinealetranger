@@ -6,7 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-		<link rel="stylesheet" href="../css/style.css" />
+		<link rel="stylesheet" href="../css/style.css"/>
 		<title>Caroline à l'étranger - expat</title>
 	</head>
 	<body>
@@ -85,18 +85,35 @@
 
 		<main>
       
-			<div class="panel_page expat">
-				<p></p>
+			<div class="ribbon">
+				<div class="panel_page expat"></div>
+				<div class="heading-text">
+					<h3>France</h3>
+				</div>
 			</div>
 
-			<div class="container">
-				<h3 class="heading-text">France</h3>
+			<div class="container">				
 				
+				<div class="search">
+					<div>
+  <label for="search" alt="nom" ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16"><path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/></svg></label>
+  <input type="text" name="search" id="search" placeholder="lieu, ville, département, région, pays, etc." onkeyup="search()"/>
+</div>
+					<div>
+						<button type="button" class="filter-button all">toutes</button>
+
+						<button type="button" class="filter-button twentythree">2023</button>
+<button type="button" class="filter-button twentytwo">2022</button>
+<button type="button" class="filter-button twentyone">2021</button>
+
+					</div>
+				</div>	
+
 				<ul class="image-gallery">
-					<li>
+					<li class="destination">
 						<a href="../photos/minis/00_carteFrance.jpg" target="_blank">
 							<img src="../photos/minis/00_carteFrance.jpg" alt="">
-							<div class="overlay">carte des régions et départements</div>
+							<div class="overlay 2021 2022 2023">carte des régions et départements</div>
 						</a>
 					</li>
 
@@ -109,167 +126,167 @@
 					</li>
 				  -->
 
-					<li>
+					<li class="destination">
 						<a href="../destinations/e_bordeaux/index.html">
 							<img src="../photos/minis/24_Bordeaux.jpg" alt="">
-							<div class="overlay">Bordeaux | Gironde 33</div>
+							<div class="overlay 2021 2022 2023">Bordeaux | Gironde 33</div>
 						</a>
 					</li>
 
 
 
 
-					<li>
+					<li class="destination">
 						<a href="../destinations/e_lacanau/index.html">
 							<img src="../photos/minis/34_Lacanau.jpg" alt="">
-							<div class="overlay">Lacanau | Gironde 33</div>
+							<div class="overlay 2022 2023">Lacanau | Gironde 33</div>
 						</a>
 					</li>
 
-					<li>
+					<li class="destination">
 						<a href="../destinations/e_graves/index.html">
 							<img src="../photos/minis/25-7_Graves.jpg" alt="">
-							<div class="overlay">les Graves | Gironde 33</div>
+							<div class="overlay 2021 2022">les Graves | Gironde 33</div>
 						</a>
 					</li>
 
-					<li>
+					<li class="destination">
 						<a href="../destinations/e_pau/index.html">
 							<img src="../photos/minis/33_Pyrenees.jpg" alt="">
-							<div class="overlay">Pau, Pyrénées-Atlantiques 64</div>
+							<div class="overlay 2022">Pau, Pyrénées-Atlantiques 64</div>
 						</a>
 					</li>
 
-					<li>
+					<li class="destination">
 						<a href="../destinations/e_pyrenees/index.html">
 							<img src="../photos/minis/33_Pyrenees.jpg" alt="">
-							<div class="overlay">Hautes-Pyrénées 65</div>
+							<div class="overlay 2022">Hautes-Pyrénées 65</div>
 						</a>
 					</li>
 
-					<li>
+					<li class="destination">
 						<a href="../destinations/e_lot/index.html">
 							<img src="../photos/minis/28_Dordogne.jpg" alt="">
-							<div class="overlay">Lot 46</div>
+							<div class="overlay 2022">Lot 46</div>
 						</a>
 					</li>
 
-					<li>
+					<li class="destination">
 						<a href="../destinations/e_dordogne/index.html">
 							<img src="../photos/minis/28_Dordogne.jpg" alt="">
-							<div class="overlay">Dordogne 24</div>
+							<div class="overlay 2021 2022">Dordogne 24</div>
 						</a>
 					</li>
 
-					<li>
+					<li class="destination">
 						<a href="../destinations/e_saintemilion/index.html">
 							<img src="../photos/minis/25-5_Saintemilion.jpg" alt="">
-							<div class="overlay">Saint-Émilion | Gironde 33</div>
+							<div class="overlay 2022 2021">Saint-Émilion | Gironde 33</div>
 						</a>
 					</li>
 
-					<li>
+					<li class="destination">
 						<a href="../destinations/e_toulouse/index.html">
 							<img src="../photos/minis/32_Toulouse.jpg" alt="">
-							<div class="overlay">Toulouse | Haute-Garonne 31</div>
+							<div class="overlay 2022">Toulouse | Haute-Garonne 31</div>
 						</a>
 					</li>
 
-					<li>
+					<li class="destination">
 						<a href="../destinations/e_paris/index.html">
 							<img src="../photos/minis/31_Paris.jpg" alt="">
-							<div class="overlay">Paris 75</div>
+							<div class="overlay 2022">Paris 75</div>
 						</a>
 					</li>
 
-					<li>
+					<li class="destination">
 						<a href="../destinations/e_biarritz/index.html">
 							<img src="../photos/minis/30_Biarritz.jpg" alt="">
-							<div class="overlay">Biarritz | Pyrénées-Atlantiques 64</div>
+							<div class="overlay 2022">Biarritz | Pyrénées-Atlantiques 64</div>
 						</a>
 					</li>
 
-					<li>
+					<li class="destination">
 						<a href="../destinations/e_bayonne/index.html">
 							<img src="../photos/minis/30_Biarritz.jpg" alt="">
-							<div class="overlay">Bayonne | Pyrénées-Atlantiques 64</div>
+							<div class="overlay 2022">Bayonne | Pyrénées-Atlantiques 64</div>
 						</a>
 					</li>
 
-					<li>
+					<li class="destination">
 						<a href="../destinations/e_alsace/index.html">
 							<img src="../photos/minis/29_Alsace.jpg" alt="">
-							<div class="overlay">Alsace | Bas-Rhin 67 & Haut-Rhin 68</div>
+							<div class="overlay 2021">Alsace | Bas-Rhin 67 & Haut-Rhin 68</div>
 						</a>
 					</li>
 
-					<li>
+					<li class="destination">
 						<a href="../destinations/e_blanquefort/index.html">
 							<img src="../photos/minis/25-6_Blanquefort.jpg" alt="">
-							<div class="overlay">parc Majolan, Blanquefort | Gironde 33</div>
+							<div class="overlay 2021">parc Majolan, Blanquefort | Gironde 33</div>
 						</a>
 					</li>
 
-					<li>
+					<li class="destination">
 						<a href="../destinations/e_larochelle/index.html">
 							<img src="../photos/minis/27_Bretagne.jpg" alt="">
-							<div class="overlay">La Rochelle | Charente-Maritime 17</div>
+							<div class="overlay 2021 2022">La Rochelle | Charente-Maritime 17</div>
 						</a>
 					</li>
 
-					<li>
+					<li class="destination">
 						<a href="../destinations/e_iledenoirmoutier/index.html">
 							<img src="../photos/minis/27_Bretagne.jpg" alt="">
-							<div class="overlay">Île-de-Noirmoutier | Vendée 85</div>
+							<div class="overlay 2021">Île-de-Noirmoutier | Vendée 85</div>
 						</a>
 					</li>
 
-					<li>
+					<li class="destination">
 						<a href="../destinations/e_bretagne/index.html">
 							<img src="../photos/minis/27_Bretagne.jpg" alt="">
-							<div class="overlay">Bretagne | Morbihan 56, Finistère 29</div>
+							<div class="overlay 2021">Bretagne | Morbihan 56, Finistère 29</div>
 						</a>
 					</li>
 
-					<li>
+					<li class="destination">
 						<a href="../destinations/e_nantes/index.html">
 							<img src="../photos/minis/27_Bretagne.jpg" alt="">
-							<div class="overlay">Nantes | Loire-Atlantique 44</div>
+							<div class="overlay 2021">Nantes | Loire-Atlantique 44</div>
 						</a>
 					</li>
 
-					<li>
+					<li class="destination">
 						<a href="../destinations/e_capferret/index.html">
 							<img src="../photos/minis/25-4_Capferret.jpg" alt="">
-							<div class="overlay">Cap Ferret | Gironde 33</div>
+							<div class="overlay 2021 2022">Cap Ferret | Gironde 33</div>
 						</a>
 					</li>
 
-					<li>
+					<li class="destination">
 						<a href="../destinations/e_angouleme/index.html">
 							<img src="../photos/minis/26_Angouleme.jpg" alt="">
-							<div class="overlay">Angoulême | Charente 16</div>
+							<div class="overlay 2021">Angoulême | Charente 16</div>
 						</a>
 					</li>
 
-					<li>
+					<li class="destination">
 						<a href="../destinations/e_arcachon/index.html">
 							<img src="../photos/minis/25-3_Arcachon.jpg" alt="">
-							<div class="overlay">Arcachon | Gironde 33</div>
+							<div class="overlay 2021 2022">Arcachon | Gironde 33</div>
 						</a>
 					</li>
 
-					<li>
+					<li class="destination">
 						<a href="../destinations/e_taillanmedoc/index.html">
 							<img src="../photos/minis/25-2_Taillanmedoc.jpg" alt="">
-							<div class="overlay">château du Taillan, le Taillan-Médoc | Gironde 33</div>
+							<div class="overlay 2021">château du Taillan, le Taillan-Médoc | Gironde 33</div>
 						</a>
 					</li>
 
-					<li>
+					<li class="destination">
 						<a href="../destinations/e_lormont/index.html">
 							<img src="../photos/minis/25-1_Lormont.jpg" alt="">
-							<div class="overlay">parc de l'Ermitage Sainte-Catherine, Lormont | Gironde 33</div>
+							<div class="overlay 2021">parc de l'Ermitage Sainte-Catherine, Lormont | Gironde 33</div>
 						</a>
 					</li>
 
@@ -281,9 +298,6 @@
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 		<script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
 		<script src="../script/script.js"></script>
-		<script>
-			const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
-			const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
-		</script>
+		<script src="../script/searchDestinations.js"></script>
 	</body>
 </html>

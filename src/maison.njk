@@ -4,73 +4,83 @@ title: maison
 dot: .
 nav: pages
 activeMaison: active
+search: searchDestinations.js
 ---
 
-			<div class="panel_page maison">
-				<p></p>
+			<div class="ribbon">
+				<div class="panel_page maison"></div>
+				<div class="heading-text">
+					<h3>Québec</h3>
+				</div>
 			</div>
 
 			<div class="container">
-				<h3 class="heading-text">Québec</h3>
+
+				<div class="search">
+					{% include "search.njk" %}
+					<div>
+						{% include "buttonsAll.njk" %}
+					</div>
+				</div>	
 				
 				<ul class="image-gallery">
-					<li>
+					<li class="destination">
 						<a href="../photos/minis/00_carteQuebec.jpg" target="_blank">
 							<img src="../photos/minis/00_carteQuebec.jpg" alt="">
 							<div class="overlay">carte des régions</div>
 						</a>
 					</li>
 
-					<li>
+					<li class="destination">
 						<a href="../destinations/m_montreal/index.html">
 							<img src="../photos/minis/01_Montreal.jpg" alt="">
 							<div class="overlay">Montréal</div>
 						</a>
 					</li>
 
-					<li>
+					<li class="destination">
 						<a href="../destinations/m_gaspesie/index.html">
 							<img src="../photos/minis/23_Gaspesie.jpg" alt="">
 							<div class="overlay">Gaspésie | région de la Gaspésie</div>
 						</a>
 					</li>
 
-					<li>
+					<li class="destination">
 						<a href="../destinations/m_monttremblant/index.html">
 							<img src="../photos/minis/21_Tremblant.jpg" alt="">
 							<div class="overlay">Mont-Tremblant | région des Laurentides</div>
 						</a>
 					</li>
 
-					<li>
+					<li class="destination">
 						<a href="../destinations/m_millerzoo/index.html">
 							<img src="../photos/minis/17_Bic.jpg" alt="">
 							<div class="overlay">Miller zoo | région de la Chaudière-Appalaches</div>
 						</a>
 					</li>
 
-					<li>
+					<li class="destination">
 						<a href="../destinations/m_bic/index.html">
 							<img src="../photos/minis/17_Bic.jpg" alt="">
 							<div class="overlay">Bic | région du Bas-Saint-Laurent</div>
 						</a>
 					</li>
 
-					<li>
+					<li class="destination">
 						<a href="../destinations/m_montsaintbruno/index.html">
 							<img src="../photos/minis/09_Charlevoix.jpg" alt="">
 							<div class="overlay">Mont Saint-Bruno | région de la Montérégie</div>
 						</a>
 					</li>
 
-					<li>
+					<li class="destination">
 						<a href="../destinations/m_charlevoix/index.html">
 							<img src="../photos/minis/09_Charlevoix.jpg" alt="">
 							<div class="overlay">Charlevoix | région de la Capitale-Nationale</div>
 						</a>
 					</li>
 
-					<li>
+					<li class="destination">
 						<a href="../destinations/m_quebec/index.html">
 							<img src="../photos/minis/05_Quebec.jpg" alt="">
 							<div class="overlay">Québec | région de la Capitale-Nationale</div>

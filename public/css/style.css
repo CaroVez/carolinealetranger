@@ -1,6 +1,14 @@
 @font-face {
+	font-family: 'Questrial';
+	src: url(../fonts/Questrial/Questrial-Regular.ttf);
+}
+@font-face {
+	font-family: 'Architects_Daughter';
+	src: url(../fonts/Architects_Daughter/ArchitectsDaughter-Regular.ttf);
+}
+@font-face {
 	font-family: 'Love';
-	src: url(fonts/Love_Light/LoveLight-Regular.ttf);
+	src: url(../fonts/Love_Light/LoveLight-Regular.ttf);
 }
 
 * {
@@ -12,44 +20,30 @@
 body
 {	
 	background-color: lightgray;
-	font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-family: 'Questrial', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 h1, h2, h3, h4, h5 {
 	font-family: 'Love';
 }
-h3, h4, h5 {
-	color: #0E8A88;
-}
 
-/*
-h1 { /* brand on index 
-	font-size: 8rem;
-	margin-top: 8rem;
-}
-h2 { /* brand on index 
-	font-size: 4rem;
-	margin-top: -4rem;
-	margin-left: 4rem;
-}
-*/
-h1 { /* brand on nav --- h3 */
+h1 { /* brand on nav */
 	font-size: 3rem;
 	margin-top: 1rem;
 }
-h2 { /* title on carousel index --- h4 */
+h2 { /* title on carousel index */
+	font-size: 10rem;
+}
+h3 { /* title on pages: publications, expat, voyages, maison */
+	font-size: 10rem;
+}
+h4 { /* title on pages: destinations */
 	font-size: 8rem;
 }
-h3 { /* title on pages publications, expat, voyages, maison --- h5 */
-	font-size: 4rem;
-}
-h4 { /* title on pages destinations --- h6 */
-	font-size: 3.5rem;
-}
-h5 { /* title on cards --- h7 */
+h5 { /* title on publication's cards + post's modal */
 	font-size: 2.5rem;
+	color: #0E8A88;
 }
-
 
 
 
@@ -69,7 +63,7 @@ a {
 	height: 70px;
 }
 .pages {
-	background-image: url(../images/header.png);	
+	background-image: url(../images/header.png);
 }
 .index {
 	background-image: none;
@@ -116,11 +110,11 @@ a {
 
 
 
-/* ########### modal form ########### */
-.modal-header {
+/* ########### modal contact form in header ########### */
+header .modal-header {
 	height: 60px;
 }
-.modal-title {
+header .modal-title {
 	font-family: 'Love';
 	font-size: 3rem;
 	color: #0E8A88;
@@ -128,7 +122,7 @@ a {
 form {
 	display: table;
 }
-.modal-body label, .modal-body input, .modal-body textarea {
+header .modal-body label, .modal-body input, .modal-body textarea {
 	display: table-cell;
 	width: 465px;
 	margin-bottom: 10px;
@@ -137,21 +131,23 @@ textarea {
 	height: 200px;
 }
 .send {
-	background-color: black;
-	border: none;
+	background-color: #0E8A88;
+	border: 1px solid #0E8A88;
 	border-radius: 3px;
 	padding: 5px;
 	color: white;
 }
 .send:hover {
-	background-color: #0E8A88;
+	background-color: white;
+	color: #0E8A88;
 }
 
 
 
 /* ########### carousel index ########### */
-.index .carousel-indicators { 
-	top: 70%;
+.index .carousel-inner .carousel-item { 
+	position: relative;
+	height: 100vh;
 }
 .index .carousel-inner .carousel-item img { 
 	object-fit: cover;
@@ -159,23 +155,45 @@ textarea {
 	margin: auto;
 }
 .index .carousel-inner .carousel-item .carousel-caption { 
-	top: 30%;
-	bottom: auto;
+	position: absolute;
+	top: 50%;
+  left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 999;
 }
-.index .carousel-inner .carousel-item .carousel-caption p{ 
+.index .carousel-inner .carousel-item .carousel-caption p { 
 	color: white;
+	background: rgba(57, 57, 57, 0.25);
 	margin: auto;
 }
 
 
 
-/* ########### ribbon image ########### */
+/* ########### heading-text ########### */
+.ribbon {
+	text-align: center;
+	position: relative;
+	margin-top: 70px;
+	height: 25rem;
+}
 .panel_page {
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-position: center;
-	height: 30rem;
+	background-position: top;
+	height: 100%;
+	opacity: 0.5;
+	position: relative;
+	z-index: 1;
 }
+.heading-text {
+	position: absolute;
+	top: 50%;
+  left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 999;
+}
+
+/* ########### ribbon image ########### */
 .expat {
 	background-image: url(../photos/ribbon/expat.jpg);
 }
@@ -312,7 +330,52 @@ textarea {
 	background-image: url(../photos/ribbon/portugal.jpg);
 }
 
-/* ########### publications grid card ########### */
+
+
+/* ########### search bar + buttons ########### */
+.search {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+.buttons {
+	display: flex;
+}
+
+.search svg {
+	color: #0E8A88;	
+}
+#search {
+	width: 30rem;
+	background-color: inherit;
+	border: none;
+	border-bottom: 1px solid #0E8A88;
+}
+
+.filter-button {
+	background-color: #0E8A88;
+	border: 1px solid #0E8A88;
+	border-radius: 3px;
+	padding: 5px;
+	color: white;
+	margin-left: 0.5rem;
+	transition: linear 0.25s;
+}
+.filter-button:hover {
+	background-color: white;
+	color: #0E8A88;
+}
+
+
+/* ########### publication's cards ########### */
+.container-publications {
+	margin-top: calc(70px + 1rem);
+}
+.container-publications > p {
+	text-align: center;
+}
+
 .card-img-top {
 	object-fit: cover;
   height: 300px;
@@ -327,10 +390,10 @@ textarea {
 	color: #0E8A88;
 }
 
-/* ########### publications grid card modal ########### */
+/* ########### publication's cards: modal ########### */
 
 
-/* ########### publications grid card modal carousel ########### */
+/* ########### publication's cards: modal's carousel ########### */
 .publications .carousel-inner .carousel-item img {
 	object-fit: cover;
   height: 750px;
@@ -345,15 +408,10 @@ textarea {
 }
 
 
-/* ########### Responsive image gallery ########### */
-.heading-text {
-  margin-top: 2rem;
-	margin-bottom: 2rem;
-	text-align: center;
-	color: #0e8a88;
-}
+/* ########### Responsive image gallery on pages: expat, voyage, maison ########### */
 ul {
   list-style: none;
+	margin-left: -2rem;
 }
 
 .image-gallery {
@@ -401,20 +459,25 @@ ul {
 
 
 /* ########### pages destinations ########### */
+h4 span {
+	font-size: 4rem;
+}
+.heading-text p {
+	color: rgb(54, 54, 54);
+	margin-top: -2rem;
+}
+
 section { 
 	margin-top: 20px;
 	margin-left: 20px;
 	margin-right: 20px;
 	margin-bottom: 20px;
 }
-.titre_section, .date_section {
+.date_section {
 	text-align: center;
 	width: 70%;
 	margin-left: auto;
 	margin-right: auto;
-}
-.titre_section span {
-	font-size: 2rem;
 }
 
 .image-gallery-destination {
@@ -434,9 +497,6 @@ section {
   flex-grow: 999;
 }
 
-.photoModal .modal-body {
-	background-color: lightgray;
-}
 
 
 /* ########### comment box ########### 

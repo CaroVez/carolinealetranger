@@ -1,38 +1,32 @@
 ---
-layout: layout.njk
-dot: ../.
+layout: layoutDestinations.njk
 title: voyages
-nav: pages
 activeVoyages: active
 
 destination: london
+pagetitle: London
+subtitleNormal: 
+subtitleItalic: United Kingdom
+subtitleNormal2: 
+subtitleItalic2: 
 ---
-
-<div class="panel_page {{destination}}">
-	<p></p>	
-</div>
+<!-- 
+	exemple subtitle:
+	<p>dans l'état de <i>California</i> aux <i>United States</i> of America</p> 
+-->
 
 <section>
+	<div class="date_section">
+    <p>du 17 au 26 novembre <b>2017</b><br>
+	  texte à venir<br>
+	  photos à venir</p> 
+  </div>
 
-  <div class="titre_section">
-		<h4>London</h4>
-		<p><i>United Kingdom</i></p>
-	</div>
-
-	<section>
-		<div class="date_section">
-      <p>du 17 au 26 novembre <b>2017</b><br>
-		  texte à venir<br>
-		  photos à venir</p> 
-	  </div>
-
-	  <div class="container">
-	    <div class="image-gallery-destination">
-      	<img src="../../photos/" alt="">
-      	<img src="../../photos/" alt="">
-      	<img src="../../photos/" alt="">
-	    </div>
-	  </div>
-	</section>
-	
+  <div class="container">
+    <div class="image-gallery-destination">
+    	<img src="../../photos/" alt="">
+    	<img src="../../photos/" alt="">
+    	<img src="../../photos/" alt="">
+    </div>
+  </div>
 </section>

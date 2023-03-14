@@ -14,19 +14,6 @@ document.querySelectorAll("menu-link").forEach(n => n.addEventListener("click", 
 
 
 
-//sliders
-$(document).ready(function(){  
-  $('.slider').slick({
-    dots: true,
-    speed: 500,
-    fade: true,
-    cssEase: 'linear',
-    mobileFirst: true
-  });
-});
-
-
-
 //disable save image option
 $(document).on('contextmenu', 'img', function() {
 	return false;

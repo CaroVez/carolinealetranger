@@ -6,7 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-		<link rel="stylesheet" href="../css/style.css" />
+		<link rel="stylesheet" href="../css/style.css"/>
 		<title>Caroline à l'étranger - publications</title>
 	</head>
 	<body>
@@ -85,14 +85,34 @@
 
 		<main>
       
-			<div class="">
-				<br>
-				<br>
-				<p></p>
+			<!--
+			<div class="ribbon">
+				<div class="panel_page"></div>
+				<div class="heading-text">
+					<h3>publications</h3>
+					<p>text</p>
+				</div>
 			</div>
+			-->
 
-			<div class="container">
-				<h3 class="heading-text">publications</h3>
+			<div class="container container-publications">
+<!--
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+-->
+				<div class="search">
+					<div>
+  <label for="search" alt="nom" ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16"><path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/></svg></label>
+  <input type="text" name="search" id="search" placeholder="lieu, ville, département, région, pays, etc." onkeyup="search()"/>
+</div>
+					<div class="buttons">
+						<button type="button" class="filter-button all">toutes</button>
+
+						<button type="button" class="filter-button twentythree">2023</button>
+<button type="button" class="filter-button twentytwo">2022</button>
+<button type="button" class="filter-button twentyone">2021</button>
+
+					</div>
+				</div>				
 				
 				<!-- Grid Card -->
 				<div class="row row-cols-1 row-cols-md-3 g-4">
@@ -115,57 +135,57 @@
 						</div>
 					</div>
 
-						<!-- post modal -->
-						<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  						<div class="modal-dialog modal-xl">
-  						  <div class="modal-content">
-  						    <div class="modal-header">
-  						      <h5 class="modal-title" id="exampleModalLabel">plages</h5>
-  						      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      						</div>
-      						<div class="modal-body">
-       							
-										<!-- post carousel -->
-										<div id="carouselPublicationCaptions" class="carousel publications slide">
-											<div class="carousel-indicators">
-												<button type="button" data-bs-target="#carouselPublicationCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-												<button type="button" data-bs-target="#carouselPublicationCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-												<button type="button" data-bs-target="#carouselPublicationCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-											</div>
-											<div class="carousel-inner">
-												<div class="carousel-item active">
-													<img src="../photos/voyages/2020.02_Leeds/01_Avion_m.jpg" class="d-block " alt="...">
-													<div class="carousel-caption d-none d-md-block">
-														<p>Some representative placeholder content for the first slide.</p>
-													</div>
-												</div>
-												<div class="carousel-item">
-													<img src="../photos/voyages/2020.02_Leeds/02_Man01_m.jpg" class="d-block " alt="...">
-													<div class="carousel-caption d-none d-md-block">
-														<p>Some representative placeholder content for the second slide. Some representative placeholder content for the second slide. Some representative placeholder content for the second slide. Some representative placeholder content for the second slide. Some representative placeholder content for the second slide.</p>
-													</div>
-												</div>
-												<div class="carousel-item">
-													<img src="../photos/voyages/2020.02_Leeds/03_Man03_m.jpg" class="d-block " alt="...">
-													<div class="carousel-caption d-none d-md-block">
-														<p>Some representative placeholder content for the third slide.</p>
-													</div>
-												</div>
-											</div>
-											<button class="carousel-control-prev" type="button" data-bs-target="#carouselPublicationCaptions" data-bs-slide="prev">
-												<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-												<span class="visually-hidden">Previous</span>
-											</button>
-											<button class="carousel-control-next" type="button" data-bs-target="#carouselPublicationCaptions" data-bs-slide="next">
-												<span class="carousel-control-next-icon" aria-hidden="true"></span>
-												<span class="visually-hidden">Next</span>
-											</button>
+					<!-- post modal -->
+					<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  					<div class="modal-dialog modal-xl">
+  					  <div class="modal-content">
+  					    <div class="modal-header">
+  					      <h5 class="modal-title" id="exampleModalLabel">plages</h5>
+  					      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      					</div>
+      					<div class="modal-body">
+       						
+									<!-- post carousel -->
+									<div id="carouselPublicationCaptions" class="carousel publications slide">
+										<div class="carousel-indicators">
+											<button type="button" data-bs-target="#carouselPublicationCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+											<button type="button" data-bs-target="#carouselPublicationCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+											<button type="button" data-bs-target="#carouselPublicationCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
 										</div>
+										<div class="carousel-inner">
+											<div class="carousel-item active">
+												<img src="../photos/voyages/2020.02_Leeds/01_Avion_m.jpg" class="d-block " alt="...">
+												<div class="carousel-caption d-none d-md-block">
+													<p>Some representative placeholder content for the first slide.</p>
+												</div>
+											</div>
+											<div class="carousel-item">
+												<img src="../photos/voyages/2020.02_Leeds/02_Man01_m.jpg" class="d-block " alt="...">
+												<div class="carousel-caption d-none d-md-block">
+													<p>Some representative placeholder content for the second slide. Some representative placeholder content for the second slide. Some representative placeholder content for the second slide. Some representative placeholder content for the second slide. Some representative placeholder content for the second slide.</p>
+												</div>
+											</div>
+											<div class="carousel-item">
+												<img src="../photos/voyages/2020.02_Leeds/03_Man03_m.jpg" class="d-block " alt="...">
+												<div class="carousel-caption d-none d-md-block">
+													<p>Some representative placeholder content for the third slide.</p>
+												</div>
+											</div>
+										</div>
+										<button class="carousel-control-prev" type="button" data-bs-target="#carouselPublicationCaptions" data-bs-slide="prev">
+											<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+											<span class="visually-hidden">Previous</span>
+										</button>
+										<button class="carousel-control-next" type="button" data-bs-target="#carouselPublicationCaptions" data-bs-slide="next">
+											<span class="carousel-control-next-icon" aria-hidden="true"></span>
+											<span class="visually-hidden">Next</span>
+										</button>
+									</div>
 
-      						</div>
-    						</div>
-  						</div>
-						</div>
+      					</div>
+    					</div>
+  					</div>
+					</div>
 
 
 					<!-- post -->
@@ -881,9 +901,6 @@
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 		<script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
 		<script src="../script/script.js"></script>
-		<script>
-			const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
-			const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
-		</script>
+		<script src="../script/searchPublications.js"></script>
 	</body>
 </html>
