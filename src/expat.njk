@@ -36,7 +36,11 @@ search: searchDestinations.js
 					<li class="destination">
 						<a href="../destinations/{{destination.name | slugify}}/index.html">
 							<img src="../photos/minis/{{destination.name | slugify}}.jpg" alt="">
-							<div class="overlay {{destination.keywords}}">{{destination.name}} | {{destination.departementProvinceState}}</div>
+							{% if destination.name in destination.departementProvinceState %}
+								<div class="overlay {{destination.keywords}}">{{destination.departementProvinceState}}</div>
+							{% else %}
+								<div class="overlay {{destination.keywords}}">{{destination.name}} | {{destination.departementProvinceState}}</div>
+							{% endif %}
 						</a>
 					</li>
 				{% endif %}

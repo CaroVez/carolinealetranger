@@ -239,9 +239,6 @@ textarea {
 .scotland {
 	background-image: url(../photos/ribbon/scotland.jpg);
 }
-.paris2016 {
-	background-image: url(../photos/ribbon/paris2016.jpg);
-}
 .italia {
 	background-image: url(../photos/ribbon/italia.jpg);
 }
@@ -302,8 +299,8 @@ textarea {
 .blanquefort {
 	background-image: url(../photos/ribbon/blanquefort.jpg);
 }
-.graves {
-	background-image: url(../photos/ribbon/graves.jpg);
+.les-graves {
+	background-image: url(../photos/ribbon/les-graves.jpg);
 }
 .dordogne {
 	background-image: url(../photos/ribbon/dordogne.jpg);
@@ -314,8 +311,8 @@ textarea {
 .biarritz {
 	background-image: url(../photos/ribbon/biarritz.jpg);
 }
-.paris2022 {
-	background-image: url(../photos/ribbon/paris2022.jpg);
+.paris {
+	background-image: url(../photos/ribbon/paris.jpg);
 }
 .toulouse {
 	background-image: url(../photos/ribbon/toulouse.jpg);
