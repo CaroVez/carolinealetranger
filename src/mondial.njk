@@ -1,0 +1,39 @@
+---
+layout: layout.njk
+title: mondial
+dot: .
+nav: pages
+activeMondial: active
+search: searchDestinations.js
+---
+
+<div class="ribbon">
+	<div class="panel_page mondial"></div>
+	<div class="heading-text">
+		<h3>destinations Mondiales</h3>
+	</div>
+</div>
+
+<div class="container">
+
+	<div class="search">
+		{% include "search.njk" %}
+		<div>
+			{% include "buttonsAll.njk" %}
+		</div>
+	</div>	
+	
+	<ul class="image-gallery">		
+			{% for destination in destinations %}
+				{% if destination.title === "mondial" %}
+					<li class="destination">
+						<a href="../destinations/{{destination.name | slugify}}/index.html">
+							<img src="../photos/minis/{{destination.name | slugify}}.jpg" alt="">
+							<div class="overlay {{destination.keywords}}">{{destination.name}} {{destination.departementProvinceStateShort}} | {{destination.countryShort}}</div>
+						</a>
+					</li>
+				{% endif %}
+			{% endfor %}		
+	</ul>
+	
+</div>

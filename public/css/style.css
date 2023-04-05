@@ -34,7 +34,7 @@ h1 { /* brand on nav */
 h2 { /* title on carousel index */
 	font-size: 10rem;
 }
-h3 { /* title on pages: publications, expat, voyages, maison */
+h3 { /* title on pages: publications, expat, mondial, maison */
 	font-size: 10rem;
 }
 h4 { /* title on pages: destinations */
@@ -197,8 +197,8 @@ textarea {
 .expat {
 	background-image: url(../photos/ribbon/expat.jpg);
 }
-.voyages {
-	background-image: url(../photos/ribbon/voyages.jpg);
+.mondial {
+	background-image: url(../photos/ribbon/mondial.jpg);
 }
 .maison {
 	background-image: url(../photos/ribbon/maison.jpg);
@@ -209,8 +209,8 @@ textarea {
 .washington {
 	background-image: url(../photos/ribbon/washington.jpg);
 }
-.newyork {
-	background-image: url(../photos/ribbon/newyork.jpg);
+.new-york {
+	background-image: url(../photos/ribbon/new-york.jpg);
 }
 .japon {
 	background-image: url(../photos/ribbon/japon.jpg);
@@ -221,8 +221,8 @@ textarea {
 .boston {
 	background-image: url(../photos/ribbon/boston.jpg);
 }
-.sanfrancisco {
-	background-image: url(../photos/ribbon/sanfrancisco.jpg);
+.san-francisco {
+	background-image: url(../photos/ribbon/san-francisco.jpg);
 }
 .chicago {
 	background-image: url(../photos/ribbon/chicago.jpg);
@@ -263,8 +263,8 @@ textarea {
 .barcelona {
 	background-image: url(../photos/ribbon/barcelona.jpg);
 }
-.monttremblant {
-	background-image: url(../photos/ribbon/monttremblant.jpg);
+.mont-tremblant {
+	background-image: url(../photos/ribbon/mont-tremblant.jpg);
 }
 .leeds {
 	background-image: url(../photos/ribbon/leeds.jpg);
@@ -281,8 +281,8 @@ textarea {
 .lormont {
 	background-image: url(../photos/ribbon/lormont.jpg);
 }
-.taillanmedoc {
-	background-image: url(../photos/ribbon/taillanmedoc.jpg);
+.taillan-medoc {
+	background-image: url(../photos/ribbon/taillan-medoc.jpg);
 }
 .arcachon {
 	background-image: url(../photos/ribbon/arcachon.jpg);
@@ -290,11 +290,11 @@ textarea {
 .angouleme {
 	background-image: url(../photos/ribbon/angouleme.jpg);
 }
-.capferret {
-	background-image: url(../photos/ribbon/capferret.jpg);
+.cap-ferret {
+	background-image: url(../photos/ribbon/cap-ferret.jpg);
 }
-.saintemilion {
-	background-image: url(../photos/ribbon/saintemilion.jpg);
+.saint-emilion {
+	background-image: url(../photos/ribbon/saint-emilion.jpg);
 }
 .bretagne {
 	background-image: url(../photos/ribbon/bretagne.jpg);
@@ -348,9 +348,13 @@ textarea {
 }
 #search {
 	width: 30rem;
-	background-color: inherit;
+	background: initial;
 	border: none;
 	border-bottom: 1px solid #0E8A88;
+}
+#search:focus {
+	background: white;
+	outline: none;
 }
 
 .filter-button {

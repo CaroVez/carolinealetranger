@@ -40,8 +40,9 @@ twentyone.addEventListener('click', () => {
 function search() {
   const input = document.getElementById('search').value.toLowerCase();
   const items = document.querySelectorAll(".destination");
+  console.log(items);
   for (i = 0; i < items.length; i++) {
-    if (!items[i].innerText.toLowerCase().includes(input)) {
+    if (!items[i].innerHTML.toLowerCase().includes(input)) {
       items[i].hidden = true;
     } else {
       items[i].hidden = false;

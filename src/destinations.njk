@@ -1,0 +1,36 @@
+---
+layout: layout.njk
+dot: ../.
+nav: pages
+
+pagination:
+    data: destinations
+    size: 1
+    alias: destinations
+permalink: "destinations/{{ destinations.name | slugify }}/"
+---
+
+<div class="ribbon">
+	<div class="panel_page {{destinations.name | slugify}}"></div>
+	<div class="heading-text">
+		<h4>{{destinations.name}} <span>{{destinations.nameSpan}}</span></h4>
+		<p>{{destinations.subtitle}} {{destinations.departementProvinceState}} {{destinations.subtitle2}} {{destinations.country}}</p>
+	</div>
+</div>
+
+{% for trip in destinations.trips %}
+  <section>
+  	<div class="date_section">
+      <p>{{trip.days}} <b>{{trip.year}}</b><br>
+  	  {{trip.text}}</p>
+    </div>
+
+  	<div class="container">
+      <div class="image-gallery-destination">
+        {% for photo in trip.photos %}
+          <img src="{{photo.src}}" alt="{{photo.alt}}">
+        {% endfor %}
+      </div>
+    </div>	
+  </section>
+{% endfor %}
