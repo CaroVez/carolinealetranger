@@ -38,6 +38,30 @@
     "title": "expat",
     "activeExpat": "active",
 
+    "name": "Médoc viticole",
+    "subtitle": "département de la",
+    "departementProvinceState": "Gironde 33",
+  
+    "keywords": "2023",
+
+    "trips": [
+      {
+        "days": "1-2 avril",
+        "year": "2023",
+        "text": "texte à venir",
+        "photos": [
+          {
+            "src": "", 
+            "alt": ""
+          }
+        ]
+      }
+    ]    
+  },
+  {
+    "title": "expat",
+    "activeExpat": "active",
+
     "name": "Bassin d'Arcachon",
     "subtitle": "département de la",
     "departementProvinceState": "Gironde 33",
@@ -1041,30 +1065,6 @@
         "days": "4 septembre",
         "year": "2021",
         "text": "Parc Majolan",
-        "photos": [
-          {
-            "src": "", 
-            "alt": ""
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "title": "expat",
-    "activeExpat": "active",
-
-    "name": "Nantes",
-    "subtitle": "département de la",
-    "departementProvinceState": "Loire-Atlantique 44",
-
-    "keywords": "aout 2021",
-
-    "trips": [
-      {
-        "days": "29 août",
-        "year": "2021",
-        "text": "texte à venir",
         "photos": [
           {
             "src": "", 

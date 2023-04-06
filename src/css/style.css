@@ -272,16 +272,13 @@ textarea {
 .bordeaux {
 	background-image: url(../photos/ribbon/bordeaux.jpg);
 }
-.gironde {
-	background-image: url(../photos/ribbon/gironde.jpg);
-}
 .lormont {
 	background-image: url(../photos/ribbon/lormont.jpg);
 }
 .taillan-medoc {
 	background-image: url(../photos/ribbon/taillan-medoc.jpg);
 }
-.arcachon {
+.bassin-d-arcachon {
 	background-image: url(../photos/ribbon/arcachon.jpg);
 }
 .angouleme {
@@ -293,7 +290,7 @@ textarea {
 .saint-emilion {
 	background-image: url(../photos/ribbon/saint-emilion.jpg);
 }
-.bretagne {
+.les-cotes-du-finistere {
 	background-image: url(../photos/ribbon/bretagne.jpg);
 }
 .blanquefort {
@@ -302,7 +299,7 @@ textarea {
 .les-graves {
 	background-image: url(../photos/ribbon/les-graves.jpg);
 }
-.dordogne {
+.roque-gageac {
 	background-image: url(../photos/ribbon/dordogne.jpg);
 }
 .alsace {
@@ -319,9 +316,6 @@ textarea {
 }
 .pyrenees {
 	background-image: url(../photos/ribbon/pyrenees.jpg);
-}
-.lacanau {
-	background-image: url(../photos/ribbon/lacanau.jpg);
 }
 .portugal {
 	background-image: url(../photos/ribbon/portugal.jpg);
