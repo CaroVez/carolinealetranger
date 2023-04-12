@@ -76,7 +76,7 @@ a {
 }
 .header a.active {
 	font-family: 'Love';
-	font-size: 4rem;
+	font-size: 2rem;
 	color:#0E8A88;
 }
 
@@ -141,7 +141,7 @@ header form {
 }
 header .modal-body label, header .modal-body input, header .modal-body textarea {
 	display: table-cell;
-	width: 87vw;
+	width: 21rem;
 	margin-bottom: 1rem;
 }
 header .modal-body textarea {
@@ -180,11 +180,8 @@ header .modal-body textarea {
 	margin-top: 50px;
 }
 .heading-text p {
-	color: rgb(54, 54, 54);
+	color: black;
 	margin-top: -1rem;
-}
-.expat {
-	background-image: url(../photos/ribbon/expat.jpg);
 }
 
 /* ########### search bar + buttons ########### */
@@ -250,8 +247,8 @@ ul {
 
 /* #### image gallery on destinations #### */
 section { 
-	margin-top: 2rem;
-	margin-bottom: 2rem;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
 }
 .date_section {
 	text-align: center;
@@ -275,4 +272,378 @@ section {
 .image-gallery-destination::after {
   content: "";
   flex-grow: 999;
+}
+
+
+
+/* ################ TABLET ################ */
+@media screen and (min-width: 576px) {
+	.hr-index, .hr-pages {
+		width: 18vw;
+	}
+	header .modal-body label, header .modal-body input, header .modal-body textarea {
+		width: 29rem;
+	}
+}
+
+
+
+/* ################ TABLET ################ */
+@media screen and (min-width: 768px) {
+
+}
+
+
+
+/* ################ DESKTOP ################ */
+@media screen and (min-width: 1080px) {
+	.index h1 { /* brand on nav */
+		font-size: 4rem;
+		margin-top: 2rem;
+	}
+	.pages h1 { /* brand on nav */
+		font-size: 3rem;
+		margin-top: 1rem;
+	}
+	h3 { /* title on pages: publications, expat, mondial, maison */
+		font-size: 6rem;
+	}
+	h4 { /* title on pages: destinations */
+		font-size: 5rem;
+	}
+	h4 span {
+		font-size: 3rem;
+	}
+
+	.hamburger {
+		display: none;
+	}
+	.header-right {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		position: inherit;
+		top: inherit;
+		right: inherit;
+		transition: inherit;
+		gap: 1.5rem;
+		flex-direction: inherit;
+		text-align: inherit;
+  }
+	.hr-index {
+		background-color: inherit;
+		width: inherit;
+	}
+	.hr-pages {
+		background-image: inherit;
+		width: inherit;
+	}
+	.hr-index .menu-item, .hr-pages .menu-item {
+		padding-right: inherit;
+		cursor: pointer; 
+	}
+	.hr-index .menu-item {
+		margin: 1rem 1rem 0 0;
+	}
+	.hr-pages .menu-item {
+		margin: 0 1rem 0 0;
+	}
+	.header-right.active {
+		right: inherit;
+	}
+  .menu-link:hover {
+    color: #0E8A88;
+  }
+
+	/* ########### search bar + buttons ########### */
+	.search {
+		margin-top: 1rem;
+	}
+
+	/* ########### ribbon ########### */
+	.ribbon {
+		text-align: center;
+		position: relative;
+		margin-top: 50px;
+		height: 25rem;
+	}
+	.panel_page {
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: top;
+		height: 100%;
+		opacity: 0.5;
+		position: relative;
+		z-index: 1;
+	}
+	.heading-text {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		z-index: 999;
+	}
+
+	/* #### responsive image gallery on pages: expat, voyage, maison #### */
+	.overlay {
+		position: absolute;
+		width: 100%;
+		height: 100%;  
+		top: 0;
+		left: 0;  
+		color: white;
+		border-radius: 5px;
+		/* center overlay content */
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+	}
+	.image-gallery li:hover .overlay {  
+		background: rgba(57, 57, 57, 0.502);
+		transition: all 0.2s 0.1s ease-in-out;
+		font-size: 1.25rem;
+	}
+
+	/* #### image gallery on destinations #### */
+	.image-gallery-destination > img {
+		width: inherit;
+		height: 30rem;
+	}
+
+
+
+	/* ########### ribbon image ########### */
+	.expat {
+		background-image: url(../photos/ribbon/expat.jpg);
+	}
+	.mondial {
+		background-image: url(../photos/ribbon/mondial.jpg);
+	}
+	.maison {
+		background-image: url(../photos/ribbon/maison.jpg);
+	}
+	
+	
+	
+	
+	.bordeaux {
+		background-image: url(../photos/ribbon/bordeaux.jpg);
+	}
+	.medoc-viticole {
+		background-image: url(../photos/ribbon/medoc-viticole.jpg);
+	}
+	.bassin-d-arcachon {
+		background-image: url(../photos/ribbon/bassin-d-arcachon.jpg);
+	}
+	.landes-du-medoc {
+		background-image: url(../photos/ribbon/landes-du-medoc.jpg);
+	}
+	.saint-jean-de-luz {
+		background-image: url(../photos/ribbon/saint-jean-de-luz.jpg);
+	}
+	.perigeux {
+		background-image: url(../photos/ribbon/perigeux.jpg);
+	}
+	.rhone {
+		background-image: url(../photos/ribbon/rhone.jpg);
+	}
+	.clermont-ferrand {
+		background-image: url(../photos/ribbon/clermont-ferrand.jpg);
+	}
+	.la-brede {
+		background-image: url(../photos/ribbon/la-brede.jpg);
+	}
+	.la-brede {
+		background-image: url(../photos/ribbon/la-brede.jpg);
+	}
+	.les-graves {
+		background-image: url(../photos/ribbon/les-graves.jpg);
+	}
+	.portets {
+		background-image: url(../photos/ribbon/portets.jpg);
+	}
+	.la-poterie-au-perche {
+		background-image: url(../photos/ribbon/la-poterie-au-perche.jpg);
+	}
+	.le-mans {
+		background-image: url(../photos/ribbon/le-mans.jpg);
+	}
+	.la-rochelle {
+		background-image: url(../photos/ribbon/la-rochelle.jpg);
+	}
+	.ile-de-re {
+		background-image: url(../photos/ribbon/ile-de-re.jpg);
+	}
+	.blaye {
+		background-image: url(../photos/ribbon/blaye.jpg);
+	}
+	.saint-emilion {
+		background-image: url(../photos/ribbon/saint-emilion.jpg);
+	}
+	.pyrenees {
+		background-image: url(../photos/ribbon/pyrenees.jpg);
+	}
+	.pau {
+		background-image: url(../photos/ribbon/pau.jpg);
+	}
+	.domme {
+		background-image: url(../photos/ribbon/domme.jpg);
+	}
+	.castelnaud-lachapelle {
+		background-image: url(../photos/ribbon/castelnaud-lachapelle.jpg);
+	}
+	.roque-gageac {
+		background-image: url(../photos/ribbon/roque-gageac.jpg);
+	}
+	.montignac {
+		background-image: url(../photos/ribbon/montignac.jpg);
+	}
+	.rocamadour {
+		background-image: url(../photos/ribbon/rocamadour.jpg);
+	}
+	.padirac {
+		background-image: url(../photos/ribbon/padirac.jpg);
+	}
+	.lacave {
+		background-image: url(../photos/ribbon/lacave.jpg);
+	}
+	.sarlat-la-caneda {
+		background-image: url(../photos/ribbon/sarlat-la-caneda.jpg);
+	}
+	.vezac {
+		background-image: url(../photos/ribbon/vezac.jpg);
+	}
+	.toulouse {
+		background-image: url(../photos/ribbon/toulouse.jpg);
+	}
+	.paris {
+		background-image: url(../photos/ribbon/paris.jpg);
+	}
+	.bayonne {
+		background-image: url(../photos/ribbon/bayonne.jpg);
+	}
+	.biarritz {
+		background-image: url(../photos/ribbon/biarritz.jpg);
+	}
+	.alsace {
+		background-image: url(../photos/ribbon/alsace.jpg);
+	}
+	.philippsbourg {
+		background-image: url(../photos/ribbon/philippsbourg.jpg);
+	}
+	.ronchamp {
+		background-image: url(../photos/ribbon/ronchamp.jpg);
+	}
+	.beynac-et-cazenac {
+		background-image: url(../photos/ribbon/beynac-et-cazenac.jpg);
+	}
+	.blanquefort {
+		background-image: url(../photos/ribbon/blanquefort.jpg);
+	}
+	.les-cotes-du-finistere {
+		background-image: url(../photos/ribbon/les-cotes-du-finistere.jpg);
+	}
+	.brest {
+		background-image: url(../photos/ribbon/brest.jpg);
+	}
+	.vannes {
+		background-image: url(../photos/ribbon/vannes.jpg);
+	}
+	.ile-de-noirmoutier {
+		background-image: url(../photos/ribbon/ile-de-noirmoutier.jpg);
+	}
+	.angouleme {
+		background-image: url(../photos/ribbon/angouleme.jpg);
+	}
+	.lormont {
+		background-image: url(../photos/ribbon/lormont.jpg);
+	}
+	
+	
+	
+	
+	.pays-basque {
+		background-image: url(../photos/ribbon/pays-basque.jpg);
+	}
+	.portugal {
+		background-image: url(../photos/ribbon/portugal.jpg);
+	}
+	.leeds {
+		background-image: url(../photos/ribbon/leeds.jpg);
+	}
+	.barcelona {
+		background-image: url(../photos/ribbon/barcelona.jpg);
+	}
+	.alberta {
+		background-image: url(../photos/ribbon/alberta.jpg);
+	}
+	.london {
+		background-image: url(../photos/ribbon/london.jpg);
+	}
+	.italia {
+		background-image: url(../photos/ribbon/italia.jpg);
+	}
+	.scotland {
+		background-image: url(../photos/ribbon/scotland.jpg);
+	}
+	.ireland {
+		background-image: url(../photos/ribbon/ireland.jpg);
+	}
+	.utah {
+		background-image: url(../photos/ribbon/utah.jpg);
+	}
+	.chicago {
+		background-image: url(../photos/ribbon/chicago.jpg);
+	}
+	.san-francisco {
+		background-image: url(../photos/ribbon/san-francisco.jpg);
+	}
+	.boston {
+		background-image: url(../photos/ribbon/boston.jpg);
+	}
+	.japon {
+		background-image: url(../photos/ribbon/japon.jpg);
+	}
+	.washington {
+		background-image: url(../photos/ribbon/washington.jpg);
+	}
+	.toronto {
+		background-image: url(../photos/ribbon/toronto.jpg);
+	}
+	.new-york {
+		background-image: url(../photos/ribbon/new-york.jpg);
+	}
+	.ottawa {
+		background-image: url(../photos/ribbon/ottawa.jpg);
+	}
+	
+	
+	
+	
+	.montreal {
+		background-image: url(../photos/ribbon/montreal.jpg);
+	}
+	.gaspesie {
+		background-image: url(../photos/ribbon/gaspesie.jpg);
+	}
+	.mont-tremblant {
+		background-image: url(../photos/ribbon/mont-tremblant.jpg);
+	}
+	.frampton {
+		background-image: url(../photos/ribbon/frampton.jpg);
+	}
+	.bic {
+		background-image: url(../photos/ribbon/bic.jpg);
+	}
+	.mont-saint-bruno {
+		background-image: url(../photos/ribbon/mont-saint-bruno.jpg);
+	}
+	.charlevoix {
+		background-image: url(../photos/ribbon/charlevoix.jpg);
+	}
+	.quebec {
+		background-image: url(../photos/ribbon/quebec.jpg);
+	}
+
 }
