@@ -27,8 +27,13 @@ h1, h2, h3, h4, h5 {
 	font-family: 'Love';
 }
 
-h1 { /* brand on nav */
+.index h1 { /* brand on nav */
+	font-size: 3rem;
+	margin-top: 1rem;
+}
+.pages h1 { /* brand on nav */
 	font-size: 2rem;
+	margin-top: 0.5rem;
 }
 h2 { /* title on carousel index */
 	font-size: 6rem;
