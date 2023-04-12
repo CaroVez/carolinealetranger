@@ -1,8 +1,8 @@
 // ########### BUTTONS ########### //
-const all = document.querySelector('.all');
-const twentythree = document.querySelector('.twentythree');
-const twentytwo = document.querySelector('.twentytwo');
-const twentyone = document.querySelector('.twentyone');
+// const all = document.querySelector('.all');
+// const twentythree = document.querySelector('.twentythree');
+// const twentytwo = document.querySelector('.twentytwo');
+// const twentyone = document.querySelector('.twentyone');
 
 // ########### SORTING ########### //
 function sortingItems(year) {
@@ -17,24 +17,24 @@ function sortingItems(year) {
 };
 
 // ########### EVENT ON CLICK ########### //
-all.addEventListener('click', () => {
-  const items = document.querySelectorAll(".overlay");
-  for (let i = 0; i < items.length; i++) {    
-    items[i].parentElement.parentElement.hidden = false;
-  }  
-});
+// all.addEventListener('click', () => {
+//   const items = document.querySelectorAll(".overlay");
+//   for (let i = 0; i < items.length; i++) {    
+//     items[i].parentElement.parentElement.hidden = false;
+//   }  
+// });
 
-twentythree.addEventListener('click', () => {
-  sortingItems("2023");
-});
-
-twentytwo.addEventListener('click', () => {
-  sortingItems("2022");
-});
-
-twentyone.addEventListener('click', () => {
-  sortingItems("2021");
-});
+// twentythree.addEventListener('click', () => {
+//   sortingItems("2023");
+// });
+// 
+// twentytwo.addEventListener('click', () => {
+//   sortingItems("2022");
+// });
+// 
+// twentyone.addEventListener('click', () => {
+//   sortingItems("2021");
+// });
 
 // ########### SEARCH BAR ########### //
 function search() {

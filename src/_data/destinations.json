@@ -55,6 +55,17 @@
             "alt": ""
           }
         ]
+      }, 
+      {
+        "days": "30 mai",
+        "year": "2021",
+        "text": "château du Taillan",
+        "photos": [
+          {
+            "src": "", 
+            "alt": ""
+          }
+        ]
       }
     ]    
   },
@@ -1198,30 +1209,6 @@
     "title": "expat",
     "activeExpat": "active",
 
-    "name": "Taillan-Médoc",
-    "subtitle": "département de la",
-    "departementProvinceState": "Gironde 33",
-
-    "keywords": "mai 2021 chateau",
-
-    "trips": [
-      {
-        "days": "30 mai",
-        "year": "2021",
-        "text": "texte à venir",
-        "photos": [
-          {
-            "src": "", 
-            "alt": ""
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "title": "expat",
-    "activeExpat": "active",
-
     "name": "Lormont",
     "subtitle": "département de la",
     "departementProvinceState": "Gironde 33",
@@ -1262,7 +1249,7 @@
     "title": "mondial",
     "activeMondial": "active",
 
-    "name": "Pays Basque Espagnol",
+    "name": "Pays Basque",
     "departementProvinceState": "",
     "departementProvinceStateShort": "",
     "subtitle2": "",
@@ -1400,7 +1387,7 @@
     "departementProvinceStateShort": "",
     "subtitle2": "en",
     "country": "España",
-    "countryShort": "",
+    "countryShort": "España",
 
     "keywords": "novembre 2019 anniversaire",
 
