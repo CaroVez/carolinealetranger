@@ -11,13 +11,16 @@ pagination:
 permalink: "destinations/{{ destinations.name | slugify }}/"
 ---
 
-<div class="ribbon">
+<div class="ribbon" id="ribbon">
 	<div class="panel_page {{destinations.name | slugify}}"></div>
 	<div class="heading-text">
-		<h4>{{destinations.name}} <span>{{destinations.nameSpan}}</span></h4>
+    {% include "backButton.njk" %}
+    <h4>{{destinations.name}} <span>{{destinations.nameSpan}}</span></h4>
 		<p>{{destinations.subtitle}} {{destinations.departementProvinceState}} {{destinations.subtitle2}} {{destinations.country}}</p>
 	</div>
 </div>
+
+{% include "upButton.njk" %}
 
 {% for trip in destinations.trips %}
   <section>

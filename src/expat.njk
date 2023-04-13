@@ -8,18 +8,18 @@ activeExpat: active
 search: searchDestinations.js
 ---
 
-<div class="ribbon">
+<div class="ribbon" id="ribbon">
 	<div class="panel_page expat"></div>
 	<div class="heading-text">
 		<h3>France</h3>
 	</div>
 </div>
 
-<div class="container">				
-	
-	<div class="search">
-		{% include "search.njk" %}
-	</div>	
+{% include "upButton.njk" %}
+
+<div class="container">
+
+	{% include "search.njk" %}
 
 	<ul class="image-gallery">
 		<li class="destination">

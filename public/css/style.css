@@ -42,7 +42,7 @@ h3 { /* title on pages: publications, expat, mondial, maison */
 	font-size: 5rem;
 }
 h4 { /* title on pages: destinations */
-	font-size: 4rem;
+	font-size: 3rem;
 }
 h4 span {
 	font-size: 2rem;
@@ -113,11 +113,11 @@ a {
 }
 .hr-index {
 	background-color: rgba(255, 255, 255, 0.3);
-	width: 25vw;
+	width: 30vw;
 }
 .hr-pages {
   background-image: url(../images/header.png);
-	width: 50vw;
+	width: 30vw;
 }
 .hr-index .menu-item, .hr-pages .menu-item {
 	margin: 1rem 0;
@@ -184,7 +184,7 @@ header .modal-body textarea {
 	margin-top: -1rem;
 }
 
-/* ########### search bar + buttons ########### */
+/* ########### search bar ########### */
 .search {
 	margin-top: -0.5rem;
 	margin-bottom: 1rem;
@@ -204,7 +204,25 @@ header .modal-body textarea {
 	outline: none;
 }
 
-/* #### responsive image gallery on pages: expat, voyage, maison #### */
+/* ########### buttons up + back ########### */
+.up-button .up, .back-button .back {
+	background-color: initial;
+	border: none;
+	color: #0E8A88;
+	z-index: 999;
+}
+.up-button .up {
+	position: fixed;
+	right: 5%;
+	bottom: 3%;
+}
+.back-button .back {
+	position: fixed;
+	left: 5%;
+	top: 7%;
+}
+
+/* #### image gallery on pages: expat, international, maison #### */
 ul {
 	list-style: none;
 	margin-left: -2rem;
@@ -252,7 +270,7 @@ section {
 }
 .date_section {
 	text-align: center;
-	width: 70%;
+	width: 90%;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -276,7 +294,9 @@ section {
 
 
 
+/* ################ ###### ################ */
 /* ################ TABLET ################ */
+/* ################ ###### ################ */
 @media screen and (min-width: 576px) {
 	.hr-index, .hr-pages {
 		width: 18vw;
@@ -295,7 +315,9 @@ section {
 
 
 
+/* ################ ####### ################ */
 /* ################ DESKTOP ################ */
+/* ################ ####### ################ */
 @media screen and (min-width: 1080px) {
 	.index h1 { /* brand on nav */
 		font-size: 4rem;
@@ -315,6 +337,7 @@ section {
 		font-size: 3rem;
 	}
 
+	/* ########### nav ########### */
 	.hamburger {
 		display: none;
 	}
@@ -351,13 +374,27 @@ section {
 	.header-right.active {
 		right: inherit;
 	}
-  .menu-link:hover {
+  .menu-link:hover, .brand:hover {
     color: #0E8A88;
-  }
+  }	
+	.header a.active:hover {
+		color:white;
+	}
 
-	/* ########### search bar + buttons ########### */
+	/* ########### search bar ########### */
 	.search {
 		margin-top: 1rem;
+	}
+
+	/* ########### buttons up + back ########### */
+	.up-button .up:hover, .back-button .back:hover {
+		color: white;
+	}
+	.back-button .back {
+		position: absolute;
+		left: -40px;
+		top: 35%;
+		transform: translate(0, -35%);
 	}
 
 	/* ########### ribbon ########### */
@@ -384,7 +421,7 @@ section {
 		z-index: 999;
 	}
 
-	/* #### responsive image gallery on pages: expat, voyage, maison #### */
+	/* #### image gallery on pages: expat, international, maison #### */
 	.overlay {
 		position: absolute;
 		width: 100%;

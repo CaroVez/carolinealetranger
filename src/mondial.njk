@@ -8,18 +8,18 @@ activeMondial: active
 search: searchDestinations.js
 ---
 
-<div class="ribbon">
+<div class="ribbon" id="ribbon">
 	<div class="panel_page mondial"></div>
 	<div class="heading-text">
 		<h3>international</h3>
 	</div>
 </div>
 
+{% include "upButton.njk" %}
+
 <div class="container">
 
-	<div class="search">
-		{% include "search.njk" %}
-	</div>	
+	{% include "search.njk" %}
 	
 	<ul class="image-gallery">		
 			{% for destination in destinations %}
