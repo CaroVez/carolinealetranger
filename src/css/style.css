@@ -221,9 +221,9 @@ header .modal-body textarea {
 	cursor: pointer;
 }
 #backButton {
-	position: fixed;
+	position: absolute;
 	left: 5%;
-	top: 7%;
+	top: 8%;
 }
 
 /* #### image gallery on pages: expat, international, maison #### */
