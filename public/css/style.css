@@ -28,7 +28,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .index h1 { /* brand on nav */
-	font-size: 3rem;
+	font-size: 2.75rem;
 	margin-top: 1rem;
 }
 .pages h1 { /* brand on nav */
@@ -54,7 +54,10 @@ h5 { /* title on publication's cards + post's modal */
 
 
 /* ########### header nav ########### */
-li {
+.img-brand {
+	display: none;
+}
+	li {
 	list-style: none;
 }
 a {
@@ -113,11 +116,11 @@ a {
 }
 .hr-index {
 	background-color: rgba(255, 255, 255, 0.3);
-	width: 30vw;
+	width: 45vw;
 }
 .hr-pages {
   background-image: url(../images/header.png);
-	width: 30vw;
+	width: 45vw;
 }
 .hr-index .menu-item, .hr-pages .menu-item {
 	margin: 1rem 0;
@@ -159,6 +162,9 @@ header .modal-body textarea {
 .index .carousel-inner .carousel-item { 
 	position: relative;
 	height: 100vh;
+}
+#carouselIndexCaptionsHorizontal { 
+	display: none;
 }
 .index .carousel-inner .carousel-item img { 
 	object-fit: cover;
@@ -325,7 +331,7 @@ section {
 		margin-top: 1rem;
 	}
 	h3 { /* title on pages: publications, expat, mondial, maison */
-		font-size: 6rem;
+		font-size: 7rem;
 	}
 	h4 { /* title on pages: destinations */
 		font-size: 5rem;
@@ -333,8 +339,30 @@ section {
 	h4 span {
 		font-size: 3rem;
 	}
+	h2 a:hover {
+		color: #0E8A88;
+	}
+
+	/* #### carousel on index #### */
+	#carouselIndexCaptionsHorizontal { 
+		display: inherit;
+	}
+	#carouselIndexCaptions { 
+		display: none;
+	}
+	.index .carousel-inner .carousel-item img { 
+		width: 100%;
+	}
 
 	/* ########### nav ########### */
+	.index .img-brand {
+		display: block;
+		height: 12rem;
+		margin-top: 8rem;
+	}
+	.index .brand {
+		display: none;
+	}
 	.hamburger {
 		display: none;
 	}
