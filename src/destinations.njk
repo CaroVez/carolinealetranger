@@ -22,19 +22,85 @@ permalink: "destinations/{{ destinations.name | slugify }}/"
 
 {% include "upButton.njk" %}
 
+{% if destinations.trips[1] == null %}
+{% else %}
+	<div class="link-destinations">
+		<p>plusieurs visites :</p>
+		<div class="links">
+			{% for trip in destinations.trips %}
+				<a class="link" href="#{{trip.days | slugify}}-{{trip.year | slugify}}">{{trip.days}} {{trip.year}}</a>
+			{% endfor %}
+		</div>
+	</div>
+{% endif %}
+
 {% for trip in destinations.trips %}
-  <section>
-  	<div class="date_section">
-      <p>{{trip.days}} <b>{{trip.year}}</b><br>
-  	  {{trip.text}}</p>
+  <section class="container-destinations">
+  	<div class="date_section" id="{{trip.days | slugify}}-{{trip.year | slugify}}">
+      <h6>{{trip.days}} <b>{{trip.year}}</b></h6>
+			<p>{{trip.text}}<br><i>{{trip.text2}}</i></p>
+      <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#{{trip.modal}}">voir le carousel de photos</button>
     </div>
+    
+    <!-- post modal -->
+		<div class="modal fade" id="{{trip.modal}}" tabindex="-1" aria-labelledby="{{trip.modal}}Label" aria-hidden="true">
+  		<div class="modal-dialog modal-xl">
+  			<div class="modal-content">
+  				<div class="modal-header">
+  					<h5 class="modal-title" id="{{trip.modal}}Label">{{trip.cardTitle}}</h5>
+  					<button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      		</div>
+
+      		<div class="modal-body">
+       						
+						<!-- post carousel -->
+						{% for carousel in trip.carousels %}
+
+						<div id="carousel{{trip.modal}}Captions" class="carousel destinations slide">	
+
+							<div class="carousel-indicators">
+							  {% for photo in carousel.photos %}
+									<button type="button" data-bs-target="#carousel{{trip.modal}}Captions" data-bs-slide-to="{{photo.slide}}" class="{{photo.active}}" aria-current="{{photo.ariaCurrent}}" aria-label="Slide {{photo.slide}}"></button>
+								{% endfor %}
+							</div>
+							<div class="carousel-inner">
+								{% for photo in carousel.photos %}
+									<div class="carousel-item {{photo.active}}">
+										<img src="../photos/{{photo.src}}" class="d-block " alt="{{photo.alt}}">
+										<div class="carousel-caption d-none d-md-block">
+											<p>{{photo.text}}</p>
+										</div>
+									</div>
+								{% endfor %}
+						  </div>										
+
+							<button class="carousel-control-prev" type="button" data-bs-target="#carousel{{trip.modal}}Captions" data-bs-slide="prev">
+								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+								<span class="visually-hidden">Previous</span>
+							</button>
+							<button class="carousel-control-next" type="button" data-bs-target="#carousel{{trip.modal}}Captions" data-bs-slide="next">
+								<span class="carousel-control-next-icon" aria-hidden="true"></span>
+								<span class="visually-hidden">Next</span>
+							</button>
+
+						</div>	
+						{% endfor %}								
+
+      		</div>
+    		</div>
+  		</div>
+		</div>
 
   	<div class="container">
       <div class="image-gallery-destination">
-        {% for photo in trip.photos %}
-          <img src="{{photo.src}}" alt="{{photo.alt}}">
+        {% for carousel in trip.carousels %}
+          {% for photo in carousel.photos %}
+            <img src="{{photo.src}}" alt="{{photo.alt}}">
+          {% endfor %}
         {% endfor %}
       </div>
     </div>	
+
   </section>
+
 {% endfor %}

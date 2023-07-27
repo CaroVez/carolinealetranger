@@ -12,20 +12,16 @@
 	<body>
 		<header>
 
-			<nav class="fixed-top header {{nav}}">
+			<nav class="fixed-top header {{nav}}" id="{{nav}}">
 
-				<img src="{{dot}}./images/logo_white.png" class="img-brand">
+				<img src="{{dot}}./images/logo_white.png" class="img-brand" id="img-brand-{{nav}}">
 
-				<a class="brand" href="{{dot}}./index.html"><h1>Caroline à l'étranger</h1></a>
+				<a class="brand" id="brand-pages" href="{{dot}}./index.html"><h1>Caroline à l'étranger</h1></a>
 
 				<ul class="header-right {{hr}}">
-					<!-- 
 					<li class="menu-item">
-						<a class="menu-link {{activePublications}}{{destinations.activePublications}}" href="{{dot}}./publications/index.html">publications&nbsp<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-1-circle-fill" viewBox="0 0 16 16">
-							<path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM9.283 4.002H7.971L6.072 5.385v1.271l1.834-1.318h.065V12h1.312V4.002Z"/>
-						</svg></a>
+						<a class="menu-link {{activeItinerary}}{{destinations.activeItinerary}}" href="{{dot}}./itinerary/index.html">itinéraires</a>
 					</li>
-					-->
 					<li class="menu-item">
 						<a class="menu-link {{activeExpat}}{{destinations.activeExpat}}" href="{{dot}}./expat/index.html">france</a>
 					</li>

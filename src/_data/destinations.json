@@ -1,5 +1,273 @@
 [
   {
+    "title": "itinerary",
+    "activeItinerary": "active",
+
+    "name": "road trip en Van dans le sud de la France",
+    "subtitle": "département de la",
+    "departementProvinceState": "Gironde 33",
+  
+    "keywords": "van 2023",
+
+    "trips": [
+      {
+        "days": "16 juin au 2 juillet",
+        "year": "2023",
+        "text": "2500 km parcourus en van, 15 départements traversés, 180 Litres de diesel, 116,70€ de péages, 16 nuits en van (11 sur camping, 3 sur aire de camping car, 2 sauvages), 52 vins goutés (dont 4 Cahors, 3 Muscat, 3 Languedoc, 2 Pic Saint Loup, 1 Corbières, 3 Cassis, 5 Collioure, 4 Banyuls, 1 Champagne et de nombreux vins maisons (13 blanc, 8 rosé, 5 rouge), 14 bières goutées (surtout en Occitanie/Catalogne du nord), 1 Pastis (pcq il fallait bien au moins une fois!)",
+        
+        "modal": "1",
+        "cardTitle": "road trip en Van dans le sud de la France",
+        
+        "carousels": [
+          {
+            "photos": [
+              {
+                "slide": "0",
+                "active": "active",
+                "ariaCurrent": "true",
+                "src": "../../photos/itineraires/2023.06_van/01.jpg", 
+                "alt": "...",
+                "text": "texte à venir",
+                "favorite": "favorite"
+              },
+              {
+                "slide": "1",
+                "src": "../../photos/itineraires/2023.06_van/02.jpg", 
+                "alt": "...",
+                "text": "texte à venir",
+                "favorite": "favorite"
+              },
+              {
+                "slide": "2",
+                "src": "../../photos/itineraires/2023.06_van/03.jpg", 
+                "alt": "...",
+                "text": "texte à venir",
+                "favorite": "favorite"
+              },
+              {
+                "slide": "3",
+                "src": "../../photos/itineraires/2023.06_van/04.jpg", 
+                "alt": "...",
+                "text": "texte à venir",
+                "favorite": "favorite"
+              },
+              {
+                "slide": "4",
+                "src": "../../photos/itineraires/2023.06_van/05.jpg", 
+                "alt": "...",
+                "text": "texte à venir",
+                "favorite": "favorite"
+              },
+              {
+                "slide": "5",
+                "src": "../../photos/itineraires/2023.06_van/06.jpg", 
+                "alt": "...",
+                "text": "texte à venir",
+                "favorite": "favorite"
+              },
+              {
+                "slide": "6",
+                "src": "../../photos/itineraires/2023.06_van/06.jpg", 
+                "alt": "...",
+                "text": "texte à venir"
+              },
+              {
+                "slide": "7",
+                "src": "../../photos/itineraires/2023.06_van/06.jpg", 
+                "alt": "...",
+                "text": "texte à venir"
+              },
+              {
+                "slide": "8",
+                "src": "../../photos/itineraires/2023.06_van/06.jpg", 
+                "alt": "...",
+                "text": "texte à venir"
+              }
+            ]
+          }
+        ]
+      }
+    ]    
+  },
+  {
+    "title": "itinerary",
+    "activeItinerary": "active",
+
+    "name": "voyage en Suisse (et un peu de France)",
+
+    "keywords": "suisse",
+
+    "trips": [
+      {
+        "days": "18 au 29 mai",
+        "year": "2023",
+        "text": "",
+
+        "modal": "1",
+        "cardTitle": "voyage en Suisse (et un peu de France)",
+        
+        "carousels": [
+          {
+            "photos": [
+              {
+                "slide": "0",
+                "active": "active",
+                "ariaCurrent": "true",
+                "src": "../../photos/itineraires/2023.06_van/01.jpg", 
+                "alt": "...",
+                "text": "texte à venir",
+                "favorite": "favorite"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "itinerary",
+    "activeItinerary": "active",
+
+    "name": "pays Basque France & España",
+
+    "keywords": "basque ",
+
+    "trips": [
+      {
+        "days": "10 au 12 février",
+        "year": "2023",
+        "text": "",
+
+        "modal": "1",
+        "cardTitle": "pays Basque France & España",
+        
+        "carousels": [
+          {
+            "photos": [
+              {
+                "slide": "0",
+                "active": "active",
+                "ariaCurrent": "true",
+                "src": "../../photos/itineraires/2023.06_van/01.jpg", 
+                "alt": "...",
+                "text": "texte à venir",
+                "favorite": "favorite"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "itinerary",
+    "activeItinerary": "active",
+
+    "name": "séjour chez nous",
+
+    "keywords": "suisse ",
+
+    "trips": [
+      {
+        "days": "22 décembre au 5 janvier",
+        "year": "2022-2023",
+        "text": "",
+
+        "modal": "1",
+        "cardTitle": "séjour chez nous",
+        
+        "carousels": [
+          {
+            "photos": [
+              {
+                "slide": "0",
+                "active": "active",
+                "ariaCurrent": "true",
+                "src": "../../photos/itineraires/2023.06_van/01.jpg", 
+                "alt": "...",
+                "text": "texte à venir",
+                "favorite": "favorite"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "itinerary",
+    "activeItinerary": "active",
+
+    "name": "escapade vers le département du Rhône",
+
+    "keywords": "",
+
+    "trips": [
+      {
+        "days": "3 au 5 décembre",
+        "year": "2022",
+        "text": "",
+
+        "modal": "1",
+        "cardTitle": "escapade vers le département du Rhône",
+        
+        "carousels": [
+          {
+            "photos": [
+              {
+                "slide": "0",
+                "active": "active",
+                "ariaCurrent": "true",
+                "src": "../../photos/itineraires/2023.06_van/01.jpg", 
+                "alt": "...",
+                "text": "texte à venir",
+                "favorite": "favorite"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  {
     "title": "expat",
     "activeExpat": "active",
 
@@ -42,28 +310,238 @@
     "subtitle": "département de la",
     "departementProvinceState": "Gironde 33",
   
-    "keywords": "2023",
+    "keywords": "2023 vignoble medoc médoc viticole domaines dégustation chai chateau château",
 
     "trips": [
       {
         "days": "1-2 avril",
         "year": "2023",
-        "text": "texte à venir",
-        "photos": [
+        "text": "Portes ouvertes des vignobles du Médoc, visite de 11 domaines et dégustation de 41 vins (+ 1 champagne).",
+        "text2": "Château Fonréaud, Château Chasse-Spleen, Château la Bridane, Château Doyac, Château Loudenne, Château Larrieu-Terrefort, Château Siran, Domaine les Sadons, Château Haut-Bages Libéral, Château Lamothe-Bergeron, Château Prieuré Lichine.",
+
+        "modal": "1",
+        "cardTitle": "Portes ouvertes des vignobles du Médoc",
+
+        "carousels": [
           {
-            "src": "", 
-            "alt": ""
+            "photos": [
+              {
+                "slide": "0",
+                "active": "active",
+                "ariaCurrent": "true",
+                "src": "../../photos/expat/2023.04_medoc-viticole/02.jpg", 
+                "alt": "...",
+                "text": "texte à venir",
+                "favorite": "favorite"
+              },
+              {
+                "slide": "1",
+                "src": "../../photos/expat/2023.04_medoc-viticole/03.jpg", 
+                "alt": "...",
+                "text": "texte à venir",
+                "favorite": "favorite"
+              },
+              {
+                "slide": "2",
+                "src": "../../photos/expat/2023.04_medoc-viticole/04.jpg", 
+                "alt": "...",
+                "text": "texte à venir",
+                "favorite": "favorite"
+              },
+              {
+                "slide": "3",
+                "src": "../../photos/expat/2023.04_medoc-viticole/05.jpg", 
+                "alt": "...",
+                "text": "texte à venir",
+                "favorite": "favorite"
+              },
+              {
+                "slide": "4",
+                "src": "../../photos/expat/2023.04_medoc-viticole/06.jpg", 
+                "alt": "...",
+                "text": "texte à venir",
+                "favorite": "favorite"
+              },
+              {
+                "slide": "5",
+                "src": "../../photos/expat/2023.04_medoc-viticole/07.jpg", 
+                "alt": "...",
+                "text": "texte à venir"
+              },
+              {
+                "slide": "6",
+                "src": "../../photos/expat/2023.04_medoc-viticole/08.jpg", 
+                "alt": "...",
+                "text": "texte à venir"
+              },
+              {
+                "slide": "7",
+                "src": "../../photos/expat/2023.04_medoc-viticole/09.jpg", 
+                "alt": "...",
+                "text": "texte à venir"
+              },
+              {
+                "slide": "8",
+                "src": "../../photos/expat/2023.04_medoc-viticole/10.jpg", 
+                "alt": "...",
+                "text": "texte à venir"
+              },
+              {
+                "slide": "9",
+                "src": "../../photos/expat/2023.04_medoc-viticole/11.jpg", 
+                "alt": "...",
+                "text": "texte à venir"
+              },
+              {
+                "slide": "10",
+                "src": "../../photos/expat/2023.04_medoc-viticole/12.jpg", 
+                "alt": "...",
+                "text": "texte à venir"
+              },
+              {
+                "slide": "11",
+                "src": "../../photos/expat/2023.04_medoc-viticole/13.jpg", 
+                "alt": "...",
+                "text": "texte à venir"
+              },
+              {
+                "slide": "12",
+                "src": "../../photos/expat/2023.04_medoc-viticole/14.jpg", 
+                "alt": "...",
+                "text": "texte à venir"
+              },
+              {
+                "slide": "13",
+                "src": "../../photos/expat/2023.04_medoc-viticole/15.jpg", 
+                "alt": "...",
+                "text": "texte à venir"
+              },
+              {
+                "slide": "14",
+                "src": "../../photos/expat/2023.04_medoc-viticole/16.jpg", 
+                "alt": "...",
+                "text": "texte à venir"
+              },
+              {
+                "slide": "15",
+                "src": "../../photos/expat/2023.04_medoc-viticole/17.jpg", 
+                "alt": "...",
+                "text": "texte à venir"
+              },
+              {
+                "slide": "16",
+                "src": "../../photos/expat/2023.04_medoc-viticole/18.jpg", 
+                "alt": "...",
+                "text": "texte à venir"
+              },
+              {
+                "slide": "17",
+                "src": "../../photos/expat/2023.04_medoc-viticole/19.jpg", 
+                "alt": "...",
+                "text": "texte à venir"
+              },
+              {
+                "slide": "18",
+                "src": "../../photos/expat/2023.04_medoc-viticole/01.jpg", 
+                "alt": "...",
+                "text": "texte à venir"
+              }
+            ]
           }
         ]
       }, 
       {
         "days": "30 mai",
         "year": "2021",
-        "text": "château du Taillan",
-        "photos": [
+        "text": "Première visite et dégustation au château du Taillan",
+
+        "modal": "2",
+        "cardTitle": "Première visite et dégustation",
+
+        "carousels": [
           {
-            "src": "", 
-            "alt": ""
+            "photos": [
+              {
+                "slide": "0",
+                "active": "active",
+                "ariaCurrent": "true",
+                "src": "../../photos/expat/2021.05_taillan/01.jpg", 
+                "alt": "...",
+                "text": "texte à venir"
+              },
+              {
+                "slide": "1",
+                "src": "../../photos/expat/2021.05_taillan/02.jpg", 
+                "alt": "...",
+                "text": "texte à venir"
+              },
+              {
+                "slide": "2",
+                "src": "../../photos/expat/2021.05_taillan/03.jpg", 
+                "alt": "...",
+                "text": "texte à venir"
+              },
+              {
+                "slide": "3",
+                "src": "../../photos/expat/2021.05_taillan/04.jpg", 
+                "alt": "...",
+                "text": "texte à venir"
+              },
+              {
+                "slide": "4",
+                "src": "../../photos/expat/2021.05_taillan/05.jpg", 
+                "alt": "...",
+                "text": "texte à venir"
+              },
+              {
+                "slide": "5",
+                "src": "../../photos/expat/2021.05_taillan/06.jpg", 
+                "alt": "...",
+                "text": "texte à venir"
+              },
+              {
+                "slide": "6",
+                "src": "../../photos/expat/2021.05_taillan/07.jpg", 
+                "alt": "...",
+                "text": "texte à venir"
+              },
+              {
+                "slide": "7",
+                "src": "../../photos/expat/2021.05_taillan/08.jpg", 
+                "alt": "...",
+                "text": "texte à venir"
+              },
+              {
+                "slide": "8",
+                "src": "../../photos/expat/2021.05_taillan/09.jpg", 
+                "alt": "...",
+                "text": "texte à venir"
+              },
+              {
+                "slide": "9",
+                "src": "../../photos/expat/2021.05_taillan/10.jpg", 
+                "alt": "...",
+                "text": "texte à venir"
+              },
+              {
+                "slide": "10",
+                "src": "../../photos/expat/2021.05_taillan/11.jpg", 
+                "alt": "...",
+                "text": "texte à venir"
+              },
+              {
+                "slide": "11",
+                "src": "../../photos/expat/2021.05_taillan/12.jpg", 
+                "alt": "...",
+                "text": "texte à venir"
+              },
+              {
+                "slide": "12",
+                "src": "../../photos/expat/2021.05_taillan/13.jpg", 
+                "alt": "...",
+                "text": "texte à venir"
+              }
+            ]
           }
         ]
       }
@@ -1317,62 +1795,100 @@
         "days": "1-2 février",
         "year": "2020",
         "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-        "photos": [
+
+        "modal": "1",
+        "cardTitle": "Leeds",
+
+        "carousels": [
           {
-            "src": "../../photos/mondial/2020.02_Leeds/01_Avion.jpg", 
-            "alt": ""
-          },
-          {
-            "src": "../../photos/mondial/2020.02_Leeds/02_Man01.jpg", 
-            "alt": ""
-          },
-          {
-            "src": "../../photos/mondial/2020.02_Leeds/03_Man03.jpg", 
-            "alt": ""
-          },
-          {
-            "src": "../../photos/mondial/2020.02_Leeds/04_Man06.jpg", 
-            "alt": ""
-          },
-          {
-            "src": "../../photos/mondial/2020.02_Leeds/06_Auto.jpg", 
-            "alt": ""
-          },
-          {
-            "src": "../../photos/mondial/2020.02_Leeds/07_route01.jpg", 
-            "alt": ""
-          },
-          {
-            "src": "../../photos/mondial/2020.02_Leeds/08_Dejeuner.jpg", 
-            "alt": ""
-          },
-          {
-            "src": "../../photos/mondial/2020.02_Leeds/09_Leeds01.jpg", 
-            "alt": ""
-          },
-          {
-            "src": "../../photos/mondial/2020.02_Leeds/10_Leeds02.jpg", 
-            "alt": ""
-          },
-          {
-            "src": "../../photos/mondial/2020.02_Leeds/11_Leeds05.jpg", 
-            "alt": ""
-          },
-          {
-            "src": "../../photos/mondial/2020.02_Leeds/12_Rugby01.jpg", 
-            "alt": ""
-          },
-          {
-            "src": "../../photos/mondial/2020.02_Leeds/13_Rugby02.jpg", 
-            "alt": ""
-          },
-          {
-            "src": "../../photos/mondial/2020.02_Leeds/14_Rugby03.jpg", 
-            "alt": ""
-          },
-          {
-            "src": "../../photos/mondial/2020.02_Leeds/15_Rugby06.jpg", 
-            "alt": ""
+            "photos": [
+              {
+                "slide": "0",
+                "active": "active",
+                "ariaCurrent": "true",
+                "src": "../../photos/mondial/2020.02_Leeds/01.jpeg", 
+                "alt": "",
+                "text": "texte à venir"
+              },
+              {
+                "slide": "1",
+                "src": "../../photos/mondial/2020.02_Leeds/02.jpeg", 
+                "alt": "",
+                "text": "texte à venir"
+              },
+              {
+                "slide": "2",
+                "src": "../../photos/mondial/2020.02_Leeds/03.jpg", 
+                "alt": "",
+                "text": "texte à venir"
+              },
+              {
+                "slide": "3",
+                "src": "../../photos/mondial/2020.02_Leeds/04.jpeg", 
+                "alt": "",
+                "text": "texte à venir"
+              },
+              {
+                "slide": "4",
+                "src": "../../photos/mondial/2020.02_Leeds/05.jpg", 
+                "alt": "",
+                "text": "texte à venir"
+              },
+              {
+                "slide": "5",
+                "src": "../../photos/mondial/2020.02_Leeds/06.jpg", 
+                "alt": "",
+                "text": "texte à venir"
+              },
+              {
+                "slide": "6",
+                "src": "../../photos/mondial/2020.02_Leeds/07.jpg", 
+                "alt": "",
+                "text": "texte à venir"
+              },
+              {
+                "slide": "7",
+                "src": "../../photos/mondial/2020.02_Leeds/08.jpg", 
+                "alt": "",
+                "text": "texte à venir"
+              },
+              {
+                "slide": "8",
+                "src": "../../photos/mondial/2020.02_Leeds/09.jpg", 
+                "alt": "",
+                "text": "texte à venir"
+              },
+              {
+                "slide": "9",
+                "src": "../../photos/mondial/2020.02_Leeds/10.jpg", 
+                "alt": "",
+                "text": "texte à venir"
+              },
+              {
+                "slide": "10",
+                "src": "../../photos/mondial/2020.02_Leeds/11.jpg", 
+                "alt": "",
+                "text": "texte à venir"
+              },
+              {
+                "slide": "11",
+                "src": "../../photos/mondial/2020.02_Leeds/12.jpg", 
+                "alt": "",
+                "text": "texte à venir"
+              },
+              {
+                "slide": "12",
+                "src": "../../photos/mondial/2020.02_Leeds/13.jpg", 
+                "alt": "",
+                "text": "texte à venir"
+              },
+              {
+                "slide": "13",
+                "src": "../../photos/mondial/2020.02_Leeds/14.jpg", 
+                "alt": "",
+                "text": "texte à venir"
+              }
+            ]
           }
         ]
       }
@@ -1745,7 +2261,8 @@
             "alt": ""
           }
         ]
-      },      {
+      },      
+      {
         "days": "mai, juillet, septembre",
         "year": "2017",
         "text": "texte à venir",
@@ -1755,18 +2272,8 @@
             "alt": ""
           }
         ]
-      },
+      },     
       {
-        "days": "juin, septembre",
-        "year": "2018",
-        "text": "texte à venir",
-        "photos": [
-          {
-            "src": "", 
-            "alt": ""
-          }
-        ]
-      },      {
         "days": "du 2 au 5 avril",
         "year": "2010",
         "text": "texte à venir",

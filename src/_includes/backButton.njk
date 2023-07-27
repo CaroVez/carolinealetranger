@@ -1,6 +1,8 @@
 <div class="back-button">
   <a class="back" id="backButton"
-  {% if destinations.title === "expat" %}
+  {% if destinations.title === "itinerary" %}
+    href="../../itinerary/index.html"
+  {% elif destinations.title === "expat" %}
     href="../../expat/index.html" 
   {% elif destinations.title === "mondial" %}
     href="../../mondial/index.html"

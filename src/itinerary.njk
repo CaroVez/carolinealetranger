@@ -1,0 +1,37 @@
+---
+layout: layout.njk
+title: itinéraires
+dot: .
+nav: pages
+hr: hr-pages
+activeItinerary: active
+search: searchDestinations.js
+---
+
+<div class="ribbon" id="ribbon">
+	<div class="panel_page expat"></div>
+	<div class="heading-text">
+		<h3>itinéraires</h3>
+	</div>
+</div>
+
+{% include "upButton.njk" %}
+
+<div class="container">
+
+	{% include "search.njk" %}
+
+	<ul class="image-gallery">
+			{% for destination in destinations %}
+				{% if destination.title === "itinerary" %}
+					<li class="destination">
+						<a href="../destinations/{{destination.name | slugify}}/index.html">
+							<img src="../photos/minis/{{destination.name | slugify}}.jpg" alt="">
+								<div class="overlay {{destination.keywords}}">{{destination.name}} | {{destination.departementProvinceState}}</div>
+						</a>
+					</li>
+				{% endif %}
+			{% endfor %}		
+	</ul>
+
+</div>

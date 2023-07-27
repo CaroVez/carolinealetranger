@@ -5,16 +5,16 @@
 // const twentyone = document.querySelector('.twentyone');
 
 // ########### SORTING ########### //
-function sortingItems(year) {
-  const items = document.querySelectorAll(".overlay");
-  for (let i = 0; i < items.length; i++) {       
-    if (!items[i].className.includes(year)) {
+//function sortingItems(year) {
+//  const items = document.querySelectorAll(".overlay");
+//  for (let i = 0; i < items.length; i++) {       
+//    if (!items[i].className.includes(year)) {
       items[i].parentElement.parentElement.hidden = true;
-    } else {
+//    } else {
       items[i].parentElement.parentElement.hidden = false;
-    }  
-  }  
-};
+//    }  
+//  }  
+//};
 
 // ########### EVENT ON CLICK ########### //
 // all.addEventListener('click', () => {
@@ -40,7 +40,6 @@ function sortingItems(year) {
 function search() {
   const input = document.getElementById('search').value.toLowerCase();
   const items = document.querySelectorAll(".destination");
-  console.log(items);
   for (i = 0; i < items.length; i++) {
     if (!items[i].innerHTML.toLowerCase().includes(input)) {
       items[i].hidden = true;
