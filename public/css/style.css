@@ -212,24 +212,6 @@ header .modal-body textarea {
 }
 
 
-/* #### grid card on itinerary #### */
-.container-itinerary .search {
-	margin-top: 60px;
-}
-.container-itinerary .card .card-body .button {
-	background-color: #0E8A88;
-	border: 1px solid #0E8A88;
-	border-radius: 3px;
-	padding: 5px;
-	color: white;
-}
-
-/* #### image gallery on cards #### */
-.image-gallery-itinerary {
-	display: none;
-}
-
-
 /* #### ribbon image on pages #### */
 .panel_page {
 	background-image: none;
@@ -284,7 +266,7 @@ header .modal-body textarea {
 	top: 8%;
 }
 
-/* #### image gallery on pages: expat, international, maison #### */
+/* #### image gallery on pages: itinerary, expat, international, maison #### */
 ul {
 	list-style: none;
 	margin-left: -2rem;
@@ -335,28 +317,21 @@ ul {
 	background-color: lightgray;
 	color: #0E8A88;
 }
-section { 
-	border-bottom: 1px solid #0E8A88;
-}
 section, .image-gallery-destination { 
 	margin-top: 1rem;
 	margin-bottom: 1rem;
 }
 .date_section, .link-destinations {
 	text-align: center;
-	width: 90%;
-	margin-left: auto;
-	margin-right: auto;
 }
 .date_section {
 	padding-top: 50px;
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
 }
-.date_section button, .container-itinerary .card-body button {
-	background-color: #0E8A88;
-	border: 1px solid #0E8A88;
-	border-radius: 3px;
-	padding: 5px;
-	color: white;
+.date_section a {
+	display: none;
 }
 
 .image-gallery-destination {
@@ -374,22 +349,6 @@ section, .image-gallery-destination {
 }
 
 
-/* #### modal on destinations #### */
-.container-destinations .modal .modal-dialog .modal-content .modal-header,
-.container-itinerary .modal .modal-dialog .modal-content .modal-header{
-	height: 3rem;
-}
-.container-destinations .modal .modal-dialog .modal-content,
-.container-itinerary .modal .modal-dialog .modal-content {
-	background-color: rgb(39, 39, 39);
-}
-
-/* #### carousel on modal #### */
-.container-destinations .carousel-inner .carousel-item img,
-.container-itinerary .carousel-inner .carousel-item img { 
-	object-fit: cover;
-	margin: auto;
-}
 
 
 
@@ -419,17 +378,34 @@ section, .image-gallery-destination {
 		width: 29rem;
 	}
 
+
+	/* #### button for modal on destinations #### */
+	.date_section a {
+		display: block;
+		padding: 5px;
+		color: #0E8A88;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.date_section a:hover {
+		color: white;
+	}
+	/* #### modal on destinations #### */
+	.container-destinations .modal .modal-dialog .modal-content .modal-header {
+		height: 3rem;
+	}
+	.container-destinations .modal .modal-dialog .modal-content {
+		background-color: rgb(39, 39, 39);
+	}
 	/* #### carousel on modal #### */
-	.container-destinations .carousel-inner .carousel-item,
-	.container-itinerary .carousel-inner .carousel-item { 
+	.container-destinations .carousel-inner .carousel-item { 
 		position: relative;
 		height: 82vh;
 	}
-	.container-destinations .carousel-inner .carousel-item img,
-	.container-itinerary .carousel-inner .carousel-item img { 
+	.container-destinations .carousel-inner .carousel-item img { 
 		object-fit: cover;
-		height: 100%;
 		margin: auto;
+		height: 100%;
 	}
 }
 
@@ -471,8 +447,6 @@ section, .image-gallery-destination {
 		display: none;
 	}
 
-	/* #### grid card on index #### */
-	
 
 	/* ########### nav ########### */
 	.index .img-brand {
@@ -565,7 +539,7 @@ section, .image-gallery-destination {
 		z-index: 999;
 	}
 
-	/* #### image gallery on pages: expat, international, maison #### */
+	/* #### image gallery on pages: itinerary, expat, international, maison #### */
 	.overlay {
 		position: absolute;
 		width: 100%;
@@ -602,12 +576,12 @@ section, .image-gallery-destination {
 	}
 
 	/* #### image gallery on cards #### */
-	.image-gallery-publication, .image-gallery-itinerary {
+	.image-gallery-publication {
 		display: flex;
 		flex-wrap: wrap;
 		gap: 10px;
 	}
-	.image-gallery-publication > img, .image-gallery-itinerary > img {
+	.image-gallery-publication > img {
 		flex: 1 1 auto; 
 		width: 90%;
 		max-height: 25rem;
@@ -615,7 +589,7 @@ section, .image-gallery-destination {
 		vertical-align: middle;
 		border-radius: 5px;
 	}
-	.image-gallery-publication > img, .image-gallery-itinerary > img {
+	.image-gallery-publication > img {
 		width: inherit;
 		max-height: inherit;
 		height: 8rem;
@@ -623,6 +597,9 @@ section, .image-gallery-destination {
 
 
 	/* ########### ribbon image ########### */
+	.itinerary {
+		background-image: url(../photos/ribbon/itinerary.jpg);
+	}
 	.expat {
 		background-image: url(../photos/ribbon/expat.jpg);
 	}
@@ -635,6 +612,17 @@ section, .image-gallery-destination {
 	
 	
 	
+	.road-trip-en-van {
+		background-image: url(../photos/ribbon/road-trip-en-van.jpg);
+	}
+	.escapade-au-pays-basque {
+		background-image: url(../photos/ribbon/escapade-au-pays-basque.jpg);
+	}
+	.escapade {
+		background-image: url(../photos/ribbon/escapade.jpg);
+	}
+
+
 	
 	.bordeaux {
 		background-image: url(../photos/ribbon/bordeaux.jpg);
@@ -772,6 +760,9 @@ section, .image-gallery-destination {
 	
 	
 	
+	.suisse {
+		background-image: url(../photos/ribbon/suisse.jpg);
+	}
 	.pays-basque {
 		background-image: url(../photos/ribbon/pays-basque.jpg);
 	}

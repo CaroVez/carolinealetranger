@@ -39,7 +39,7 @@ permalink: "destinations/{{ destinations.name | slugify }}/"
   	<div class="date_section" id="{{trip.days | slugify}}-{{trip.year | slugify}}">
       <h6>{{trip.days}} <b>{{trip.year}}</b></h6>
 			<p>{{trip.text}}<br><i>{{trip.text2}}</i></p>
-      <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#{{trip.modal}}">voir le carousel de photos</button>
+      <a type="button" class="btn" data-bs-toggle="modal" data-bs-target="#{{trip.modal}}">voir le carousel de photos</a>
     </div>
     
     <!-- post modal -->
