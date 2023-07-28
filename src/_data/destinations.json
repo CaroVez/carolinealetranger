@@ -1,14 +1,13 @@
 [
   {
-    "title": "itinerary",
+    "title": "itinéraire",
     "activeItinerary": "active",
 
     "name": "road trip en Van",
-    "subtitle": "départements du",
+    "subtitle": "départements de",
     "departementProvinceState": "Gironde 33",
     "subtitle2": "en",
     "country": "France",
-    "countryShort": "France",
   
     "keywords": "van 2023",
 
@@ -67,24 +66,6 @@
                 "alt": "...",
                 "text": "texte à venir",
                 "favorite": "favorite"
-              },
-              {
-                "slide": "6",
-                "src": "../../photos/itineraires/2023.06_van/06.jpg", 
-                "alt": "...",
-                "text": "texte à venir"
-              },
-              {
-                "slide": "7",
-                "src": "../../photos/itineraires/2023.06_van/06.jpg", 
-                "alt": "...",
-                "text": "texte à venir"
-              },
-              {
-                "slide": "8",
-                "src": "../../photos/itineraires/2023.06_van/06.jpg", 
-                "alt": "...",
-                "text": "texte à venir"
               }
             ]
           }
@@ -93,10 +74,11 @@
     ]    
   },
   {
-    "title": "itinerary",
+    "title": "itinéraire",
     "activeItinerary": "active",
 
-    "name": "escapade au pays Basque",
+    "name": "au pays Basque",
+    "subtitle2": "en",
     "country": "France & España",
 
     "keywords": "basque février 2023",
@@ -108,7 +90,7 @@
         "text": "",
 
         "modal": "1",
-        "cardTitle": "escapade au pays Basque",
+        "cardTitle": "au pays Basque",
         
         "carousels": [
           {
@@ -117,7 +99,7 @@
                 "slide": "0",
                 "active": "active",
                 "ariaCurrent": "true",
-                "src": "../../photos/itineraires/2023.06_van/01.jpg", 
+                "src": "", 
                 "alt": "...",
                 "text": "texte à venir",
                 "favorite": "favorite"
@@ -129,12 +111,14 @@
     ]
   },
   {
-    "title": "itinerary",
+    "title": "itinéraire",
     "activeItinerary": "active",
 
     "name": "escapade",
-    "subtitle": "départements du",
-    "departementProvinceState": "Rhône 69",
+    "subtitle": "départements de",
+    "departementProvinceState": "Dordogne 24, Puy-de-Dôme 63 & Rhône 69",
+    "subtitle2": "en",
+    "country": "France",
 
     "keywords": "",
 
@@ -154,7 +138,7 @@
                 "slide": "0",
                 "active": "active",
                 "ariaCurrent": "true",
-                "src": "../../photos/itineraires/2023.06_van/01.jpg", 
+                "src": "", 
                 "alt": "...",
                 "text": "texte à venir",
                 "favorite": "favorite"
@@ -204,7 +188,7 @@
 
 
   {
-    "title": "expat",
+    "title": "France",
     "activeExpat": "active",
 
     "name": "Bordeaux",
@@ -226,7 +210,7 @@
         ]
       },
       {
-        "days": "du 18 au 27 novembre",
+        "days": "",
         "year": "2021",
         "text": "texte à venir",
         "photos": [
@@ -239,7 +223,7 @@
     ]    
   },
   {
-    "title": "expat",
+    "title": "France",
     "activeExpat": "active",
 
     "name": "Médoc viticole",
@@ -484,7 +468,7 @@
     ]    
   },
   {
-    "title": "expat",
+    "title": "France",
     "activeExpat": "active",
 
     "name": "Bassin d'Arcachon",
@@ -541,7 +525,7 @@
     ]
   },
   {
-    "title": "expat",
+    "title": "France",
     "activeExpat": "active",
 
     "name": "Landes du Médoc",
@@ -587,7 +571,7 @@
     ]
   },
   {
-    "title": "expat",
+    "title": "France",
     "activeExpat": "active",
 
     "name": "Saint-Jean-de-Luz",
@@ -611,7 +595,7 @@
     ]
   },
   {
-    "title": "expat",
+    "title": "France",
     "activeExpat": "active",
 
     "name": "Périgeux",
@@ -635,7 +619,7 @@
     ]
   },
   {
-    "title": "expat",
+    "title": "France",
     "activeExpat": "active",
 
     "name": "Rhône",
@@ -659,7 +643,7 @@
     ]
   },
   {
-    "title": "expat",
+    "title": "France",
     "activeExpat": "active",
 
     "name": "Clermont-Ferrand",
@@ -683,7 +667,7 @@
     ]
   },
   {
-    "title": "expat",
+    "title": "France",
     "activeExpat": "active",
 
     "name": "La Brède",
@@ -707,7 +691,7 @@
     ]
   },
   {
-    "title": "expat",
+    "title": "France",
     "activeExpat": "active",
 
     "name": "Les Graves",
@@ -742,7 +726,7 @@
     ]
   },
   {
-    "title": "expat",
+    "title": "France",
     "activeExpat": "active",
 
     "name": "Portets",
@@ -766,7 +750,7 @@
     ]
   },
   {
-    "title": "expat",
+    "title": "France",
     "activeExpat": "active",
 
     "name": "La Poterie-au-Perche",
@@ -790,7 +774,7 @@
     ]
   },
   {
-    "title": "expat",
+    "title": "France",
     "activeExpat": "active",
 
     "name": "Le Mans",
@@ -814,7 +798,7 @@
     ]
   },
   {
-    "title": "expat",
+    "title": "France",
     "activeExpat": "active",
 
     "name": "La Rochelle",
@@ -849,7 +833,7 @@
     ]
   },
   {
-    "title": "expat",
+    "title": "France",
     "activeExpat": "active",
 
     "name": "Île de Ré",
@@ -873,7 +857,7 @@
     ]
   },
   {
-    "title": "expat",
+    "title": "France",
     "activeExpat": "active",
 
     "name": "Blaye",
@@ -897,7 +881,7 @@
     ]
   },
   {
-    "title": "expat",
+    "title": "France",
     "activeExpat": "active",
 
     "name": "Saint-Émilion",
@@ -965,7 +949,7 @@
     ]
   },
   {
-    "title": "expat",
+    "title": "France",
     "activeExpat": "active",
 
     "name": "Pyrénées",
@@ -989,7 +973,7 @@
     ]
   },
   {
-    "title": "expat",
+    "title": "France",
     "activeExpat": "active",
 
     "name": "Pau",
@@ -1013,7 +997,7 @@
     ]
   },
   {
-    "title": "expat",
+    "title": "France",
     "activeExpat": "active",
 
     "name": "Domme",
@@ -1037,7 +1021,7 @@
     ]
   },  
   {
-    "title": "expat",
+    "title": "France",
     "activeExpat": "active",
 
     "name": "Castelnaud-Lachapelle",
@@ -1072,7 +1056,7 @@
     ]
   },
   {
-    "title": "expat",
+    "title": "France",
     "activeExpat": "active",
 
     "name": "Roque-Gageac",
@@ -1118,7 +1102,7 @@
     ]
   },
   {
-    "title": "expat",
+    "title": "France",
     "activeExpat": "active",
 
     "name": "Montignac",
@@ -1142,7 +1126,7 @@
     ]
   }, 
   {
-    "title": "expat",
+    "title": "France",
     "activeExpat": "active",
 
     "name": "Rocamadour",
@@ -1166,7 +1150,7 @@
     ]
   }, 
   {
-    "title": "expat",
+    "title": "France",
     "activeExpat": "active",
 
     "name": "Padirac",
@@ -1190,7 +1174,7 @@
     ]
   }, 
   {
-    "title": "expat",
+    "title": "France",
     "activeExpat": "active",
 
     "name": "Lacave",
@@ -1214,7 +1198,7 @@
     ]
   }, 
   {
-    "title": "expat",
+    "title": "France",
     "activeExpat": "active",
 
     "name": "Sarlat-la-Caneda",
@@ -1260,7 +1244,7 @@
     ]
   }, 
   {
-    "title": "expat",
+    "title": "France",
     "activeExpat": "active",
 
     "name": "Vézac",
@@ -1284,7 +1268,7 @@
     ]
   }, 
   {
-    "title": "expat",
+    "title": "France",
     "activeExpat": "active",
 
     "name": "Toulouse",
@@ -1308,7 +1292,7 @@
     ]
   }, 
   {
-    "title": "expat",
+    "title": "France",
     "activeExpat": "active",
 
     "name": "Paris",
@@ -1332,7 +1316,7 @@
     ]
   }, 
   {
-    "title": "expat",
+    "title": "France",
     "activeExpat": "active",
 
     "name": "Bayonne",
@@ -1356,7 +1340,7 @@
     ]
   }, 
   {
-    "title": "expat",
+    "title": "France",
     "activeExpat": "active",
 
     "name": "Biarritz",
@@ -1380,7 +1364,7 @@
     ]
   }, 
   {
-    "title": "expat",
+    "title": "France",
     "activeExpat": "active",
 
     "name": "Alsace",
@@ -1404,7 +1388,7 @@
     ]
   },
   {
-    "title": "expat",
+    "title": "France",
     "activeExpat": "active",
 
     "name": "Philippsbourg",
@@ -1428,7 +1412,7 @@
     ]
   },
   {
-    "title": "expat",
+    "title": "France",
     "activeExpat": "active",
 
     "name": "Ronchamp",
@@ -1452,7 +1436,7 @@
     ]
   },
   {
-    "title": "expat",
+    "title": "France",
     "activeExpat": "active",
 
     "name": "Beynac-et-Cazenac",
@@ -1476,7 +1460,7 @@
     ]
   },
   {
-    "title": "expat",
+    "title": "France",
     "activeExpat": "active",
 
     "name": "Blanquefort",
@@ -1500,7 +1484,7 @@
     ]
   },
   {
-    "title": "expat",
+    "title": "France",
     "activeExpat": "active",
 
     "name": "Les côtes du Finistère",
@@ -1524,7 +1508,7 @@
     ]
   },
   {
-    "title": "expat",
+    "title": "France",
     "activeExpat": "active",
 
     "name": "Brest",
@@ -1548,7 +1532,7 @@
     ]
   },
   {
-    "title": "expat",
+    "title": "France",
     "activeExpat": "active",
 
     "name": "Vannes",
@@ -1572,7 +1556,7 @@
     ]
   },
   {
-    "title": "expat",
+    "title": "France",
     "activeExpat": "active",
 
     "name": "Île de Noirmoutier",
@@ -1596,7 +1580,7 @@
     ]
   },
   {
-    "title": "expat",
+    "title": "France",
     "activeExpat": "active",
 
     "name": "Angoulême",
@@ -1620,7 +1604,7 @@
     ]
   },
   {
-    "title": "expat",
+    "title": "France",
     "activeExpat": "active",
 
     "name": "Lormont",
@@ -1658,8 +1642,33 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
   {
-    "title": "mondial",
+    "title": "international",
     "activeMondial": "active",
 
     "name": "Suisse",
@@ -1683,7 +1692,7 @@
                 "slide": "0",
                 "active": "active",
                 "ariaCurrent": "true",
-                "src": "../../photos/itineraires/2023.06_van/01.jpg", 
+                "src": "", 
                 "alt": "...",
                 "text": "texte à venir",
                 "favorite": "favorite"
@@ -1695,7 +1704,7 @@
     ]
   },
   {
-    "title": "mondial",
+    "title": "international",
     "activeMondial": "active",
 
     "name": "Pays Basque",
@@ -1722,7 +1731,7 @@
     ]
   },
   {
-    "title": "mondial",
+    "title": "international",
     "activeMondial": "active",
 
     "name": "Portugal",
@@ -1749,7 +1758,7 @@
     ]
   },
   {
-    "title": "mondial",
+    "title": "international",
     "activeMondial": "active",
 
     "name": "Leeds",
@@ -1866,7 +1875,7 @@
     ]
   },
   {
-    "title": "mondial",
+    "title": "international",
     "activeMondial": "active",
 
     "name": "Barcelona",
@@ -1893,7 +1902,7 @@
     ]
   },
   {
-    "title": "mondial",
+    "title": "international",
     "activeMondial": "active",
 
     "name": "Alberta",
@@ -1920,7 +1929,7 @@
     ]
   },
   {
-    "title": "mondial",
+    "title": "international",
     "activeMondial": "active",
 
     "name": "London",
@@ -1947,7 +1956,7 @@
     ]
   },
   {
-    "title": "mondial",
+    "title": "international",
     "activeMondial": "active",
 
     "name": "Italia",
@@ -1974,7 +1983,7 @@
     ]
   },
   {
-    "title": "mondial",
+    "title": "international",
     "activeMondial": "active",
 
     "name": "Scotland",
@@ -2001,7 +2010,7 @@
     ]
   },
   {
-    "title": "mondial",
+    "title": "international",
     "activeMondial": "active",
 
     "name": "Ireland",
@@ -2028,7 +2037,7 @@
     ]
   },
   {
-    "title": "mondial",
+    "title": "international",
     "activeMondial": "active",
 
     "name": "Utah",
@@ -2055,7 +2064,7 @@
     ]
   },
   {
-    "title": "mondial",
+    "title": "international",
     "activeMondial": "active",
 
     "name": "Chicago",
@@ -2082,7 +2091,7 @@
     ]
   },
   {
-    "title": "mondial",
+    "title": "international",
     "activeMondial": "active",
 
     "name": "San Francisco",
@@ -2109,7 +2118,7 @@
     ]
   },
   {
-    "title": "mondial",
+    "title": "international",
     "activeMondial": "active",
 
     "name": "Boston",
@@ -2136,7 +2145,7 @@
     ]
   },
   {
-    "title": "mondial",
+    "title": "international",
     "activeMondial": "active",
 
     "name": "Japon",
@@ -2160,7 +2169,7 @@
     ]
   },
   {
-    "title": "mondial",
+    "title": "international",
     "activeMondial": "active",
 
     "name": "Washington",
@@ -2198,7 +2207,7 @@
     ]
   },
   {
-    "title": "mondial",
+    "title": "international",
     "activeMondial": "active",
 
     "name": "Toronto",
@@ -2258,7 +2267,7 @@
     ]
   },
   {
-    "title": "mondial",
+    "title": "international",
     "activeMondial": "active",
 
     "name": "New York",
@@ -2306,7 +2315,7 @@
     ]
   },
   {
-    "title": "mondial",
+    "title": "international",
     "activeMondial": "active",
 
     "name": "Ottawa",
@@ -2369,8 +2378,31 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   {
-    "title": "maison",
+    "title": "Québec",
     "activeMaison": "active",
 
     "name": "Montréal",
@@ -2395,7 +2427,7 @@
                 "slide": "0",
                 "active": "active",
                 "ariaCurrent": "true",
-                "src": "../../photos/itineraires/2023.06_van/01.jpg", 
+                "src": "", 
                 "alt": "...",
                 "text": "texte à venir",
                 "favorite": "favorite"
@@ -2418,7 +2450,7 @@
     ]
   },
   {
-    "title": "maison",
+    "title": "Québec",
     "activeMaison": "active",
 
     "name": "Gaspésie",
@@ -2442,7 +2474,7 @@
     ]
   },
   {
-    "title": "maison",
+    "title": "Québec",
     "activeMaison": "active",
 
     "name": "Mont-Tremblant",
@@ -2488,7 +2520,7 @@
     ]
   },
   {
-    "title": "maison",
+    "title": "Québec",
     "activeMaison": "active",
 
     "name": "Frampton",
@@ -2512,7 +2544,7 @@
     ]
   },
   {
-    "title": "maison",
+    "title": "Québec",
     "activeMaison": "active",
 
     "name": "Bic",
@@ -2536,7 +2568,7 @@
     ]
   },
   {
-    "title": "maison",
+    "title": "Québec",
     "activeMaison": "active",
 
     "name": "Mont Saint-Bruno",
@@ -2560,7 +2592,7 @@
     ]
   },
   {
-    "title": "maison",
+    "title": "Québec",
     "activeMaison": "active",
 
     "name": "Charlevoix",
@@ -2584,7 +2616,7 @@
     ]
   },
   {
-    "title": "maison",
+    "title": "Québec",
     "activeMaison": "active",
 
     "name": "Québec",

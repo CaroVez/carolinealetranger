@@ -597,17 +597,17 @@ section, .image-gallery-destination {
 
 
 	/* ########### ribbon image ########### */
-	.itinerary {
-		background-image: url(../photos/ribbon/itinerary.jpg);
+	.itineraires {
+		background-image: url(../photos/ribbon/road-trip-en-van.jpg);
 	}
-	.expat {
-		background-image: url(../photos/ribbon/expat.jpg);
+	.france {
+		background-image: url(../photos/ribbon/pyrenees.jpg);
 	}
-	.mondial {
-		background-image: url(../photos/ribbon/mondial.jpg);
+	.international {
+		background-image: url(../photos/ribbon/international.jpg);
 	}
-	.maison {
-		background-image: url(../photos/ribbon/maison.jpg);
+	.quebec-pr {
+		background-image: url(../photos/ribbon/quebec.jpg);
 	}
 	
 	
@@ -615,11 +615,11 @@ section, .image-gallery-destination {
 	.road-trip-en-van {
 		background-image: url(../photos/ribbon/road-trip-en-van.jpg);
 	}
-	.escapade-au-pays-basque {
-		background-image: url(../photos/ribbon/escapade-au-pays-basque.jpg);
+	.au-pays-basque {
+		background-image: url(../photos/ribbon/pays-basque.jpg);
 	}
 	.escapade {
-		background-image: url(../photos/ribbon/escapade.jpg);
+		background-image: url(../photos/ribbon/rhone.jpg);
 	}
 
 
@@ -843,7 +843,7 @@ section, .image-gallery-destination {
 		background-image: url(../photos/ribbon/charlevoix.jpg);
 	}
 	.quebec {
-		background-image: url(../photos/ribbon/quebec.jpg);
+		background-image: url(../photos/ribbon/quebeccity.jpg);
 	}
 
 }
