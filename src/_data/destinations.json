@@ -3,9 +3,12 @@
     "title": "itinerary",
     "activeItinerary": "active",
 
-    "name": "road trip en Van dans le sud de la France",
-    "subtitle": "département de la",
+    "name": "road trip en Van",
+    "subtitle": "départements du",
     "departementProvinceState": "Gironde 33",
+    "subtitle2": "en",
+    "country": "France",
+    "countryShort": "France",
   
     "keywords": "van 2023",
 
@@ -16,7 +19,7 @@
         "text": "2500 km parcourus en van, 15 départements traversés, 180 Litres de diesel, 116,70€ de péages, 16 nuits en van (11 sur camping, 3 sur aire de camping car, 2 sauvages), 52 vins goutés (dont 4 Cahors, 3 Muscat, 3 Languedoc, 2 Pic Saint Loup, 1 Corbières, 3 Cassis, 5 Collioure, 4 Banyuls, 1 Champagne et de nombreux vins maisons (13 blanc, 8 rosé, 5 rouge), 14 bières goutées (surtout en Occitanie/Catalogne du nord), 1 Pastis (pcq il fallait bien au moins une fois!)",
         
         "modal": "1",
-        "cardTitle": "road trip en Van dans le sud de la France",
+        "cardTitle": "road trip en Van",
         
         "carousels": [
           {
@@ -93,44 +96,10 @@
     "title": "itinerary",
     "activeItinerary": "active",
 
-    "name": "voyage en Suisse (et un peu de France)",
+    "name": "escapade au pays Basque",
+    "country": "France & España",
 
-    "keywords": "suisse",
-
-    "trips": [
-      {
-        "days": "18 au 29 mai",
-        "year": "2023",
-        "text": "",
-
-        "modal": "1",
-        "cardTitle": "voyage en Suisse (et un peu de France)",
-        
-        "carousels": [
-          {
-            "photos": [
-              {
-                "slide": "0",
-                "active": "active",
-                "ariaCurrent": "true",
-                "src": "../../photos/itineraires/2023.06_van/01.jpg", 
-                "alt": "...",
-                "text": "texte à venir",
-                "favorite": "favorite"
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "title": "itinerary",
-    "activeItinerary": "active",
-
-    "name": "pays Basque France & España",
-
-    "keywords": "basque ",
+    "keywords": "basque février 2023",
 
     "trips": [
       {
@@ -139,7 +108,7 @@
         "text": "",
 
         "modal": "1",
-        "cardTitle": "pays Basque France & España",
+        "cardTitle": "escapade au pays Basque",
         
         "carousels": [
           {
@@ -163,42 +132,9 @@
     "title": "itinerary",
     "activeItinerary": "active",
 
-    "name": "séjour chez nous",
-
-    "keywords": "suisse ",
-
-    "trips": [
-      {
-        "days": "22 décembre au 5 janvier",
-        "year": "2022-2023",
-        "text": "",
-
-        "modal": "1",
-        "cardTitle": "séjour chez nous",
-        
-        "carousels": [
-          {
-            "photos": [
-              {
-                "slide": "0",
-                "active": "active",
-                "ariaCurrent": "true",
-                "src": "../../photos/itineraires/2023.06_van/01.jpg", 
-                "alt": "...",
-                "text": "texte à venir",
-                "favorite": "favorite"
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "title": "itinerary",
-    "activeItinerary": "active",
-
-    "name": "escapade vers le département du Rhône",
+    "name": "escapade",
+    "subtitle": "départements du",
+    "departementProvinceState": "Rhône 69",
 
     "keywords": "",
 
@@ -209,7 +145,7 @@
         "text": "",
 
         "modal": "1",
-        "cardTitle": "escapade vers le département du Rhône",
+        "cardTitle": "escapade",
         
         "carousels": [
           {
@@ -1722,7 +1658,41 @@
 
 
 
+  {
+    "title": "mondial",
+    "activeMondial": "active",
 
+    "name": "Suisse",
+
+    "keywords": "suisse mai 2023",
+
+    "trips": [
+      {
+        "days": "18 au 29 mai",
+        "year": "2023",
+        "text": "texte à venir",
+
+        "modal": "1",
+        "cardTitle": "Suisse",
+        
+        "carousels": [
+          {
+            "photos": [
+              {
+                "slide": "0",
+                "active": "active",
+                "ariaCurrent": "true",
+                "src": "../../photos/itineraires/2023.06_van/01.jpg", 
+                "alt": "...",
+                "text": "texte à venir",
+                "favorite": "favorite"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   {
     "title": "mondial",
     "activeMondial": "active",
@@ -1738,7 +1708,7 @@
 
     "trips": [
       {
-        "days": "du 10 au 12 février",
+        "days": "10 au 12 février",
         "year": "2023",
         "text": "texte à venir",
         "photos": [
@@ -2410,8 +2380,32 @@
 
     "trips": [
       {
+        "days": "22 décembre au 5 janvier",
+        "year": "2022-2023",
+        "text": "",
+
+        "modal": "1",
+        "cardTitle": "séjour chez nous",
+        
+        "carousels": [
+          {
+            "photos": [
+              {
+                "slide": "0",
+                "active": "active",
+                "ariaCurrent": "true",
+                "src": "../../photos/itineraires/2023.06_van/01.jpg", 
+                "alt": "...",
+                "text": "texte à venir",
+                "favorite": "favorite"
+              }
+            ]
+          }
+        ]
+      },
+      {
         "days": "",
-        "year": "2023",
+        "year": "2021",
         "text": "texte à venir",
         "photos": [
           {
