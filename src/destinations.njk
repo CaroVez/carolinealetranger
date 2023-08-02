@@ -16,7 +16,11 @@ permalink: "destinations/{{ destinations.name | slugify }}/"
 	<div class="heading-text">
     {% include "backButton.njk" %}
     <h4>{{destinations.name}} <span>{{destinations.nameSpan}}</span></h4>
-		<p>{{destinations.subtitle}} {{destinations.departementProvinceState}} {{destinations.subtitle2}} {{destinations.country}}</p>
+		<p>{{destinations.subtitle}} {{destinations.departementProvinceState}}
+			{% if destinations.title === "itinéraire" %}
+			<br>
+			{% endif %}
+		{{destinations.subtitle2}} {{destinations.country}}</p>		
 	</div>
 </div>
 

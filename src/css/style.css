@@ -723,8 +723,14 @@ section, .image-gallery-destination {
 	.biarritz {
 		background-image: url(../photos/ribbon/biarritz.jpg);
 	}
-	.alsace {
-		background-image: url(../photos/ribbon/alsace.jpg);
+	.alsace-et-plus {
+		background-image: url(../photos/ribbon/alsace-et-plus.jpg);
+	}
+	.haut-rhin {
+		background-image: url(../photos/ribbon/haut-rhin.jpg);
+	}
+	.bas-rhin {
+		background-image: url(../photos/ribbon/bas-rhin.jpg);
 	}
 	.philippsbourg {
 		background-image: url(../photos/ribbon/philippsbourg.jpg);
@@ -740,6 +746,9 @@ section, .image-gallery-destination {
 	}
 	.les-cotes-du-finistere {
 		background-image: url(../photos/ribbon/les-cotes-du-finistere.jpg);
+	}
+	.cote-est {
+		background-image: url(../photos/ribbon/cote-est.jpg);
 	}
 	.brest {
 		background-image: url(../photos/ribbon/brest.jpg);
@@ -760,8 +769,8 @@ section, .image-gallery-destination {
 	
 	
 	
-	.suisse {
-		background-image: url(../photos/ribbon/suisse.jpg);
+	.schweiz {
+		background-image: url(../photos/ribbon/schweiz.jpg);
 	}
 	.pays-basque {
 		background-image: url(../photos/ribbon/pays-basque.jpg);
