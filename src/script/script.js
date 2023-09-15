@@ -13,6 +13,20 @@ document.querySelectorAll("menu-link").forEach(n => n.addEventListener("click", 
 }));
 
 
+// ########### SEARCH BAR ########### //
+function search() {
+  const input = document.getElementById('search').value.toLowerCase();
+  const items = document.querySelectorAll(".destination");
+  for (i = 0; i < items.length; i++) {
+    if (!items[i].innerHTML.toLowerCase().includes(input)) {
+      items[i].hidden = true;
+    } else {
+      items[i].hidden = false;
+    }
+  }
+}
+
+
 // Get the upButton:
 let upButton = document.getElementById("upButton");
 // change nav bar on index page on scroll
@@ -22,24 +36,12 @@ let index = document.getElementById("index");
 // When the user scrolls down 50px from the top of the document
 window.onscroll = function() {scrollFunction()};
 function scrollFunction() {
-  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
     upButton.style.display = "block";
-    imgBrandIndex.style.display = "none";
-    brandPages.style.display = "block";
-    index.style.backgroundImage = "url(images/header.png)";
-  } else if($(window).width() < 700) {
-    upButton.style.display = "none";
-    imgBrandIndex.style.display = "none";
-    brandPages.style.display = "block"
-    index.style.backgroundImage = "none";
   } else {
     upButton.style.display = "none";
-    imgBrandIndex.style.display = "block";
-    brandPages.style.display = "none"
-    index.style.backgroundImage = "none";
   }
 }
-
 // When the user clicks on the button, scroll to the top of the document
 function topFunction() {
   document.body.scrollTop = 0; // For Safari

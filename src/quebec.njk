@@ -1,47 +1,45 @@
 ---
 layout: layout.njk
+metaDescription:
 title: Québec
+p: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 dot: .
-nav: pages
-hr: hr-pages
 activeMaison: active
-search: searchDestinations.js
 ---
 
-<div class="ribbon" id="ribbon">
-	<div class="panel_page quebec-pr"></div>
-	<div class="heading-text">
-		<h3>Québec</h3>
+<main>
+
+	{% include "ribbon.njk" %}
+
+	{% include "upButton.njk" %}
+
+	<div class="container">
+
+		{% include "search.njk" %}	
+
+		<ul class="image-gallery">
+			<li class="destination">
+				<a href="../photos/minis/00_carteQuebec.jpg" target="_blank">
+					<img src="../photos/minis/00_carteQuebec.jpg" alt="">
+					<div class="overlay">carte des régions</div>
+				</a>
+			</li>
+				{% for destination in destinations %}
+					{% if destination.title === "Québec" %}
+						<li class="destination">
+							<a href="../destinations/{{destination.name | slugify}}/index.html">
+								<img src="../photos/minis/{{destination.name | slugify}}.jpg" alt="">
+								{% if destination.departementProvinceState === "" %}
+									<div class="overlay {{destination.keywords}}">{{destination.name}}</div>
+								{% else %}
+									<div class="overlay {{destination.keywords}}">{{destination.name}} | {{destination.departementProvinceState}}</div>
+								{% endif %}
+							</a>
+						</li>
+					{% endif %}
+				{% endfor %}
+		</ul>
+
 	</div>
-</div>
 
-{% include "upButton.njk" %}
-
-<div class="container">
-
-	{% include "search.njk" %}	
-	
-	<ul class="image-gallery">
-		<li class="destination">
-			<a href="../photos/minis/00_carteQuebec.jpg" target="_blank">
-				<img src="../photos/minis/00_carteQuebec.jpg" alt="">
-				<div class="overlay">carte des régions</div>
-			</a>
-		</li>
-			{% for destination in destinations %}
-				{% if destination.title === "Québec" %}
-					<li class="destination">
-						<a href="../destinations/{{destination.name | slugify}}/index.html">
-							<img src="../photos/minis/{{destination.name | slugify}}.jpg" alt="">
-							{% if destination.departementProvinceState === "" %}
-								<div class="overlay {{destination.keywords}}">{{destination.name}}</div>
-							{% else %}
-								<div class="overlay {{destination.keywords}}">{{destination.name}} | {{destination.departementProvinceState}}</div>
-							{% endif %}
-						</a>
-					</li>
-				{% endif %}
-			{% endfor %}
-	</ul>
-
-</div>
+</main>

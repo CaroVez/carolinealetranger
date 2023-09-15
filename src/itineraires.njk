@@ -1,27 +1,23 @@
 ---
 layout: layout.njk
+metaDescription:
 title: itinéraires
+p: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 dot: .
-nav: pages
-hr: hr-pages
 activeItinerary: active
-search: searchDestinations.js
 ---
 
-<div class="ribbon" id="ribbon">
-	<div class="panel_page itineraires"></div>
-	<div class="heading-text">
-		<h3>itinéraires</h3>
-	</div>
-</div>
+<main>
+	
+	{% include "ribbon.njk" %}
 
-{% include "upButton.njk" %}
+	{% include "upButton.njk" %}
 
-<div class="container">
+	<div class="container">
 
-	{% include "search.njk" %}
+		{% include "search.njk" %}
 
-	<ul class="image-gallery">
+		<ul class="image-gallery">
 			{% for destination in destinations %}
 				{% if destination.title === "itinéraire" %}
 					<li class="destination">
@@ -32,6 +28,8 @@ search: searchDestinations.js
 					</li>
 				{% endif %}
 			{% endfor %}		
-	</ul>
+		</ul>
 
-</div>
+	</div>
+
+</main>

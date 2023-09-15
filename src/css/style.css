@@ -3,10 +3,6 @@
 	src: url(../fonts/Questrial/Questrial-Regular.ttf);
 }
 @font-face {
-	font-family: 'Architects_Daughter';
-	src: url(../fonts/Architects_Daughter/ArchitectsDaughter-Regular.ttf);
-}
-@font-face {
 	font-family: 'Love';
 	src: url(../fonts/Love_Light/LoveLight-Regular.ttf);
 }
@@ -19,23 +15,33 @@
 
 body
 {	
-	background-color: lightgray;
+	background-image: url(../images/header.png);
+	/*background-color: lightgray;*/
 	font-family: 'Questrial', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	color: white;
+}
+.body-index {
+	background-image: url(../images/background_v.JPG);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 100%;
 }
 
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h5 {
 	font-family: 'Love';
 }
 
-.index h1, .pages h1 { /* brand on nav */
+h1 { /* brand on nav */
 	font-size: 2.75rem;
 	margin-top: 1rem;
+	color: #FCAF45;
 }
 h2 { /* title on carousel index */
 	font-size: 6rem;
 }
-h3 { /* title on pages: publications, expat, mondial, maison */
-	font-size: 5rem;
+h3 { /* title on pages: expat, mondial, maison */
+	font-size: 4rem;
 }
 h4 { /* title on pages: destinations */
 	font-size: 3rem;
@@ -43,19 +49,60 @@ h4 { /* title on pages: destinations */
 h4 span {
 	font-size: 2rem;
 }
-h5 { /* title on publication's cards + post's modal */
-	font-size: 2.5rem;
-	color: #0E8A88;
+h5 { /* title on post's modal */
+	font-size: 2rem;
+	color: #FCAF45;
 }
 h6 { /* trips title on pages: destinations */
 	font-size: 1.5rem;
 }
 
 
-/* ########### header nav ########### */
-.img-brand {
+/* ########### page index ########### */
+#index {
+	height: 97vh;
+	margin: 1.5vh;
+}
+
+.body-index .header {
+	background-image: none;
+}
+.body-index .header .brand {
 	display: none;
 }
+.body-index .hamburger {
+	position: fixed;
+	top: 0.75rem;
+	right: 1.5rem;
+}
+.body-index .bar {
+	background-color: white;
+}
+
+.col-two {
+	width: 90vw;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+.col-two .brand-index {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.col-two .brand-index .logo {
+	width: 80vw;
+}
+.col-two .brand-index p {
+	width: fit-content;
+	margin-left: auto;
+	margin-right: auto;
+	border: white solid 2px;
+	padding: 1vh;
+}
+
+/* ########### header nav ########### */
 li {
 	list-style: none;
 }
@@ -69,17 +116,12 @@ a {
 	align-items: center;
 	padding: 0 24px;
 	height: 50px;
-}
-.pages {
-	background-image: url(../images/header.png);
-}
-.index {
-	background-image: none;
+	background-image: url(../images/header.png); 
 }
 .header a.active {
 	font-family: 'Love';
 	font-size: 2rem;
-	color:#0E8A88;
+	color:#FCAF45;
 }
 
 /* #### menu hamburger #### */
@@ -90,7 +132,7 @@ a {
 	margin: 5px auto;
 	-webkit-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
-	background-color: white;
+	background-color: #FCAF45;
 }
 .hamburger {
 	display: block;
@@ -112,12 +154,10 @@ a {
 	gap: 0;
 	flex-direction: column;
 	text-align: right;
-}
-.hr-index, .hr-pages {
 	background-image: url(../images/header.png);
 	width: 45vw;
 }
-.hr-index .menu-item, .hr-pages .menu-item {
+.header-right .menu-item {
 	margin: 1rem 0;
 	padding-right: 1rem;
 }
@@ -126,118 +166,111 @@ a {
 }
 	
 /* #### modal contact form in header #### */
+#index .modal-header,
 header .modal-header {
 	height: 4rem;
 }
+#index .modal-title,
 header .modal-title {
 	font-family: 'Love';
 	font-size: 3rem;
-	color: #0E8A88;
+	color: #FCAF45;
 }
+#index form,
 header form {
 	display: table;
+	color: black;
+	text-align: left;
 }
-header .modal-body label, header .modal-body input, header .modal-body textarea {
+#index .modal-body label, 
+#index .modal-body input, 
+#index .modal-body textarea,
+header .modal-body label, 
+header .modal-body input, 
+header .modal-body textarea {
 	display: table-cell;
 	width: 21rem;
 	margin-bottom: 1rem;
 }
+#index .modal-body textarea,
 header .modal-body textarea {
 	height: 10rem;
 }
 .send {
-	background-color: #0E8A88;
-	border: 1px solid #0E8A88;
+	background-color: #FCAF45;
+	border: 1px solid #FCAF45;
 	border-radius: 3px;
 	padding: 5px;
 	color: white;
 }
 
-/* #### carousel on index #### */
-.container-fluide .carousel-inner .carousel-item { 
-	position: relative;
-	height: 100vh;
-	background-color: rgb(170, 170, 170);
-}
-#carouselIndexCaptionsHorizontal { 
-	display: none;
-}
-.container-fluide .carousel-inner .carousel-item img { 
-	object-fit: cover;
-	width: 100%;
-	height: 100%;
-	margin: auto;
-	mix-blend-mode: multiply;
-}
-.container-fluide .carousel-inner .carousel-item .carousel-caption { 
-	width: 80%;
-	text-align: center;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-}
-.container-fluide .carousel-inner .carousel-item .carousel-caption span { 
-	font-family: 'Love';
-	font-size: 1.5rem;
-}
-
-
-/* #### grid card on index #### */
-.container-publications .heading-text {
-	width: 100%;
-	text-align: center;
-	position: absolute;
-	top: 80%;
-	left: 50%;
-	transform: translate(-50%, -20%);
-	z-index: 999;
-	color: white;
-}
-
-#publications {
-	padding-top: 50px;
-}
-.container-publications .card .card-body .button {
-	background-color: #0E8A88;
-	border: 1px solid #0E8A88;
-	border-radius: 3px;
-	padding: 5px;
-	color: white;
-}
-
-/* #### image gallery on cards #### */
-.image-gallery-publication {
-	display: none;
-}
 
 
 /* #### ribbon image on pages #### */
-.panel_page {
-	background-image: none;
+.panel_page img {
+	display: none;
 }
-.ribbon {
-	text-align: center;
+.ribbon,
+.ribbon-destinations {
 	margin-top: 50px;
 }
-.ribbon .heading-text p {
+.ribbon .heading-text,
+.ribbon-destinations .heading-text {
+	text-align: center;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.ribbon .heading-text {
+	margin-top: 5rem;
+}
+.ribbon-destinations .heading-text {
+	margin-top: 7rem;
+}
+/*
+.ribbon-destinations .heading-text h4 {
+	white-space: nowrap;
+}
+*/
+.ribbon-destinations .heading-text p {
 	margin-top: -1rem;
 }
+.ribbon .heading-text a {
+	display: none;
+}
+
+#destinations .desktop {
+	display: none;
+}
+#destinations .link-destinations .links ul {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1.5vh;
+	justify-content: center;
+}
+#destinations .link-destinations .links li {
+	background-color: #FCAF45;
+	border-radius: 3px;
+	padding: 5px;
+	height: 4vh;
+	text-align: center;
+}
+
 
 /* ########### search bar ########### */
 .search {
-	margin-top: -0.5rem;
+	margin-top: 1rem;
 	margin-bottom: 1rem;
 	text-align: center;
 }
 .search svg {
-	color: #0E8A88;	
+	color: #FCAF45;	
 }
 #search {
 	width: 90%;
 	background: initial;
 	border: none;
-	border-bottom: 1px solid #0E8A88;
+	border-bottom: 1px solid #FCAF45;
 }
 #search:focus {
 	background: white;
@@ -253,10 +286,10 @@ header .modal-body textarea {
 	transform: rotate(-90deg);
 }
 #upButton, #backButton {
+	color: #FCAF45;
 	background-color: initial;
 	border: none;
 	outline: none;
-	color: #0E8A88;
 	z-index: 999;
 	cursor: pointer;
 }
@@ -271,64 +304,67 @@ ul {
 	list-style: none;
 	margin-left: -2rem;
 }
+
+.image-gallery-index-destinations,
 .image-gallery {
 	display: flex;
+	gap: 1.5vh;
 	flex-wrap: wrap;
-	gap: 10px;
+}
+.image-gallery-index-destinations > li {
+	flex: 1 1 100%; 
+	height: 12vh;
+	position: relative;
 }
 .image-gallery > li {
 	flex: 1 1 auto; 
 	height: 200px;
 	position: relative;
 }
-.image-gallery li img {
+.image-gallery-index-destinations li img {
+	display: none;
+}
+.image-gallery li img  {
 	object-fit: cover;
 	width: 100%;
 	height: 100%;
-	vertical-align: middle;
 	border-radius: 5px;
 }
-.overlay {
+.image-gallery-index-destinations .overlay,
+.image-gallery .overlay {
 	position: absolute;
 	width: 100%;
 	height: 100%;  
 	top: 0;
 	left: 0;  
-	color: white;
+	background-color: rgba(0, 0, 0, 0.3);
 	text-shadow: rgb(0, 0, 0) 0 0 4px;
 	border-radius: 5px;
+}
+.image-gallery-index-destinations .overlay,
+.image-gallery .overlay {
 	/* center overlay content */
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	text-align: center;
 }
-
+.image-gallery-index-destinations .overlay {
+	font-size: 2.5rem;
+	font-family: 'love';
+}
 
 /* #### image gallery on destinations #### */
-.link-destinations .links .link {
-	background-color: #0E8A88;
-	border: 1px solid #0E8A88;
-	border-radius: 3px;
-	padding: 5px;
-	color: white;
-}
-.link-destinations .links .link:hover {
-	background-color: lightgray;
-	color: #0E8A88;
-}
 section, .image-gallery-destination { 
 	margin-top: 1rem;
 	margin-bottom: 1rem;
 }
-.date_section, .link-destinations {
-	text-align: center;
-}
 .date_section {
 	padding-top: 50px;
-	width: 70%;
+	width: 90%;
 	margin-left: auto;
 	margin-right: auto;
+	text-align: center;
 }
 .date_section a {
 	display: none;
@@ -355,504 +391,337 @@ section, .image-gallery-destination {
 /* ################ ######### ################ */
 /* ################ LANDSCAPE ################ */
 /* ################ ######### ################ */
-@media screen and (orientation: landscape) {
-	/* #### carousel on index #### */
-	#carouselIndexCaptionsHorizontal { 
-		display: inherit;
-	}
-	#carouselIndexCaptions { 
-		display: none;
-	}
-}
-
-
-
+/* # */ @media screen and (orientation: landscape) {
+/* # */ 	
+/* # */ }
 /* ################ ###### ################ */
 /* ################ TABLET ################ */
 /* ################ ###### ################ */
-@media screen and (min-width: 576px) {
-	.hr-index, .hr-pages {
-		width: 18vw;
-	}
-	header .modal-body label, header .modal-body input, header .modal-body textarea {
-		width: 29rem;
-	}
-
-
-	/* #### button for modal on destinations #### */
-	.date_section a {
-		display: block;
-		padding: 5px;
-		color: #0E8A88;
-		margin-left: auto;
-		margin-right: auto;
-	}
-	.date_section a:hover {
-		color: white;
-	}
-	/* #### modal on destinations #### */
-	.container-destinations .modal .modal-dialog .modal-content .modal-header {
-		height: 3rem;
-	}
-	.container-destinations .modal .modal-dialog .modal-content {
-		background-color: rgb(39, 39, 39);
-	}
-	/* #### carousel on modal #### */
-	.container-destinations .carousel-inner .carousel-item { 
-		position: relative;
-		height: 82vh;
-	}
-	.container-destinations .carousel-inner .carousel-item img { 
-		object-fit: cover;
-		margin: auto;
-		height: 100%;
-	}
-}
-
-
-
+/* # */ @media screen and (min-width: 576px) {
+/* # */ 	.header-right {
+/* # */ 		width: 18vw;
+/* # */ 	}
+/* # */ 	#index .modal-body label,
+/* # */ 	#index .modal-body input, 
+/* # */ 	#index .modal-body textarea,
+/* # */ 	header .modal-body label, 
+/* # */ 	header .modal-body input, 
+/* # */ 	header .modal-body textarea {
+/* # */ 		width: 29rem;
+/* # */ 	}
+/* # */ 
+/* # */ 
+/* # */ 	/* #### button for modal/carousel on destinations #### */
+/* # */ 	.date_section a {
+/* # */ 		display: block;
+/* # */ 		padding: 5px;
+/* # */ 		color: #FCAF45;
+/* # */ 		margin-left: auto;
+/* # */ 		margin-right: auto;
+/* # */ 	}
+/* # */ 	.date_section a:hover {
+/* # */ 		color: white;
+/* # */ 	}
+/* # */ 	/* #### modal on destinations #### */
+/* # */ 	.container-destinations .modal .modal-dialog .modal-content .modal-header {
+/* # */ 		height: 3rem;
+/* # */ 	}
+/* # */ 	.container-destinations .modal .modal-dialog .modal-content {
+/* # */ 		background-color: rgb(39, 39, 39);
+/* # */ 	}
+/* # */ 	/* #### carousel on modal #### */
+/* # */ 	.container-destinations .carousel-inner .carousel-item { 
+/* # */ 		position: relative;
+/* # */ 		height: 82vh;
+/* # */ 	}
+/* # */ 	.container-destinations .carousel-inner .carousel-item img { 
+/* # */ 		object-fit: cover;
+/* # */ 		margin: auto;
+/* # */ 		height: 100%;
+/* # */ 	}
+/* # */ }
+/* # */
+/* # */
+/* # */
 /* ################ TABLET ################ */
-@media screen and (min-width: 768px) {
-
-}
-
-
-
+/* # */ @media screen and (min-width: 768px) {
+/* # */ 
+/* # */ }
+/* # */ 
+/* # */ 
+/* # */ 
 /* ################ ####### ################ */
 /* ################ DESKTOP ################ */
 /* ################ ####### ################ */
-@media screen and (min-width: 1080px) {
-	.pages h1, .index h1 { /* brand on nav */
-		font-size: 3rem;
-		margin-top: 1rem;
-	}
-	h3 { /* title on pages: publications, expat, mondial, maison */
-		font-size: 7rem;
-	}
-	h4 { /* title on pages: destinations */
-		font-size: 5rem;
-	}
-	h4 span {
-		font-size: 3rem;
-	}
-	h2 a:hover {
-		color: #0E8A88;
-	}
-
-	/* #### carousel on index #### */
-	#carouselIndexCaptionsHorizontal { 
-		display: inherit;
-	}
-	#carouselIndexCaptions { 
-		display: none;
-	}
+/* # */ @media screen and (min-width: 1080px) {
+/* # */ 	.body-index {
+/* # */			background-image: url(../images/background_h.JPG);
+/* # */		}
+/* # */		h1 { /* brand on nav */
+/* # */ 		font-size: 3rem;
+/* # */ 		margin-top: 1rem;
+/* # */			color: white;
+/* # */ 	}
+/* # */ 	h3 { /* title on pages: publications, expat, mondial, maison */
+/* # */ 		font-size: 6rem;
+/* # */			font-family: 'love';
+/* # */ 	}
+/* # */ 	h4 { /* title on pages: destinations */
+/* # */ 		font-size: 5rem;
+/* # */ 	}
+/* # */ 	h4 span {
+/* # */ 		font-size: 3rem;
+/* # */ 	}
+/* # */ 	h1:hover, h2 a:hover {
+/* # */ 		color: #FCAF45;
+/* # */ 	}
 
 
-	/* ########### nav ########### */
-	.index .img-brand {
-		display: block;
-		height: 12rem;
-		margin-top: 8rem;
-	}
-	.index .brand {
-		display: none;
-	}
-	.hamburger {
-		display: none;
-	}
-	.header-right {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		position: inherit;
-		top: inherit;
-		right: inherit;
-		transition: inherit;
-		gap: 1.5rem;
-		flex-direction: inherit;
-		text-align: inherit;
-  }
-	.hr-index, .hr-pages {
-		background-image: inherit;
-		width: inherit;
-	}
-	.hr-index .menu-item, .hr-pages .menu-item {
-		padding-right: inherit;
-		cursor: pointer; 
-	}
-	.hr-index .menu-item {
-		margin: 1rem 1rem 0 0;
-	}
-	.hr-pages .menu-item {
-		margin: 0 1rem 0 0;
-	}
-	.header-right.active {
-		right: inherit;
-	}
-  .menu-link:hover, .brand:hover {
-    color: #0E8A88;
-  }	
-	.header a.active:hover {
-		color:white;
-	}
-
-	/* ########### search bar ########### */
-	.search {
-		margin-top: 1rem;
-	}
-
-	/* ########### buttons up + back ########### */
-	#upButton {
-		right: 0;
-	}
-	#upButton:hover, #backButton:hover {
-		color: white;
-	}
-	#backButton {
-		position: absolute;
-		left: -40px;
-		top: 35%;
-		transform: translate(0, -35%);
-	}
-
-	/* ########### ribbon ########### */
-	.ribbon {
-		text-align: center;
-		position: relative;
-		margin-top: 50px;
-		height: 25rem;
-	}
-	.ribbon .panel_page {
-		background-repeat: no-repeat;
-		background-size: cover;
-		background-position: top;
-		height: 100%;
-		opacity: 0.5;
-		position: relative;
-		z-index: 1;
-	}
-	.ribbon .heading-text {
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		z-index: 999;
-	}
-
-	/* #### image gallery on pages: itinerary, expat, international, maison #### */
-	.overlay {
-		position: absolute;
-		width: 100%;
-		height: 100%;  
-		top: 0;
-		left: 0;  
-		color: white;
-		border-radius: 5px;
-		/* center overlay content */
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		text-align: center;
-	}
-	.image-gallery li:hover .overlay {  
-		background: rgba(57, 57, 57, 0.502);
-		transition: all 0.2s 0.1s ease-in-out;
-		font-size: 1.25rem;
-	}
-	.image-gallery::after {
-		content: "";
-		flex-grow: 999;
-	}
-
-	/* #### image gallery on destinations #### */
-	.image-gallery-destination > img {
-		width: inherit;
-		max-height: inherit;
-		height: 19rem;
-	}
-	.image-gallery-destination::after {
-		content: "";
-		flex-grow: 999;
-	}
-
-	/* #### image gallery on cards #### */
-	.image-gallery-publication {
-		display: flex;
-		flex-wrap: wrap;
-		gap: 10px;
-	}
-	.image-gallery-publication > img {
-		flex: 1 1 auto; 
-		width: 90%;
-		max-height: 25rem;
-		object-fit: cover;
-		vertical-align: middle;
-		border-radius: 5px;
-	}
-	.image-gallery-publication > img {
-		width: inherit;
-		max-height: inherit;
-		height: 8rem;
-	}
+/* # */		.body-index .header-right {
+/* # */			left: 0;
+/* # */			gap: 3rem;
+/* # */ 		text-align: center;
+/* # */ 		width: fit-content;
+/* # */			margin-left: auto;
+/* # */			margin-right: auto;
+/* # */		}
+/* # */ 	.body-index .header-right .menu-item {
+/* # */ 		margin: 0.75rem 1rem 0 0;
+/* # */ 	}
 
 
-	/* ########### ribbon image ########### */
-	.itineraires {
-		background-image: url(../photos/ribbon/road-trip-en-van.jpg);
-	}
-	.france {
-		background-image: url(../photos/ribbon/pyrenees.jpg);
-	}
-	.international {
-		background-image: url(../photos/ribbon/international.jpg);
-	}
-	.quebec-pr {
-		background-image: url(../photos/ribbon/quebec.jpg);
-	}
-	
-	
-	
-	.road-trip-en-van {
-		background-image: url(../photos/ribbon/road-trip-en-van.jpg);
-	}
-	.au-pays-basque {
-		background-image: url(../photos/ribbon/pays-basque.jpg);
-	}
-	.escapade {
-		background-image: url(../photos/ribbon/rhone.jpg);
-	}
+/* # */ 	.col-two .brand-index .logo {
+/* # */ 		height: 70vh;
+/* # */ 		width: inherit;
+/* # */ 	}
 
 
-	
-	.bordeaux {
-		background-image: url(../photos/ribbon/bordeaux.jpg);
-	}
-	.medoc-viticole {
-		background-image: url(../photos/ribbon/medoc-viticole.jpg);
-	}
-	.bassin-d-arcachon {
-		background-image: url(../photos/ribbon/bassin-d-arcachon.jpg);
-	}
-	.landes-du-medoc {
-		background-image: url(../photos/ribbon/landes-du-medoc.jpg);
-	}
-	.saint-jean-de-luz {
-		background-image: url(../photos/ribbon/saint-jean-de-luz.jpg);
-	}
-	.perigeux {
-		background-image: url(../photos/ribbon/perigeux.jpg);
-	}
-	.rhone {
-		background-image: url(../photos/ribbon/rhone.jpg);
-	}
-	.clermont-ferrand {
-		background-image: url(../photos/ribbon/clermont-ferrand.jpg);
-	}
-	.la-brede {
-		background-image: url(../photos/ribbon/la-brede.jpg);
-	}
-	.la-brede {
-		background-image: url(../photos/ribbon/la-brede.jpg);
-	}
-	.les-graves {
-		background-image: url(../photos/ribbon/les-graves.jpg);
-	}
-	.portets {
-		background-image: url(../photos/ribbon/portets.jpg);
-	}
-	.la-poterie-au-perche {
-		background-image: url(../photos/ribbon/la-poterie-au-perche.jpg);
-	}
-	.le-mans {
-		background-image: url(../photos/ribbon/le-mans.jpg);
-	}
-	.la-rochelle {
-		background-image: url(../photos/ribbon/la-rochelle.jpg);
-	}
-	.ile-de-re {
-		background-image: url(../photos/ribbon/ile-de-re.jpg);
-	}
-	.blaye {
-		background-image: url(../photos/ribbon/blaye.jpg);
-	}
-	.saint-emilion {
-		background-image: url(../photos/ribbon/saint-emilion.jpg);
-	}
-	.pyrenees {
-		background-image: url(../photos/ribbon/pyrenees.jpg);
-	}
-	.pau {
-		background-image: url(../photos/ribbon/pau.jpg);
-	}
-	.domme {
-		background-image: url(../photos/ribbon/domme.jpg);
-	}
-	.castelnaud-lachapelle {
-		background-image: url(../photos/ribbon/castelnaud-lachapelle.jpg);
-	}
-	.roque-gageac {
-		background-image: url(../photos/ribbon/roque-gageac.jpg);
-	}
-	.montignac {
-		background-image: url(../photos/ribbon/montignac.jpg);
-	}
-	.rocamadour {
-		background-image: url(../photos/ribbon/rocamadour.jpg);
-	}
-	.padirac {
-		background-image: url(../photos/ribbon/padirac.jpg);
-	}
-	.lacave {
-		background-image: url(../photos/ribbon/lacave.jpg);
-	}
-	.sarlat-la-caneda {
-		background-image: url(../photos/ribbon/sarlat-la-caneda.jpg);
-	}
-	.vezac {
-		background-image: url(../photos/ribbon/vezac.jpg);
-	}
-	.toulouse {
-		background-image: url(../photos/ribbon/toulouse.jpg);
-	}
-	.paris {
-		background-image: url(../photos/ribbon/paris.jpg);
-	}
-	.bayonne {
-		background-image: url(../photos/ribbon/bayonne.jpg);
-	}
-	.biarritz {
-		background-image: url(../photos/ribbon/biarritz.jpg);
-	}
-	.alsace-et-plus {
-		background-image: url(../photos/ribbon/alsace-et-plus.jpg);
-	}
-	.haut-rhin {
-		background-image: url(../photos/ribbon/haut-rhin.jpg);
-	}
-	.bas-rhin {
-		background-image: url(../photos/ribbon/bas-rhin.jpg);
-	}
-	.philippsbourg {
-		background-image: url(../photos/ribbon/philippsbourg.jpg);
-	}
-	.ronchamp {
-		background-image: url(../photos/ribbon/ronchamp.jpg);
-	}
-	.beynac-et-cazenac {
-		background-image: url(../photos/ribbon/beynac-et-cazenac.jpg);
-	}
-	.blanquefort {
-		background-image: url(../photos/ribbon/blanquefort.jpg);
-	}
-	.les-cotes-du-finistere {
-		background-image: url(../photos/ribbon/les-cotes-du-finistere.jpg);
-	}
-	.cote-est {
-		background-image: url(../photos/ribbon/cote-est.jpg);
-	}
-	.brest {
-		background-image: url(../photos/ribbon/brest.jpg);
-	}
-	.vannes {
-		background-image: url(../photos/ribbon/vannes.jpg);
-	}
-	.ile-de-noirmoutier {
-		background-image: url(../photos/ribbon/ile-de-noirmoutier.jpg);
-	}
-	.angouleme {
-		background-image: url(../photos/ribbon/angouleme.jpg);
-	}
-	.lormont {
-		background-image: url(../photos/ribbon/lormont.jpg);
-	}
-	
-	
-	
-	
-	.schweiz {
-		background-image: url(../photos/ribbon/schweiz.jpg);
-	}
-	.pays-basque {
-		background-image: url(../photos/ribbon/pays-basque.jpg);
-	}
-	.portugal {
-		background-image: url(../photos/ribbon/portugal.jpg);
-	}
-	.leeds {
-		background-image: url(../photos/ribbon/leeds.jpg);
-	}
-	.barcelona {
-		background-image: url(../photos/ribbon/barcelona.jpg);
-	}
-	.alberta {
-		background-image: url(../photos/ribbon/alberta.jpg);
-	}
-	.london {
-		background-image: url(../photos/ribbon/london.jpg);
-	}
-	.italia {
-		background-image: url(../photos/ribbon/italia.jpg);
-	}
-	.scotland {
-		background-image: url(../photos/ribbon/scotland.jpg);
-	}
-	.ireland {
-		background-image: url(../photos/ribbon/ireland.jpg);
-	}
-	.utah {
-		background-image: url(../photos/ribbon/utah.jpg);
-	}
-	.chicago {
-		background-image: url(../photos/ribbon/chicago.jpg);
-	}
-	.san-francisco {
-		background-image: url(../photos/ribbon/san-francisco.jpg);
-	}
-	.boston {
-		background-image: url(../photos/ribbon/boston.jpg);
-	}
-	.japon {
-		background-image: url(../photos/ribbon/japon.jpg);
-	}
-	.washington {
-		background-image: url(../photos/ribbon/washington.jpg);
-	}
-	.toronto {
-		background-image: url(../photos/ribbon/toronto.jpg);
-	}
-	.new-york {
-		background-image: url(../photos/ribbon/new-york.jpg);
-	}
-	.ottawa {
-		background-image: url(../photos/ribbon/ottawa.jpg);
-	}
-	
-	
-	
-	
-	.montreal {
-		background-image: url(../photos/ribbon/montreal.jpg);
-	}
-	.gaspesie {
-		background-image: url(../photos/ribbon/gaspesie.jpg);
-	}
-	.mont-tremblant {
-		background-image: url(../photos/ribbon/mont-tremblant.jpg);
-	}
-	.frampton {
-		background-image: url(../photos/ribbon/frampton.jpg);
-	}
-	.bic {
-		background-image: url(../photos/ribbon/bic.jpg);
-	}
-	.mont-saint-bruno {
-		background-image: url(../photos/ribbon/mont-saint-bruno.jpg);
-	}
-	.charlevoix {
-		background-image: url(../photos/ribbon/charlevoix.jpg);
-	}
-	.quebec {
-		background-image: url(../photos/ribbon/quebeccity.jpg);
-	}
+/* # */ 	.hamburger {
+/* # */ 		display: none;
+/* # */ 	}
+/* # */ 	.header-right {
+/* # */ 		display: flex;
+/* # */ 		justify-content: space-between;
+/* # */ 		align-items: center;
+/* # */ 		position: inherit;
+/* # */ 		top: inherit;
+/* # */ 		right: inherit;
+/* # */ 		transition: inherit;
+/* # */ 		gap: 1.5rem;
+/* # */ 		flex-direction: inherit;
+/* # */ 		text-align: inherit;
+/* # */ 		background-image: inherit;
+/* # */ 		width: inherit;
+/* # */ 	}
+/* # */ 	.header-right .menu-item {
+/* # */ 		padding-right: inherit;
+/* # */ 		cursor: pointer; 
+/* # */ 		margin: 0 1rem 0 0;
+/* # */ 	}
+/* # */ 	.header-right.active {
+/* # */ 		right: inherit;
+/* # */ 	}
+/* # */   .menu-link:hover, .brand:hover {
+/* # */     color: #FCAF45;
+/* # */   }	
+/* # */ 	.header a.active:hover {
+/* # */ 		color:white;
+/* # */ 	}
+/* # */ 
+/* # */ 
+/* # */ 	/* ########### search bar ########### */
+/* # */ 	.search {
+/* # */ 		margin-top: 1rem;
+/* # */ 	}
+/* # */ 
+/* # */ 	/* ########### buttons up + back ########### */
+/* # */ 	#upButton {
+/* # */ 		right: 0;
+/* # */ 	}
+/* # */ 	#backButton:hover,
+/* # */ 	#upButton:hover {
+/* # */ 		color: white;
+/* # */ 	}
+/* # */ 	#backButton {
+/* # */ 		position: absolute;
+/* # */ 		left: 1%;
+/* # */ 		top: 2%;
+/* # */ 	}
+/* # */ 
+/* # */ 
+/* # */ 	/* ########### ribbon ########### */
+/* # */ 	.ribbon,
+/* # */		.ribbon-destinations {
+/* # */ 		position: relative;
+/* # */ 		height: 95vh;
+/* # */ 	}
+/* # */ 	#index .panel_page_blur,
+/* # */ 	.ribbon .panel_page_blur,
+/* # */ 	.ribbon-destinations .panel_page_blur {
+/* # */ 		position: absolute;
+/* # */ 		left: 0;
+/* # */ 		top: 0;
+/* # */ 		height: 100%;
+/* # */ 		background-color: rgba(0, 0, 0, 0.3);
+/* # */ 		/*backdrop-filter: blur(2px);*/
+/* # */ 		z-index: 1;
+/* # */ 	}
+/* # */ 	#index .panel_page_blur,
+/* # */ 	.ribbon-destinations .panel_page_blur {
+/* # */ 		width: 30vw;
+/* # */ 	}
+/* # */ 	.ribbon .panel_page_blur {
+/* # */ 		width: 50vw;
+/* # */ 	}
+/* # */ 	.ribbon-destinations .panel_page img,
+/* # */ 	.ribbon .panel_page img {
+/* # */ 		display: block;
+/* # */			object-fit: cover;
+/* # */ 		max-height: 95vh;
+/* # */ 		width: 100%;
+/* # */ 		height: 100%;
+/* # */ 	}
+/* # */		.ribbon .panel_page .france {
+/* # */			object-position: top;
+/* # */		}
+/* # */ 	.ribbon .heading-text,
+/* # */ 	.ribbon-destinations .heading-text {
+/* # */ 		position: absolute;
+/* # */ 		top: 45%;
+/* # */ 		z-index: 999;
+/* # */ 		color: white;
+/* # */			margin-top: 5rem;
+/* # */			width: inherit;
+/* # */			margin-top: inherit;
+/* # */ 	}
+/* # */ 	.ribbon .heading-text {
+/* # */ 		left: 25%;
+/* # */ 		transform: translate(-50%, -50%);
+/* # */			text-align: center;
+/* # */ 		width: 40vw;
+/* # */ 	}
+/* # */ 	.ribbon-destinations .heading-text {
+/* # */ 		right: 5%;
+/* # */ 		transform: translate(-5%, -50%);
+/* # */ 		text-align: right;
+/* # */ 	}
+/* # */   .ribbon .heading-text p {
+/* # */   	margin-top: -1rem;
+/* # */   }
+/* # */		.ribbon .heading-text a {
+/* # */			display: block;
+/* # */ 		width: fit-content;
+/* # */			margin-left: auto;
+/* # */			margin-right: auto;
+/* # */		}
+/* # */		.ribbon .heading-text a:hover {
+/* # */			color:	#FCAF45;
+/* # */		}
 
-}
+
+/* # */		#index .link-destinations,
+/* # */		#destinations .link-destinations {
+/* # */			position: absolute;
+/* # */			top: 50%;
+/* # */			left: 2%;
+/* # */			transform: translate(-2%, -50%);
+/* # */			z-index: 999;
+/* # */		}
+/* # */		#destinations .link-destinations {
+/* # */			width: 40vw;
+/* # */		}
+/* # */		#index .link-destinations .publications-title {
+/* # */			height: 4vh;
+/* # */			color: #FCAF45;
+/* # */			margin-bottom: 2rem;
+/* # */		}
+/* # */		#destinations .mobile {
+/* # */			display: none;
+/* # */		}
+/* # */		#destinations .desktop {
+/* # */			display: block;
+/* # */		}
+/* # */		#index .link-destinations .links ul {
+/* # */			margin-left: -4rem;
+/* # */		}
+/* # */		#destinations .link-destinations .links ul {
+/* # */			margin-left: -2rem;
+/* # */			display: inherit;
+/* # */			flex-wrap: inherit;
+/* # */			gap: inherit;
+/* # */			justify-content: inherit;
+/* # */		}
+/* # */		#index .link-destinations .links li,
+/* # */		#destinations .link-destinations .links li {
+/* # */			margin-bottom: 2rem;
+/* # */			background-color: inherit;
+/* # */			border-radius: inherit;
+/* # */			padding: inherit;
+/* # */			height: inherit;
+/* # */			text-align: inherit;
+/* # */		}
+/* # */		#index .link-destinations .links li a:hover,
+/* # */		#destinations .link-destinations .links li a:hover {
+/* # */			color: #FCAF45;
+/* # */		}
+/* # */		#index .link-destinations .links li a .date,
+/* # */		#destinations .link-destinations .links li a .date {
+/* # */			margin-bottom: -0.25rem;
+/* # */		}
+/* # */		#destinations .link-destinations .links li a .text {
+/* # */			display: block;
+/* # */		}
+
+
+/* # */
+/* # */ 
+/* # */ 	/* #### image gallery on pages: itinerary, expat, international, maison #### */
+/* # */		.image-gallery-index-destinations > li {
+/* # */			flex: 1 1 40%; 
+/* # */			height: 18vh;
+/* # */		}
+/* # */		.image-gallery-index-destinations li img {
+/* # */			display: block;
+/* # */			object-fit: cover;
+/* # */			width: 100%;
+/* # */			height: 100%;
+/* # */			border-radius: 5px;
+/* # */		}
+/* # */ 	.image-gallery-index-destinations .overlay {
+/* # */ 		font-size: 3rem;
+/* # */ 	}
+/* # */ 	.image-gallery-index-destinations .overlay span {
+/* # */ 		font-size: 2rem;
+/* # */ 	}
+/* # */ 	.image-gallery li:hover .overlay {  
+/* # */ 		background: rgba(57, 57, 57, 0.502);
+/* # */ 		transition: all 0.2s 0.1s ease-in-out;
+/* # */ 		font-size: 1.25rem;
+/* # */ 	}
+/* # */ 	.image-gallery-index-destinations li:hover .overlay {  
+/* # */ 		background: rgba(65, 65, 65, 0.5);
+/* # */ 		transition: all 0.2s 0.1s ease-in-out;
+/* # */ 		font-size: 5rem;
+/* # */ 	}
+/* # */ 	.image-gallery::after {
+/* # */ 		content: "";
+/* # */ 		flex-grow: 999;
+/* # */ 	}
+/* # */ 
+/* # */ 
+/* # */ 	/* #### image gallery on destinations #### */
+/* # */ 	.date_section {
+/* # */			width: 70%;
+/* # */		}
+/* # */		
+/* # */		.image-gallery-destination > img {
+/* # */ 		width: inherit;
+/* # */ 		max-height: inherit;
+/* # */ 		height: 19rem;
+/* # */ 	}
+/* # */ 	.image-gallery-destination::after {
+/* # */ 		content: "";
+/* # */ 		flex-grow: 999;
+/* # */ 	}
+/* # */ 
+/* # */ }

@@ -1,106 +1,32 @@
 [
   {
-    "date": "16 juin au 2 juillet 2023",
-    "cardTitle": "road trip en Van",
-    "cardText": "dans le sud de la France",
-    "link": "itinerary",
-    "keywords": "",
-    "photos": [
-      {
-        "src": "photos/itineraires/2023.06_van/01.jpg", 
-        "alt": "..."
-      },
-      {
-        "src": "photos/itineraires/2023.06_van/02.jpg", 
-        "alt": "..."
-      },
-      {
-        "src": "photos/itineraires/2023.06_van/03.jpg", 
-        "alt": "..."
-      },
-      {
-        "src": "photos/itineraires/2023.06_van/04.jpg", 
-        "alt": "..."
-      },
-      {
-        "src": "photos/itineraires/2023.06_van/05.jpg", 
-        "alt": "..."
-      },
-      {
-        "src": "photos/itineraires/2023.06_van/06.jpg", 
-        "alt": "..."
-      }
-    ]
+    "date": "16 juin-2 juillet 2023",
+    "title": "road trip en Van",
+    "link": "road-trip-en-van"
   },
   {
     "date": "18-29 mai 2023",
-    "cardTitle": "Schweiz",
-    "cardText": "Schweiz",
-    "link": "itinerary",
-    "keywords": ""
+    "title": "Schweiz",
+    "link": "schweiz"
   },
   {
     "date": "6-9 mai 2023",
-    "cardTitle": "long weekend à Paris",
-    "cardText": "Paris 75 | France",
-    "link": "paris",
-    "keywords": ""
+    "title": "long weekend à Paris",
+    "link": "paris"
   },
   {
     "date": "16 avril 2023",
-    "cardTitle": "croisière sur la Garonne jusqu'à Blaye",
-    "cardText": "Gironde | France",
-    "link": "blaye",
-    "keywords": ""
-  },
-  {
-    "date": "10 avril 2023",
-    "cardTitle": "Palais de la Bourse",
-    "cardText": "Bordeaux | Gironde 33 | France",
-    "link": "bordeaux",
-    "keywords": ""
+    "title": "croisière jusqu'à Blaye",
+    "link": "blaye"
   },
   {
     "date": "1-2 avril 2023",
-    "cardTitle": "portes ouvertes des vignobles du Médoc",
-    "cardText": "Landes du Médoc | Gironde 33 | France",
-    "link": "medoc-viticole",
-    "keywords": "",
-    "photos": [
-      {
-        "src": "photos/expat/2023.04_medoc-viticole/02.jpg", 
-        "alt": "..."
-      },
-      {
-        "src": "photos/expat/2023.04_medoc-viticole/03.jpg", 
-        "alt": "..."
-      },
-      {
-        "src": "photos/expat/2023.04_medoc-viticole/04.jpg", 
-        "alt": "..."
-      },
-      {
-        "src": "photos/expat/2023.04_medoc-viticole/05.jpg", 
-        "alt": "..."
-      },
-      {
-        "src": "photos/expat/2023.04_medoc-viticole/06.jpg", 
-        "alt": "..."
-      }
-    ]
+    "title": "vignobles du Médoc",
+    "link": "medoc-viticole"
   },
   {
     "date": "17-19 mars 2023",
-    "cardTitle": "weekend au Bassin",
-    "cardText": "Gironde | France",
-    "link": "bassin-d-arcachon",
-    "keywords": ""
-  },
-  {
-    "date": "4 mars 2023",
-    "cardTitle": "plages",
-    "cardText": "Gironde | France",
-    "link": "landes-du-medoc",
-    "keywords": ""
+    "title": "weekend au Bassin",
+    "link": "bassin-d-arcachon"
   }
 ]

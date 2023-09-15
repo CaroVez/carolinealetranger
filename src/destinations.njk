@@ -1,8 +1,7 @@
 ---
-layout: layout.njk
+layout: layout.njk 
 dot: ../.
 nav: pages
-hr: hr-pages
 
 pagination:
     data: destinations
@@ -11,39 +10,75 @@ pagination:
 permalink: "destinations/{{ destinations.name | slugify }}/"
 ---
 
-<div class="ribbon" id="ribbon">
-	<div class="panel_page {{destinations.name | slugify}}"></div>
-	<div class="heading-text">
-    {% include "backButton.njk" %}
-    <h4>{{destinations.name}} <span>{{destinations.nameSpan}}</span></h4>
-		<p>{{destinations.subtitle}} {{destinations.departementProvinceState}}
-			{% if destinations.title === "itinéraire" %}
-			<br>
-			{% endif %}
-		{{destinations.subtitle2}} {{destinations.country}}</p>		
-	</div>
-</div>
+<main id="destinations">
 
-{% include "upButton.njk" %}
+	<div class="ribbon-destinations" id="ribbon">
 
-{% if destinations.trips[1] == null %}
-{% else %}
-	<div class="link-destinations">
-		<p>plusieurs visites :</p>
-		<div class="links">
-			{% for trip in destinations.trips %}
-				<a class="link" href="#{{trip.days | slugify}}-{{trip.year | slugify}}">{{trip.days}} {{trip.year}}</a>
-			{% endfor %}
+		<div class="heading-text">
+    	<h4>{{destinations.name}} <span>{{destinations.nameSpan}}</span></h4>
+			<p>{{destinations.subtitle}} {{destinations.departementProvinceState}}
+				{% if destinations.title === "itinéraire" %}
+				<br>
+				{% endif %}
+			{{destinations.subtitle2}} {{destinations.country}}</p>		
 		</div>
-	</div>
-{% endif %}
 
-{% for trip in destinations.trips %}
+		<div class="panel_page_blur" ></div>
+		<div class="panel_page">
+			<img src="../../photos/ribbon/{{destinations.name | slugify}}.jpg" alt="">
+			{% include "backButton.njk" %}
+			<div class="link-destinations">
+				<div class="links">
+					<ul>
+						{% for trip in destinations.trips %}
+						<div class="mobile">
+							{% if destinations.trips[1] == null %}
+							{% else %}
+								<li>
+									<a class="link" href="#{{trip.days | slugify}}-{{trip.year | slugify}}">
+										<p class="date">{{trip.days}} {{trip.year}}</p>
+      						</a>
+								</li>
+							{% endif %}
+						</div>
+						<div class="desktop">
+							<li>
+								<a class="link" href="#{{trip.days | slugify}}-{{trip.year | slugify}}">
+								{% if destinations.trips[1] == null %}
+									<h6 class="date">{{trip.days}} <b>{{trip.year}}</b></h6>
+									<p class="text">{{trip.text}}<br><i>{{trip.text2}}</i></p>
+								{% else %}
+									<h6 class="date">{{trip.days}} {{trip.year}}</h6>
+									<p class="text">{{trip.text}}</p>
+								{% endif %}									
+      					</a>
+							</li>
+						</div>
+						{% endfor %}
+					</ul>
+				</div>
+			</div>
+		</div>
+	
+	</div>
+
+	{% include "upButton.njk" %}
+
+	{% for trip in destinations.trips %}
   <section class="container-destinations">
   	<div class="date_section" id="{{trip.days | slugify}}-{{trip.year | slugify}}">
-      <h6>{{trip.days}} <b>{{trip.year}}</b></h6>
-			<p>{{trip.text}}<br><i>{{trip.text2}}</i></p>
-      <a type="button" class="btn" data-bs-toggle="modal" data-bs-target="#{{trip.modal}}">voir le carousel de photos</a>
+			<div class="mobile">
+				<h6>{{trip.days}} <b>{{trip.year}}</b></h6>
+				<p>{{trip.text}}<br><i>{{trip.text2}}</i></p>
+			</div>
+			<div class="desktop">
+				{% if destinations.trips[1] == null %}
+				{% else %}
+					<h6>{{trip.days}} <b>{{trip.year}}</b></h6>
+					<p>{{trip.text}}<br><i>{{trip.text2}}</i></p>
+				{% endif %}
+			</div>
+			<a type="button" class="btn" data-bs-toggle="modal" data-bs-target="#{{trip.modal}}">voir le carousel de photos</a>
     </div>
     
     <!-- post modal -->
@@ -51,7 +86,7 @@ permalink: "destinations/{{ destinations.name | slugify }}/"
   		<div class="modal-dialog modal-xl">
   			<div class="modal-content">
   				<div class="modal-header">
-  					<h5 class="modal-title" id="{{trip.modal}}Label">{{trip.cardTitle}}</h5>
+  					<h5 class="modal-title" id="{{trip.modal}}Label">{{trip.modalTitle}}</h5>
   					<button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
       		</div>
 
@@ -106,5 +141,6 @@ permalink: "destinations/{{ destinations.name | slugify }}/"
     </div>	
 
   </section>
+	{% endfor %}
 
-{% endfor %}
+</main>
