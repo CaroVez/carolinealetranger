@@ -2,31 +2,37 @@
   {
     "date": "16 juin-2 juillet 2023",
     "title": "road trip en Van",
+    "category": "itinéraire",
     "link": "road-trip-en-van"
   },
   {
     "date": "18-29 mai 2023",
     "title": "Schweiz",
+    "category": "international",
     "link": "schweiz"
   },
   {
     "date": "6-9 mai 2023",
     "title": "long weekend à Paris",
+    "category": "france",
     "link": "paris"
   },
   {
     "date": "16 avril 2023",
     "title": "croisière jusqu'à Blaye",
+    "category": "france",
     "link": "blaye"
   },
   {
     "date": "1-2 avril 2023",
     "title": "vignobles du Médoc",
+    "category": "france",
     "link": "medoc-viticole"
   },
   {
     "date": "17-19 mars 2023",
     "title": "weekend au Bassin",
+    "category": "france",
     "link": "bassin-d-arcachon"
   }
 ]

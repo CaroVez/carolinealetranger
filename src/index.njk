@@ -7,7 +7,59 @@ body: body-index
 
 <main id="index">
 
-	<div class="col-one">
+	<div class="col-one mobile">
+
+		<a class="btn btn-offcanvas" data-bs-toggle="offcanvas" href="#offcanvasIndexMobile" role="button" aria-controls="offcanvasIndexMobile">dernières publications</a>
+
+		<div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasIndexMobile" aria-labelledby="offcanvasIndexMobileLabel">
+  		<div class="offcanvas-header">
+				<h5 class="offcanvas-title" id="offcanvasIndexMobileLabel"></h5>
+    		<button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  		</div>
+  		<div class="offcanvas-body">
+				<div>
+					<ul class="image-gallery-index">
+						{% for publication in publications %}
+						<li>
+							<a href="./destinations/{{publication.link}}/index.html#{{publication.date | slugify}}">
+								<img src="./photos/minis/{{publication.link | slugify}}.jpg" alt="">
+								<div class="overlay">{{publication.date}} | {{publication.title}}</div>
+							</a>
+						</li>
+						{% endfor %}		
+					</ul>
+				</div>
+  		</div>
+		</div>
+
+	</div>
+
+	<div class="col-one desktop">
+
+		<a class="btn btn-offcanvas" data-bs-toggle="offcanvas" href="#offcanvasIndexDesktop" role="button" aria-controls="offcanvasIndexDesktop"> 
+			<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16"><path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/></svg> dernières publications <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16"><path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/></svg>
+		</a>
+
+		<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasIndexDesktop" aria-labelledby="offcanvasIndexDesktopLabel">
+  		<div class="offcanvas-header">
+				<h5 class="offcanvas-title" id="offcanvasIndexDesktopLabel"></h5>
+    		<button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  		</div>
+  		<div class="offcanvas-body">
+				<div>
+					<ul class="image-gallery-index">
+						{% for publication in publications %}
+						<li>
+							<a href="./destinations/{{publication.link}}/index.html#{{publication.date | slugify}}">
+								<img src="./photos/minis/{{publication.link | slugify}}.jpg" alt="">
+								<div class="overlay">{{publication.date}} | {{publication.title}}</div>
+							</a>
+						</li>
+						{% endfor %}		
+					</ul>
+				</div>
+  		</div>
+		</div>
 
 	</div>
 
@@ -17,37 +69,6 @@ body: body-index
 			<img src="./images/logo_white.png" alt="logo" class="logo">
 			<p>blogue de photos d'escapades</p>
 		</div>
-
-			<!--
-			<div class="container">
-				<ul class="image-gallery-index-destinations">
-					<li>
-						<a href="./france/index.html">
-							<img src="./photos/category/france.jpg" alt="">
-							<div class="overlay">France</div>
-						</a>
-					</li>
-					<li>
-						<a href="./quebec/index.html">
-							<img src="./photos/category/quebec-canada.jpg" alt="">
-							<div class="overlay">Québec</div>
-						</a>
-					</li>
-					<li>
-						<a href="./international/index.html">
-							<img src="./photos/category/international.jpg" alt="">
-							<div class="overlay">international</div>
-						</a>
-					</li>
-					<li>
-						<a href="./itineraires/index.html">
-							<img src="./photos/category/itineraires.jpg" alt="">
-							<div class="overlay">itinéraires</div>
-						</a>
-					</li>
-				</ul>
-			</div>
-			-->
 
 	</div>
 
