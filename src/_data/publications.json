@@ -1,62 +1,32 @@
 [
   {
-    "date": "15 octobre 2023",
-    "title": "visite du Château fort de Roquetaillade",
+    "date": "14 juillet 2024",
+    "title": "marche sur les plages à Anglet",
     "category": "france",
-    "link": "mazeres"
+    "link": "anglet"
   },
   {
-    "date": "20 août 2023 & 23 septembre 2023",
-    "title": "journées au Bassin d'Arcachon",
+    "date": "13 juillet 2024",
+    "title": "Fêtes de Bayonne",
     "category": "france",
-    "link": "bassin-d-arcachon"
+    "link": "bayonne"
   },
   {
-    "date": "11-15 août 2023",
-    "title": "Amsterdam",
-    "category": "international",
-    "link": "Amsterdam"
-  },
-  {
-    "date": "30 juillet 2023",
-    "title": "visite du Château Tour Baladoz",
+    "date": "29 juin 2024",
+    "title": "escapade en Champagne | Châlons-en-Champagne",
     "category": "france",
-    "link": "saint-emilion"
+    "link": "chalons-en-champagne"
   },
   {
-    "date": "16 juillet 2023",
-    "title": "une journée à la plage de Biscarosse",
+    "date": "29 juin 2024",
+    "title": "escapade en Champagne | Verzenay",
     "category": "france",
-    "link": "biscarosse"
+    "link": "verzenay"
   },
   {
-    "date": "16 juin-2 juillet 2023",
-    "title": "road trip en Van",
-    "category": "itinéraire",
-    "link": "road-trip-en-van-dans-le-sud"
-  },
-  {
-    "date": "18-29 mai 2023",
-    "title": "Schweiz",
-    "category": "international",
-    "link": "schweiz"
-  },
-  {
-    "date": "6-9 mai 2023",
-    "title": "long weekend à Paris",
+    "date": "28 juin 2024",
+    "title": "escapade en Champagne | Reims",
     "category": "france",
-    "link": "paris"
-  },
-  {
-    "date": "16 avril 2023",
-    "title": "croisière jusqu'à Blaye",
-    "category": "france",
-    "link": "blaye"
-  },
-  {
-    "date": "1-2 avril 2023",
-    "title": "vignobles du Médoc",
-    "category": "france",
-    "link": "medoc-viticole"
+    "link": "reims"
   }
 ]

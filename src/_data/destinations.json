@@ -42,6 +42,556 @@
       }
     ]    
   },
+
+  {
+    "title": "France",
+    "metaDescription": "",
+    "activeExpat": "active",
+  
+    "name": "Anglet",
+    "subtitle": "département des",
+    "departementProvinceState": "Pyrénées-Atlantiques 64",
+  
+    "keywords": "juillet 2024 ",
+
+    "places": [
+      {
+        "title": "marche sur les plages à Anglet",
+        "modal": "1",
+        "modalTitle": "marche sur les plages à Anglet",
+        
+        "trips": [
+          {
+            "date": "14 juillet 2024",
+            "description": "marche sur les plages à Anglet"
+          }
+        ],
+        "photos": [
+          {
+            "slide": "0",
+            "active": "active",
+            "ariaCurrent": "true",
+            "src": "../../photos/", 
+            "alt": "...",
+            "text": "texte à venir 0"
+          },
+          {
+            "slide": "1",
+            "src": "../../photos/", 
+            "alt": "...",
+            "text": "texte à venir 1"
+          },
+          {
+            "slide": "2",
+            "src": "../../photos/", 
+            "alt": "...",
+            "text": "texte à venir 2"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "France",
+    "activeExpat": "active",
+
+    "name": "Bayonne",
+    "subtitle": "département des",
+    "departementProvinceState": "Pyrénées-Atlantiques 64",
+
+    "keywords": "juillet février 2022 2024",
+
+    "places": [
+      {
+        "title": "Fêtes de Bayonne",
+        "modal": "1",
+        "modalTitle": "Fêtes de Bayonne",
+
+        "trips": [
+          {
+            "date": "13 juillet 2024",
+            "description": "Fêtes de Bayonne"
+          }
+        ],
+        "photos": [
+          {
+            "slide": "0",
+            "active": "active",
+            "ariaCurrent": "true",
+            "src": "../../photos/", 
+            "alt": "...",
+            "text": "texte à venir 0"
+          },
+          {
+            "slide": "1",
+            "src": "../../photos/", 
+            "alt": "...",
+            "text": "texte à venir 1"
+          }
+        ]
+      },
+      {
+        "title": "Ville",
+        "modal": "1",
+        "modalTitle": "Bayonne",
+
+        "trips": [
+          {
+            "date": "6 février 2022",
+            "description": "Bayonne"
+          }
+        ],
+        "photos": [
+          {
+            "slide": "0",
+            "active": "active",
+            "ariaCurrent": "true",
+            "src": "../../photos/", 
+            "alt": "...",
+            "text": "texte à venir 0"
+          },
+          {
+            "slide": "1",
+            "src": "../../photos/", 
+            "alt": "...",
+            "text": "texte à venir 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "France",
+    "metaDescription": "",
+    "activeExpat": "active",
+  
+    "name": "Châlons-en-Champagne",
+    "subtitle": "département de la",
+    "departementProvinceState": "Marne 51",
+  
+    "keywords": "juin 2024 ",
+
+    "places": [
+      {
+        "title": "escapade en Champagne",
+        "modal": "1",
+        "modalTitle": "escapade en Champagne",
+        
+        "trips": [
+          {
+            "date": "29 juin 2024",
+            "description": "escapade en Champagne"
+          }
+        ],
+        "photos": [
+          {
+            "slide": "0",
+            "active": "active",
+            "ariaCurrent": "true",
+            "src": "../../photos/", 
+            "alt": "...",
+            "text": "texte à venir 0"
+          },
+          {
+            "slide": "1",
+            "src": "../../photos/", 
+            "alt": "...",
+            "text": "texte à venir 1"
+          },
+          {
+            "slide": "2",
+            "src": "../../photos/", 
+            "alt": "...",
+            "text": "texte à venir 2"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "France",
+    "metaDescription": "",
+    "activeExpat": "active",
+  
+    "name": "Verzenay",
+    "subtitle": "département de la",
+    "departementProvinceState": "Marne 51",
+  
+    "keywords": "juin 2024 ",
+
+    "places": [
+      {
+        "title": "escapade en Champagne",
+        "modal": "1",
+        "modalTitle": "escapade en Champagne",
+        
+        "trips": [
+          {
+            "date": "29 juin 2024",
+            "description": "escapade en Champagne"
+          }
+        ],
+        "photos": [
+          {
+            "slide": "0",
+            "active": "active",
+            "ariaCurrent": "true",
+            "src": "../../photos/", 
+            "alt": "...",
+            "text": "texte à venir 0"
+          },
+          {
+            "slide": "1",
+            "src": "../../photos/", 
+            "alt": "...",
+            "text": "texte à venir 1"
+          },
+          {
+            "slide": "2",
+            "src": "../../photos/", 
+            "alt": "...",
+            "text": "texte à venir 2"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "France",
+    "metaDescription": "",
+    "activeExpat": "active",
+  
+    "name": "Reims",
+    "subtitle": "département de la",
+    "departementProvinceState": "Marne 51",
+  
+    "keywords": "juin 2024 ",
+
+    "places": [
+      {
+        "title": "escapade en Champagne",
+        "modal": "1",
+        "modalTitle": "escapade en Champagne",
+        
+        "trips": [
+          {
+            "date": "28 juin 2024",
+            "description": "escapade en Champagne"
+          }
+        ],
+        "photos": [
+          {
+            "slide": "0",
+            "active": "active",
+            "ariaCurrent": "true",
+            "src": "../../photos/", 
+            "alt": "...",
+            "text": "texte à venir 0"
+          },
+          {
+            "slide": "1",
+            "src": "../../photos/", 
+            "alt": "...",
+            "text": "texte à venir 1"
+          },
+          {
+            "slide": "2",
+            "src": "../../photos/", 
+            "alt": "...",
+            "text": "texte à venir 2"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "France",
+    "metaDescription": "",
+    "activeExpat": "active",
+  
+    "name": "Épernay",
+    "subtitle": "département de la",
+    "departementProvinceState": "Marne 51",
+  
+    "keywords": "juin 2024 ",
+
+    "places": [
+      {
+        "title": "escapade en Champagne",
+        "modal": "1",
+        "modalTitle": "escapade en Champagne",
+        
+        "trips": [
+          {
+            "date": "27 juin 2024",
+            "description": "visite et dégustation à Moët & Chandon"
+          }
+        ],
+        "photos": [
+          {
+            "slide": "0",
+            "active": "active",
+            "ariaCurrent": "true",
+            "src": "../../photos/", 
+            "alt": "...",
+            "text": "texte à venir 0"
+          },
+          {
+            "slide": "1",
+            "src": "../../photos/", 
+            "alt": "...",
+            "text": "texte à venir 1"
+          },
+          {
+            "slide": "2",
+            "src": "../../photos/", 
+            "alt": "...",
+            "text": "texte à venir 2"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "France",
+    "metaDescription": "",
+    "activeExpat": "active",
+  
+    "name": "Hautvillers",
+    "subtitle": "département de la",
+    "departementProvinceState": "Marne 51",
+  
+    "keywords": "juin 2024 ",
+
+    "places": [
+      {
+        "title": "escapade en Champagne",
+        "modal": "1",
+        "modalTitle": "escapade en Champagne",
+        
+        "trips": [
+          {
+            "date": "27 juin 2024",
+            "description": "escapade en Champagne"
+          }
+        ],
+        "photos": [
+          {
+            "slide": "0",
+            "active": "active",
+            "ariaCurrent": "true",
+            "src": "../../photos/", 
+            "alt": "...",
+            "text": "texte à venir 0"
+          },
+          {
+            "slide": "1",
+            "src": "../../photos/", 
+            "alt": "...",
+            "text": "texte à venir 1"
+          },
+          {
+            "slide": "2",
+            "src": "../../photos/", 
+            "alt": "...",
+            "text": "texte à venir 2"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "France",
+    "metaDescription": "",
+    "activeExpat": "active",
+  
+    "name": "Lyon",
+    "subtitle": "département du",
+    "departementProvinceState": "Rhône 69",
+  
+    "keywords": "juin 2024 ",
+
+    "places": [
+      {
+        "title": "escapade à Lyon",
+        "modal": "1",
+        "modalTitle": "escapade à Lyon",
+        
+        "trips": [
+          {
+            "date": "21-26 juin 2024",
+            "description": ""
+          }
+        ],
+        "photos": [
+          {
+            "slide": "0",
+            "active": "active",
+            "ariaCurrent": "true",
+            "src": "../../photos/", 
+            "alt": "...",
+            "text": "texte à venir 0"
+          },
+          {
+            "slide": "1",
+            "src": "../../photos/", 
+            "alt": "...",
+            "text": "texte à venir 1"
+          },
+          {
+            "slide": "2",
+            "src": "../../photos/", 
+            "alt": "...",
+            "text": "texte à venir 2"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "France",
+    "metaDescription": "",
+    "activeExpat": "active",
+  
+    "name": "Cadillac",
+    "subtitle": "département de la",
+    "departementProvinceState": "Gironde 33",
+  
+    "keywords": "juin 2024 ",
+
+    "places": [
+      {
+        "title": "journée portes ouvertes de château à Cadillac",
+        "modal": "1",
+        "modalTitle": "journée portes ouvertes de château à Cadillac",
+        
+        "trips": [
+          {
+            "date": "2 juin 2024",
+            "description": ""
+          }
+        ],
+        "photos": [
+          {
+            "slide": "0",
+            "active": "active",
+            "ariaCurrent": "true",
+            "src": "../../photos/", 
+            "alt": "...",
+            "text": "texte à venir 0"
+          },
+          {
+            "slide": "1",
+            "src": "../../photos/", 
+            "alt": "...",
+            "text": "texte à venir 1"
+          },
+          {
+            "slide": "2",
+            "src": "../../photos/", 
+            "alt": "...",
+            "text": "texte à venir 2"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "France",
+    "metaDescription": "",
+    "activeExpat": "active",
+  
+    "name": "Versailles",
+    "subtitle": "département des",
+    "departementProvinceState": "Yvelines 78",
+  
+    "keywords": "mars 2024 ",
+
+    "places": [
+      {
+        "title": "weekend à Versailles",
+        "modal": "1",
+        "modalTitle": "weekend à Versailles",
+        
+        "trips": [
+          {
+            "date": "29 mars au 1er avril 2024",
+            "description": ""
+          }
+        ],
+        "photos": [
+          {
+            "slide": "0",
+            "active": "active",
+            "ariaCurrent": "true",
+            "src": "../../photos/", 
+            "alt": "...",
+            "text": "texte à venir 0"
+          },
+          {
+            "slide": "1",
+            "src": "../../photos/", 
+            "alt": "...",
+            "text": "texte à venir 1"
+          },
+          {
+            "slide": "2",
+            "src": "../../photos/", 
+            "alt": "...",
+            "text": "texte à venir 2"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "France",
+    "metaDescription": "",
+    "activeExpat": "active",
+  
+    "name": "Soulac-sur-Mer",
+    "subtitle": "département de la",
+    "departementProvinceState": "Gironde 33",
+  
+    "keywords": "mars 2024 ",
+
+    "places": [
+      {
+        "title": "balade à Soulac-sur-Mer",
+        "modal": "1",
+        "modalTitle": "balade à Soulac-sur-Mer",
+        
+        "trips": [
+          {
+            "date": "23 mars 2024",
+            "description": ""
+          }
+        ],
+        "photos": [
+          {
+            "slide": "0",
+            "active": "active",
+            "ariaCurrent": "true",
+            "src": "../../photos/", 
+            "alt": "...",
+            "text": "texte à venir 0"
+          },
+          {
+            "slide": "1",
+            "src": "../../photos/", 
+            "alt": "...",
+            "text": "texte à venir 1"
+          },
+          {
+            "slide": "2",
+            "src": "../../photos/", 
+            "alt": "...",
+            "text": "texte à venir 2"
+          }
+        ]
+      }
+    ]
+  },
   {
     "title": "France",
     "metaDescription": "",
@@ -3404,48 +3954,7 @@
         ]
       }
     ]
-  }, 
-  {
-    "title": "France",
-    "activeExpat": "active",
-
-    "name": "Bayonne",
-    "subtitle": "département des",
-    "departementProvinceState": "Pyrénées-Atlantiques 64",
-
-    "keywords": "février 2022",
-
-    "places": [
-      {
-        "title": "Ville",
-        "modal": "1",
-        "modalTitle": "Bayonne",
-
-        "trips": [
-          {
-            "date": "6 février 2022",
-            "description": "Bayonne"
-          }
-        ],
-        "photos": [
-          {
-            "slide": "0",
-            "active": "active",
-            "ariaCurrent": "true",
-            "src": "../../photos/", 
-            "alt": "...",
-            "text": "texte à venir 0"
-          },
-          {
-            "slide": "1",
-            "src": "../../photos/", 
-            "alt": "...",
-            "text": "texte à venir 1"
-          }
-        ]
-      }
-    ]
-  }, 
+  },  
   {
     "title": "France",
     "activeExpat": "active",
@@ -4017,8 +4526,182 @@
 
 
 
+  {
+    "title": "international",
+    "activeMondial": "active",
 
+    "name": "Milano",
+    "departementProvinceState": "",
+    "departementProvinceStateShort": "",
+    "subtitle2": "",
+    "country": "Italia",
+    "countryShort": "Italia",
 
+    "keywords": "milano italie italia mai 2024",
+
+    "places": [
+      {
+        "title": "Longue fin de semaine à Milano",
+        "modal": "1",
+        "modalTitle": "Longue fin de semaine à Milano",
+
+        "trips": [
+          {
+            "date": "1-5 mai 2024",
+            "description": "Longue fin de semaine à Milano"
+          }
+        ],
+        "photos": [
+          {
+            "slide": "0",
+            "active": "active",
+            "ariaCurrent": "true",
+            "src": "../../photos/", 
+            "alt": "...",
+            "text": "texte à venir 0"
+          },
+          {
+            "slide": "1",
+            "src": "../../photos/", 
+            "alt": "...",
+            "text": "texte à venir 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "international",
+    "activeMondial": "active",
+
+    "name": "Malmö",
+    "departementProvinceState": "",
+    "departementProvinceStateShort": "",
+    "subtitle2": "",
+    "country": "Suède",
+    "countryShort": "Suède",
+
+    "keywords": "suede malmo københavn copenhague novembre 2023",
+
+    "places": [
+      {
+        "title": "Malmö",
+        "modal": "1",
+        "modalTitle": "Malmö",
+
+        "trips": [
+          {
+            "date": "8 novembre 2023",
+            "description": "Malmö"
+          }
+        ],
+        "photos": [
+          {
+            "slide": "0",
+            "active": "active",
+            "ariaCurrent": "true",
+            "src": "../../photos/", 
+            "alt": "...",
+            "text": "texte à venir 0"
+          },
+          {
+            "slide": "1",
+            "src": "../../photos/", 
+            "alt": "...",
+            "text": "texte à venir 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "international",
+    "activeMondial": "active",
+
+    "name": "Billund",
+    "departementProvinceState": "",
+    "departementProvinceStateShort": "",
+    "subtitle2": "",
+    "country": "Danemark",
+    "countryShort": "Danemark",
+
+    "keywords": "Billund københavn copenhague novembre 2023",
+
+    "places": [
+      {
+        "title": "Billund",
+        "modal": "1",
+        "modalTitle": "Billund",
+
+        "trips": [
+          {
+            "date": "7 novembre 2023",
+            "description": "Lego house"
+          }
+        ],
+        "photos": [
+          {
+            "slide": "0",
+            "active": "active",
+            "ariaCurrent": "true",
+            "src": "../../photos/", 
+            "alt": "...",
+            "text": "texte à venir 0"
+          },
+          {
+            "slide": "1",
+            "src": "../../photos/", 
+            "alt": "...",
+            "text": "texte à venir 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "international",
+    "activeMondial": "active",
+
+    "name": "København",
+    "departementProvinceState": "",
+    "departementProvinceStateShort": "",
+    "subtitle2": "",
+    "country": "Danemark",
+    "countryShort": "Danemark",
+
+    "keywords": "københavn copenhague novembre 2023",
+
+    "places": [
+      {
+        "title": "København",
+        "modal": "1",
+        "modalTitle": "København",
+
+        "trips": [
+          {
+            "date": "5-12 novembre 2023",
+            "description": "København"
+          }
+        ],
+        "photos": [
+          {
+            "slide": "0",
+            "active": "active",
+            "ariaCurrent": "true",
+            "src": "../../photos/", 
+            "alt": "...",
+            "text": "texte à venir 0"
+          },
+          {
+            "slide": "1",
+            "src": "../../photos/", 
+            "alt": "...",
+            "text": "texte à venir 1"
+          }
+        ]
+      }
+    ]
+  },
   {
     "title": "international",
     "activeMondial": "active",
@@ -4034,7 +4717,7 @@
 
     "places": [
       {
-        "title": "Ville et campagne",
+        "title": "Ville",
         "modal": "1",
         "modalTitle": "Amsterdam",
 
@@ -4042,6 +4725,182 @@
           {
             "date": "11-15 août 2023",
             "description": "Amsterdam"
+          }
+        ],
+        "photos": [
+          {
+            "slide": "0",
+            "active": "active",
+            "ariaCurrent": "true",
+            "src": "../../photos/", 
+            "alt": "...",
+            "text": "texte à venir 0"
+          },
+          {
+            "slide": "1",
+            "src": "../../photos/", 
+            "alt": "...",
+            "text": "texte à venir 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "international",
+    "activeMondial": "active",
+
+    "name": "Edam",
+    "departementProvinceState": "North Holland",
+    "departementProvinceStateShort": "",
+    "subtitle2": "",
+    "country": "Netherlands",
+    "countryShort": "Netherlands",
+
+    "keywords": "edam amsterdam aout août 2023",
+
+    "places": [
+      {
+        "title": "Edam",
+        "modal": "1",
+        "modalTitle": "Edam",
+
+        "trips": [
+          {
+            "date": "11-15 août 2023",
+            "description": "Edam"
+          }
+        ],
+        "photos": [
+          {
+            "slide": "0",
+            "active": "active",
+            "ariaCurrent": "true",
+            "src": "../../photos/", 
+            "alt": "...",
+            "text": "texte à venir 0"
+          },
+          {
+            "slide": "1",
+            "src": "../../photos/", 
+            "alt": "...",
+            "text": "texte à venir 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "international",
+    "activeMondial": "active",
+
+    "name": "Marken",
+    "departementProvinceState": "North Holland",
+    "departementProvinceStateShort": "",
+    "subtitle2": "",
+    "country": "Netherlands",
+    "countryShort": "Netherlands",
+
+    "keywords": "marken amsterdam aout août 2023",
+
+    "places": [
+      {
+        "title": "Marken",
+        "modal": "1",
+        "modalTitle": "Marken",
+
+        "trips": [
+          {
+            "date": "11-15 août 2023",
+            "description": "Marken"
+          }
+        ],
+        "photos": [
+          {
+            "slide": "0",
+            "active": "active",
+            "ariaCurrent": "true",
+            "src": "../../photos/", 
+            "alt": "...",
+            "text": "texte à venir 0"
+          },
+          {
+            "slide": "1",
+            "src": "../../photos/", 
+            "alt": "...",
+            "text": "texte à venir 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "international",
+    "activeMondial": "active",
+
+    "name": "Volendam",
+    "departementProvinceState": "North Holland",
+    "departementProvinceStateShort": "",
+    "subtitle2": "",
+    "country": "Netherlands",
+    "countryShort": "Netherlands",
+
+    "keywords": "volendam amsterdam aout août 2023",
+
+    "places": [
+      {
+        "title": "Volendam",
+        "modal": "1",
+        "modalTitle": "Volendam",
+
+        "trips": [
+          {
+            "date": "11-15 août 2023",
+            "description": "Volendam"
+          }
+        ],
+        "photos": [
+          {
+            "slide": "0",
+            "active": "active",
+            "ariaCurrent": "true",
+            "src": "../../photos/", 
+            "alt": "...",
+            "text": "texte à venir 0"
+          },
+          {
+            "slide": "1",
+            "src": "../../photos/", 
+            "alt": "...",
+            "text": "texte à venir 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "international",
+    "activeMondial": "active",
+
+    "name": "Zaanse Schans",
+    "departementProvinceState": "North Holland",
+    "departementProvinceStateShort": "",
+    "subtitle2": "",
+    "country": "Netherlands",
+    "countryShort": "Netherlands",
+
+    "keywords": "zaanse Schans amsterdam aout août 2023",
+
+    "places": [
+      {
+        "title": "Zaanse Schans",
+        "modal": "1",
+        "modalTitle": "Zaanse Schans",
+
+        "trips": [
+          {
+            "date": "11-15 août 2023",
+            "description": "Zaanse Schans"
           }
         ],
         "photos": [
@@ -4111,7 +4970,7 @@
     "title": "international",
     "activeMondial": "active",
 
-    "name": "Pays Basque",
+    "name": "Bilbao",
     "departementProvinceState": "",
     "departementProvinceStateShort": "",
     "subtitle2": "",
@@ -4122,14 +4981,102 @@
 
     "places": [
       {
-        "title": "Villes et routes",
+        "title": "Bilbao",
         "modal": "1",
         "modalTitle": "Pays Basque Espagnol",
 
         "trips": [
           {
             "date": "10-12 février 2023",
-            "description": "Pays Basque Espagnol"
+            "description": "Bilbao"
+          }
+        ],
+        "photos": [
+          {
+            "slide": "0",
+            "active": "active",
+            "ariaCurrent": "true",
+            "src": "../../photos/", 
+            "alt": "...",
+            "text": "texte à venir 0"
+          },
+          {
+            "slide": "1",
+            "src": "../../photos/", 
+            "alt": "...",
+            "text": "texte à venir 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "international",
+    "activeMondial": "active",
+
+    "name": "Gaztelugatxeko",
+    "departementProvinceState": "",
+    "departementProvinceStateShort": "",
+    "subtitle2": "",
+    "country": "España",
+    "countryShort": "España",
+
+    "keywords": "février 2023",
+
+    "places": [
+      {
+        "title": "Gaztelugatxeko",
+        "modal": "1",
+        "modalTitle": "Pays Basque Espagnol",
+
+        "trips": [
+          {
+            "date": "12 février 2023",
+            "description": "Gaztelugatxeko"
+          }
+        ],
+        "photos": [
+          {
+            "slide": "0",
+            "active": "active",
+            "ariaCurrent": "true",
+            "src": "../../photos/", 
+            "alt": "...",
+            "text": "texte à venir 0"
+          },
+          {
+            "slide": "1",
+            "src": "../../photos/", 
+            "alt": "...",
+            "text": "texte à venir 1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "international",
+    "activeMondial": "active",
+
+    "name": "San Sebastian",
+    "departementProvinceState": "",
+    "departementProvinceStateShort": "",
+    "subtitle2": "",
+    "country": "España",
+    "countryShort": "España",
+
+    "keywords": "février 2023",
+
+    "places": [
+      {
+        "title": "San Sebastian",
+        "modal": "1",
+        "modalTitle": "Pays Basque Espagnol",
+
+        "trips": [
+          {
+            "date": "12 février 2023",
+            "description": "San Sebastian"
           }
         ],
         "photos": [
