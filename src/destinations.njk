@@ -11,9 +11,11 @@ permalink: "destinations/{{ destinations.name | slugify }}/"
 ---
 
 <main id="destinations">
-
+	
+	<!-- ribbon -->
 	<div class="ribbon-destinations" id="ribbon">
 
+		<!-- destination's name on the right -->
 		<div class="heading-text">
     	<h4>{{destinations.name}} <span>{{destinations.nameSpan}}</span></h4>
 			<p>{{destinations.subtitle}} {{destinations.departementProvinceState}}
@@ -22,35 +24,28 @@ permalink: "destinations/{{ destinations.name | slugify }}/"
 				{% endif %}
 			{{destinations.subtitle2}} {{destinations.country}}</p>		
 		</div>
-
+		
+		<!-- blur on the left (only on desktop) -->
 		<div class="panel_page_blur" ></div>
 		<div class="panel_page">
+			<!-- image (only on desktop) -->
 			<img src="../../photos/ribbon/{{destinations.name | slugify}}.jpg" alt="">
 			{% include "backButton.njk" %}
 			<div class="link-destinations">
 				<div class="links">
 					<ul>
-						{% for trip in destinations.trips %}
-						<div class="mobile">
-							{% if destinations.trips[1] == null %}
-							{% else %}
-								<li>
-									<a class="link" href="#{{trip.days | slugify}}-{{trip.year | slugify}}">
-										<p class="date">{{trip.days}} {{trip.year}}</p>
-      						</a>
-								</li>
-							{% endif %}
-						</div>
+						{% for place in destinations.places %}
 						<div class="desktop">
 							<li>
-								<a class="link" href="#{{trip.days | slugify}}-{{trip.year | slugify}}">
-								{% if destinations.trips[1] == null %}
-									<h6 class="date">{{trip.days}} <b>{{trip.year}}</b></h6>
-									<p class="text">{{trip.text}}<br><i>{{trip.text2}}</i></p>
-								{% else %}
-									<h6 class="date">{{trip.days}} {{trip.year}}</h6>
-									<p class="text">{{trip.text}}</p>
-								{% endif %}									
+								<a class="link" href="#{{place.title | slugify}}">
+									<!-- places on the left: title and dates -->
+									<h6 class="date">{{place.title}}</h6>
+									<p class="text">
+										{% set comma = joiner() %}
+										{% for trip in place.trips %}
+										{{ comma() }} {{trip.date}}
+										{% endfor %}
+									</p>
       					</a>
 							</li>
 						</div>
@@ -62,48 +57,88 @@ permalink: "destinations/{{ destinations.name | slugify }}/"
 	
 	</div>
 
+	<!-- accordion (only on mobile) -->
+	<div class="accordion" id="accordionMobile">
+		{% for place in destinations.places %}
+		<div class="accordion-item">
+		  <h6 class="accordion-header">
+		    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse{{place.modal}}" aria-expanded="false" aria-controls="collapse{{place.modal}}">
+					<!-- places: title -->
+					<h6 class="date">{{place.title}}</h6>
+		    </button>
+		  </h6>
+		  <div id="collapse{{place.modal}}" class="accordion-collapse collapse" data-bs-parent="#accordionMobile">
+		    <div class="accordion-body">
+					<div class="date_section" id="{{place.title | slugify}}">
+						<div class="mobile">
+							<!-- places: descriptions and dates -->
+							{% for trip in place.trips %}
+							<p>{{trip.description}}<br><i>{{trip.date}}</i></p>
+							{% endfor %}
+						</div>
+					</div>
+					<!-- places: photos -->
+					<div class="container">
+		    		<div class="image-gallery-destination">
+		    		  {% for photo in place.photos %}
+		    		    <img src="{{photo.src}}" alt="{{photo.alt}}">
+								<p>{{photo.text}}</p>
+		    		  {% endfor %}
+		    		</div>
+					</div>
+		    </div>
+		  </div>
+		</div>
+		{% endfor %}
+	</div>
+
 	{% include "upButton.njk" %}
 
-	{% for trip in destinations.trips %}
-  <section class="container-destinations">
-  	<div class="date_section" id="{{trip.days | slugify}}-{{trip.year | slugify}}">
-			<div class="mobile">
-				<h6>{{trip.days}} <b>{{trip.year}}</b></h6>
-				<p>{{trip.text}}<br><i>{{trip.text2}}</i></p>
-			</div>
+	<!-- section -->
+	{% for place in destinations.places %}
+  <section class="container-destinations" id="sectionDesktop">
+  	
+		<!-- places: title, descriptions and dates -->
+		<div class="date_section" id="{{place.title | slugify}}">
 			<div class="desktop">
-				{% if destinations.trips[1] == null %}
-				{% else %}
-					<h6>{{trip.days}} <b>{{trip.year}}</b></h6>
-					<p>{{trip.text}}<br><i>{{trip.text2}}</i></p>
-				{% endif %}
+				<h6>{{place.title}}</b></h6>
+				{% for trip in place.trips %}
+				<p>{{trip.description}}<br><i>{{trip.date}}</i></p>
+				{% endfor %}
 			</div>
-			<a type="button" class="btn" data-bs-toggle="modal" data-bs-target="#{{trip.modal}}">voir le carousel de photos</a>
+			<a type="button" class="btn" data-bs-toggle="modal" data-bs-target="#{{place.modal}}">voir le carousel de photos</a>
+    </div>
+
+		<!-- places: photos -->
+		<div class="container">
+      <div class="image-gallery-destination">
+        {% for photo in place.photos %}
+          <img src="{{photo.src}}" alt="{{photo.alt}}" title="{{photo.text}}">
+        {% endfor %}
+      </div>
     </div>
     
-    <!-- post modal -->
-		<div class="modal fade" id="{{trip.modal}}" tabindex="-1" aria-labelledby="{{trip.modal}}Label" aria-hidden="true">
+    <!-- modal for the carousel (only on desktop) -->
+		<div class="modal fade" id="{{place.modal}}" tabindex="-1" aria-labelledby="{{place.modal}}Label" aria-hidden="true">
   		<div class="modal-dialog modal-xl">
   			<div class="modal-content">
   				<div class="modal-header">
-  					<h5 class="modal-title" id="{{trip.modal}}Label">{{trip.modalTitle}}</h5>
+  					<h5 class="modal-title" id="{{place.modal}}Label">{{place.modalTitle}}</h5>
   					<button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
       		</div>
 
       		<div class="modal-body">
        						
-						<!-- post carousel -->
-						{% for carousel in trip.carousels %}
-
-						<div id="carousel{{trip.modal}}Captions" class="carousel destinations slide">	
+						<!-- carousel of photos -->
+						<div id="carousel{{place.modal}}Captions" class="carousel destinations slide">	
 
 							<div class="carousel-indicators">
-							  {% for photo in carousel.photos %}
-									<button type="button" data-bs-target="#carousel{{trip.modal}}Captions" data-bs-slide-to="{{photo.slide}}" class="{{photo.active}}" aria-current="{{photo.ariaCurrent}}" aria-label="Slide {{photo.slide}}"></button>
+							  {% for photo in place.photos %}
+									<button type="button" data-bs-target="#carousel{{place.modal}}Captions" data-bs-slide-to="{{photo.slide}}" class="{{photo.active}}" aria-current="{{photo.ariaCurrent}}" aria-label="Slide {{photo.slide}}"></button>
 								{% endfor %}
 							</div>
 							<div class="carousel-inner">
-								{% for photo in carousel.photos %}
+								{% for photo in place.photos %}
 									<div class="carousel-item {{photo.active}}">
 										<img src="../photos/{{photo.src}}" class="d-block " alt="{{photo.alt}}">
 										<div class="carousel-caption d-none d-md-block">
@@ -113,32 +148,21 @@ permalink: "destinations/{{ destinations.name | slugify }}/"
 								{% endfor %}
 						  </div>										
 
-							<button class="carousel-control-prev" type="button" data-bs-target="#carousel{{trip.modal}}Captions" data-bs-slide="prev">
+							<button class="carousel-control-prev" type="button" data-bs-target="#carousel{{place.modal}}Captions" data-bs-slide="prev">
 								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
 								<span class="visually-hidden">Previous</span>
 							</button>
-							<button class="carousel-control-next" type="button" data-bs-target="#carousel{{trip.modal}}Captions" data-bs-slide="next">
+							<button class="carousel-control-next" type="button" data-bs-target="#carousel{{place.modal}}Captions" data-bs-slide="next">
 								<span class="carousel-control-next-icon" aria-hidden="true"></span>
 								<span class="visually-hidden">Next</span>
 							</button>
 
-						</div>	
-						{% endfor %}								
+						</div>							
 
       		</div>
     		</div>
   		</div>
-		</div>
-
-  	<div class="container">
-      <div class="image-gallery-destination">
-        {% for carousel in trip.carousels %}
-          {% for photo in carousel.photos %}
-            <img src="{{photo.src}}" alt="{{photo.alt}}">
-          {% endfor %}
-        {% endfor %}
-      </div>
-    </div>	
+		</div>	
 
   </section>
 	{% endfor %}

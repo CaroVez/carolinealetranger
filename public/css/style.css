@@ -13,8 +13,7 @@
 	box-sizing: border-box;
 }
 
-body
-{	
+body, .accordion-body {	
 	background-image: url(../images/header.png);
 	/*background-color: lightgray;*/
 	font-family: 'Questrial', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -150,7 +149,7 @@ h6 { /* trips title on pages: destinations */
 	width: fit-content;
 	margin-left: auto;
 	margin-right: auto;
-	border: white solid 2px;
+	border-left: white solid 10px;
 	padding: 1vh;
 }
 
@@ -409,6 +408,25 @@ ul {
 	display: none;
 }
 
+#accordionMobile .accordion-item {
+	border: none;
+}
+#accordionMobile .accordion-button {
+	background: white;
+	border: none;
+	outline: none;
+}
+#accordionMobile .accordion-button:focus {
+	background: #FCAF45;
+	outline: none;
+	color: black;
+}
+#accordionMobile .accordion-body {
+	border: none;
+}
+
+
+
 section, .image-gallery-destination { 
 	margin-top: 1rem;
 	margin-bottom: 1rem;
@@ -558,7 +576,7 @@ section, .image-gallery-destination {
 /* # */			z-index: 999;transform: rotate(-90deg);
 /* # */			text-wrap: nowrap;
 /* # */			position: absolute;
-/* # */			bottom: 15%;
+/* # */			top: 15%;
 /* # */			left: -150%;
 /* # */		}
 /* # */		.col-one .btn-offcanvas:hover {
@@ -781,9 +799,9 @@ section, .image-gallery-destination {
 /* # */		#accordionMobile {
 /* # */			display: none;
 /* # */		}
-#sectionDesktop {
-	display: block;
-}
+/* # */		#sectionDesktop {
+/* # */			display: block;
+/* # */		}
 
 
 

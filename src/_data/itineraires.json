@@ -1,0 +1,215 @@
+[
+  {
+    "title": "itinéraire",
+    "metaDescription": "testVan",
+    "activeItinerary": "active",
+
+    "name": "road trip en van dans le sud",
+    "subtitle": "15 départements traversés",
+    "subtitle2": "en",
+    "country": "France",
+  
+    "keywords": "van 2023 sud france road trip roadsurfer monaco juin juillet",
+
+    "places": [
+      {
+        "title": "road trip en van dans le sud",
+        "modal": "1",
+        "modalTitle": "road trip en van dans le sud",
+
+        "trips": [
+          {
+            "date": "16 juin-2 juillet 2023",
+            "description": "2500 km parcourus en van, 15 départements traversés, 180 Litres de diesel, 116,70€ de péages, 16 nuits en van (11 sur camping, 3 sur aire de camping car, 2 sauvages), 52 vins goutés (dont 4 Cahors, 3 Muscat, 3 Languedoc, 2 Pic Saint Loup, 1 Corbières, 3 Cassis, 5 Collioure, 4 Banyuls, 1 Champagne et de nombreux vins maisons (13 blanc, 8 rosé, 5 rouge), 14 bières goutées (surtout en Occitanie/Catalogne du nord), 1 Pastis (pcq il fallait bien au moins une fois!)"
+          }
+        ],
+        "photos": [
+          {
+            "slide": "0",
+            "active": "active",
+            "ariaCurrent": "true",
+            "src": "../../photos/itineraires/2023.06_van/01.jpg", 
+            "alt": "...",
+            "text": "texte à venir"
+          },
+          {
+            "slide": "1",
+            "src": "../../photos/itineraires/2023.06_van/02.jpg", 
+            "alt": "...",
+            "text": "texte à venir"
+          },
+          {
+            "slide": "2",
+            "src": "../../photos/itineraires/2023.06_van/03.jpg", 
+            "alt": "...",
+            "text": "texte à venir"
+          },
+          {
+            "slide": "3",
+            "src": "../../photos/itineraires/2023.06_van/04.jpg", 
+            "alt": "...",
+            "text": "texte à venir"
+          },
+          {
+            "slide": "4",
+            "src": "../../photos/itineraires/2023.06_van/05.jpg", 
+            "alt": "...",
+            "text": "texte à venir"
+          },
+          {
+            "slide": "5",
+            "src": "../../photos/itineraires/2023.06_van/06.jpg", 
+            "alt": "...",
+            "text": "texte à venir"
+          }
+        ]
+      }
+    ]  
+  },
+  {
+    "title": "itinéraire",
+    "activeItinerary": "active",
+
+    "name": "au pays Basque",
+    "subtitle2": "en",
+    "country": "France & España",
+
+    "keywords": "basque février 2023",
+
+    "places": [
+      {
+        "title": "au pays Basque",
+        "modal": "1",
+        "modalTitle": "au pays Basque",
+
+        "trips": [
+          {
+            "date": "10-12 février 2023",
+            "description": "weekend au pays Basque"
+          }
+        ],
+        "photos": [
+          {
+            "slide": "0",
+            "active": "active",
+            "ariaCurrent": "true",
+            "src": "../../photos/", 
+            "alt": "...",
+            "text": "texte à venir"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "itinéraire",
+    "activeItinerary": "active",
+
+    "name": "traversée vers l'est",
+    "subtitle": "départements de",
+    "departementProvinceState": "Dordogne 24, Puy-de-Dôme 63 & Rhône 69",
+    "subtitle2": "en",
+    "country": "France",
+
+    "keywords": "",
+
+    "places": [
+      {
+        "title": "traversée vers l'est",
+        "modal": "1",
+        "modalTitle": "traversée vers l'est",
+
+        "trips": [
+          {
+            "date": "3-5 décembre 2022",
+            "description": "traversée vers l'est"
+          }
+        ],
+        "photos": [
+          {
+            "slide": "0",
+            "active": "active",
+            "ariaCurrent": "true",
+            "src": "../../photos/", 
+            "alt": "...",
+            "text": "texte à venir"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "itinéraire",
+    "activeItinerary": "active",
+
+    "name": "Alsace et plus",
+    "subtitle": "départements de",
+    "departementProvinceState": "Bas-Rhin 67, Haut-Rhin 68, Moselle 57 & Haute-Saône 70",
+    "subtitle2": "en",
+    "country": "France",
+
+    "keywords": "2021 strasbourg colmar anniversaire novembre alsace Bas-Rhin 67 Philippsbourg Moselle 57 Château Falkenstein Haute-Saône 70 Ronchamp corbusier",
+
+    "places": [
+      {
+        "title": "Alsace et plus",
+        "modal": "1",
+        "modalTitle": "Alsace et plus",
+
+        "trips": [
+          {
+            "date": "18-27 novembre 2021",
+            "description": "Alsace et plus"
+          }
+        ],
+        "photos": [
+          {
+            "slide": "0",
+            "active": "active",
+            "ariaCurrent": "true",
+            "src": "../../photos/", 
+            "alt": "...",
+            "text": "texte à venir"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "itinéraire",
+    "activeItinerary": "active",
+
+    "name": "Côte Atlantique",
+    "subtitle": "départements de",
+    "departementProvinceState": "Charente-Maritime 17, Vendée 85, Morbihan 56 & Finistère 29 ",
+    "subtitle2": "en",
+    "country": "France",
+
+    "keywords": "2021 la rochelle Charente-Maritime 17 Île-de-Noirmoutier Vendée 85 Vannes Morbihan 56 Brest Finistère 29 île-tudy caramet-sur-mer nantes",
+
+    "places": [
+      {
+        "title": "Côte Atlantique",
+        "modal": "1",
+        "modalTitle": "Côte Atlantique",
+
+        "trips": [
+          {
+            "date": "20-29 août 2021",
+            "description": "Côte Atlantique"
+          }
+        ],
+        "photos": [
+          {
+            "slide": "0",
+            "active": "active",
+            "ariaCurrent": "true",
+            "src": "../../photos/", 
+            "alt": "...",
+            "text": "texte à venir"
+          }
+        ]
+      }
+    ]
+  }
+]

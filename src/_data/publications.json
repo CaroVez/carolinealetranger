@@ -1,9 +1,39 @@
 [
   {
+    "date": "15 octobre 2023",
+    "title": "visite du Château fort de Roquetaillade",
+    "category": "france",
+    "link": "mazeres"
+  },
+  {
+    "date": "20 août 2023 & 23 septembre 2023",
+    "title": "journées au Bassin d'Arcachon",
+    "category": "france",
+    "link": "bassin-d-arcachon"
+  },
+  {
+    "date": "11-15 août 2023",
+    "title": "Amsterdam",
+    "category": "international",
+    "link": "Amsterdam"
+  },
+  {
+    "date": "30 juillet 2023",
+    "title": "visite du Château Tour Baladoz",
+    "category": "france",
+    "link": "saint-emilion"
+  },
+  {
+    "date": "16 juillet 2023",
+    "title": "une journée à la plage de Biscarosse",
+    "category": "france",
+    "link": "biscarosse"
+  },
+  {
     "date": "16 juin-2 juillet 2023",
     "title": "road trip en Van",
     "category": "itinéraire",
-    "link": "road-trip-en-van"
+    "link": "road-trip-en-van-dans-le-sud"
   },
   {
     "date": "18-29 mai 2023",
@@ -28,11 +58,5 @@
     "title": "vignobles du Médoc",
     "category": "france",
     "link": "medoc-viticole"
-  },
-  {
-    "date": "17-19 mars 2023",
-    "title": "weekend au Bassin",
-    "category": "france",
-    "link": "bassin-d-arcachon"
   }
 ]
