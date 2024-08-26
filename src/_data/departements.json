@@ -1,0 +1,274 @@
+[
+  {
+    "id": "001",
+    "title": "departement",
+    "activeExpat": "active",
+
+    "departementProvinceState": "Alpes-de-Haute-Provence 04",
+    "region": "Provence-Alpes-Côte d'Azur"
+  },
+  {
+    "id": "002",
+    "title": "departement",
+    "activeExpat": "active",
+
+    "departementProvinceState": "Alpes-Maritimes 06",
+    "region": "Provence-Alpes-Côte d'Azur"
+  },
+  {
+    "id": "003",
+    "title": "departement",
+    "activeExpat": "active",
+
+    "departementProvinceState": "Aude 11",
+    "region": "Occitanie"
+  },
+  {
+    "id": "004",
+    "title": "departement",
+    "activeExpat": "active",
+
+    "departementProvinceState": "Aveyron 12",
+    "region": "Occitanie"
+  },
+  {
+    "id": "005",
+    "title": "departement",
+    "activeExpat": "active",
+
+    "departementProvinceState": "Bas-Rhin 67",
+    "region": "Grand-Est"
+  },
+  {
+    "id": "006",
+    "title": "departement",
+    "activeExpat": "active",
+
+    "departementProvinceState": "Bouches-du-Rhône 13",
+    "region": "Provence-Alpes-Côte d'Azur"
+  },
+  {
+    "id": "007",
+    "title": "departement",
+    "activeExpat": "active",
+
+    "departementProvinceState": "Charente 16",
+    "region": "Nouvelle-Aquitaine"
+  },
+  {
+    "id": "008",
+    "title": "departement",
+    "activeExpat": "active",
+
+    "departementProvinceState": "Charente-Maritime 17",
+    "region": "Nouvelle-Aquitaine"
+  },
+  {
+    "id": "009",
+    "title": "departement",
+    "activeExpat": "active",
+
+    "departementProvinceState": "Dordogne 24",
+    "region": "Nouvelle-Aquitaine"
+  },
+  {
+    "id": "010",
+    "title": "departement",
+    "activeExpat": "active",
+
+    "departementProvinceState": "Finistère 29",
+    "region": "Bretagne"
+  },
+  {
+    "id": "011",
+    "title": "departement",
+    "activeExpat": "active",
+
+    "departementProvinceState": "Gironde 33",
+    "region": "Nouvelle-Aquitaine"
+  },
+  {
+    "id": "012",
+    "title": "departement",
+    "activeExpat": "active",
+
+    "departementProvinceState": "Haute-Garonne 31",
+    "region": "Occitanie"
+  },
+  {
+    "id": "013",
+    "title": "departement",
+    "activeExpat": "active",
+
+    "departementProvinceState": "Haute-Saône 70",
+    "region": "Bourgogne-Franche-Comté"
+  },
+  {
+    "id": "014",
+    "title": "departement",
+    "activeExpat": "active",
+
+    "departementProvinceState": "Haute-Savoie 74",
+    "region": "Auvergne-Rhône-Aples"
+  },
+  {
+    "id": "015",
+    "title": "departement",
+    "activeExpat": "active",
+
+    "departementProvinceState": "Hautes-Pyrénées 65",
+    "region": "Occitanie"
+  },
+  {
+    "id": "016",
+    "title": "departement",
+    "activeExpat": "active",
+
+    "departementProvinceState": "Haut-Rhin 68",
+    "region": "Grand-Est"
+  },
+  {
+    "id": "017",
+    "title": "departement",
+    "activeExpat": "active",
+
+    "departementProvinceState": "Hérault 34",
+    "region": "Occitanie"
+  },
+  {
+    "id": "018",
+    "title": "departement",
+    "activeExpat": "active",
+
+    "departementProvinceState": "Landes 40",
+    "region": "Nouvelle-Aquitaine"
+  },
+  {
+    "id": "019",
+    "title": "departement",
+    "activeExpat": "active",
+
+    "departementProvinceState": "Lot 46",
+    "region": "Occitanie"
+  },
+  {
+    "id": "020",
+    "title": "departement",
+    "activeExpat": "active",
+
+    "departementProvinceState": "Lot et Garonne 47",
+    "region": "Nouvelle-Aquitaine"
+  },
+  {
+    "id": "021",
+    "title": "departement",
+    "activeExpat": "active",
+
+    "departementProvinceState": "Marne 51",
+    "region": "Grand-Est"
+  },
+  {
+    "id": "022",
+    "title": "departement",
+    "activeExpat": "active",
+
+    "departementProvinceState": "Morbihan 56",
+    "region": "Bretagne"
+  },
+  {
+    "id": "023",
+    "title": "departement",
+    "activeExpat": "active",
+
+    "departementProvinceState": "Moselle 57",
+    "region": "Grand-Est"
+  },
+  {
+    "id": "024",
+    "title": "departement",
+    "activeExpat": "active",
+
+    "departementProvinceState": "Paris 75",
+    "region": "Île-de-France"
+  },
+  {
+    "id": "025",
+    "title": "departement",
+    "activeExpat": "active",
+
+    "departementProvinceState": "Puy de Dôme 63",
+    "region": "Auvergne-Rhône-Aples"
+  },
+  {
+    "id": "026",
+    "title": "departement",
+    "activeExpat": "active",
+
+    "departementProvinceState": "Pyrénées-Atlantiques 64",
+    "region": "Nouvelle-Aquitaine"
+  },
+  {
+    "id": "027",
+    "title": "departement",
+    "activeExpat": "active",
+
+    "departementProvinceState": "Pyrénées-Orientales 66",
+    "region": "Occitanie"
+  },
+  {
+    "id": "028",
+    "title": "departement",
+    "activeExpat": "active",
+
+    "departementProvinceState": "Rhône 69",
+    "region": "Auvergne-Rhône-Aples"
+  },
+  {
+    "id": "029",
+    "title": "departement",
+    "activeExpat": "active",
+
+    "departementProvinceState": "Sarthe 72",
+    "region": "Pays de la Loire"
+  },
+  {
+    "id": "030",
+    "title": "departement",
+    "activeExpat": "active",
+
+    "departementProvinceState": "Tarn 81",
+    "region": "Occitanie"
+  },
+  {
+    "id": "031",
+    "title": "departement",
+    "activeExpat": "active",
+
+    "departementProvinceState": "Var 83",
+    "region": "Provence-Alpes-Côte d'Azur"
+  },
+  {
+    "id": "032",
+    "title": "departement",
+    "activeExpat": "active",
+
+    "departementProvinceState": "Vaucluse 84",
+    "region": "Provence-Alpes-Côte d'Azur"
+  },
+  {
+    "id": "033",
+    "title": "departement",
+    "activeExpat": "active",
+
+    "departementProvinceState": "Vendée 85",
+    "region": "Pays de la Loire"
+  },
+  {
+    "id": "034",
+    "title": "departement",
+    "activeExpat": "active",
+
+    "departementProvinceState": "Yvelines 78",
+    "region": "Île-de-France"
+  }
+]

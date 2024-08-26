@@ -1,0 +1,68 @@
+---
+layout: layout.njk 
+dot: ../../.
+nav: pages
+
+pagination:
+    data: departements
+    size: 1
+    alias: departements
+permalink: "france/departements/{{ departements.departementProvinceState | slugify }}/"
+---
+
+<main>
+
+	<!-- ribbon -->
+	<div class="ribbon-destinations" id="ribbon">
+
+		<!-- destination's name on the right -->
+		<div class="heading-text">
+    		<h4>{{departements.departementProvinceState}}</h4>
+			<p>dans la région {{departements.region}}</p>		
+		</div>
+		
+		<!-- blur on the left (only on desktop) -->
+		<div class="panel_page_blur" ></div>
+		<div class="panel_page">
+			<!-- image (only on desktop) -->
+			<img src="../../photos/ribbon/{{ departements.departementProvinceState | slugify }}.jpg" alt="">
+			{% include "backButton.njk" %}
+		</div>
+	
+	</div>
+
+	{% include "upButton.njk" %}
+
+	<div class="container">
+
+		{% include "search.njk" %}
+		{% include "alphabeticOrderButton.njk" %}
+
+		<ul class="image-gallery">
+			<li class="destination-carte">
+				<a href="../../../photos/minis/00_carteFrance.jpg" target="_blank">
+					<img src="../../../photos/minis/{{ departements.departementProvinceState | slugify }}.png" alt="">
+					<div class="overlay 2021 2022 2023">carte des régions et départements</div>
+				</a>
+			</li>		
+				{% for destination in destinations %}
+					{% if destination.departementProvinceState === departements.departementProvinceState %}
+						<li class="destination">
+							{% if destination.link === "" %}
+								<a title="à venir" >
+							{% else %}
+								<a href="../destinations/{{destination.name | slugify}}/index.html">
+							{% endif %}
+
+								<img src="../../../photos/minis/{{destination.name | slugify}}.jpg" alt="">
+								
+								<div class="overlay {{destination.keywords}} {{destination.departementProvinceState}} {{destination.region}}">{{destination.name}}</div>
+							</a>
+						</li>
+					{% endif %}
+				{% endfor %}
+		</ul>
+
+	</div>
+
+</main>

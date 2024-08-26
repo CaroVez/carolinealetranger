@@ -111,9 +111,19 @@
   </div>
 </div>
 
+		<div class="alphabeticOrder-button">
+  <button onclick="alphabeticOrder()" id="alphabeticOrderButton" title="">alphabétique</button>
+</div>
 
-		<ul class="image-gallery">
-			<li class="destination">
+
+  		<button class="villes" id="villesButton" title="">villes</button>
+
+  		<button class="departements" id="departementsButton" title="">départements</button>
+
+  		<button class="regions" id="regionsButton" title="">régions</button>
+
+		<ul class="image-gallery" id="villes">
+			<li class="destination-carte">
 				<a href="../photos/minis/00_carteFrance.jpg" target="_blank">
 					<img src="../photos/minis/00_carteFrance.jpg" alt="">
 					<div class="overlay 2021 2022 2023">carte des régions et départements</div>
@@ -121,893 +131,1817 @@
 			</li>		
 				
 					
-						<li class="destination">
-							<a href="../destinations/bordeaux/index.html">
+						<li class="destination" id="bordeaux">
+
+							
+								<a title="à venir" >
+							
+
 								<img src="../photos/minis/bordeaux.jpg" alt="">
-								
-									<div class="overlay 2021 2022 2023">Bordeaux | Gironde 33</div>
-								
-							</a>
+
+								<div class="overlay 2021 2022 2023 2024">Bordeaux | <br> Gironde 33 | <br>Nouvelle-Aquitaine</div>
+			
+								</a>
 						</li>
 					
 				
 					
-						<li class="destination">
-							<a href="../destinations/anglet/index.html">
+						<li class="destination" id="anglet">
+
+							
+								<a title="à venir" >
+							
+
 								<img src="../photos/minis/anglet.jpg" alt="">
-								
-									<div class="overlay juillet 2024 ">Anglet | Pyrénées-Atlantiques 64</div>
-								
-							</a>
+
+								<div class="overlay juillet 2024 plages">Anglet | <br> Pyrénées-Atlantiques 64 | <br>Nouvelle-Aquitaine</div>
+			
+								</a>
 						</li>
 					
 				
 					
-						<li class="destination">
-							<a href="../destinations/bayonne/index.html">
+						<li class="destination" id="bayonne">
+
+							
+								<a title="à venir" >
+							
+
 								<img src="../photos/minis/bayonne.jpg" alt="">
-								
-									<div class="overlay juillet février 2022 2024">Bayonne | Pyrénées-Atlantiques 64</div>
-								
-							</a>
+
+								<div class="overlay juillet février 2022 2024 fêtes ">Bayonne | <br> Pyrénées-Atlantiques 64 | <br>Nouvelle-Aquitaine</div>
+			
+								</a>
 						</li>
 					
 				
 					
-						<li class="destination">
-							<a href="../destinations/chalons-en-champagne/index.html">
-								<img src="../photos/minis/chalons-en-champagne.jpg" alt="">
-								
-									<div class="overlay juin 2024 ">Châlons-en-Champagne | Marne 51</div>
-								
-							</a>
-						</li>
-					
-				
-					
-						<li class="destination">
-							<a href="../destinations/verzenay/index.html">
-								<img src="../photos/minis/verzenay.jpg" alt="">
-								
-									<div class="overlay juin 2024 ">Verzenay | Marne 51</div>
-								
-							</a>
-						</li>
-					
-				
-					
-						<li class="destination">
-							<a href="../destinations/reims/index.html">
-								<img src="../photos/minis/reims.jpg" alt="">
-								
-									<div class="overlay juin 2024 ">Reims | Marne 51</div>
-								
-							</a>
-						</li>
-					
-				
-					
-						<li class="destination">
-							<a href="../destinations/epernay/index.html">
-								<img src="../photos/minis/epernay.jpg" alt="">
-								
-									<div class="overlay juin 2024 ">Épernay | Marne 51</div>
-								
-							</a>
-						</li>
-					
-				
-					
-						<li class="destination">
-							<a href="../destinations/hautvillers/index.html">
-								<img src="../photos/minis/hautvillers.jpg" alt="">
-								
-									<div class="overlay juin 2024 ">Hautvillers | Marne 51</div>
-								
-							</a>
-						</li>
-					
-				
-					
-						<li class="destination">
-							<a href="../destinations/lyon/index.html">
-								<img src="../photos/minis/lyon.jpg" alt="">
-								
-									<div class="overlay juin 2024 ">Lyon | Rhône 69</div>
-								
-							</a>
-						</li>
-					
-				
-					
-						<li class="destination">
-							<a href="../destinations/cadillac/index.html">
-								<img src="../photos/minis/cadillac.jpg" alt="">
-								
-									<div class="overlay juin 2024 ">Cadillac | Gironde 33</div>
-								
-							</a>
-						</li>
-					
-				
-					
-						<li class="destination">
-							<a href="../destinations/versailles/index.html">
-								<img src="../photos/minis/versailles.jpg" alt="">
-								
-									<div class="overlay mars 2024 ">Versailles | Yvelines 78</div>
-								
-							</a>
-						</li>
-					
-				
-					
-						<li class="destination">
-							<a href="../destinations/soulac-sur-mer/index.html">
-								<img src="../photos/minis/soulac-sur-mer.jpg" alt="">
-								
-									<div class="overlay mars 2024 ">Soulac-sur-Mer | Gironde 33</div>
-								
-							</a>
-						</li>
-					
-				
-					
-						<li class="destination">
-							<a href="../destinations/mazeres/index.html">
-								<img src="../photos/minis/mazeres.jpg" alt="">
-								
-									<div class="overlay 2023 château fort roquetaillade graves mazeres">Mazères | Gironde 33</div>
-								
-							</a>
-						</li>
-					
-				
-					
-						<li class="destination">
-							<a href="../destinations/bassin-d-arcachon/index.html">
-								<img src="../photos/minis/bassin-d-arcachon.jpg" alt="">
-								
-									<div class="overlay Arcachon Cap-Ferret Dune du Pilat Village Ostréicole Herbe Lanton plage huitres 2021 juin juillet 2022 septembre 2023 mars aout août">Bassin d&#39;Arcachon | Gironde 33</div>
-								
-							</a>
-						</li>
-					
-				
-					
-						<li class="destination">
-							<a href="../destinations/saint-emilion/index.html">
-								<img src="../photos/minis/saint-emilion.jpg" alt="">
-								
-									<div class="overlay septembre 2022">Saint-Émilion | Gironde 33</div>
-								
-							</a>
-						</li>
-					
-				
-					
-						<li class="destination">
-							<a href="../destinations/biscarosse/index.html">
-								<img src="../photos/minis/biscarosse.jpg" alt="">
-								
-									<div class="overlay 2023 biscarosse plage">Biscarosse | Landes 40</div>
-								
-							</a>
-						</li>
-					
-				
-					
-						<li class="destination">
-							<a href="../destinations/carcassonne/index.html">
-								<img src="../photos/minis/carcassonne.jpg" alt="">
-								
-									<div class="overlay 2023 van ">Carcassonne | Aude 11</div>
-								
-							</a>
-						</li>
-					
-				
-					
-						<li class="destination">
-							<a href="../destinations/catalogne-du-nord/index.html">
-								<img src="../photos/minis/catalogne-du-nord.jpg" alt="">
-								
-									<div class="overlay 2023 van ">Catalogne du Nord | Pyrénées-Orientales 66</div>
-								
-							</a>
-						</li>
-					
-				
-					
-						<li class="destination">
-							<a href="../destinations/collioure/index.html">
-								<img src="../photos/minis/collioure.jpg" alt="">
-								
-									<div class="overlay 2023 van ">Collioure | Pyrénées-Orientales 66</div>
-								
-							</a>
-						</li>
-					
-				
-					
-						<li class="destination">
-							<a href="../destinations/beziers/index.html">
-								<img src="../photos/minis/beziers.jpg" alt="">
-								
-									<div class="overlay 2023 van ">Béziers | Hérault 34</div>
-								
-							</a>
-						</li>
-					
-				
-					
-						<li class="destination">
-							<a href="../destinations/les-baux-de-provence/index.html">
-								<img src="../photos/minis/les-baux-de-provence.jpg" alt="">
-								
-									<div class="overlay 2023 van ">Les Baux-de-Provence | Bouches-du-Rhône 13</div>
-								
-							</a>
-						</li>
-					
-				
-					
-						<li class="destination">
-							<a href="../destinations/aix-en-provence/index.html">
-								<img src="../photos/minis/aix-en-provence.jpg" alt="">
-								
-									<div class="overlay 2023 van ">Aix-en-Provence | Bouches-du-Rhône 13</div>
-								
-							</a>
-						</li>
-					
-				
-					
-						<li class="destination">
-							<a href="../destinations/lourmarin/index.html">
-								<img src="../photos/minis/lourmarin.jpg" alt="">
-								
-									<div class="overlay 2023 van ">Lourmarin | Vaucluse 84</div>
-								
-							</a>
-						</li>
-					
-				
-					
-						<li class="destination">
-							<a href="../destinations/moustiers-sainte-marie/index.html">
-								<img src="../photos/minis/moustiers-sainte-marie.jpg" alt="">
-								
-									<div class="overlay 2023 van ">Moustiers-Sainte-Marie | Alpes-de-Haute-Provence 04</div>
-								
-							</a>
-						</li>
-					
-				
-					
-						<li class="destination">
-							<a href="../destinations/les-gorges-du-verdon/index.html">
-								<img src="../photos/minis/les-gorges-du-verdon.jpg" alt="">
-								
-									<div class="overlay 2023 van ">les Gorges du Verdon | Alpes-de-Haute-Provence 04</div>
-								
-							</a>
-						</li>
-					
-				
-					
-						<li class="destination">
-							<a href="../destinations/eze/index.html">
-								<img src="../photos/minis/eze.jpg" alt="">
-								
-									<div class="overlay 2023 van ">Èze | Alpes-Maritimes 06</div>
-								
-							</a>
-						</li>
-					
-				
-					
-						<li class="destination">
-							<a href="../destinations/nice/index.html">
-								<img src="../photos/minis/nice.jpg" alt="">
-								
-									<div class="overlay 2023 van ">Nice | Alpes-Maritimes 06</div>
-								
-							</a>
-						</li>
-					
-				
-					
-						<li class="destination">
-							<a href="../destinations/saint-tropez/index.html">
-								<img src="../photos/minis/saint-tropez.jpg" alt="">
-								
-									<div class="overlay 2023 van ">Saint-Tropez | Var 83</div>
-								
-							</a>
-						</li>
-					
-				
-					
-						<li class="destination">
-							<a href="../destinations/six-fours-les-plages/index.html">
-								<img src="../photos/minis/six-fours-les-plages.jpg" alt="">
-								
-									<div class="overlay 2023 van ">Six-Fours-les-Plages | Var 83</div>
-								
-							</a>
-						</li>
-					
-				
-					
-						<li class="destination">
-							<a href="../destinations/la-route-des-cretes/index.html">
-								<img src="../photos/minis/la-route-des-cretes.jpg" alt="">
-								
-									<div class="overlay 2023 van ">la route des Crêtes | Bouches-du-Rhône 13</div>
-								
-							</a>
-						</li>
-					
-				
-					
-						<li class="destination">
-							<a href="../destinations/cassis/index.html">
-								<img src="../photos/minis/cassis.jpg" alt="">
-								
-									<div class="overlay 2023 van ">Cassis | Bouches-du-Rhône 13</div>
-								
-							</a>
-						</li>
-					
-				
-					
-						<li class="destination">
-							<a href="../destinations/marseille/index.html">
-								<img src="../photos/minis/marseille.jpg" alt="">
-								
-									<div class="overlay 2023 van ">Marseille | Bouches-du-Rhône 13</div>
-								
-							</a>
-						</li>
-					
-				
-					
-						<li class="destination">
-							<a href="../destinations/avignon/index.html">
-								<img src="../photos/minis/avignon.jpg" alt="">
-								
-									<div class="overlay 2023 van ">Avignon | Vaucluse 84</div>
-								
-							</a>
-						</li>
-					
-				
-					
-						<li class="destination">
-							<a href="../destinations/montpellier/index.html">
-								<img src="../photos/minis/montpellier.jpg" alt="">
-								
-									<div class="overlay 2023 van ">Montpellier | Hérault 34</div>
-								
-							</a>
-						</li>
-					
-				
-					
-						<li class="destination">
-							<a href="../destinations/sete/index.html">
-								<img src="../photos/minis/sete.jpg" alt="">
-								
-									<div class="overlay 2023 van ">Sète | Hérault 34</div>
-								
-							</a>
-						</li>
-					
-				
-					
-						<li class="destination">
-							<a href="../destinations/maguelone/index.html">
-								<img src="../photos/minis/maguelone.jpg" alt="">
-								
-									<div class="overlay 2023 van ">Maguelone | Hérault 34</div>
-								
-							</a>
-						</li>
-					
-				
-					
-						<li class="destination">
-							<a href="../destinations/pavalas-les-flots/index.html">
-								<img src="../photos/minis/pavalas-les-flots.jpg" alt="">
-								
-									<div class="overlay 2023 van ">Pavalas-les-Flots | Hérault 34</div>
-								
-							</a>
-						</li>
-					
-				
-					
-						<li class="destination">
-							<a href="../destinations/viaduc-de-millau/index.html">
-								<img src="../photos/minis/viaduc-de-millau.jpg" alt="">
-								
-									<div class="overlay 2023 van ">Viaduc de Millau | Aveyron 12</div>
-								
-							</a>
-						</li>
-					
-				
-					
-						<li class="destination">
-							<a href="../destinations/cordes-sur-ciel/index.html">
-								<img src="../photos/minis/cordes-sur-ciel.jpg" alt="">
-								
-									<div class="overlay 2023 van ">Cordes-sur-ciel | Tarn 81</div>
-								
-							</a>
-						</li>
-					
-				
-					
-						<li class="destination">
-							<a href="../destinations/cahors/index.html">
-								<img src="../photos/minis/cahors.jpg" alt="">
-								
-									<div class="overlay 2023 van ">Cahors | Lot 46</div>
-								
-							</a>
-						</li>
-					
-				
-					
-						<li class="destination">
-							<a href="../destinations/landes-du-medoc/index.html">
-								<img src="../photos/minis/landes-du-medoc.jpg" alt="">
-								
-									<div class="overlay plages mars 2023 soulac-sur-mer vendays-montalivet lacanau">Landes du Médoc | Gironde 33</div>
-								
-							</a>
-						</li>
-					
-				
-					
-						<li class="destination">
-							<a href="../destinations/annecy/index.html">
-								<img src="../photos/minis/annecy.jpg" alt="">
-								
-									<div class="overlay 2023 ">Annecy | Haute-Savoie 74</div>
-								
-							</a>
-						</li>
-					
-				
-					
-						<li class="destination">
-							<a href="../destinations/chamonix-mont-blanc/index.html">
-								<img src="../photos/minis/chamonix-mont-blanc.jpg" alt="">
-								
-									<div class="overlay 2023 ">Chamonix-Mont-Blanc | Haute-Savoie 74</div>
-								
-							</a>
-						</li>
-					
-				
-					
-						<li class="destination">
-							<a href="../destinations/paris/index.html">
+						<li class="destination" id="paris">
+
+							
+								<a title="à venir" >
+							
+
 								<img src="../photos/minis/paris.jpg" alt="">
-								
-									<div class="overlay février 2022">Paris 75</div>
-								
-							</a>
+
+								<div class="overlay février 2022 mai 2023 juin 2024 ">Paris | <br> Paris 75 | <br>Île-de-France</div>
+			
+								</a>
 						</li>
 					
 				
 					
-						<li class="destination">
-							<a href="../destinations/blaye/index.html">
-								<img src="../photos/minis/blaye.jpg" alt="">
-								
-									<div class="overlay septembre 2022 château Bel-Air Royère avril 2023 croisière garonne">Blaye | Gironde 33</div>
-								
-							</a>
+						<li class="destination" id="chalons-en-champagne">
+
+							
+								<a title="à venir" >
+							
+
+								<img src="../photos/minis/chalons-en-champagne.jpg" alt="">
+
+								<div class="overlay juin 2024 champagne">Châlons-en-Champagne | <br> Marne 51 | <br>Grand-Est</div>
+			
+								</a>
 						</li>
 					
 				
 					
-						<li class="destination">
-							<a href="../destinations/medoc-viticole/index.html">
-								<img src="../photos/minis/medoc-viticole.jpg" alt="">
-								
-									<div class="overlay 2023 vignoble medoc médoc viticole domaines dégustation chai chateau château">Médoc viticole | Gironde 33</div>
-								
-							</a>
+						<li class="destination" id="verzenay">
+
+							
+								<a title="à venir" >
+							
+
+								<img src="../photos/minis/verzenay.jpg" alt="">
+
+								<div class="overlay juin 2024 champagne">Verzenay | <br> Marne 51 | <br>Grand-Est</div>
+			
+								</a>
 						</li>
 					
 				
 					
-						<li class="destination">
-							<a href="../destinations/saint-jean-de-luz/index.html">
-								<img src="../photos/minis/saint-jean-de-luz.jpg" alt="">
-								
-									<div class="overlay pays basque 2023 février">Saint-Jean-de-Luz | Pyrénées-Atlantiques 64</div>
-								
-							</a>
+						<li class="destination" id="reims">
+
+							
+								<a title="à venir" >
+							
+
+								<img src="../photos/minis/reims.jpg" alt="">
+
+								<div class="overlay juin 2024 champagne">Reims | <br> Marne 51 | <br>Grand-Est</div>
+			
+								</a>
 						</li>
 					
 				
 					
-						<li class="destination">
-							<a href="../destinations/perigeux/index.html">
-								<img src="../photos/minis/perigeux.jpg" alt="">
-								
-									<div class="overlay décembre 2023">Périgeux | Dordogne 24</div>
-								
-							</a>
+						<li class="destination" id="epernay">
+
+							
+								<a title="à venir" >
+							
+
+								<img src="../photos/minis/epernay.jpg" alt="">
+
+								<div class="overlay juin 2024 champagne">Épernay | <br> Marne 51 | <br>Grand-Est</div>
+			
+								</a>
 						</li>
 					
 				
 					
-						<li class="destination">
-							<a href="../destinations/rhone/index.html">
-								<img src="../photos/minis/rhone.jpg" alt="">
-								
-									<div class="overlay décembre 2023 oingt tourette corbusier bully valsonne">Rhône 69</div>
-								
-							</a>
+						<li class="destination" id="hautvillers">
+
+							
+								<a title="à venir" >
+							
+
+								<img src="../photos/minis/hautvillers.jpg" alt="">
+
+								<div class="overlay juin 2024 champagne">Hautvillers | <br> Marne 51 | <br>Grand-Est</div>
+			
+								</a>
 						</li>
 					
 				
 					
-						<li class="destination">
-							<a href="../destinations/clermont-ferrand/index.html">
-								<img src="../photos/minis/clermont-ferrand.jpg" alt="">
-								
-									<div class="overlay décembre 2023">Clermont-Ferrand | Puy de Dôme 63</div>
-								
-							</a>
+						<li class="destination" id="lyon">
+
+							
+								<a title="à venir" >
+							
+
+								<img src="../photos/minis/lyon.jpg" alt="">
+
+								<div class="overlay juin 2024 ">Lyon | <br> Rhône 69 | <br>Auvergne-Rhône-Alpes</div>
+			
+								</a>
 						</li>
 					
 				
 					
-						<li class="destination">
-							<a href="../destinations/la-brede/index.html">
-								<img src="../photos/minis/la-brede.jpg" alt="">
-								
-									<div class="overlay octobre 2022 chateau montesquieu">La Brède | Gironde 33</div>
-								
-							</a>
+						<li class="destination" id="cadillac-cotes-de-bordeaux">
+
+							
+								<a title="à venir" >
+							
+
+								<img src="../photos/minis/cadillac-cotes-de-bordeaux.jpg" alt="">
+
+								<div class="overlay juin 2024 vins château portes ouvertes">Cadillac Côtes de Bordeaux | <br> Gironde 33 | <br>Nouvelle-Aquitaine</div>
+			
+								</a>
 						</li>
 					
 				
 					
-						<li class="destination">
-							<a href="../destinations/les-graves/index.html">
+						<li class="destination" id="dune-de-pilat">
+
+							
+								<a title="à venir" >
+							
+
+								<img src="../photos/minis/dune-de-pilat.jpg" alt="">
+
+								<div class="overlay Arcachon Cap-Ferret Dune du Pilat Village Ostréicole Herbe Lanton plage huitres 2021 juin juillet 2022 septembre 2023 mars aout août">Dune de Pilat | <br> Gironde 33 | <br>Nouvelle-Aquitaine</div>
+			
+								</a>
+						</li>
+					
+				
+					
+						<li class="destination" id="herbe">
+
+							
+								<a title="à venir" >
+							
+
+								<img src="../photos/minis/herbe.jpg" alt="">
+
+								<div class="overlay Arcachon Cap-Ferret Dune du Pilat Village Ostréicole Herbe Lanton plage huitres 2021 juin juillet 2022 septembre 2023 mars aout août">Herbe | <br> Gironde 33 | <br>Nouvelle-Aquitaine</div>
+			
+								</a>
+						</li>
+					
+				
+					
+						<li class="destination" id="cap-ferret">
+
+							
+								<a href="../destinations/cap-ferret/index.html">
+							
+
+								<img src="../photos/minis/cap-ferret.jpg" alt="">
+
+								<div class="overlay Cap-Ferret plage juillet septembre août mai 2021 2022 2023 2024">Cap-Ferret | <br> Gironde 33 | <br>Nouvelle-Aquitaine</div>
+			
+								</a>
+						</li>
+					
+				
+					
+						<li class="destination" id="saint-emilion">
+
+							
+								<a title="à venir" >
+							
+
+								<img src="../photos/minis/saint-emilion.jpg" alt="">
+
+								<div class="overlay juillet octobre février avril septembre mai 2021 2022 2023 2024 vins châteaux village">Saint-Émilion | <br> Gironde 33 | <br>Nouvelle-Aquitaine</div>
+			
+								</a>
+						</li>
+					
+				
+					
+						<li class="destination" id="versailles">
+
+							
+								<a title="à venir" >
+							
+
+								<img src="../photos/minis/versailles.jpg" alt="">
+
+								<div class="overlay mars 2024 ">Versailles | <br> Yvelines 78 | <br>Île-de-France</div>
+			
+								</a>
+						</li>
+					
+				
+					
+						<li class="destination" id="soulac-sur-mer">
+
+							
+								<a title="à venir" >
+							
+
+								<img src="../photos/minis/soulac-sur-mer.jpg" alt="">
+
+								<div class="overlay mars 2024 plage village">Soulac-sur-Mer | <br> Gironde 33 | <br>Nouvelle-Aquitaine</div>
+			
+								</a>
+						</li>
+					
+				
+					
+						<li class="destination" id="duras">
+
+							
+								<a title="à venir" >
+							
+
+								<img src="../photos/minis/duras.jpg" alt="">
+
+								<div class="overlay décembre 2023 village château">Duras | <br> Lot et Garonne 47 | <br>Nouvelle-Aquitaine</div>
+			
+								</a>
+						</li>
+					
+				
+					
+						<li class="destination" id="monsegur">
+
+							
+								<a title="à venir" >
+							
+
+								<img src="../photos/minis/monsegur.jpg" alt="">
+
+								<div class="overlay décembre 2023 village">Monségur | <br> Gironde 33 | <br>Nouvelle-Aquitaine</div>
+			
+								</a>
+						</li>
+					
+				
+					
+						<li class="destination" id="mazeres">
+
+							
+								<a title="à venir" >
+							
+
+								<img src="../photos/minis/mazeres.jpg" alt="">
+
+								<div class="overlay 2023 château fort roquetaillade graves mazeres octobre">Mazères | <br> Gironde 33 | <br>Nouvelle-Aquitaine</div>
+			
+								</a>
+						</li>
+					
+				
+					
+						<li class="destination" id="les-graves">
+
+							
+								<a title="à venir" >
+							
+
 								<img src="../photos/minis/les-graves.jpg" alt="">
-								
-									<div class="overlay octobre 2022 2021">Les Graves | Gironde 33</div>
-								
-							</a>
+
+								<div class="overlay octobre 2023 2022 2021 vins portes ouvertes châteaux vignoble">Les Graves | <br> Gironde 33 | <br>Nouvelle-Aquitaine</div>
+			
+								</a>
 						</li>
 					
 				
 					
-						<li class="destination">
-							<a href="../destinations/portets/index.html">
+						<li class="destination" id="biscarosse">
+
+							
+								<a title="à venir" >
+							
+
+								<img src="../photos/minis/biscarosse.jpg" alt="">
+
+								<div class="overlay 2023 biscarosse plage juillet ">Biscarosse | <br> Landes 40 | <br>Nouvelle-Aquitaine</div>
+			
+								</a>
+						</li>
+					
+				
+					
+						<li class="destination" id="carcassonne">
+
+							
+								<a title="à venir" >
+							
+
+								<img src="../photos/minis/carcassonne.jpg" alt="">
+
+								<div class="overlay 2023 van sud juillet">Carcassonne | <br> Aude 11 | <br>Occitanie</div>
+			
+								</a>
+						</li>
+					
+				
+					
+						<li class="destination" id="la-cote-de-catalogne-du-nord">
+
+							
+								<a title="à venir" >
+							
+
+								<img src="../photos/minis/la-cote-de-catalogne-du-nord.jpg" alt="">
+
+								<div class="overlay 2023 van sud juillet">la côte de Catalogne du Nord | <br> Pyrénées-Orientales 66 | <br>Occitanie</div>
+			
+								</a>
+						</li>
+					
+				
+					
+						<li class="destination" id="banyuls-sur-mer">
+
+							
+								<a title="à venir" >
+							
+
+								<img src="../photos/minis/banyuls-sur-mer.jpg" alt="">
+
+								<div class="overlay 2023 van sud juillet">Banyuls-sur-Mer | <br> Pyrénées-Orientales 66 | <br>Occitanie</div>
+			
+								</a>
+						</li>
+					
+				
+					
+						<li class="destination" id="collioure">
+
+							
+								<a title="à venir" >
+							
+
+								<img src="../photos/minis/collioure.jpg" alt="">
+
+								<div class="overlay 2023 van sud juin">Collioure | <br> Pyrénées-Orientales 66 | <br>Occitanie</div>
+			
+								</a>
+						</li>
+					
+				
+					
+						<li class="destination" id="beziers">
+
+							
+								<a title="à venir" >
+							
+
+								<img src="../photos/minis/beziers.jpg" alt="">
+
+								<div class="overlay 2023 van sud juin">Béziers | <br> Hérault 34 | <br>Occitanie</div>
+			
+								</a>
+						</li>
+					
+				
+					
+						<li class="destination" id="les-baux-de-provence">
+
+							
+								<a title="à venir" >
+							
+
+								<img src="../photos/minis/les-baux-de-provence.jpg" alt="">
+
+								<div class="overlay 2023 van sud juin">Les Baux-de-Provence | <br> Bouches-du-Rhône 13 | <br>Provence-Alpes-Côte d&#39;Azur</div>
+			
+								</a>
+						</li>
+					
+				
+					
+						<li class="destination" id="aix-en-provence">
+
+							
+								<a title="à venir" >
+							
+
+								<img src="../photos/minis/aix-en-provence.jpg" alt="">
+
+								<div class="overlay 2023 van sud juin">Aix-en-Provence | <br> Bouches-du-Rhône 13 | <br>Provence-Alpes-Côte d&#39;Azur</div>
+			
+								</a>
+						</li>
+					
+				
+					
+						<li class="destination" id="lourmarin">
+
+							
+								<a title="à venir" >
+							
+
+								<img src="../photos/minis/lourmarin.jpg" alt="">
+
+								<div class="overlay 2023 van sud juin">Lourmarin | <br> Vaucluse 84 | <br>Provence-Alpes-Côte d&#39;Azur</div>
+			
+								</a>
+						</li>
+					
+				
+					
+						<li class="destination" id="moustiers-sainte-marie">
+
+							
+								<a title="à venir" >
+							
+
+								<img src="../photos/minis/moustiers-sainte-marie.jpg" alt="">
+
+								<div class="overlay 2023 van sud juin">Moustiers-Sainte-Marie | <br> Alpes-de-Haute-Provence 04 | <br>Provence-Alpes-Côte d&#39;Azur</div>
+			
+								</a>
+						</li>
+					
+				
+					
+						<li class="destination" id="les-gorges-du-verdon">
+
+							
+								<a title="à venir" >
+							
+
+								<img src="../photos/minis/les-gorges-du-verdon.jpg" alt="">
+
+								<div class="overlay 2023 van sud juin">les Gorges du Verdon | <br> Alpes-de-Haute-Provence 04 | <br>Provence-Alpes-Côte d&#39;Azur</div>
+			
+								</a>
+						</li>
+					
+				
+					
+						<li class="destination" id="eze">
+
+							
+								<a title="à venir" >
+							
+
+								<img src="../photos/minis/eze.jpg" alt="">
+
+								<div class="overlay 2023 van sud juin">Èze | <br> Alpes-Maritimes 06 | <br>Provence-Alpes-Côte d&#39;Azur</div>
+			
+								</a>
+						</li>
+					
+				
+					
+						<li class="destination" id="nice">
+
+							
+								<a title="à venir" >
+							
+
+								<img src="../photos/minis/nice.jpg" alt="">
+
+								<div class="overlay 2023 van sud juin">Nice | <br> Alpes-Maritimes 06 | <br>Provence-Alpes-Côte d&#39;Azur</div>
+			
+								</a>
+						</li>
+					
+				
+					
+						<li class="destination" id="saint-tropez">
+
+							
+								<a title="à venir" >
+							
+
+								<img src="../photos/minis/saint-tropez.jpg" alt="">
+
+								<div class="overlay 2023 van sud juin">Saint-Tropez | <br> Var 83 | <br>Provence-Alpes-Côte d&#39;Azur</div>
+			
+								</a>
+						</li>
+					
+				
+					
+						<li class="destination" id="six-fours-les-plages">
+
+							
+								<a title="à venir" >
+							
+
+								<img src="../photos/minis/six-fours-les-plages.jpg" alt="">
+
+								<div class="overlay 2023 van sud juin">Six-Fours-les-Plages | <br> Var 83 | <br>Provence-Alpes-Côte d&#39;Azur</div>
+			
+								</a>
+						</li>
+					
+				
+					
+						<li class="destination" id="la-route-des-cretes">
+
+							
+								<a title="à venir" >
+							
+
+								<img src="../photos/minis/la-route-des-cretes.jpg" alt="">
+
+								<div class="overlay 2023 van sud juin">la route des Crêtes | <br> Bouches-du-Rhône 13 | <br>Provence-Alpes-Côte d&#39;Azur</div>
+			
+								</a>
+						</li>
+					
+				
+					
+						<li class="destination" id="cassis">
+
+							
+								<a title="à venir" >
+							
+
+								<img src="../photos/minis/cassis.jpg" alt="">
+
+								<div class="overlay 2023 van sud juin">Cassis | <br> Bouches-du-Rhône 13 | <br>Provence-Alpes-Côte d&#39;Azur</div>
+			
+								</a>
+						</li>
+					
+				
+					
+						<li class="destination" id="marseille">
+
+							
+								<a title="à venir" >
+							
+
+								<img src="../photos/minis/marseille.jpg" alt="">
+
+								<div class="overlay 2023 van sud juin">Marseille | <br> Bouches-du-Rhône 13 | <br>Provence-Alpes-Côte d&#39;Azur</div>
+			
+								</a>
+						</li>
+					
+				
+					
+						<li class="destination" id="avignon">
+
+							
+								<a title="à venir" >
+							
+
+								<img src="../photos/minis/avignon.jpg" alt="">
+
+								<div class="overlay 2023 van sud juin">Avignon | <br> Vaucluse 84 | <br>Provence-Alpes-Côte d&#39;Azur</div>
+			
+								</a>
+						</li>
+					
+				
+					
+						<li class="destination" id="montpellier">
+
+							
+								<a title="à venir" >
+							
+
+								<img src="../photos/minis/montpellier.jpg" alt="">
+
+								<div class="overlay 2023 van sud juin">Montpellier | <br> Hérault 34 | <br>Occitanie</div>
+			
+								</a>
+						</li>
+					
+				
+					
+						<li class="destination" id="sete">
+
+							
+								<a title="à venir" >
+							
+
+								<img src="../photos/minis/sete.jpg" alt="">
+
+								<div class="overlay 2023 van sud juin">Sète | <br> Hérault 34 | <br>Occitanie</div>
+			
+								</a>
+						</li>
+					
+				
+					
+						<li class="destination" id="maguelone">
+
+							
+								<a title="à venir" >
+							
+
+								<img src="../photos/minis/maguelone.jpg" alt="">
+
+								<div class="overlay 2023 van sud juin">Maguelone | <br> Hérault 34 | <br>Occitanie</div>
+			
+								</a>
+						</li>
+					
+				
+					
+						<li class="destination" id="pavalas-les-flots">
+
+							
+								<a title="à venir" >
+							
+
+								<img src="../photos/minis/pavalas-les-flots.jpg" alt="">
+
+								<div class="overlay 2023 van sud juin">Pavalas-les-Flots | <br> Hérault 34 | <br>Occitanie</div>
+			
+								</a>
+						</li>
+					
+				
+					
+						<li class="destination" id="viaduc-de-millau">
+
+							
+								<a title="à venir" >
+							
+
+								<img src="../photos/minis/viaduc-de-millau.jpg" alt="">
+
+								<div class="overlay 2023 van sud juin">Viaduc de Millau | <br> Aveyron 12 | <br>Occitanie</div>
+			
+								</a>
+						</li>
+					
+				
+					
+						<li class="destination" id="cordes-sur-ciel">
+
+							
+								<a title="à venir" >
+							
+
+								<img src="../photos/minis/cordes-sur-ciel.jpg" alt="">
+
+								<div class="overlay 2023 van sud juin">Cordes-sur-ciel | <br> Tarn 81 | <br>Occitanie</div>
+			
+								</a>
+						</li>
+					
+				
+					
+						<li class="destination" id="cahors">
+
+							
+								<a title="à venir" >
+							
+
+								<img src="../photos/minis/cahors.jpg" alt="">
+
+								<div class="overlay 2023 van sud juin">Cahors | <br> Lot 46 | <br>Occitanie</div>
+			
+								</a>
+						</li>
+					
+				
+					
+						<li class="destination" id="lacanau">
+
+							
+								<a title="à venir" >
+							
+
+								<img src="../photos/minis/lacanau.jpg" alt="">
+
+								<div class="overlay plages juin septembre mars juin 2022 2023 2024">Lacanau | <br> Gironde 33 | <br>Nouvelle-Aquitaine</div>
+			
+								</a>
+						</li>
+					
+				
+					
+						<li class="destination" id="annecy">
+
+							
+								<a title="à venir" >
+							
+
+								<img src="../photos/minis/annecy.jpg" alt="">
+
+								<div class="overlay 2023 mai">Annecy | <br> Haute-Savoie 74 | <br>Auvergne-Rhône-Alpes</div>
+			
+								</a>
+						</li>
+					
+				
+					
+						<li class="destination" id="chamonix-mont-blanc">
+
+							
+								<a title="à venir" >
+							
+
+								<img src="../photos/minis/chamonix-mont-blanc.jpg" alt="">
+
+								<div class="overlay 2023 mai">Chamonix-Mont-Blanc | <br> Haute-Savoie 74 | <br>Auvergne-Rhône-Alpes</div>
+			
+								</a>
+						</li>
+					
+				
+					
+						<li class="destination" id="blaye">
+
+							
+								<a title="à venir" >
+							
+
+								<img src="../photos/minis/blaye.jpg" alt="">
+
+								<div class="overlay septembre 2022 château Bel-Air Royère avril 2023 croisière garonne">Blaye | <br> Gironde 33 | <br>Nouvelle-Aquitaine</div>
+			
+								</a>
+						</li>
+					
+				
+					
+						<li class="destination" id="medoc-viticole">
+
+							
+								<a href="../destinations/medoc-viticole/index.html">
+							
+
+								<img src="../photos/minis/medoc-viticole.jpg" alt="">
+
+								<div class="overlay 2023 vignoble medoc domaines dégustation chai chateau château vin">Médoc viticole | <br> Gironde 33 | <br>Nouvelle-Aquitaine</div>
+			
+								</a>
+						</li>
+					
+				
+					
+						<li class="destination" id="lanton">
+
+							
+								<a title="à venir" >
+							
+
+								<img src="../photos/minis/lanton.jpg" alt="">
+
+								<div class="overlay plages mars 2023 huitres">Lanton | <br> Gironde 33 | <br>Nouvelle-Aquitaine</div>
+			
+								</a>
+						</li>
+					
+				
+					
+						<li class="destination" id="vendays-montalivet">
+
+							
+								<a title="à venir" >
+							
+
+								<img src="../photos/minis/vendays-montalivet.jpg" alt="">
+
+								<div class="overlay plages mars 2023 ">Vendays-Montalivet | <br> Gironde 33 | <br>Nouvelle-Aquitaine</div>
+			
+								</a>
+						</li>
+					
+				
+					
+						<li class="destination" id="saint-jean-de-luz">
+
+							
+								<a title="à venir" >
+							
+
+								<img src="../photos/minis/saint-jean-de-luz.jpg" alt="">
+
+								<div class="overlay pays basque 2023 février">Saint-Jean-de-Luz | <br> Pyrénées-Atlantiques 64 | <br>Nouvelle-Aquitaine</div>
+			
+								</a>
+						</li>
+					
+				
+					
+						<li class="destination" id="perigeux">
+
+							
+								<a title="à venir" >
+							
+
+								<img src="../photos/minis/perigeux.jpg" alt="">
+
+								<div class="overlay décembre 2023">Périgeux | <br> Dordogne 24 | <br>Nouvelle-Aquitaine</div>
+			
+								</a>
+						</li>
+					
+				
+					
+						<li class="destination" id="oingt">
+
+							
+								<a title="à venir" >
+							
+
+								<img src="../photos/minis/oingt.jpg" alt="">
+
+								<div class="overlay décembre 2023 ">Oingt | <br> Rhône 69 | <br>Auvergne-Rhône-Alpes</div>
+			
+								</a>
+						</li>
+					
+				
+					
+						<li class="destination" id="eveux-couvent-de-la-tourette">
+
+							
+								<a title="à venir" >
+							
+
+								<img src="../photos/minis/eveux-couvent-de-la-tourette.jpg" alt="">
+
+								<div class="overlay décembre 2023 corbusier">Éveux, couvent de la Tourette | <br> Rhône 69 | <br>Auvergne-Rhône-Alpes</div>
+			
+								</a>
+						</li>
+					
+				
+					
+						<li class="destination" id="bully">
+
+							
+								<a title="à venir" >
+							
+
+								<img src="../photos/minis/bully.jpg" alt="">
+
+								<div class="overlay décembre 2023 ">Bully | <br> Rhône 69 | <br>Auvergne-Rhône-Alpes</div>
+			
+								</a>
+						</li>
+					
+				
+					
+						<li class="destination" id="valsonne">
+
+							
+								<a title="à venir" >
+							
+
+								<img src="../photos/minis/valsonne.jpg" alt="">
+
+								<div class="overlay décembre 2023 ">Valsonne | <br> Rhône 69 | <br>Auvergne-Rhône-Alpes</div>
+			
+								</a>
+						</li>
+					
+				
+					
+						<li class="destination" id="clermont-ferrand">
+
+							
+								<a title="à venir" >
+							
+
+								<img src="../photos/minis/clermont-ferrand.jpg" alt="">
+
+								<div class="overlay décembre 2023">Clermont-Ferrand | <br> Puy de Dôme 63 | <br>Auvergne-Rhône-Alpes</div>
+			
+								</a>
+						</li>
+					
+				
+					
+						<li class="destination" id="la-brede">
+
+							
+								<a title="à venir" >
+							
+
+								<img src="../photos/minis/la-brede.jpg" alt="">
+
+								<div class="overlay octobre 2022 chateau montesquieu">La Brède | <br> Gironde 33 | <br>Nouvelle-Aquitaine</div>
+			
+								</a>
+						</li>
+					
+				
+					
+						<li class="destination" id="portets">
+
+							
+								<a title="à venir" >
+							
+
 								<img src="../photos/minis/portets.jpg" alt="">
-								
-									<div class="overlay octobre 2022 mascaret">Portets | Gironde 33</div>
-								
-							</a>
+
+								<div class="overlay octobre 2022 mascaret">Portets | <br> Gironde 33 | <br>Nouvelle-Aquitaine</div>
+			
+								</a>
 						</li>
 					
 				
 					
-						<li class="destination">
-							<a href="../destinations/le-mans/index.html">
-								<img src="../photos/minis/le-mans.jpg" alt="">
-								
-									<div class="overlay septembre 2022">Le Mans | Sarthe 72</div>
-								
-							</a>
-						</li>
-					
-				
-					
-						<li class="destination">
-							<a href="../destinations/la-rochelle/index.html">
+						<li class="destination" id="la-rochelle">
+
+							
+								<a title="à venir" >
+							
+
 								<img src="../photos/minis/la-rochelle.jpg" alt="">
-								
-									<div class="overlay septembre 2022">La Rochelle | Charente-Maritime 17</div>
-								
-							</a>
+
+								<div class="overlay septembre août 2021 2022">La Rochelle | <br> Charente-Maritime 17 | <br>Nouvelle-Aquitaine</div>
+			
+								</a>
 						</li>
 					
 				
 					
-						<li class="destination">
-							<a href="../destinations/ile-de-re/index.html">
+						<li class="destination" id="le-mans">
+
+							
+								<a title="à venir" >
+							
+
+								<img src="../photos/minis/le-mans.jpg" alt="">
+
+								<div class="overlay septembre 2022">Le Mans | <br> Sarthe 72 | <br>Pays de la Loire</div>
+			
+								</a>
+						</li>
+					
+				
+					
+						<li class="destination" id="ile-de-re">
+
+							
+								<a title="à venir" >
+							
+
 								<img src="../photos/minis/ile-de-re.jpg" alt="">
-								
-									<div class="overlay septembre 2022">Île de Ré | Charente-Maritime 17</div>
-								
-							</a>
+
+								<div class="overlay septembre 2022">Île de Ré | <br> Charente-Maritime 17 | <br>Nouvelle-Aquitaine</div>
+			
+								</a>
 						</li>
 					
 				
 					
-						<li class="destination">
-							<a href="../destinations/pyrenees/index.html">
-								<img src="../photos/minis/pyrenees.jpg" alt="">
-								
-									<div class="overlay mai 2022">Hautes-Pyrénées 65</div>
-								
-							</a>
+						<li class="destination" id="arcachon">
+
+							
+								<a title="à venir" >
+							
+
+								<img src="../photos/minis/arcachon.jpg" alt="">
+
+								<div class="overlay 2021 juin 2022 septembre ">Arcachon | <br> Gironde 33 | <br>Nouvelle-Aquitaine</div>
+			
+								</a>
 						</li>
 					
 				
 					
-						<li class="destination">
-							<a href="../destinations/pau/index.html">
+						<li class="destination" id="tourmalet">
+
+							
+								<a title="à venir" >
+							
+
+								<img src="../photos/minis/tourmalet.jpg" alt="">
+
+								<div class="overlay mai 2022">Tourmalet | <br> Hautes-Pyrénées 65 | <br>Occitanie</div>
+			
+								</a>
+						</li>
+					
+				
+					
+						<li class="destination" id="bareges">
+
+							
+								<a title="à venir" >
+							
+
+								<img src="../photos/minis/bareges.jpg" alt="">
+
+								<div class="overlay mai 2022">Barèges | <br> Hautes-Pyrénées 65 | <br>Occitanie</div>
+			
+								</a>
+						</li>
+					
+				
+					
+						<li class="destination" id="luz-ardiden">
+
+							
+								<a title="à venir" >
+							
+
+								<img src="../photos/minis/luz-ardiden.jpg" alt="">
+
+								<div class="overlay mai 2022">Luz-Ardiden | <br> Hautes-Pyrénées 65 | <br>Occitanie</div>
+			
+								</a>
+						</li>
+					
+				
+					
+						<li class="destination" id="lac-de-gaube">
+
+							
+								<a title="à venir" >
+							
+
+								<img src="../photos/minis/lac-de-gaube.jpg" alt="">
+
+								<div class="overlay mai 2022">Lac de Gaube | <br> Hautes-Pyrénées 65 | <br>Occitanie</div>
+			
+								</a>
+						</li>
+					
+				
+					
+						<li class="destination" id="pont-d-espagne">
+
+							
+								<a title="à venir" >
+							
+
+								<img src="../photos/minis/pont-d-espagne.jpg" alt="">
+
+								<div class="overlay mai 2022">Pont d&#39;Espagne | <br> Hautes-Pyrénées 65 | <br>Occitanie</div>
+			
+								</a>
+						</li>
+					
+				
+					
+						<li class="destination" id="cirque-de-gavarnie">
+
+							
+								<a title="à venir" >
+							
+
+								<img src="../photos/minis/cirque-de-gavarnie.jpg" alt="">
+
+								<div class="overlay mai 2022">Cirque de Gavarnie | <br> Hautes-Pyrénées 65 | <br>Occitanie</div>
+			
+								</a>
+						</li>
+					
+				
+					
+						<li class="destination" id="luz-saint-sauveur">
+
+							
+								<a title="à venir" >
+							
+
+								<img src="../photos/minis/luz-saint-sauveur.jpg" alt="">
+
+								<div class="overlay mai 2022">Luz-Saint-Sauveur | <br> Hautes-Pyrénées 65 | <br>Occitanie</div>
+			
+								</a>
+						</li>
+					
+				
+					
+						<li class="destination" id="lourdes">
+
+							
+								<a title="à venir" >
+							
+
+								<img src="../photos/minis/lourdes.jpg" alt="">
+
+								<div class="overlay mai 2022">Lourdes | <br> Hautes-Pyrénées 65 | <br>Occitanie</div>
+			
+								</a>
+						</li>
+					
+				
+					
+						<li class="destination" id="pau">
+
+							
+								<a title="à venir" >
+							
+
 								<img src="../photos/minis/pau.jpg" alt="">
-								
-									<div class="overlay mai 2022">Pau | Pyrénées-Atlantiques 64</div>
-								
-							</a>
+
+								<div class="overlay mai 2022">Pau | <br> Pyrénées-Atlantiques 64 | <br>Nouvelle-Aquitaine</div>
+			
+								</a>
 						</li>
 					
 				
 					
-						<li class="destination">
-							<a href="../destinations/domme/index.html">
-								<img src="../photos/minis/domme.jpg" alt="">
-								
-									<div class="overlay avril 2022">Domme | Dordogne 24</div>
-								
-							</a>
-						</li>
-					
-				
-					
-						<li class="destination">
-							<a href="../destinations/castelnaud-lachapelle/index.html">
+						<li class="destination" id="castelnaud-lachapelle">
+
+							
+								<a title="à venir" >
+							
+
 								<img src="../photos/minis/castelnaud-lachapelle.jpg" alt="">
-								
-									<div class="overlay avril 2022">Castelnaud-Lachapelle | Dordogne 24</div>
-								
-							</a>
+
+								<div class="overlay février avril 2022">Castelnaud-Lachapelle | <br> Dordogne 24 | <br>Nouvelle-Aquitaine</div>
+			
+								</a>
 						</li>
 					
 				
 					
-						<li class="destination">
-							<a href="../destinations/roque-gageac/index.html">
+						<li class="destination" id="domme">
+
+							
+								<a title="à venir" >
+							
+
+								<img src="../photos/minis/domme.jpg" alt="">
+
+								<div class="overlay avril 2022">Domme | <br> Dordogne 24 | <br>Nouvelle-Aquitaine</div>
+			
+								</a>
+						</li>
+					
+				
+					
+						<li class="destination" id="roque-gageac">
+
+							
+								<a title="à venir" >
+							
+
 								<img src="../photos/minis/roque-gageac.jpg" alt="">
-								
-									<div class="overlay avril 2022">Roque-Gageac | Dordogne 24</div>
-								
-							</a>
+
+								<div class="overlay octobre février avril 2021 2022">Roque-Gageac | <br> Dordogne 24 | <br>Nouvelle-Aquitaine</div>
+			
+								</a>
 						</li>
 					
 				
 					
-						<li class="destination">
-							<a href="../destinations/montignac/index.html">
+						<li class="destination" id="montignac">
+
+							
+								<a title="à venir" >
+							
+
 								<img src="../photos/minis/montignac.jpg" alt="">
-								
-									<div class="overlay avril 2022 lascaux">Montignac | Dordogne 24</div>
-								
-							</a>
+
+								<div class="overlay avril 2022 lascaux iv">Montignac | <br> Dordogne 24 | <br>Nouvelle-Aquitaine</div>
+			
+								</a>
 						</li>
 					
 				
 					
-						<li class="destination">
-							<a href="../destinations/rocamadour/index.html">
+						<li class="destination" id="rocamadour">
+
+							
+								<a title="à venir" >
+							
+
 								<img src="../photos/minis/rocamadour.jpg" alt="">
-								
-									<div class="overlay avril 2022">Rocamadour | Lot 46</div>
-								
-							</a>
+
+								<div class="overlay avril 2022">Rocamadour | <br> Lot 46 | <br>Occitanie</div>
+			
+								</a>
 						</li>
 					
 				
 					
-						<li class="destination">
-							<a href="../destinations/padirac/index.html">
+						<li class="destination" id="padirac">
+
+							
+								<a title="à venir" >
+							
+
 								<img src="../photos/minis/padirac.jpg" alt="">
-								
-									<div class="overlay avril 2022 gouffre">Padirac | Lot 46</div>
-								
-							</a>
+
+								<div class="overlay avril 2022 gouffre">Padirac | <br> Lot 46 | <br>Occitanie</div>
+			
+								</a>
 						</li>
 					
 				
 					
-						<li class="destination">
-							<a href="../destinations/lacave/index.html">
+						<li class="destination" id="lacave">
+
+							
+								<a title="à venir" >
+							
+
 								<img src="../photos/minis/lacave.jpg" alt="">
-								
-									<div class="overlay avril 2022">Lacave | Lot 46</div>
-								
-							</a>
+
+								<div class="overlay avril 2022">Lacave | <br> Lot 46 | <br>Occitanie</div>
+			
+								</a>
 						</li>
 					
 				
 					
-						<li class="destination">
-							<a href="../destinations/sarlat-la-caneda/index.html">
+						<li class="destination" id="sarlat-la-caneda">
+
+							
+								<a title="à venir" >
+							
+
 								<img src="../photos/minis/sarlat-la-caneda.jpg" alt="">
-								
-									<div class="overlay avril 2022">Sarlat-la-Caneda | Dordogne 24</div>
-								
-							</a>
+
+								<div class="overlay octobre février avril 2021 2022">Sarlat-la-Caneda | <br> Dordogne 24 | <br>Nouvelle-Aquitaine</div>
+			
+								</a>
 						</li>
 					
 				
 					
-						<li class="destination">
-							<a href="../destinations/vezac/index.html">
+						<li class="destination" id="vezac">
+
+							
+								<a title="à venir" >
+							
+
 								<img src="../photos/minis/vezac.jpg" alt="">
-								
-									<div class="overlay avril 2022 jardins marqueyssac">Vézac | Dordogne 24</div>
-								
-							</a>
+
+								<div class="overlay avril 2022 jardins marqueyssac">Vézac | <br> Dordogne 24 | <br>Nouvelle-Aquitaine</div>
+			
+								</a>
 						</li>
 					
 				
 					
-						<li class="destination">
-							<a href="../destinations/toulouse/index.html">
+						<li class="destination" id="toulouse">
+
+							
+								<a title="à venir" >
+							
+
 								<img src="../photos/minis/toulouse.jpg" alt="">
-								
-									<div class="overlay mars 2022 rugby">Toulouse | Haute-Garonne 31</div>
-								
-							</a>
+
+								<div class="overlay mars 2022 rugby">Toulouse | <br> Haute-Garonne 31 | <br>Occitanie</div>
+			
+								</a>
 						</li>
 					
 				
 					
-						<li class="destination">
-							<a href="../destinations/biarritz/index.html">
+						<li class="destination" id="biarritz">
+
+							
+								<a title="à venir" >
+							
+
 								<img src="../photos/minis/biarritz.jpg" alt="">
-								
-									<div class="overlay février 2022">Biarritz | Pyrénées-Atlantiques 64</div>
-								
-							</a>
+
+								<div class="overlay février 2022">Biarritz | <br> Pyrénées-Atlantiques 64 | <br>Nouvelle-Aquitaine</div>
+			
+								</a>
 						</li>
 					
 				
 					
-						<li class="destination">
-							<a href="../destinations/bas-rhin/index.html">
-								<img src="../photos/minis/bas-rhin.jpg" alt="">
-								
-									<div class="overlay 2021 strasbourg colmar anniversaire novembre alsace Bas-Rhin 67">Bas-Rhin 67</div>
-								
-							</a>
+						<li class="destination" id="strasbourg">
+
+							
+								<a title="à venir" >
+							
+
+								<img src="../photos/minis/strasbourg.jpg" alt="">
+
+								<div class="overlay 2021 novembre alsace">Strasbourg | <br> Bas-Rhin 67 | <br>Grand-Est</div>
+			
+								</a>
 						</li>
 					
 				
 					
-						<li class="destination">
-							<a href="../destinations/haut-rhin/index.html">
-								<img src="../photos/minis/haut-rhin.jpg" alt="">
-								
-									<div class="overlay 2021 strasbourg colmar anniversaire novembre alsace Haut-Rhin 68">Haut-Rhin 68</div>
-								
-							</a>
+						<li class="destination" id="obernai">
+
+							
+								<a title="à venir" >
+							
+
+								<img src="../photos/minis/obernai.jpg" alt="">
+
+								<div class="overlay 2021 novembre alsace">Obernai | <br> Bas-Rhin 67 | <br>Grand-Est</div>
+			
+								</a>
 						</li>
 					
 				
 					
-						<li class="destination">
-							<a href="../destinations/philippsbourg/index.html">
+						<li class="destination" id="drachenbronn">
+
+							
+								<a title="à venir" >
+							
+
+								<img src="../photos/minis/drachenbronn.jpg" alt="">
+
+								<div class="overlay 2021 novembre alsace">Drachenbronn | <br> Bas-Rhin 67 | <br>Grand-Est</div>
+			
+								</a>
+						</li>
+					
+				
+					
+						<li class="destination" id="cleebourg">
+
+							
+								<a title="à venir" >
+							
+
+								<img src="../photos/minis/cleebourg.jpg" alt="">
+
+								<div class="overlay 2021 novembre alsace">Cleebourg | <br> Bas-Rhin 67 | <br>Grand-Est</div>
+			
+								</a>
+						</li>
+					
+				
+					
+						<li class="destination" id="wissembourg">
+
+							
+								<a title="à venir" >
+							
+
+								<img src="../photos/minis/wissembourg.jpg" alt="">
+
+								<div class="overlay 2021 novembre alsace">Wissembourg | <br> Bas-Rhin 67 | <br>Grand-Est</div>
+			
+								</a>
+						</li>
+					
+				
+					
+						<li class="destination" id="hagenau">
+
+							
+								<a title="à venir" >
+							
+
+								<img src="../photos/minis/hagenau.jpg" alt="">
+
+								<div class="overlay 2021 novembre alsace anniversaire">Hagenau | <br> Bas-Rhin 67 | <br>Grand-Est</div>
+			
+								</a>
+						</li>
+					
+				
+					
+						<li class="destination" id="niederbronn-les-bains">
+
+							
+								<a title="à venir" >
+							
+
+								<img src="../photos/minis/niederbronn-les-bains.jpg" alt="">
+
+								<div class="overlay 2021 anniversaire novembre alsace">Niederbronn-les-bains | <br> Bas-Rhin 67 | <br>Grand-Est</div>
+			
+								</a>
+						</li>
+					
+				
+					
+						<li class="destination" id="philippsbourg">
+
+							
+								<a title="à venir" >
+							
+
 								<img src="../photos/minis/philippsbourg.jpg" alt="">
-								
-									<div class="overlay 2021 anniversaire">Philippsbourg | Moselle 57</div>
-								
-							</a>
+
+								<div class="overlay 2021 novembre anniversaire">Philippsbourg | <br> Moselle 57 | <br>Grand-Est</div>
+			
+								</a>
 						</li>
 					
 				
 					
-						<li class="destination">
-							<a href="../destinations/ronchamp/index.html">
+						<li class="destination" id="fort-de-mutzig">
+
+							
+								<a title="à venir" >
+							
+
+								<img src="../photos/minis/fort-de-mutzig.jpg" alt="">
+
+								<div class="overlay 2021 novembre alsace">Fort de Mutzig | <br> Bas-Rhin 67 | <br>Grand-Est</div>
+			
+								</a>
+						</li>
+					
+				
+					
+						<li class="destination" id="barr">
+
+							
+								<a title="à venir" >
+							
+
+								<img src="../photos/minis/barr.jpg" alt="">
+
+								<div class="overlay 2021 novembre alsace">Barr | <br> Bas-Rhin 67 | <br>Grand-Est</div>
+			
+								</a>
+						</li>
+					
+				
+					
+						<li class="destination" id="riquewihr">
+
+							
+								<a title="à venir" >
+							
+
+								<img src="../photos/minis/riquewihr.jpg" alt="">
+
+								<div class="overlay 2021 novembre alsace">Riquewihr | <br> Haut-Rhin 68 | <br>Grand-Est</div>
+			
+								</a>
+						</li>
+					
+				
+					
+						<li class="destination" id="kaysersberg">
+
+							
+								<a title="à venir" >
+							
+
+								<img src="../photos/minis/kaysersberg.jpg" alt="">
+
+								<div class="overlay 2021 novembre alsace">Kaysersberg | <br> Haut-Rhin 68 | <br>Grand-Est</div>
+			
+								</a>
+						</li>
+					
+				
+					
+						<li class="destination" id="ribeauville">
+
+							
+								<a title="à venir" >
+							
+
+								<img src="../photos/minis/ribeauville.jpg" alt="">
+
+								<div class="overlay 2021 novembre alsace">Ribeauvillé | <br> Haut-Rhin 68 | <br>Grand-Est</div>
+			
+								</a>
+						</li>
+					
+				
+					
+						<li class="destination" id="chateau-du-haut-koenigsbourg">
+
+							
+								<a title="à venir" >
+							
+
+								<img src="../photos/minis/chateau-du-haut-koenigsbourg.jpg" alt="">
+
+								<div class="overlay 2021 novembre alsace">Château du Haut-Kœnigsbourg | <br> Bas-Rhin 67 | <br>Grand-Est</div>
+			
+								</a>
+						</li>
+					
+				
+					
+						<li class="destination" id="eguisheim">
+
+							
+								<a title="à venir" >
+							
+
+								<img src="../photos/minis/eguisheim.jpg" alt="">
+
+								<div class="overlay 2021 novembre alsace">Eguisheim | <br> Haut-Rhin 68 | <br>Grand-Est</div>
+			
+								</a>
+						</li>
+					
+				
+					
+						<li class="destination" id="thann">
+
+							
+								<a title="à venir" >
+							
+
+								<img src="../photos/minis/thann.jpg" alt="">
+
+								<div class="overlay 2021 novembre alsace">Thann | <br> Haut-Rhin 68 | <br>Grand-Est</div>
+			
+								</a>
+						</li>
+					
+				
+					
+						<li class="destination" id="ronchamp">
+
+							
+								<a title="à venir" >
+							
+
 								<img src="../photos/minis/ronchamp.jpg" alt="">
-								
-									<div class="overlay 2021 le corbusier anniversaire Colline Notre-Dame du Haut Chapelle">Ronchamp | Haute-Saône 70</div>
-								
-							</a>
+
+								<div class="overlay 2021 le corbusier Colline Notre-Dame du Haut Chapelle">Ronchamp | <br> Haute-Saône 70 | <br>Bourgogne-Franche-Comté</div>
+			
+								</a>
 						</li>
 					
 				
 					
-						<li class="destination">
-							<a href="../destinations/beynac-et-cazenac/index.html">
+						<li class="destination" id="colmar">
+
+							
+								<a title="à venir" >
+							
+
+								<img src="../photos/minis/colmar.jpg" alt="">
+
+								<div class="overlay 2021 novembre alsace">Colmar | <br> Haut-Rhin 68 | <br>Grand-Est</div>
+			
+								</a>
+						</li>
+					
+				
+					
+						<li class="destination" id="beynac-et-cazenac">
+
+							
+								<a title="à venir" >
+							
+
 								<img src="../photos/minis/beynac-et-cazenac.jpg" alt="">
-								
-									<div class="overlay ocotbre 2021">Beynac-et-Cazenac | Dordogne 24</div>
-								
-							</a>
+
+								<div class="overlay ocotbre 2021">Beynac-et-Cazenac | <br> Dordogne 24 | <br>Nouvelle-Aquitaine</div>
+			
+								</a>
 						</li>
 					
 				
 					
-						<li class="destination">
-							<a href="../destinations/blanquefort/index.html">
+						<li class="destination" id="blanquefort">
+
+							
+								<a title="à venir" >
+							
+
 								<img src="../photos/minis/blanquefort.jpg" alt="">
-								
-									<div class="overlay septembre 2021 parc majolan">Blanquefort | Gironde 33</div>
-								
-							</a>
+
+								<div class="overlay septembre 2021 parc majolan">Blanquefort | <br> Gironde 33 | <br>Nouvelle-Aquitaine</div>
+			
+								</a>
 						</li>
 					
 				
 					
-						<li class="destination">
-							<a href="../destinations/les-cotes-du-finistere/index.html">
-								<img src="../photos/minis/les-cotes-du-finistere.jpg" alt="">
-								
-									<div class="overlay aout 2021">Les côtes du Finistère | Finistère 29</div>
-								
-							</a>
+						<li class="destination" id="camaret-sur-mer">
+
+							
+								<a title="à venir" >
+							
+
+								<img src="../photos/minis/camaret-sur-mer.jpg" alt="">
+
+								<div class="overlay aout 2021">Camaret-sur-Mer | <br> Finistère 29 | <br>Bretagne</div>
+			
+								</a>
 						</li>
 					
 				
 					
-						<li class="destination">
-							<a href="../destinations/brest/index.html">
+						<li class="destination" id="fort-de-kerviniou">
+
+							
+								<a title="à venir" >
+							
+
+								<img src="../photos/minis/fort-de-kerviniou.jpg" alt="">
+
+								<div class="overlay aout 2021">Fort de Kerviniou | <br> Finistère 29 | <br>Bretagne</div>
+			
+								</a>
+						</li>
+					
+				
+					
+						<li class="destination" id="pointe-des-espagnols">
+
+							
+								<a title="à venir" >
+							
+
+								<img src="../photos/minis/pointe-des-espagnols.jpg" alt="">
+
+								<div class="overlay aout 2021">Pointe des Espagnols | <br> Finistère 29 | <br>Bretagne</div>
+			
+								</a>
+						</li>
+					
+				
+					
+						<li class="destination" id="kermorvan">
+
+							
+								<a title="à venir" >
+							
+
+								<img src="../photos/minis/kermorvan.jpg" alt="">
+
+								<div class="overlay aout 2021">Kermorvan | <br> Finistère 29 | <br>Bretagne</div>
+			
+								</a>
+						</li>
+					
+				
+					
+						<li class="destination" id="saint-mathieu">
+
+							
+								<a title="à venir" >
+							
+
+								<img src="../photos/minis/saint-mathieu.jpg" alt="">
+
+								<div class="overlay aout 2021">Saint-Mathieu | <br> Finistère 29 | <br>Bretagne</div>
+			
+								</a>
+						</li>
+					
+				
+					
+						<li class="destination" id="bertheaume">
+
+							
+								<a title="à venir" >
+							
+
+								<img src="../photos/minis/bertheaume.jpg" alt="">
+
+								<div class="overlay aout 2021">Bertheaume | <br> Finistère 29 | <br>Bretagne</div>
+			
+								</a>
+						</li>
+					
+				
+					
+						<li class="destination" id="cote-du-petit-minou">
+
+							
+								<a title="à venir" >
+							
+
+								<img src="../photos/minis/cote-du-petit-minou.jpg" alt="">
+
+								<div class="overlay aout 2021">Côte du petit Minou | <br> Finistère 29 | <br>Bretagne</div>
+			
+								</a>
+						</li>
+					
+				
+					
+						<li class="destination" id="brest">
+
+							
+								<a title="à venir" >
+							
+
 								<img src="../photos/minis/brest.jpg" alt="">
-								
-									<div class="overlay aout 2021">Brest | Finistère 29</div>
-								
-							</a>
+
+								<div class="overlay aout 2021">Brest | <br> Finistère 29 | <br>Bretagne</div>
+			
+								</a>
 						</li>
 					
 				
 					
-						<li class="destination">
-							<a href="../destinations/vannes/index.html">
+						<li class="destination" id="ile-tudy">
+
+							
+								<a title="à venir" >
+							
+
+								<img src="../photos/minis/ile-tudy.jpg" alt="">
+
+								<div class="overlay aout 2021">Île Tudy | <br> Finistère 29 | <br>Bretagne</div>
+			
+								</a>
+						</li>
+					
+				
+					
+						<li class="destination" id="carnac">
+
+							
+								<a title="à venir" >
+							
+
+								<img src="../photos/minis/carnac.jpg" alt="">
+
+								<div class="overlay aout 2021">Carnac | <br> Morbihan 56 | <br>Bretagne</div>
+			
+								</a>
+						</li>
+					
+				
+					
+						<li class="destination" id="vannes">
+
+							
+								<a title="à venir" >
+							
+
 								<img src="../photos/minis/vannes.jpg" alt="">
-								
-									<div class="overlay aout 2021">Vannes | Morbihan 56</div>
-								
-							</a>
+
+								<div class="overlay aout 2021">Vannes | <br> Morbihan 56 | <br>Bretagne</div>
+			
+								</a>
 						</li>
 					
 				
 					
-						<li class="destination">
-							<a href="../destinations/ile-de-noirmoutier/index.html">
+						<li class="destination" id="ile-de-noirmoutier">
+
+							
+								<a title="à venir" >
+							
+
 								<img src="../photos/minis/ile-de-noirmoutier.jpg" alt="">
-								
-									<div class="overlay aout 2021">Île de Noirmoutier | Vendée 85</div>
-								
-							</a>
+
+								<div class="overlay aout 2021">Île de Noirmoutier | <br> Vendée 85 | <br>Pays de la Loire</div>
+			
+								</a>
 						</li>
 					
 				
 					
-						<li class="destination">
-							<a href="../destinations/angouleme/index.html">
+						<li class="destination" id="angouleme">
+
+							
+								<a title="à venir" >
+							
+
 								<img src="../photos/minis/angouleme.jpg" alt="">
-								
-									<div class="overlay juin 2021">Angoulême | Charente 16</div>
-								
-							</a>
+
+								<div class="overlay juin 2021 bande-dessinée bd">Angoulême | <br> Charente 16 | <br>Nouvelle-Aquitaine</div>
+			
+								</a>
 						</li>
 					
 				
 					
-						<li class="destination">
-							<a href="../destinations/lormont/index.html">
+						<li class="destination" id="lormont">
+
+							
+								<a title="à venir" >
+							
+
 								<img src="../photos/minis/lormont.jpg" alt="">
-								
-									<div class="overlay avril 2021 parc">Lormont | Gironde 33</div>
-								
-							</a>
+
+								<div class="overlay avril 2021 parc Ermitage Sainte-Catherine">Lormont | <br> Gironde 33 | <br>Nouvelle-Aquitaine</div>
+			
+								</a>
 						</li>
 					
 				
@@ -1090,7 +2024,518 @@
 					
 				
 					
-						
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+		</ul>
+
+		<ul class="image-gallery" id="departements" hidden>
+			<li class="destination-carte">
+				<a href="../photos/minis/00_carteFrance.jpg" target="_blank">
+					<img src="../photos/minis/00_carteFrance.jpg" alt="">
+					<div class="overlay 2021 2022 2023">carte des régions et départements</div>
+				</a>
+			</li>
+				
+				<li class="destination" id="alpes-de-haute-provence-04">
+					<a href="../france/departements/alpes-de-haute-provence-04/index.html">
+					<img src="../photos/minis/alpes-de-haute-provence-04.png" alt="">
+					<div class="overlay">Alpes-de-Haute-Provence 04 | <br> Provence-Alpes-Côte d&#39;Azur</div>
+					</a>
+				</li>
+				
+				<li class="destination" id="alpes-maritimes-06">
+					<a href="../france/departements/alpes-maritimes-06/index.html">
+					<img src="../photos/minis/alpes-maritimes-06.png" alt="">
+					<div class="overlay">Alpes-Maritimes 06 | <br> Provence-Alpes-Côte d&#39;Azur</div>
+					</a>
+				</li>
+				
+				<li class="destination" id="aude-11">
+					<a href="../france/departements/aude-11/index.html">
+					<img src="../photos/minis/aude-11.png" alt="">
+					<div class="overlay">Aude 11 | <br> Occitanie</div>
+					</a>
+				</li>
+				
+				<li class="destination" id="aveyron-12">
+					<a href="../france/departements/aveyron-12/index.html">
+					<img src="../photos/minis/aveyron-12.png" alt="">
+					<div class="overlay">Aveyron 12 | <br> Occitanie</div>
+					</a>
+				</li>
+				
+				<li class="destination" id="bas-rhin-67">
+					<a href="../france/departements/bas-rhin-67/index.html">
+					<img src="../photos/minis/bas-rhin-67.png" alt="">
+					<div class="overlay">Bas-Rhin 67 | <br> Grand-Est</div>
+					</a>
+				</li>
+				
+				<li class="destination" id="bouches-du-rhone-13">
+					<a href="../france/departements/bouches-du-rhone-13/index.html">
+					<img src="../photos/minis/bouches-du-rhone-13.png" alt="">
+					<div class="overlay">Bouches-du-Rhône 13 | <br> Provence-Alpes-Côte d&#39;Azur</div>
+					</a>
+				</li>
+				
+				<li class="destination" id="charente-16">
+					<a href="../france/departements/charente-16/index.html">
+					<img src="../photos/minis/charente-16.png" alt="">
+					<div class="overlay">Charente 16 | <br> Nouvelle-Aquitaine</div>
+					</a>
+				</li>
+				
+				<li class="destination" id="charente-maritime-17">
+					<a href="../france/departements/charente-maritime-17/index.html">
+					<img src="../photos/minis/charente-maritime-17.png" alt="">
+					<div class="overlay">Charente-Maritime 17 | <br> Nouvelle-Aquitaine</div>
+					</a>
+				</li>
+				
+				<li class="destination" id="dordogne-24">
+					<a href="../france/departements/dordogne-24/index.html">
+					<img src="../photos/minis/dordogne-24.png" alt="">
+					<div class="overlay">Dordogne 24 | <br> Nouvelle-Aquitaine</div>
+					</a>
+				</li>
+				
+				<li class="destination" id="finistere-29">
+					<a href="../france/departements/finistere-29/index.html">
+					<img src="../photos/minis/finistere-29.png" alt="">
+					<div class="overlay">Finistère 29 | <br> Bretagne</div>
+					</a>
+				</li>
+				
+				<li class="destination" id="gironde-33">
+					<a href="../france/departements/gironde-33/index.html">
+					<img src="../photos/minis/gironde-33.png" alt="">
+					<div class="overlay">Gironde 33 | <br> Nouvelle-Aquitaine</div>
+					</a>
+				</li>
+				
+				<li class="destination" id="haute-garonne-31">
+					<a href="../france/departements/haute-garonne-31/index.html">
+					<img src="../photos/minis/haute-garonne-31.png" alt="">
+					<div class="overlay">Haute-Garonne 31 | <br> Occitanie</div>
+					</a>
+				</li>
+				
+				<li class="destination" id="haute-saone-70">
+					<a href="../france/departements/haute-saone-70/index.html">
+					<img src="../photos/minis/haute-saone-70.png" alt="">
+					<div class="overlay">Haute-Saône 70 | <br> Bourgogne-Franche-Comté</div>
+					</a>
+				</li>
+				
+				<li class="destination" id="haute-savoie-74">
+					<a href="../france/departements/haute-savoie-74/index.html">
+					<img src="../photos/minis/haute-savoie-74.png" alt="">
+					<div class="overlay">Haute-Savoie 74 | <br> Auvergne-Rhône-Aples</div>
+					</a>
+				</li>
+				
+				<li class="destination" id="hautes-pyrenees-65">
+					<a href="../france/departements/hautes-pyrenees-65/index.html">
+					<img src="../photos/minis/hautes-pyrenees-65.png" alt="">
+					<div class="overlay">Hautes-Pyrénées 65 | <br> Occitanie</div>
+					</a>
+				</li>
+				
+				<li class="destination" id="haut-rhin-68">
+					<a href="../france/departements/haut-rhin-68/index.html">
+					<img src="../photos/minis/haut-rhin-68.png" alt="">
+					<div class="overlay">Haut-Rhin 68 | <br> Grand-Est</div>
+					</a>
+				</li>
+				
+				<li class="destination" id="herault-34">
+					<a href="../france/departements/herault-34/index.html">
+					<img src="../photos/minis/herault-34.png" alt="">
+					<div class="overlay">Hérault 34 | <br> Occitanie</div>
+					</a>
+				</li>
+				
+				<li class="destination" id="landes-40">
+					<a href="../france/departements/landes-40/index.html">
+					<img src="../photos/minis/landes-40.png" alt="">
+					<div class="overlay">Landes 40 | <br> Nouvelle-Aquitaine</div>
+					</a>
+				</li>
+				
+				<li class="destination" id="lot-46">
+					<a href="../france/departements/lot-46/index.html">
+					<img src="../photos/minis/lot-46.png" alt="">
+					<div class="overlay">Lot 46 | <br> Occitanie</div>
+					</a>
+				</li>
+				
+				<li class="destination" id="lot-et-garonne-47">
+					<a href="../france/departements/lot-et-garonne-47/index.html">
+					<img src="../photos/minis/lot-et-garonne-47.png" alt="">
+					<div class="overlay">Lot et Garonne 47 | <br> Nouvelle-Aquitaine</div>
+					</a>
+				</li>
+				
+				<li class="destination" id="marne-51">
+					<a href="../france/departements/marne-51/index.html">
+					<img src="../photos/minis/marne-51.png" alt="">
+					<div class="overlay">Marne 51 | <br> Grand-Est</div>
+					</a>
+				</li>
+				
+				<li class="destination" id="morbihan-56">
+					<a href="../france/departements/morbihan-56/index.html">
+					<img src="../photos/minis/morbihan-56.png" alt="">
+					<div class="overlay">Morbihan 56 | <br> Bretagne</div>
+					</a>
+				</li>
+				
+				<li class="destination" id="moselle-57">
+					<a href="../france/departements/moselle-57/index.html">
+					<img src="../photos/minis/moselle-57.png" alt="">
+					<div class="overlay">Moselle 57 | <br> Grand-Est</div>
+					</a>
+				</li>
+				
+				<li class="destination" id="paris-75">
+					<a href="../france/departements/paris-75/index.html">
+					<img src="../photos/minis/paris-75.png" alt="">
+					<div class="overlay">Paris 75 | <br> Île-de-France</div>
+					</a>
+				</li>
+				
+				<li class="destination" id="puy-de-dome-63">
+					<a href="../france/departements/puy-de-dome-63/index.html">
+					<img src="../photos/minis/puy-de-dome-63.png" alt="">
+					<div class="overlay">Puy de Dôme 63 | <br> Auvergne-Rhône-Aples</div>
+					</a>
+				</li>
+				
+				<li class="destination" id="pyrenees-atlantiques-64">
+					<a href="../france/departements/pyrenees-atlantiques-64/index.html">
+					<img src="../photos/minis/pyrenees-atlantiques-64.png" alt="">
+					<div class="overlay">Pyrénées-Atlantiques 64 | <br> Nouvelle-Aquitaine</div>
+					</a>
+				</li>
+				
+				<li class="destination" id="pyrenees-orientales-66">
+					<a href="../france/departements/pyrenees-orientales-66/index.html">
+					<img src="../photos/minis/pyrenees-orientales-66.png" alt="">
+					<div class="overlay">Pyrénées-Orientales 66 | <br> Occitanie</div>
+					</a>
+				</li>
+				
+				<li class="destination" id="rhone-69">
+					<a href="../france/departements/rhone-69/index.html">
+					<img src="../photos/minis/rhone-69.png" alt="">
+					<div class="overlay">Rhône 69 | <br> Auvergne-Rhône-Aples</div>
+					</a>
+				</li>
+				
+				<li class="destination" id="sarthe-72">
+					<a href="../france/departements/sarthe-72/index.html">
+					<img src="../photos/minis/sarthe-72.png" alt="">
+					<div class="overlay">Sarthe 72 | <br> Pays de la Loire</div>
+					</a>
+				</li>
+				
+				<li class="destination" id="tarn-81">
+					<a href="../france/departements/tarn-81/index.html">
+					<img src="../photos/minis/tarn-81.png" alt="">
+					<div class="overlay">Tarn 81 | <br> Occitanie</div>
+					</a>
+				</li>
+				
+				<li class="destination" id="var-83">
+					<a href="../france/departements/var-83/index.html">
+					<img src="../photos/minis/var-83.png" alt="">
+					<div class="overlay">Var 83 | <br> Provence-Alpes-Côte d&#39;Azur</div>
+					</a>
+				</li>
+				
+				<li class="destination" id="vaucluse-84">
+					<a href="../france/departements/vaucluse-84/index.html">
+					<img src="../photos/minis/vaucluse-84.png" alt="">
+					<div class="overlay">Vaucluse 84 | <br> Provence-Alpes-Côte d&#39;Azur</div>
+					</a>
+				</li>
+				
+				<li class="destination" id="vendee-85">
+					<a href="../france/departements/vendee-85/index.html">
+					<img src="../photos/minis/vendee-85.png" alt="">
+					<div class="overlay">Vendée 85 | <br> Pays de la Loire</div>
+					</a>
+				</li>
+				
+				<li class="destination" id="yvelines-78">
+					<a href="../france/departements/yvelines-78/index.html">
+					<img src="../photos/minis/yvelines-78.png" alt="">
+					<div class="overlay">Yvelines 78 | <br> Île-de-France</div>
+					</a>
+				</li>
+				
+		</ul>
+
+		<ul class="image-gallery" id="regions" hidden>
+			<li class="destination-carte">
+				<a href="../photos/minis/00_carteFrance.jpg" target="_blank">
+					<img src="../photos/minis/00_carteFrance.jpg" alt="">
+					<div class="overlay 2021 2022 2023">carte des régions et départements</div>
+				</a>
+			</li>
+				
+				<li class="destination" id="auvergne-rhone-alpes">
+					<a href="../france/regions/auvergne-rhone-alpes/index.html">
+						<img src="../photos/minis/auvergne-rhone-alpes.png" alt="">
+						<div class="overlay">Auvergne-Rhône-Alpes</div>
+					</a>
+				</li>
+				
+				<li class="destination" id="bourgogne-franche-comte">
+					<a href="../france/regions/bourgogne-franche-comte/index.html">
+						<img src="../photos/minis/bourgogne-franche-comte.png" alt="">
+						<div class="overlay">Bourgogne-Franche-Comté</div>
+					</a>
+				</li>
+				
+				<li class="destination" id="bretagne">
+					<a href="../france/regions/bretagne/index.html">
+						<img src="../photos/minis/bretagne.png" alt="">
+						<div class="overlay">Bretagne</div>
+					</a>
+				</li>
+				
+				<li class="destination" id="grand-est">
+					<a href="../france/regions/grand-est/index.html">
+						<img src="../photos/minis/grand-est.png" alt="">
+						<div class="overlay">Grand-Est</div>
+					</a>
+				</li>
+				
+				<li class="destination" id="ile-de-france">
+					<a href="../france/regions/ile-de-france/index.html">
+						<img src="../photos/minis/ile-de-france.png" alt="">
+						<div class="overlay">Île-de-France</div>
+					</a>
+				</li>
+				
+				<li class="destination" id="nouvelle-aquitaine">
+					<a href="../france/regions/nouvelle-aquitaine/index.html">
+						<img src="../photos/minis/nouvelle-aquitaine.png" alt="">
+						<div class="overlay">Nouvelle-Aquitaine</div>
+					</a>
+				</li>
+				
+				<li class="destination" id="occitanie">
+					<a href="../france/regions/occitanie/index.html">
+						<img src="../photos/minis/occitanie.png" alt="">
+						<div class="overlay">Occitanie</div>
+					</a>
+				</li>
+				
+				<li class="destination" id="pays-de-la-loire">
+					<a href="../france/regions/pays-de-la-loire/index.html">
+						<img src="../photos/minis/pays-de-la-loire.png" alt="">
+						<div class="overlay">Pays de la Loire</div>
+					</a>
+				</li>
+				
+				<li class="destination" id="provence-alpes-cote-d-azur">
+					<a href="../france/regions/provence-alpes-cote-d-azur/index.html">
+						<img src="../photos/minis/provence-alpes-cote-d-azur.png" alt="">
+						<div class="overlay">Provence-Alpes-Côte d&#39;Azur</div>
+					</a>
+				</li>
+				
 		</ul>
 
 	</div>

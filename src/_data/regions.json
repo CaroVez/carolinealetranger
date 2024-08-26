@@ -1,0 +1,65 @@
+[    
+  {
+    "order": "001",
+    "title": "region",
+    "activeExpat": "active",
+
+    "region": "Auvergne-Rhône-Alpes"
+  },
+  {
+    "order": "002",
+    "title": "region",
+    "activeExpat": "active",
+
+    "region": "Bourgogne-Franche-Comté"
+  },
+  {
+    "order": "003",
+    "title": "region",
+    "activeExpat": "active",
+
+    "region": "Bretagne"
+  },
+  {
+    "order": "004",
+    "title": "region",
+    "activeExpat": "active",
+
+    "region": "Grand-Est"
+  },
+  {
+    "order": "005",
+    "title": "region",
+    "activeExpat": "active",
+
+    "region": "Île-de-France"
+  },
+  {
+    "order": "006",
+    "title": "region",
+    "activeExpat": "active",
+
+    "region": "Nouvelle-Aquitaine"
+  },
+  {
+    "order": "007",
+    "title": "region",
+    "activeExpat": "active",
+
+    "region": "Occitanie"
+  },
+  {
+    "order": "008",
+    "title": "region",
+    "activeExpat": "active",
+
+    "region": "Pays de la Loire"
+  },
+  {
+    "order": "009",
+    "title": "region",
+    "activeExpat": "active",
+    
+    "region": "Provence-Alpes-Côte d'Azur"
+  }
+]

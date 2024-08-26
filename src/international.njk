@@ -20,15 +20,24 @@ activeMondial: active
 		<ul class="image-gallery">	
 			{% for destination in destinations %}
 				{% if destination.title === "international" %}
-					<li class="destination">
-						<a href="../destinations/{{destination.name | slugify}}/index.html">
+					<li class="destination" id="{{destination.name | slugify}}">
+
+						{% if destination.link === "" %}
+							<a title="à venir" >
+						{% else %}
+							<a href="../destinations/{{destination.name | slugify}}/index.html">
+						{% endif %}
+
 							<img src="../photos/minis/{{destination.name | slugify}}.jpg" alt="">
-							{% if destination.countryShort === "" %}
-								<div class="overlay {{destination.keywords}}">{{destination.name}} {{destination.departementProvinceStateShort}}</div>
-							{% else %}
-								<div class="overlay {{destination.keywords}}">{{destination.name}} {{destination.departementProvinceStateShort}} | {{destination.countryShort}}</div>
-							{% endif %}
-						</a>
+
+						{% if destination.country === "" %}
+							<div class="overlay {{destination.keywords}}">{{destination.name}}</div>
+						{% elif destination.countryShort === "" %}
+							<div class="overlay {{destination.keywords}}">{{destination.name}} {{destination.departementProvinceStateShort}} | {{destination.country}}</div>
+						{% else %}
+							<div class="overlay {{destination.keywords}}">{{destination.name}} {{destination.departementProvinceStateShort}} | {{destination.countryShort}}</div>
+						{% endif %}
+							</a>
 					</li>
 				{% endif %}
 			{% endfor %}		

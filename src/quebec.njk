@@ -26,15 +26,21 @@ activeMaison: active
 			</li>
 				{% for destination in destinations %}
 					{% if destination.title === "Québec" %}
-						<li class="destination">
-							<a href="../destinations/{{destination.name | slugify}}/index.html">
+						<li class="destination" id="{{destination.name | slugify}}">
+							{% if destination.link === "" %}
+								<a title="à venir" >
+							{% else %}
+								<a href="../destinations/{{destination.name | slugify}}/index.html">
+							{% endif %}
+
 								<img src="../photos/minis/{{destination.name | slugify}}.jpg" alt="">
-								{% if destination.departementProvinceState === "" %}
-									<div class="overlay {{destination.keywords}}">{{destination.name}}</div>
-								{% else %}
-									<div class="overlay {{destination.keywords}}">{{destination.name}} | {{destination.departementProvinceState}}</div>
-								{% endif %}
-							</a>
+
+							{% if destination.departementProvinceState === "" %}
+								<div class="overlay {{destination.keywords}}">{{destination.name}}</div>
+							{% else %}
+								<div class="overlay {{destination.keywords}}">{{destination.name}} | {{destination.departementProvinceState}}</div>
+							{% endif %}
+								</a>
 						</li>
 					{% endif %}
 				{% endfor %}

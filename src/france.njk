@@ -16,9 +16,16 @@ activeExpat: active
 	<div class="container">
 
 		{% include "search.njk" %}
+		{% include "alphabeticOrderButton.njk" %}
 
-		<ul class="image-gallery">
-			<li class="destination">
+  		<button class="villes" id="villesButton" title="">villes</button>
+
+  		<button class="departements" id="departementsButton" title="">départements</button>
+
+  		<button class="regions" id="regionsButton" title="">régions</button>
+
+		<ul class="image-gallery" id="villes">
+			<li class="destination-carte">
 				<a href="../photos/minis/00_carteFrance.jpg" target="_blank">
 					<img src="../photos/minis/00_carteFrance.jpg" alt="">
 					<div class="overlay 2021 2022 2023">carte des régions et départements</div>
@@ -26,18 +33,56 @@ activeExpat: active
 			</li>		
 				{% for destination in destinations %}
 					{% if destination.title === "France" %}
-						<li class="destination">
-							<a href="../destinations/{{destination.name | slugify}}/index.html">
+						<li class="destination" id="{{destination.name | slugify}}">
+
+							{% if destination.link === "" %}
+								<a title="à venir" >
+							{% else %}
+								<a href="../destinations/{{destination.name | slugify}}/index.html">
+							{% endif %}
+
 								<img src="../photos/minis/{{destination.name | slugify}}.jpg" alt="">
-								{% if destination.name in destination.departementProvinceState %}
-									<div class="overlay {{destination.keywords}}">{{destination.departementProvinceState}}</div>
-								{% else %}
-									<div class="overlay {{destination.keywords}}">{{destination.name}} | {{destination.departementProvinceState}}</div>
-								{% endif %}
-							</a>
+
+								<div class="overlay {{destination.keywords}}">{{destination.name}} | <br> {{destination.departementProvinceState}} | <br>{{destination.region}}</div>
+			
+								</a>
 						</li>
 					{% endif %}
-				{% endfor %}		
+				{% endfor %}
+		</ul>
+
+		<ul class="image-gallery" id="departements" hidden>
+			<li class="destination-carte">
+				<a href="../photos/minis/00_carteFrance.jpg" target="_blank">
+					<img src="../photos/minis/00_carteFrance.jpg" alt="">
+					<div class="overlay 2021 2022 2023">carte des régions et départements</div>
+				</a>
+			</li>
+				{% for departement in departements %}
+				<li class="destination" id="{{departement.departementProvinceState | slugify}}">
+					<a href="../france/departements/{{departement.departementProvinceState | slugify}}/index.html">
+					<img src="../photos/minis/{{departement.departementProvinceState | slugify}}.png" alt="">
+					<div class="overlay">{{departement.departementProvinceState}} | <br> {{departement.region}}</div>
+					</a>
+				</li>
+				{% endfor %}
+		</ul>
+
+		<ul class="image-gallery" id="regions" hidden>
+			<li class="destination-carte">
+				<a href="../photos/minis/00_carteFrance.jpg" target="_blank">
+					<img src="../photos/minis/00_carteFrance.jpg" alt="">
+					<div class="overlay 2021 2022 2023">carte des régions et départements</div>
+				</a>
+			</li>
+				{% for region in regions %}
+				<li class="destination" id="{{region.region | slugify}}">
+					<a href="../france/regions/{{region.region | slugify}}/index.html">
+						<img src="../photos/minis/{{region.region | slugify}}.png" alt="">
+						<div class="overlay">{{region.region}}</div>
+					</a>
+				</li>
+				{% endfor %}
 		</ul>
 
 	</div>

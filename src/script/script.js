@@ -1,4 +1,4 @@
-//hamburger menu
+// ########### BURGER MENU ########### //
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".header-right");
 
@@ -27,6 +27,52 @@ function search() {
 }
 
 
+// ########### BUTTON "ordre alphabétique" ########### //
+let alphabeticOrderButton = document.getElementById("alphabeticOrderButton");
+
+function alphabeticOrder() {
+  const array = [];
+  const item = document.querySelectorAll(".destination");
+  for (let i = 0; i < item.length; i++) {
+    array.push(item[i].innerHTML);
+  }  
+  
+  // ??? trier les items selon le contenu entre les caractères | | ???
+  array.sort();
+  for (let i = 0; i < array.length; i++) {
+    item[i].innerHTML = array[i];
+  }
+}
+
+
+// ########### BUTTON "départements & régions" ########### //
+let villes = document.getElementById("villesButton");
+let departements = document.getElementById("departementsButton");
+let regions = document.getElementById("regionsButton");
+
+function sorting(category) {
+  const items = document.querySelectorAll(".image-gallery");
+  for (let i = 0; i < items.length; i++) {
+    if (items[i].id != category) {
+      items[i].hidden = true;
+    } else {
+      items[i].hidden = false;
+    }
+  }
+};
+
+villes.addEventListener('click', () => {
+  sorting('villes');
+});
+departements.addEventListener('click', () => {
+  sorting('departements');
+});
+regions.addEventListener('click', () => {
+  sorting('regions');
+});
+
+
+// ########### BUTTON UP ########### //
 // Get the upButton:
 let upButton = document.getElementById("upButton");
 // change nav bar on index page on scroll
@@ -49,7 +95,7 @@ function topFunction() {
 }
 
 
-//disable save image option
+// ########### disable save image option ########### //
 $(document).on('contextmenu', 'img', function() {
 	return false;
 });
