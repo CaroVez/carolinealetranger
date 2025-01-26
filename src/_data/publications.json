@@ -1,32 +1,40 @@
 [
   {
-    "date": "14 juillet 2024",
-    "title": "marche sur les plages à Anglet",
+    "date": "16-23 novembre 2024",
+    "title": "voyage à Lanzarote",
+    "category": "international",
+    "link": "teguise"
+  },
+  {
+    "date": "1-5 octobre 2024",
+    "title": "séjour à Helsinki & Tallinn",
+    "category": "international",
+    "link": "helsinki"
+  },
+  {
+    "date": "21-29 septembre 2024",
+    "title": "voyage en Belgique",
+    "category": "international",
+    "link": "brugge"
+  },
+
+  {
+    "date": "15-18 août",
+    "title": "escapade en van",
+    "category": "france",
+    "link": "meschers-sur-gironde"
+  },
+  {
+    "date": "13-14 juillet 2024",
+    "title": "Fêtes de Bayonne & marche sur les plages à Anglet",
     "category": "france",
     "link": "anglet"
   },
   {
-    "date": "13 juillet 2024",
-    "title": "Fêtes de Bayonne",
+    "date": "27-29 juin 2024",
+    "title": "escapade en Champagne",
     "category": "france",
-    "link": "bayonne"
-  },
-  {
-    "date": "29 juin 2024",
-    "title": "escapade en Champagne | Châlons-en-Champagne",
-    "category": "france",
-    "link": "chalons-en-champagne"
-  },
-  {
-    "date": "29 juin 2024",
-    "title": "escapade en Champagne | Verzenay",
-    "category": "france",
-    "link": "verzenay"
-  },
-  {
-    "date": "28 juin 2024",
-    "title": "escapade en Champagne | Reims",
-    "category": "france",
-    "link": "reims"
+    "link": "hautvillers"
   }
+
 ]

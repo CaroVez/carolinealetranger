@@ -29,7 +29,9 @@ permalink: "destinations/{{ destinations.name | slugify }}/"
 		<div class="panel_page_blur" ></div>
 		<div class="panel_page">
 			<!-- image (only on desktop) -->
-			<img src="../../photos/ribbon/{{destinations.name | slugify}}.jpg" alt="">
+			<img src="../../photos/ribbon/{{destinations.name | slugify}}.jpg" 
+     			alt="Destination"
+     			onerror="this.onerror=null; this.src='../../photos/ribbon/default.jpg';">
 			{% include "backButton.njk" %}
 			<div class="link-destinations">
 				<div class="links">

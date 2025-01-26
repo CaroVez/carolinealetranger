@@ -27,7 +27,8 @@ npx @11ty/eleventy
 "keywords": "",  
 #### dates, régions, etc. : tous mots qui n'apparaîent pas dans "name" et "departementProvinceState"
 
-"link": "",
+"link": "", 
+#### active
 "places": [
   {
     "title": "weekend de rugby",  

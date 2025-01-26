@@ -21,7 +21,8 @@ body: body-index
 					<ul class="image-gallery-index">
 						{% for publication in publications %}
 						<li>
-							<a href="./destinations/{{publication.link}}/index.html#{{publication.date | slugify}}">
+							<!-- ./destinations/{{publication.link}}/index.html#{{publication.date | slugify}} -->
+							<a href="">
 								<img src="./photos/minis/{{publication.link | slugify}}.jpg" alt="">
 								<div class="overlay">{{publication.date}} | {{publication.title}}</div>
 							</a>
@@ -50,7 +51,8 @@ body: body-index
 					<ul class="image-gallery-index">
 						{% for publication in publications %}
 						<li>
-							<a href="./destinations/{{publication.link}}/index.html#{{publication.date | slugify}}">
+							<!-- ./destinations/{{publication.link}}/index.html#{{publication.date | slugify}} -->
+							<a href="">
 								<img src="./photos/minis/{{publication.link | slugify}}.jpg" alt="">
 								<div class="overlay">{{publication.date}} | {{publication.title}}</div>
 							</a>
