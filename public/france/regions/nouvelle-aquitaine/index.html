@@ -127,11 +127,14 @@ title="retour vers region"><svg xmlns="http://www.w3.org/2000/svg" width="32" he
 </div>
 
 		<div class="alphabeticOrder-button">
-  <button onclick="alphabeticOrder()" id="alphabeticOrderButton" title="">alphabétique</button>
+  <button onclick="alphabeticOrder()" id="alphabeticOrderButton" title="alphabétique"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-sort-alpha-down" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M10.082 5.629 9.664 7H8.598l1.789-5.332h1.234L13.402 7h-1.12l-.419-1.371zm1.57-.785L11 2.687h-.047l-.652 2.157z"/>
+  <path d="M12.96 14H9.028v-.691l2.579-3.72v-.054H9.098v-.867h3.785v.691l-2.567 3.72v.054h2.645zM4.5 2.5a.5.5 0 0 0-1 0v9.793l-1.146-1.147a.5.5 0 0 0-.708.708l2 1.999.007.007a.497.497 0 0 0 .7-.006l2-2a.5.5 0 0 0-.707-.708L4.5 12.293z"/>
+</svg></button>
 </div>
 
 
-		<ul class="image-gallery">
+		<ul class="image-gallery" id="villes">
 			<li class="destination-carte">
 				<a href="../../../photos/minis/00_carteFrance.jpg" target="_blank">
 					<img src="../../../photos/minis/nouvelle-aquitaine.png" alt="">
@@ -140,7 +143,7 @@ title="retour vers region"><svg xmlns="http://www.w3.org/2000/svg" width="32" he
 			</li>		
 				
 					
-						<li class="destination">
+						<li class="destination" id="bordeaux">
 
 							
 								<a href="../destinations/bordeaux/index.html">
@@ -149,12 +152,13 @@ title="retour vers region"><svg xmlns="http://www.w3.org/2000/svg" width="32" he
 								<img src="../../../photos/minis/bordeaux.jpg" alt="">
 								
 								<div class="overlay 2021 2022 2023 2024 Nouvelle-Aquitaine">Bordeaux | <br> Gironde 33</div>
-							</a>
+								
+								</a>
 						</li>
 					
 				
 					
-						<li class="destination">
+						<li class="destination" id="soulac-sur-mer">
 
 							
 								<a href="../destinations/soulac-sur-mer/index.html">
@@ -163,12 +167,13 @@ title="retour vers region"><svg xmlns="http://www.w3.org/2000/svg" width="32" he
 								<img src="../../../photos/minis/soulac-sur-mer.jpg" alt="">
 								
 								<div class="overlay mars 2024 plage village van Nouvelle-Aquitaine">Soulac-sur-Mer | <br> Gironde 33</div>
-							</a>
+								
+								</a>
 						</li>
 					
 				
 					
-						<li class="destination">
+						<li class="destination" id="verdon-sur-mer">
 
 							
 								<a href="../destinations/verdon-sur-mer/index.html">
@@ -177,12 +182,13 @@ title="retour vers region"><svg xmlns="http://www.w3.org/2000/svg" width="32" he
 								<img src="../../../photos/minis/verdon-sur-mer.jpg" alt="">
 								
 								<div class="overlay août 2024 van Nouvelle-Aquitaine">Verdon-sur-Mer | <br> Gironde 33</div>
-							</a>
+								
+								</a>
 						</li>
 					
 				
 					
-						<li class="destination">
+						<li class="destination" id="meschers-sur-gironde">
 
 							
 								<a href="../destinations/meschers-sur-gironde/index.html">
@@ -191,12 +197,13 @@ title="retour vers region"><svg xmlns="http://www.w3.org/2000/svg" width="32" he
 								<img src="../../../photos/minis/meschers-sur-gironde.jpg" alt="">
 								
 								<div class="overlay août 2024 van Nouvelle-Aquitaine">Meschers-sur-Gironde | <br> Charente-Maritime 17</div>
-							</a>
+								
+								</a>
 						</li>
 					
 				
 					
-						<li class="destination">
+						<li class="destination" id="bellac">
 
 							
 								<a href="../destinations/bellac/index.html">
@@ -205,12 +212,13 @@ title="retour vers region"><svg xmlns="http://www.w3.org/2000/svg" width="32" he
 								<img src="../../../photos/minis/bellac.jpg" alt="">
 								
 								<div class="overlay août 2024 van Nouvelle-Aquitaine">Bellac | <br> Haute-Vienne 87</div>
-							</a>
+								
+								</a>
 						</li>
 					
 				
 					
-						<li class="destination">
+						<li class="destination" id="guizengeard">
 
 							
 								<a href="../destinations/guizengeard/index.html">
@@ -219,12 +227,13 @@ title="retour vers region"><svg xmlns="http://www.w3.org/2000/svg" width="32" he
 								<img src="../../../photos/minis/guizengeard.jpg" alt="">
 								
 								<div class="overlay août 2024 lac van Nouvelle-Aquitaine">Guizengeard | <br> Charente 16</div>
-							</a>
+								
+								</a>
 						</li>
 					
 				
 					
-						<li class="destination">
+						<li class="destination" id="anglet">
 
 							
 								<a href="../destinations/anglet/index.html">
@@ -233,12 +242,13 @@ title="retour vers region"><svg xmlns="http://www.w3.org/2000/svg" width="32" he
 								<img src="../../../photos/minis/anglet.jpg" alt="">
 								
 								<div class="overlay juillet 2024 plages Nouvelle-Aquitaine">Anglet | <br> Pyrénées-Atlantiques 64</div>
-							</a>
+								
+								</a>
 						</li>
 					
 				
 					
-						<li class="destination">
+						<li class="destination" id="bayonne">
 
 							
 								<a href="../destinations/bayonne/index.html">
@@ -247,7 +257,8 @@ title="retour vers region"><svg xmlns="http://www.w3.org/2000/svg" width="32" he
 								<img src="../../../photos/minis/bayonne.jpg" alt="">
 								
 								<div class="overlay juillet février 2022 2024 fêtes  Nouvelle-Aquitaine">Bayonne | <br> Pyrénées-Atlantiques 64</div>
-							</a>
+								
+								</a>
 						</li>
 					
 				
@@ -266,7 +277,7 @@ title="retour vers region"><svg xmlns="http://www.w3.org/2000/svg" width="32" he
 					
 				
 					
-						<li class="destination">
+						<li class="destination" id="cadillac-cotes-de-bordeaux">
 
 							
 								<a href="../destinations/cadillac-cotes-de-bordeaux/index.html">
@@ -275,12 +286,13 @@ title="retour vers region"><svg xmlns="http://www.w3.org/2000/svg" width="32" he
 								<img src="../../../photos/minis/cadillac-cotes-de-bordeaux.jpg" alt="">
 								
 								<div class="overlay juin 2024 vins château portes ouvertes Nouvelle-Aquitaine">Cadillac Côtes de Bordeaux | <br> Gironde 33</div>
-							</a>
+								
+								</a>
 						</li>
 					
 				
 					
-						<li class="destination">
+						<li class="destination" id="dune-de-pilat">
 
 							
 								<a href="../destinations/dune-de-pilat/index.html">
@@ -289,12 +301,13 @@ title="retour vers region"><svg xmlns="http://www.w3.org/2000/svg" width="32" he
 								<img src="../../../photos/minis/dune-de-pilat.jpg" alt="">
 								
 								<div class="overlay Arcachon Cap-Ferret Dune du Pilat Village Ostréicole Herbe Lanton plage huitres 2021 juin juillet 2022 septembre 2023 mars aout août Nouvelle-Aquitaine">Dune de Pilat | <br> Gironde 33</div>
-							</a>
+								
+								</a>
 						</li>
 					
 				
 					
-						<li class="destination">
+						<li class="destination" id="herbe">
 
 							
 								<a href="../destinations/herbe/index.html">
@@ -303,12 +316,13 @@ title="retour vers region"><svg xmlns="http://www.w3.org/2000/svg" width="32" he
 								<img src="../../../photos/minis/herbe.jpg" alt="">
 								
 								<div class="overlay Arcachon Cap-Ferret Dune du Pilat Village Ostréicole Herbe Lanton plage huitres 2021 juin juillet 2022 septembre 2023 mars aout août Nouvelle-Aquitaine">Herbe | <br> Gironde 33</div>
-							</a>
+								
+								</a>
 						</li>
 					
 				
 					
-						<li class="destination">
+						<li class="destination" id="cap-ferret">
 
 							
 								<a href="../destinations/cap-ferret/index.html">
@@ -317,12 +331,13 @@ title="retour vers region"><svg xmlns="http://www.w3.org/2000/svg" width="32" he
 								<img src="../../../photos/minis/cap-ferret.jpg" alt="">
 								
 								<div class="overlay Cap-Ferret plage juillet septembre août mai 2021 2022 2023 2024 Nouvelle-Aquitaine">Cap-Ferret | <br> Gironde 33</div>
-							</a>
+								
+								</a>
 						</li>
 					
 				
 					
-						<li class="destination">
+						<li class="destination" id="saint-emilion">
 
 							
 								<a href="../destinations/saint-emilion/index.html">
@@ -331,14 +346,15 @@ title="retour vers region"><svg xmlns="http://www.w3.org/2000/svg" width="32" he
 								<img src="../../../photos/minis/saint-emilion.jpg" alt="">
 								
 								<div class="overlay juillet octobre février avril septembre mai 2021 2022 2023 2024 vins châteaux village Nouvelle-Aquitaine">Saint-Émilion | <br> Gironde 33</div>
-							</a>
+								
+								</a>
 						</li>
 					
 				
 					
 				
 					
-						<li class="destination">
+						<li class="destination" id="duras">
 
 							
 								<a href="../destinations/duras/index.html">
@@ -347,12 +363,13 @@ title="retour vers region"><svg xmlns="http://www.w3.org/2000/svg" width="32" he
 								<img src="../../../photos/minis/duras.jpg" alt="">
 								
 								<div class="overlay décembre 2023 village château Nouvelle-Aquitaine">Duras | <br> Lot et Garonne 47</div>
-							</a>
+								
+								</a>
 						</li>
 					
 				
 					
-						<li class="destination">
+						<li class="destination" id="monsegur">
 
 							
 								<a href="../destinations/monsegur/index.html">
@@ -361,12 +378,13 @@ title="retour vers region"><svg xmlns="http://www.w3.org/2000/svg" width="32" he
 								<img src="../../../photos/minis/monsegur.jpg" alt="">
 								
 								<div class="overlay décembre 2023 village Nouvelle-Aquitaine">Monségur | <br> Gironde 33</div>
-							</a>
+								
+								</a>
 						</li>
 					
 				
 					
-						<li class="destination">
+						<li class="destination" id="mazeres">
 
 							
 								<a href="../destinations/mazeres/index.html">
@@ -375,12 +393,13 @@ title="retour vers region"><svg xmlns="http://www.w3.org/2000/svg" width="32" he
 								<img src="../../../photos/minis/mazeres.jpg" alt="">
 								
 								<div class="overlay 2023 château fort roquetaillade graves mazeres octobre Nouvelle-Aquitaine">Mazères | <br> Gironde 33</div>
-							</a>
+								
+								</a>
 						</li>
 					
 				
 					
-						<li class="destination">
+						<li class="destination" id="les-graves">
 
 							
 								<a href="../destinations/les-graves/index.html">
@@ -389,12 +408,13 @@ title="retour vers region"><svg xmlns="http://www.w3.org/2000/svg" width="32" he
 								<img src="../../../photos/minis/les-graves.jpg" alt="">
 								
 								<div class="overlay octobre 2023 2022 2021 vins portes ouvertes châteaux vignoble Nouvelle-Aquitaine">Les Graves | <br> Gironde 33</div>
-							</a>
+								
+								</a>
 						</li>
 					
 				
 					
-						<li class="destination">
+						<li class="destination" id="biscarosse">
 
 							
 								<a href="../destinations/biscarosse/index.html">
@@ -403,7 +423,8 @@ title="retour vers region"><svg xmlns="http://www.w3.org/2000/svg" width="32" he
 								<img src="../../../photos/minis/biscarosse.jpg" alt="">
 								
 								<div class="overlay 2023 biscarosse plage juillet  Nouvelle-Aquitaine">Biscarosse | <br> Landes 40</div>
-							</a>
+								
+								</a>
 						</li>
 					
 				
@@ -458,7 +479,7 @@ title="retour vers region"><svg xmlns="http://www.w3.org/2000/svg" width="32" he
 					
 				
 					
-						<li class="destination">
+						<li class="destination" id="lacanau">
 
 							
 								<a href="../destinations/lacanau/index.html">
@@ -467,7 +488,8 @@ title="retour vers region"><svg xmlns="http://www.w3.org/2000/svg" width="32" he
 								<img src="../../../photos/minis/lacanau.jpg" alt="">
 								
 								<div class="overlay plages juin septembre mars juin 2022 2023 2024 Nouvelle-Aquitaine">Lacanau | <br> Gironde 33</div>
-							</a>
+								
+								</a>
 						</li>
 					
 				
@@ -476,7 +498,7 @@ title="retour vers region"><svg xmlns="http://www.w3.org/2000/svg" width="32" he
 					
 				
 					
-						<li class="destination">
+						<li class="destination" id="blaye">
 
 							
 								<a href="../destinations/blaye/index.html">
@@ -485,12 +507,13 @@ title="retour vers region"><svg xmlns="http://www.w3.org/2000/svg" width="32" he
 								<img src="../../../photos/minis/blaye.jpg" alt="">
 								
 								<div class="overlay septembre 2022 château Bel-Air Royère avril 2023 croisière garonne Nouvelle-Aquitaine">Blaye | <br> Gironde 33</div>
-							</a>
+								
+								</a>
 						</li>
 					
 				
 					
-						<li class="destination">
+						<li class="destination" id="medoc-viticole">
 
 							
 								<a href="../destinations/medoc-viticole/index.html">
@@ -499,12 +522,13 @@ title="retour vers region"><svg xmlns="http://www.w3.org/2000/svg" width="32" he
 								<img src="../../../photos/minis/medoc-viticole.jpg" alt="">
 								
 								<div class="overlay 2023 vignoble medoc domaines dégustation chai chateau château vin Nouvelle-Aquitaine">Médoc viticole | <br> Gironde 33</div>
-							</a>
+								
+								</a>
 						</li>
 					
 				
 					
-						<li class="destination">
+						<li class="destination" id="lanton">
 
 							
 								<a href="../destinations/lanton/index.html">
@@ -513,12 +537,13 @@ title="retour vers region"><svg xmlns="http://www.w3.org/2000/svg" width="32" he
 								<img src="../../../photos/minis/lanton.jpg" alt="">
 								
 								<div class="overlay plages mars 2023 huitres Nouvelle-Aquitaine">Lanton | <br> Gironde 33</div>
-							</a>
+								
+								</a>
 						</li>
 					
 				
 					
-						<li class="destination">
+						<li class="destination" id="vendays-montalivet">
 
 							
 								<a href="../destinations/vendays-montalivet/index.html">
@@ -527,12 +552,13 @@ title="retour vers region"><svg xmlns="http://www.w3.org/2000/svg" width="32" he
 								<img src="../../../photos/minis/vendays-montalivet.jpg" alt="">
 								
 								<div class="overlay plages mars 2023  Nouvelle-Aquitaine">Vendays-Montalivet | <br> Gironde 33</div>
-							</a>
+								
+								</a>
 						</li>
 					
 				
 					
-						<li class="destination">
+						<li class="destination" id="saint-jean-de-luz">
 
 							
 								<a href="../destinations/saint-jean-de-luz/index.html">
@@ -541,12 +567,13 @@ title="retour vers region"><svg xmlns="http://www.w3.org/2000/svg" width="32" he
 								<img src="../../../photos/minis/saint-jean-de-luz.jpg" alt="">
 								
 								<div class="overlay pays basque 2023 février Nouvelle-Aquitaine">Saint-Jean-de-Luz | <br> Pyrénées-Atlantiques 64</div>
-							</a>
+								
+								</a>
 						</li>
 					
 				
 					
-						<li class="destination">
+						<li class="destination" id="perigeux">
 
 							
 								<a href="../destinations/perigeux/index.html">
@@ -555,7 +582,8 @@ title="retour vers region"><svg xmlns="http://www.w3.org/2000/svg" width="32" he
 								<img src="../../../photos/minis/perigeux.jpg" alt="">
 								
 								<div class="overlay décembre 2023 Nouvelle-Aquitaine">Périgeux | <br> Dordogne 24</div>
-							</a>
+								
+								</a>
 						</li>
 					
 				
@@ -570,7 +598,7 @@ title="retour vers region"><svg xmlns="http://www.w3.org/2000/svg" width="32" he
 					
 				
 					
-						<li class="destination">
+						<li class="destination" id="la-brede">
 
 							
 								<a href="../destinations/la-brede/index.html">
@@ -579,12 +607,13 @@ title="retour vers region"><svg xmlns="http://www.w3.org/2000/svg" width="32" he
 								<img src="../../../photos/minis/la-brede.jpg" alt="">
 								
 								<div class="overlay octobre 2022 chateau montesquieu Nouvelle-Aquitaine">La Brède | <br> Gironde 33</div>
-							</a>
+								
+								</a>
 						</li>
 					
 				
 					
-						<li class="destination">
+						<li class="destination" id="portets">
 
 							
 								<a href="../destinations/portets/index.html">
@@ -593,12 +622,13 @@ title="retour vers region"><svg xmlns="http://www.w3.org/2000/svg" width="32" he
 								<img src="../../../photos/minis/portets.jpg" alt="">
 								
 								<div class="overlay octobre 2022 mascaret Nouvelle-Aquitaine">Portets | <br> Gironde 33</div>
-							</a>
+								
+								</a>
 						</li>
 					
 				
 					
-						<li class="destination">
+						<li class="destination" id="la-rochelle">
 
 							
 								<a href="../destinations/la-rochelle/index.html">
@@ -607,14 +637,15 @@ title="retour vers region"><svg xmlns="http://www.w3.org/2000/svg" width="32" he
 								<img src="../../../photos/minis/la-rochelle.jpg" alt="">
 								
 								<div class="overlay septembre août 2021 2022 Nouvelle-Aquitaine">La Rochelle | <br> Charente-Maritime 17</div>
-							</a>
+								
+								</a>
 						</li>
 					
 				
 					
 				
 					
-						<li class="destination">
+						<li class="destination" id="ile-de-re">
 
 							
 								<a href="../destinations/ile-de-re/index.html">
@@ -623,12 +654,13 @@ title="retour vers region"><svg xmlns="http://www.w3.org/2000/svg" width="32" he
 								<img src="../../../photos/minis/ile-de-re.jpg" alt="">
 								
 								<div class="overlay septembre 2022 Nouvelle-Aquitaine">Île de Ré | <br> Charente-Maritime 17</div>
-							</a>
+								
+								</a>
 						</li>
 					
 				
 					
-						<li class="destination">
+						<li class="destination" id="arcachon">
 
 							
 								<a href="../destinations/arcachon/index.html">
@@ -637,7 +669,8 @@ title="retour vers region"><svg xmlns="http://www.w3.org/2000/svg" width="32" he
 								<img src="../../../photos/minis/arcachon.jpg" alt="">
 								
 								<div class="overlay 2021 juin 2022 septembre  Nouvelle-Aquitaine">Arcachon | <br> Gironde 33</div>
-							</a>
+								
+								</a>
 						</li>
 					
 				
@@ -658,7 +691,7 @@ title="retour vers region"><svg xmlns="http://www.w3.org/2000/svg" width="32" he
 					
 				
 					
-						<li class="destination">
+						<li class="destination" id="pau">
 
 							
 								<a href="../destinations/pau/index.html">
@@ -667,12 +700,13 @@ title="retour vers region"><svg xmlns="http://www.w3.org/2000/svg" width="32" he
 								<img src="../../../photos/minis/pau.jpg" alt="">
 								
 								<div class="overlay mai 2022 Nouvelle-Aquitaine">Pau | <br> Pyrénées-Atlantiques 64</div>
-							</a>
+								
+								</a>
 						</li>
 					
 				
 					
-						<li class="destination">
+						<li class="destination" id="castelnaud-lachapelle">
 
 							
 								<a href="../destinations/castelnaud-lachapelle/index.html">
@@ -681,12 +715,13 @@ title="retour vers region"><svg xmlns="http://www.w3.org/2000/svg" width="32" he
 								<img src="../../../photos/minis/castelnaud-lachapelle.jpg" alt="">
 								
 								<div class="overlay février avril 2022 Nouvelle-Aquitaine">Castelnaud-Lachapelle | <br> Dordogne 24</div>
-							</a>
+								
+								</a>
 						</li>
 					
 				
 					
-						<li class="destination">
+						<li class="destination" id="domme">
 
 							
 								<a href="../destinations/domme/index.html">
@@ -695,12 +730,13 @@ title="retour vers region"><svg xmlns="http://www.w3.org/2000/svg" width="32" he
 								<img src="../../../photos/minis/domme.jpg" alt="">
 								
 								<div class="overlay avril 2022 Nouvelle-Aquitaine">Domme | <br> Dordogne 24</div>
-							</a>
+								
+								</a>
 						</li>
 					
 				
 					
-						<li class="destination">
+						<li class="destination" id="roque-gageac">
 
 							
 								<a href="../destinations/roque-gageac/index.html">
@@ -709,12 +745,13 @@ title="retour vers region"><svg xmlns="http://www.w3.org/2000/svg" width="32" he
 								<img src="../../../photos/minis/roque-gageac.jpg" alt="">
 								
 								<div class="overlay octobre février avril 2021 2022 Nouvelle-Aquitaine">Roque-Gageac | <br> Dordogne 24</div>
-							</a>
+								
+								</a>
 						</li>
 					
 				
 					
-						<li class="destination">
+						<li class="destination" id="montignac">
 
 							
 								<a href="../destinations/montignac/index.html">
@@ -723,7 +760,8 @@ title="retour vers region"><svg xmlns="http://www.w3.org/2000/svg" width="32" he
 								<img src="../../../photos/minis/montignac.jpg" alt="">
 								
 								<div class="overlay avril 2022 lascaux iv Nouvelle-Aquitaine">Montignac | <br> Dordogne 24</div>
-							</a>
+								
+								</a>
 						</li>
 					
 				
@@ -734,7 +772,7 @@ title="retour vers region"><svg xmlns="http://www.w3.org/2000/svg" width="32" he
 					
 				
 					
-						<li class="destination">
+						<li class="destination" id="sarlat-la-caneda">
 
 							
 								<a href="../destinations/sarlat-la-caneda/index.html">
@@ -743,12 +781,13 @@ title="retour vers region"><svg xmlns="http://www.w3.org/2000/svg" width="32" he
 								<img src="../../../photos/minis/sarlat-la-caneda.jpg" alt="">
 								
 								<div class="overlay octobre février avril 2021 2022 Nouvelle-Aquitaine">Sarlat-la-Caneda | <br> Dordogne 24</div>
-							</a>
+								
+								</a>
 						</li>
 					
 				
 					
-						<li class="destination">
+						<li class="destination" id="vezac">
 
 							
 								<a href="../destinations/vezac/index.html">
@@ -757,14 +796,15 @@ title="retour vers region"><svg xmlns="http://www.w3.org/2000/svg" width="32" he
 								<img src="../../../photos/minis/vezac.jpg" alt="">
 								
 								<div class="overlay avril 2022 jardins marqueyssac Nouvelle-Aquitaine">Vézac | <br> Dordogne 24</div>
-							</a>
+								
+								</a>
 						</li>
 					
 				
 					
 				
 					
-						<li class="destination">
+						<li class="destination" id="biarritz">
 
 							
 								<a href="../destinations/biarritz/index.html">
@@ -773,7 +813,8 @@ title="retour vers region"><svg xmlns="http://www.w3.org/2000/svg" width="32" he
 								<img src="../../../photos/minis/biarritz.jpg" alt="">
 								
 								<div class="overlay février 2022 Nouvelle-Aquitaine">Biarritz | <br> Pyrénées-Atlantiques 64</div>
-							</a>
+								
+								</a>
 						</li>
 					
 				
@@ -814,7 +855,7 @@ title="retour vers region"><svg xmlns="http://www.w3.org/2000/svg" width="32" he
 					
 				
 					
-						<li class="destination">
+						<li class="destination" id="beynac-et-cazenac">
 
 							
 								<a href="../destinations/beynac-et-cazenac/index.html">
@@ -823,12 +864,13 @@ title="retour vers region"><svg xmlns="http://www.w3.org/2000/svg" width="32" he
 								<img src="../../../photos/minis/beynac-et-cazenac.jpg" alt="">
 								
 								<div class="overlay ocotbre 2021 Nouvelle-Aquitaine">Beynac-et-Cazenac | <br> Dordogne 24</div>
-							</a>
+								
+								</a>
 						</li>
 					
 				
 					
-						<li class="destination">
+						<li class="destination" id="blanquefort">
 
 							
 								<a href="../destinations/blanquefort/index.html">
@@ -837,7 +879,8 @@ title="retour vers region"><svg xmlns="http://www.w3.org/2000/svg" width="32" he
 								<img src="../../../photos/minis/blanquefort.jpg" alt="">
 								
 								<div class="overlay septembre 2021 parc majolan Nouvelle-Aquitaine">Blanquefort | <br> Gironde 33</div>
-							</a>
+								
+								</a>
 						</li>
 					
 				
@@ -866,7 +909,7 @@ title="retour vers region"><svg xmlns="http://www.w3.org/2000/svg" width="32" he
 					
 				
 					
-						<li class="destination">
+						<li class="destination" id="angouleme">
 
 							
 								<a href="../destinations/angouleme/index.html">
@@ -875,12 +918,13 @@ title="retour vers region"><svg xmlns="http://www.w3.org/2000/svg" width="32" he
 								<img src="../../../photos/minis/angouleme.jpg" alt="">
 								
 								<div class="overlay juin 2021 bande-dessinée bd Nouvelle-Aquitaine">Angoulême | <br> Charente 16</div>
-							</a>
+								
+								</a>
 						</li>
 					
 				
 					
-						<li class="destination">
+						<li class="destination" id="lormont">
 
 							
 								<a href="../destinations/lormont/index.html">
@@ -889,7 +933,8 @@ title="retour vers region"><svg xmlns="http://www.w3.org/2000/svg" width="32" he
 								<img src="../../../photos/minis/lormont.jpg" alt="">
 								
 								<div class="overlay avril 2021 parc Ermitage Sainte-Catherine Nouvelle-Aquitaine">Lormont | <br> Gironde 33</div>
-							</a>
+								
+								</a>
 						</li>
 					
 				

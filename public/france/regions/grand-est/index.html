@@ -127,11 +127,14 @@ title="retour vers region"><svg xmlns="http://www.w3.org/2000/svg" width="32" he
 </div>
 
 		<div class="alphabeticOrder-button">
-  <button onclick="alphabeticOrder()" id="alphabeticOrderButton" title="">alphabétique</button>
+  <button onclick="alphabeticOrder()" id="alphabeticOrderButton" title="alphabétique"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-sort-alpha-down" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M10.082 5.629 9.664 7H8.598l1.789-5.332h1.234L13.402 7h-1.12l-.419-1.371zm1.57-.785L11 2.687h-.047l-.652 2.157z"/>
+  <path d="M12.96 14H9.028v-.691l2.579-3.72v-.054H9.098v-.867h3.785v.691l-2.567 3.72v.054h2.645zM4.5 2.5a.5.5 0 0 0-1 0v9.793l-1.146-1.147a.5.5 0 0 0-.708.708l2 1.999.007.007a.497.497 0 0 0 .7-.006l2-2a.5.5 0 0 0-.707-.708L4.5 12.293z"/>
+</svg></button>
 </div>
 
 
-		<ul class="image-gallery">
+		<ul class="image-gallery" id="villes">
 			<li class="destination-carte">
 				<a href="../../../photos/minis/00_carteFrance.jpg" target="_blank">
 					<img src="../../../photos/minis/grand-est.png" alt="">
@@ -158,7 +161,7 @@ title="retour vers region"><svg xmlns="http://www.w3.org/2000/svg" width="32" he
 					
 				
 					
-						<li class="destination">
+						<li class="destination" id="chalons-en-champagne">
 
 							
 								<a href="../destinations/chalons-en-champagne/index.html">
@@ -167,12 +170,13 @@ title="retour vers region"><svg xmlns="http://www.w3.org/2000/svg" width="32" he
 								<img src="../../../photos/minis/chalons-en-champagne.jpg" alt="">
 								
 								<div class="overlay juin 2024 champagne Grand-Est">Châlons-en-Champagne | <br> Marne 51</div>
-							</a>
+								
+								</a>
 						</li>
 					
 				
 					
-						<li class="destination">
+						<li class="destination" id="verzenay">
 
 							
 								<a href="../destinations/verzenay/index.html">
@@ -181,12 +185,13 @@ title="retour vers region"><svg xmlns="http://www.w3.org/2000/svg" width="32" he
 								<img src="../../../photos/minis/verzenay.jpg" alt="">
 								
 								<div class="overlay juin 2024 champagne Grand-Est">Verzenay | <br> Marne 51</div>
-							</a>
+								
+								</a>
 						</li>
 					
 				
 					
-						<li class="destination">
+						<li class="destination" id="reims">
 
 							
 								<a href="../destinations/reims/index.html">
@@ -195,12 +200,13 @@ title="retour vers region"><svg xmlns="http://www.w3.org/2000/svg" width="32" he
 								<img src="../../../photos/minis/reims.jpg" alt="">
 								
 								<div class="overlay juin 2024 champagne Grand-Est">Reims | <br> Marne 51</div>
-							</a>
+								
+								</a>
 						</li>
 					
 				
 					
-						<li class="destination">
+						<li class="destination" id="epernay">
 
 							
 								<a href="../destinations/epernay/index.html">
@@ -209,12 +215,13 @@ title="retour vers region"><svg xmlns="http://www.w3.org/2000/svg" width="32" he
 								<img src="../../../photos/minis/epernay.jpg" alt="">
 								
 								<div class="overlay juin 2024 champagne Grand-Est">Épernay | <br> Marne 51</div>
-							</a>
+								
+								</a>
 						</li>
 					
 				
 					
-						<li class="destination">
+						<li class="destination" id="hautvillers">
 
 							
 								<a href="../destinations/hautvillers/index.html">
@@ -223,7 +230,8 @@ title="retour vers region"><svg xmlns="http://www.w3.org/2000/svg" width="32" he
 								<img src="../../../photos/minis/hautvillers.jpg" alt="">
 								
 								<div class="overlay juin 2024 champagne Grand-Est">Hautvillers | <br> Marne 51</div>
-							</a>
+								
+								</a>
 						</li>
 					
 				
@@ -382,7 +390,7 @@ title="retour vers region"><svg xmlns="http://www.w3.org/2000/svg" width="32" he
 					
 				
 					
-						<li class="destination">
+						<li class="destination" id="strasbourg">
 
 							
 								<a href="../destinations/strasbourg/index.html">
@@ -391,12 +399,13 @@ title="retour vers region"><svg xmlns="http://www.w3.org/2000/svg" width="32" he
 								<img src="../../../photos/minis/strasbourg.jpg" alt="">
 								
 								<div class="overlay 2021 novembre alsace Grand-Est">Strasbourg | <br> Bas-Rhin 67</div>
-							</a>
+								
+								</a>
 						</li>
 					
 				
 					
-						<li class="destination">
+						<li class="destination" id="obernai">
 
 							
 								<a href="../destinations/obernai/index.html">
@@ -405,12 +414,13 @@ title="retour vers region"><svg xmlns="http://www.w3.org/2000/svg" width="32" he
 								<img src="../../../photos/minis/obernai.jpg" alt="">
 								
 								<div class="overlay 2021 novembre alsace Grand-Est">Obernai | <br> Bas-Rhin 67</div>
-							</a>
+								
+								</a>
 						</li>
 					
 				
 					
-						<li class="destination">
+						<li class="destination" id="drachenbronn">
 
 							
 								<a href="../destinations/drachenbronn/index.html">
@@ -419,12 +429,13 @@ title="retour vers region"><svg xmlns="http://www.w3.org/2000/svg" width="32" he
 								<img src="../../../photos/minis/drachenbronn.jpg" alt="">
 								
 								<div class="overlay 2021 novembre alsace Grand-Est">Drachenbronn | <br> Bas-Rhin 67</div>
-							</a>
+								
+								</a>
 						</li>
 					
 				
 					
-						<li class="destination">
+						<li class="destination" id="cleebourg">
 
 							
 								<a href="../destinations/cleebourg/index.html">
@@ -433,12 +444,13 @@ title="retour vers region"><svg xmlns="http://www.w3.org/2000/svg" width="32" he
 								<img src="../../../photos/minis/cleebourg.jpg" alt="">
 								
 								<div class="overlay 2021 novembre alsace Grand-Est">Cleebourg | <br> Bas-Rhin 67</div>
-							</a>
+								
+								</a>
 						</li>
 					
 				
 					
-						<li class="destination">
+						<li class="destination" id="wissembourg">
 
 							
 								<a href="../destinations/wissembourg/index.html">
@@ -447,12 +459,13 @@ title="retour vers region"><svg xmlns="http://www.w3.org/2000/svg" width="32" he
 								<img src="../../../photos/minis/wissembourg.jpg" alt="">
 								
 								<div class="overlay 2021 novembre alsace Grand-Est">Wissembourg | <br> Bas-Rhin 67</div>
-							</a>
+								
+								</a>
 						</li>
 					
 				
 					
-						<li class="destination">
+						<li class="destination" id="hagenau">
 
 							
 								<a href="../destinations/hagenau/index.html">
@@ -461,12 +474,13 @@ title="retour vers region"><svg xmlns="http://www.w3.org/2000/svg" width="32" he
 								<img src="../../../photos/minis/hagenau.jpg" alt="">
 								
 								<div class="overlay 2021 novembre alsace anniversaire Grand-Est">Hagenau | <br> Bas-Rhin 67</div>
-							</a>
+								
+								</a>
 						</li>
 					
 				
 					
-						<li class="destination">
+						<li class="destination" id="niederbronn-les-bains">
 
 							
 								<a href="../destinations/niederbronn-les-bains/index.html">
@@ -475,12 +489,13 @@ title="retour vers region"><svg xmlns="http://www.w3.org/2000/svg" width="32" he
 								<img src="../../../photos/minis/niederbronn-les-bains.jpg" alt="">
 								
 								<div class="overlay 2021 anniversaire novembre alsace Grand-Est">Niederbronn-les-bains | <br> Bas-Rhin 67</div>
-							</a>
+								
+								</a>
 						</li>
 					
 				
 					
-						<li class="destination">
+						<li class="destination" id="philippsbourg">
 
 							
 								<a href="../destinations/philippsbourg/index.html">
@@ -489,12 +504,13 @@ title="retour vers region"><svg xmlns="http://www.w3.org/2000/svg" width="32" he
 								<img src="../../../photos/minis/philippsbourg.jpg" alt="">
 								
 								<div class="overlay 2021 novembre anniversaire Grand-Est">Philippsbourg | <br> Moselle 57</div>
-							</a>
+								
+								</a>
 						</li>
 					
 				
 					
-						<li class="destination">
+						<li class="destination" id="fort-de-mutzig">
 
 							
 								<a href="../destinations/fort-de-mutzig/index.html">
@@ -503,12 +519,13 @@ title="retour vers region"><svg xmlns="http://www.w3.org/2000/svg" width="32" he
 								<img src="../../../photos/minis/fort-de-mutzig.jpg" alt="">
 								
 								<div class="overlay 2021 novembre alsace Grand-Est">Fort de Mutzig | <br> Bas-Rhin 67</div>
-							</a>
+								
+								</a>
 						</li>
 					
 				
 					
-						<li class="destination">
+						<li class="destination" id="barr">
 
 							
 								<a href="../destinations/barr/index.html">
@@ -517,12 +534,13 @@ title="retour vers region"><svg xmlns="http://www.w3.org/2000/svg" width="32" he
 								<img src="../../../photos/minis/barr.jpg" alt="">
 								
 								<div class="overlay 2021 novembre alsace Grand-Est">Barr | <br> Bas-Rhin 67</div>
-							</a>
+								
+								</a>
 						</li>
 					
 				
 					
-						<li class="destination">
+						<li class="destination" id="riquewihr">
 
 							
 								<a href="../destinations/riquewihr/index.html">
@@ -531,12 +549,13 @@ title="retour vers region"><svg xmlns="http://www.w3.org/2000/svg" width="32" he
 								<img src="../../../photos/minis/riquewihr.jpg" alt="">
 								
 								<div class="overlay 2021 novembre alsace Grand-Est">Riquewihr | <br> Haut-Rhin 68</div>
-							</a>
+								
+								</a>
 						</li>
 					
 				
 					
-						<li class="destination">
+						<li class="destination" id="kaysersberg">
 
 							
 								<a href="../destinations/kaysersberg/index.html">
@@ -545,12 +564,13 @@ title="retour vers region"><svg xmlns="http://www.w3.org/2000/svg" width="32" he
 								<img src="../../../photos/minis/kaysersberg.jpg" alt="">
 								
 								<div class="overlay 2021 novembre alsace Grand-Est">Kaysersberg | <br> Haut-Rhin 68</div>
-							</a>
+								
+								</a>
 						</li>
 					
 				
 					
-						<li class="destination">
+						<li class="destination" id="ribeauville">
 
 							
 								<a href="../destinations/ribeauville/index.html">
@@ -559,12 +579,13 @@ title="retour vers region"><svg xmlns="http://www.w3.org/2000/svg" width="32" he
 								<img src="../../../photos/minis/ribeauville.jpg" alt="">
 								
 								<div class="overlay 2021 novembre alsace Grand-Est">Ribeauvillé | <br> Haut-Rhin 68</div>
-							</a>
+								
+								</a>
 						</li>
 					
 				
 					
-						<li class="destination">
+						<li class="destination" id="chateau-du-haut-koenigsbourg">
 
 							
 								<a href="../destinations/chateau-du-haut-koenigsbourg/index.html">
@@ -573,12 +594,13 @@ title="retour vers region"><svg xmlns="http://www.w3.org/2000/svg" width="32" he
 								<img src="../../../photos/minis/chateau-du-haut-koenigsbourg.jpg" alt="">
 								
 								<div class="overlay 2021 novembre alsace Grand-Est">Château du Haut-Kœnigsbourg | <br> Bas-Rhin 67</div>
-							</a>
+								
+								</a>
 						</li>
 					
 				
 					
-						<li class="destination">
+						<li class="destination" id="eguisheim">
 
 							
 								<a href="../destinations/eguisheim/index.html">
@@ -587,12 +609,13 @@ title="retour vers region"><svg xmlns="http://www.w3.org/2000/svg" width="32" he
 								<img src="../../../photos/minis/eguisheim.jpg" alt="">
 								
 								<div class="overlay 2021 novembre alsace Grand-Est">Eguisheim | <br> Haut-Rhin 68</div>
-							</a>
+								
+								</a>
 						</li>
 					
 				
 					
-						<li class="destination">
+						<li class="destination" id="thann">
 
 							
 								<a href="../destinations/thann/index.html">
@@ -601,14 +624,15 @@ title="retour vers region"><svg xmlns="http://www.w3.org/2000/svg" width="32" he
 								<img src="../../../photos/minis/thann.jpg" alt="">
 								
 								<div class="overlay 2021 novembre alsace Grand-Est">Thann | <br> Haut-Rhin 68</div>
-							</a>
+								
+								</a>
 						</li>
 					
 				
 					
 				
 					
-						<li class="destination">
+						<li class="destination" id="colmar">
 
 							
 								<a href="../destinations/colmar/index.html">
@@ -617,7 +641,8 @@ title="retour vers region"><svg xmlns="http://www.w3.org/2000/svg" width="32" he
 								<img src="../../../photos/minis/colmar.jpg" alt="">
 								
 								<div class="overlay 2021 novembre alsace Grand-Est">Colmar | <br> Haut-Rhin 68</div>
-							</a>
+								
+								</a>
 						</li>
 					
 				

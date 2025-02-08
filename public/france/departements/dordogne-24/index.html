@@ -127,11 +127,14 @@ title="retour vers departement"><svg xmlns="http://www.w3.org/2000/svg" width="3
 </div>
 
 		<div class="alphabeticOrder-button">
-  <button onclick="alphabeticOrder()" id="alphabeticOrderButton" title="">alphabétique</button>
+  <button onclick="alphabeticOrder()" id="alphabeticOrderButton" title="alphabétique"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-sort-alpha-down" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M10.082 5.629 9.664 7H8.598l1.789-5.332h1.234L13.402 7h-1.12l-.419-1.371zm1.57-.785L11 2.687h-.047l-.652 2.157z"/>
+  <path d="M12.96 14H9.028v-.691l2.579-3.72v-.054H9.098v-.867h3.785v.691l-2.567 3.72v.054h2.645zM4.5 2.5a.5.5 0 0 0-1 0v9.793l-1.146-1.147a.5.5 0 0 0-.708.708l2 1.999.007.007a.497.497 0 0 0 .7-.006l2-2a.5.5 0 0 0-.707-.708L4.5 12.293z"/>
+</svg></button>
 </div>
 
 
-		<ul class="image-gallery">
+		<ul class="image-gallery" id="villes">
 			<li class="destination-carte">
 				<a href="../../../photos/minis/00_carteFrance.jpg" target="_blank">
 					<img src="../../../photos/minis/dordogne-24.png" alt="">
@@ -258,7 +261,8 @@ title="retour vers departement"><svg xmlns="http://www.w3.org/2000/svg" width="3
 					
 				
 					
-						<li class="destination">
+						<li class="destination" id="perigeux">
+
 							
 								<a href="../destinations/perigeux/index.html">
 							
@@ -266,7 +270,8 @@ title="retour vers departement"><svg xmlns="http://www.w3.org/2000/svg" width="3
 								<img src="../../../photos/minis/perigeux.jpg" alt="">
 								
 								<div class="overlay décembre 2023 Dordogne 24 Nouvelle-Aquitaine">Périgeux</div>
-							</a>
+								
+								</a>
 						</li>
 					
 				
@@ -311,7 +316,8 @@ title="retour vers departement"><svg xmlns="http://www.w3.org/2000/svg" width="3
 					
 				
 					
-						<li class="destination">
+						<li class="destination" id="castelnaud-lachapelle">
+
 							
 								<a href="../destinations/castelnaud-lachapelle/index.html">
 							
@@ -319,12 +325,14 @@ title="retour vers departement"><svg xmlns="http://www.w3.org/2000/svg" width="3
 								<img src="../../../photos/minis/castelnaud-lachapelle.jpg" alt="">
 								
 								<div class="overlay février avril 2022 Dordogne 24 Nouvelle-Aquitaine">Castelnaud-Lachapelle</div>
-							</a>
+								
+								</a>
 						</li>
 					
 				
 					
-						<li class="destination">
+						<li class="destination" id="domme">
+
 							
 								<a href="../destinations/domme/index.html">
 							
@@ -332,12 +340,14 @@ title="retour vers departement"><svg xmlns="http://www.w3.org/2000/svg" width="3
 								<img src="../../../photos/minis/domme.jpg" alt="">
 								
 								<div class="overlay avril 2022 Dordogne 24 Nouvelle-Aquitaine">Domme</div>
-							</a>
+								
+								</a>
 						</li>
 					
 				
 					
-						<li class="destination">
+						<li class="destination" id="roque-gageac">
+
 							
 								<a href="../destinations/roque-gageac/index.html">
 							
@@ -345,12 +355,14 @@ title="retour vers departement"><svg xmlns="http://www.w3.org/2000/svg" width="3
 								<img src="../../../photos/minis/roque-gageac.jpg" alt="">
 								
 								<div class="overlay octobre février avril 2021 2022 Dordogne 24 Nouvelle-Aquitaine">Roque-Gageac</div>
-							</a>
+								
+								</a>
 						</li>
 					
 				
 					
-						<li class="destination">
+						<li class="destination" id="montignac">
+
 							
 								<a href="../destinations/montignac/index.html">
 							
@@ -358,7 +370,8 @@ title="retour vers departement"><svg xmlns="http://www.w3.org/2000/svg" width="3
 								<img src="../../../photos/minis/montignac.jpg" alt="">
 								
 								<div class="overlay avril 2022 lascaux iv Dordogne 24 Nouvelle-Aquitaine">Montignac</div>
-							</a>
+								
+								</a>
 						</li>
 					
 				
@@ -369,7 +382,8 @@ title="retour vers departement"><svg xmlns="http://www.w3.org/2000/svg" width="3
 					
 				
 					
-						<li class="destination">
+						<li class="destination" id="sarlat-la-caneda">
+
 							
 								<a href="../destinations/sarlat-la-caneda/index.html">
 							
@@ -377,12 +391,14 @@ title="retour vers departement"><svg xmlns="http://www.w3.org/2000/svg" width="3
 								<img src="../../../photos/minis/sarlat-la-caneda.jpg" alt="">
 								
 								<div class="overlay octobre février avril 2021 2022 Dordogne 24 Nouvelle-Aquitaine">Sarlat-la-Caneda</div>
-							</a>
+								
+								</a>
 						</li>
 					
 				
 					
-						<li class="destination">
+						<li class="destination" id="vezac">
+
 							
 								<a href="../destinations/vezac/index.html">
 							
@@ -390,7 +406,8 @@ title="retour vers departement"><svg xmlns="http://www.w3.org/2000/svg" width="3
 								<img src="../../../photos/minis/vezac.jpg" alt="">
 								
 								<div class="overlay avril 2022 jardins marqueyssac Dordogne 24 Nouvelle-Aquitaine">Vézac</div>
-							</a>
+								
+								</a>
 						</li>
 					
 				
@@ -435,7 +452,8 @@ title="retour vers departement"><svg xmlns="http://www.w3.org/2000/svg" width="3
 					
 				
 					
-						<li class="destination">
+						<li class="destination" id="beynac-et-cazenac">
+
 							
 								<a href="../destinations/beynac-et-cazenac/index.html">
 							
@@ -443,7 +461,8 @@ title="retour vers departement"><svg xmlns="http://www.w3.org/2000/svg" width="3
 								<img src="../../../photos/minis/beynac-et-cazenac.jpg" alt="">
 								
 								<div class="overlay ocotbre 2021 Dordogne 24 Nouvelle-Aquitaine">Beynac-et-Cazenac</div>
-							</a>
+								
+								</a>
 						</li>
 					
 				

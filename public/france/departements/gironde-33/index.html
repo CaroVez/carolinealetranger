@@ -127,11 +127,14 @@ title="retour vers departement"><svg xmlns="http://www.w3.org/2000/svg" width="3
 </div>
 
 		<div class="alphabeticOrder-button">
-  <button onclick="alphabeticOrder()" id="alphabeticOrderButton" title="">alphabétique</button>
+  <button onclick="alphabeticOrder()" id="alphabeticOrderButton" title="alphabétique"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-sort-alpha-down" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M10.082 5.629 9.664 7H8.598l1.789-5.332h1.234L13.402 7h-1.12l-.419-1.371zm1.57-.785L11 2.687h-.047l-.652 2.157z"/>
+  <path d="M12.96 14H9.028v-.691l2.579-3.72v-.054H9.098v-.867h3.785v.691l-2.567 3.72v.054h2.645zM4.5 2.5a.5.5 0 0 0-1 0v9.793l-1.146-1.147a.5.5 0 0 0-.708.708l2 1.999.007.007a.497.497 0 0 0 .7-.006l2-2a.5.5 0 0 0-.707-.708L4.5 12.293z"/>
+</svg></button>
 </div>
 
 
-		<ul class="image-gallery">
+		<ul class="image-gallery" id="villes">
 			<li class="destination-carte">
 				<a href="../../../photos/minis/00_carteFrance.jpg" target="_blank">
 					<img src="../../../photos/minis/gironde-33.png" alt="">
@@ -140,7 +143,8 @@ title="retour vers departement"><svg xmlns="http://www.w3.org/2000/svg" width="3
 			</li>		
 				
 					
-						<li class="destination">
+						<li class="destination" id="bordeaux">
+
 							
 								<a href="../destinations/bordeaux/index.html">
 							
@@ -148,12 +152,14 @@ title="retour vers departement"><svg xmlns="http://www.w3.org/2000/svg" width="3
 								<img src="../../../photos/minis/bordeaux.jpg" alt="">
 								
 								<div class="overlay 2021 2022 2023 2024 Gironde 33 Nouvelle-Aquitaine">Bordeaux</div>
-							</a>
+								
+								</a>
 						</li>
 					
 				
 					
-						<li class="destination">
+						<li class="destination" id="soulac-sur-mer">
+
 							
 								<a href="../destinations/soulac-sur-mer/index.html">
 							
@@ -161,12 +167,14 @@ title="retour vers departement"><svg xmlns="http://www.w3.org/2000/svg" width="3
 								<img src="../../../photos/minis/soulac-sur-mer.jpg" alt="">
 								
 								<div class="overlay mars 2024 plage village van Gironde 33 Nouvelle-Aquitaine">Soulac-sur-Mer</div>
-							</a>
+								
+								</a>
 						</li>
 					
 				
 					
-						<li class="destination">
+						<li class="destination" id="verdon-sur-mer">
+
 							
 								<a href="../destinations/verdon-sur-mer/index.html">
 							
@@ -174,7 +182,8 @@ title="retour vers departement"><svg xmlns="http://www.w3.org/2000/svg" width="3
 								<img src="../../../photos/minis/verdon-sur-mer.jpg" alt="">
 								
 								<div class="overlay août 2024 van Gironde 33 Nouvelle-Aquitaine">Verdon-sur-Mer</div>
-							</a>
+								
+								</a>
 						</li>
 					
 				
@@ -203,7 +212,8 @@ title="retour vers departement"><svg xmlns="http://www.w3.org/2000/svg" width="3
 					
 				
 					
-						<li class="destination">
+						<li class="destination" id="cadillac-cotes-de-bordeaux">
+
 							
 								<a href="../destinations/cadillac-cotes-de-bordeaux/index.html">
 							
@@ -211,12 +221,14 @@ title="retour vers departement"><svg xmlns="http://www.w3.org/2000/svg" width="3
 								<img src="../../../photos/minis/cadillac-cotes-de-bordeaux.jpg" alt="">
 								
 								<div class="overlay juin 2024 vins château portes ouvertes Gironde 33 Nouvelle-Aquitaine">Cadillac Côtes de Bordeaux</div>
-							</a>
+								
+								</a>
 						</li>
 					
 				
 					
-						<li class="destination">
+						<li class="destination" id="dune-de-pilat">
+
 							
 								<a href="../destinations/dune-de-pilat/index.html">
 							
@@ -224,12 +236,14 @@ title="retour vers departement"><svg xmlns="http://www.w3.org/2000/svg" width="3
 								<img src="../../../photos/minis/dune-de-pilat.jpg" alt="">
 								
 								<div class="overlay Arcachon Cap-Ferret Dune du Pilat Village Ostréicole Herbe Lanton plage huitres 2021 juin juillet 2022 septembre 2023 mars aout août Gironde 33 Nouvelle-Aquitaine">Dune de Pilat</div>
-							</a>
+								
+								</a>
 						</li>
 					
 				
 					
-						<li class="destination">
+						<li class="destination" id="herbe">
+
 							
 								<a href="../destinations/herbe/index.html">
 							
@@ -237,12 +251,14 @@ title="retour vers departement"><svg xmlns="http://www.w3.org/2000/svg" width="3
 								<img src="../../../photos/minis/herbe.jpg" alt="">
 								
 								<div class="overlay Arcachon Cap-Ferret Dune du Pilat Village Ostréicole Herbe Lanton plage huitres 2021 juin juillet 2022 septembre 2023 mars aout août Gironde 33 Nouvelle-Aquitaine">Herbe</div>
-							</a>
+								
+								</a>
 						</li>
 					
 				
 					
-						<li class="destination">
+						<li class="destination" id="cap-ferret">
+
 							
 								<a href="../destinations/cap-ferret/index.html">
 							
@@ -250,12 +266,14 @@ title="retour vers departement"><svg xmlns="http://www.w3.org/2000/svg" width="3
 								<img src="../../../photos/minis/cap-ferret.jpg" alt="">
 								
 								<div class="overlay Cap-Ferret plage juillet septembre août mai 2021 2022 2023 2024 Gironde 33 Nouvelle-Aquitaine">Cap-Ferret</div>
-							</a>
+								
+								</a>
 						</li>
 					
 				
 					
-						<li class="destination">
+						<li class="destination" id="saint-emilion">
+
 							
 								<a href="../destinations/saint-emilion/index.html">
 							
@@ -263,7 +281,8 @@ title="retour vers departement"><svg xmlns="http://www.w3.org/2000/svg" width="3
 								<img src="../../../photos/minis/saint-emilion.jpg" alt="">
 								
 								<div class="overlay juillet octobre février avril septembre mai 2021 2022 2023 2024 vins châteaux village Gironde 33 Nouvelle-Aquitaine">Saint-Émilion</div>
-							</a>
+								
+								</a>
 						</li>
 					
 				
@@ -272,7 +291,8 @@ title="retour vers departement"><svg xmlns="http://www.w3.org/2000/svg" width="3
 					
 				
 					
-						<li class="destination">
+						<li class="destination" id="monsegur">
+
 							
 								<a href="../destinations/monsegur/index.html">
 							
@@ -280,12 +300,14 @@ title="retour vers departement"><svg xmlns="http://www.w3.org/2000/svg" width="3
 								<img src="../../../photos/minis/monsegur.jpg" alt="">
 								
 								<div class="overlay décembre 2023 village Gironde 33 Nouvelle-Aquitaine">Monségur</div>
-							</a>
+								
+								</a>
 						</li>
 					
 				
 					
-						<li class="destination">
+						<li class="destination" id="mazeres">
+
 							
 								<a href="../destinations/mazeres/index.html">
 							
@@ -293,12 +315,14 @@ title="retour vers departement"><svg xmlns="http://www.w3.org/2000/svg" width="3
 								<img src="../../../photos/minis/mazeres.jpg" alt="">
 								
 								<div class="overlay 2023 château fort roquetaillade graves mazeres octobre Gironde 33 Nouvelle-Aquitaine">Mazères</div>
-							</a>
+								
+								</a>
 						</li>
 					
 				
 					
-						<li class="destination">
+						<li class="destination" id="les-graves">
+
 							
 								<a href="../destinations/les-graves/index.html">
 							
@@ -306,7 +330,8 @@ title="retour vers departement"><svg xmlns="http://www.w3.org/2000/svg" width="3
 								<img src="../../../photos/minis/les-graves.jpg" alt="">
 								
 								<div class="overlay octobre 2023 2022 2021 vins portes ouvertes châteaux vignoble Gironde 33 Nouvelle-Aquitaine">Les Graves</div>
-							</a>
+								
+								</a>
 						</li>
 					
 				
@@ -363,7 +388,8 @@ title="retour vers departement"><svg xmlns="http://www.w3.org/2000/svg" width="3
 					
 				
 					
-						<li class="destination">
+						<li class="destination" id="lacanau">
+
 							
 								<a href="../destinations/lacanau/index.html">
 							
@@ -371,7 +397,8 @@ title="retour vers departement"><svg xmlns="http://www.w3.org/2000/svg" width="3
 								<img src="../../../photos/minis/lacanau.jpg" alt="">
 								
 								<div class="overlay plages juin septembre mars juin 2022 2023 2024 Gironde 33 Nouvelle-Aquitaine">Lacanau</div>
-							</a>
+								
+								</a>
 						</li>
 					
 				
@@ -380,7 +407,8 @@ title="retour vers departement"><svg xmlns="http://www.w3.org/2000/svg" width="3
 					
 				
 					
-						<li class="destination">
+						<li class="destination" id="blaye">
+
 							
 								<a href="../destinations/blaye/index.html">
 							
@@ -388,12 +416,14 @@ title="retour vers departement"><svg xmlns="http://www.w3.org/2000/svg" width="3
 								<img src="../../../photos/minis/blaye.jpg" alt="">
 								
 								<div class="overlay septembre 2022 château Bel-Air Royère avril 2023 croisière garonne Gironde 33 Nouvelle-Aquitaine">Blaye</div>
-							</a>
+								
+								</a>
 						</li>
 					
 				
 					
-						<li class="destination">
+						<li class="destination" id="medoc-viticole">
+
 							
 								<a href="../destinations/medoc-viticole/index.html">
 							
@@ -401,12 +431,14 @@ title="retour vers departement"><svg xmlns="http://www.w3.org/2000/svg" width="3
 								<img src="../../../photos/minis/medoc-viticole.jpg" alt="">
 								
 								<div class="overlay 2023 vignoble medoc domaines dégustation chai chateau château vin Gironde 33 Nouvelle-Aquitaine">Médoc viticole</div>
-							</a>
+								
+								</a>
 						</li>
 					
 				
 					
-						<li class="destination">
+						<li class="destination" id="lanton">
+
 							
 								<a href="../destinations/lanton/index.html">
 							
@@ -414,12 +446,14 @@ title="retour vers departement"><svg xmlns="http://www.w3.org/2000/svg" width="3
 								<img src="../../../photos/minis/lanton.jpg" alt="">
 								
 								<div class="overlay plages mars 2023 huitres Gironde 33 Nouvelle-Aquitaine">Lanton</div>
-							</a>
+								
+								</a>
 						</li>
 					
 				
 					
-						<li class="destination">
+						<li class="destination" id="vendays-montalivet">
+
 							
 								<a href="../destinations/vendays-montalivet/index.html">
 							
@@ -427,7 +461,8 @@ title="retour vers departement"><svg xmlns="http://www.w3.org/2000/svg" width="3
 								<img src="../../../photos/minis/vendays-montalivet.jpg" alt="">
 								
 								<div class="overlay plages mars 2023  Gironde 33 Nouvelle-Aquitaine">Vendays-Montalivet</div>
-							</a>
+								
+								</a>
 						</li>
 					
 				
@@ -446,7 +481,8 @@ title="retour vers departement"><svg xmlns="http://www.w3.org/2000/svg" width="3
 					
 				
 					
-						<li class="destination">
+						<li class="destination" id="la-brede">
+
 							
 								<a href="../destinations/la-brede/index.html">
 							
@@ -454,12 +490,14 @@ title="retour vers departement"><svg xmlns="http://www.w3.org/2000/svg" width="3
 								<img src="../../../photos/minis/la-brede.jpg" alt="">
 								
 								<div class="overlay octobre 2022 chateau montesquieu Gironde 33 Nouvelle-Aquitaine">La Brède</div>
-							</a>
+								
+								</a>
 						</li>
 					
 				
 					
-						<li class="destination">
+						<li class="destination" id="portets">
+
 							
 								<a href="../destinations/portets/index.html">
 							
@@ -467,7 +505,8 @@ title="retour vers departement"><svg xmlns="http://www.w3.org/2000/svg" width="3
 								<img src="../../../photos/minis/portets.jpg" alt="">
 								
 								<div class="overlay octobre 2022 mascaret Gironde 33 Nouvelle-Aquitaine">Portets</div>
-							</a>
+								
+								</a>
 						</li>
 					
 				
@@ -478,7 +517,8 @@ title="retour vers departement"><svg xmlns="http://www.w3.org/2000/svg" width="3
 					
 				
 					
-						<li class="destination">
+						<li class="destination" id="arcachon">
+
 							
 								<a href="../destinations/arcachon/index.html">
 							
@@ -486,7 +526,8 @@ title="retour vers departement"><svg xmlns="http://www.w3.org/2000/svg" width="3
 								<img src="../../../photos/minis/arcachon.jpg" alt="">
 								
 								<div class="overlay 2021 juin 2022 septembre  Gironde 33 Nouvelle-Aquitaine">Arcachon</div>
-							</a>
+								
+								</a>
 						</li>
 					
 				
@@ -569,7 +610,8 @@ title="retour vers departement"><svg xmlns="http://www.w3.org/2000/svg" width="3
 					
 				
 					
-						<li class="destination">
+						<li class="destination" id="blanquefort">
+
 							
 								<a href="../destinations/blanquefort/index.html">
 							
@@ -577,7 +619,8 @@ title="retour vers departement"><svg xmlns="http://www.w3.org/2000/svg" width="3
 								<img src="../../../photos/minis/blanquefort.jpg" alt="">
 								
 								<div class="overlay septembre 2021 parc majolan Gironde 33 Nouvelle-Aquitaine">Blanquefort</div>
-							</a>
+								
+								</a>
 						</li>
 					
 				
@@ -608,7 +651,8 @@ title="retour vers departement"><svg xmlns="http://www.w3.org/2000/svg" width="3
 					
 				
 					
-						<li class="destination">
+						<li class="destination" id="lormont">
+
 							
 								<a href="../destinations/lormont/index.html">
 							
@@ -616,7 +660,8 @@ title="retour vers departement"><svg xmlns="http://www.w3.org/2000/svg" width="3
 								<img src="../../../photos/minis/lormont.jpg" alt="">
 								
 								<div class="overlay avril 2021 parc Ermitage Sainte-Catherine Gironde 33 Nouvelle-Aquitaine">Lormont</div>
-							</a>
+								
+								</a>
 						</li>
 					
 				

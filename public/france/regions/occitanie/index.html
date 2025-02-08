@@ -127,11 +127,14 @@ title="retour vers region"><svg xmlns="http://www.w3.org/2000/svg" width="32" he
 </div>
 
 		<div class="alphabeticOrder-button">
-  <button onclick="alphabeticOrder()" id="alphabeticOrderButton" title="">alphabétique</button>
+  <button onclick="alphabeticOrder()" id="alphabeticOrderButton" title="alphabétique"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-sort-alpha-down" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M10.082 5.629 9.664 7H8.598l1.789-5.332h1.234L13.402 7h-1.12l-.419-1.371zm1.57-.785L11 2.687h-.047l-.652 2.157z"/>
+  <path d="M12.96 14H9.028v-.691l2.579-3.72v-.054H9.098v-.867h3.785v.691l-2.567 3.72v.054h2.645zM4.5 2.5a.5.5 0 0 0-1 0v9.793l-1.146-1.147a.5.5 0 0 0-.708.708l2 1.999.007.007a.497.497 0 0 0 .7-.006l2-2a.5.5 0 0 0-.707-.708L4.5 12.293z"/>
+</svg></button>
 </div>
 
 
-		<ul class="image-gallery">
+		<ul class="image-gallery" id="villes">
 			<li class="destination-carte">
 				<a href="../../../photos/minis/00_carteFrance.jpg" target="_blank">
 					<img src="../../../photos/minis/occitanie.png" alt="">
@@ -192,7 +195,7 @@ title="retour vers region"><svg xmlns="http://www.w3.org/2000/svg" width="32" he
 					
 				
 					
-						<li class="destination">
+						<li class="destination" id="carcassonne">
 
 							
 								<a href="../destinations/carcassonne/index.html">
@@ -201,12 +204,13 @@ title="retour vers region"><svg xmlns="http://www.w3.org/2000/svg" width="32" he
 								<img src="../../../photos/minis/carcassonne.jpg" alt="">
 								
 								<div class="overlay 2023 van sud juillet Occitanie">Carcassonne | <br> Aude 11</div>
-							</a>
+								
+								</a>
 						</li>
 					
 				
 					
-						<li class="destination">
+						<li class="destination" id="la-cote-de-catalogne-du-nord">
 
 							
 								<a href="../destinations/la-cote-de-catalogne-du-nord/index.html">
@@ -215,12 +219,13 @@ title="retour vers region"><svg xmlns="http://www.w3.org/2000/svg" width="32" he
 								<img src="../../../photos/minis/la-cote-de-catalogne-du-nord.jpg" alt="">
 								
 								<div class="overlay 2023 van sud juillet Occitanie">la côte de Catalogne du Nord | <br> Pyrénées-Orientales 66</div>
-							</a>
+								
+								</a>
 						</li>
 					
 				
 					
-						<li class="destination">
+						<li class="destination" id="banyuls-sur-mer">
 
 							
 								<a href="../destinations/banyuls-sur-mer/index.html">
@@ -229,12 +234,13 @@ title="retour vers region"><svg xmlns="http://www.w3.org/2000/svg" width="32" he
 								<img src="../../../photos/minis/banyuls-sur-mer.jpg" alt="">
 								
 								<div class="overlay 2023 van sud juillet Occitanie">Banyuls-sur-Mer | <br> Pyrénées-Orientales 66</div>
-							</a>
+								
+								</a>
 						</li>
 					
 				
 					
-						<li class="destination">
+						<li class="destination" id="collioure">
 
 							
 								<a href="../destinations/collioure/index.html">
@@ -243,12 +249,13 @@ title="retour vers region"><svg xmlns="http://www.w3.org/2000/svg" width="32" he
 								<img src="../../../photos/minis/collioure.jpg" alt="">
 								
 								<div class="overlay 2023 van sud juin Occitanie">Collioure | <br> Pyrénées-Orientales 66</div>
-							</a>
+								
+								</a>
 						</li>
 					
 				
 					
-						<li class="destination">
+						<li class="destination" id="beziers">
 
 							
 								<a href="../destinations/beziers/index.html">
@@ -257,7 +264,8 @@ title="retour vers region"><svg xmlns="http://www.w3.org/2000/svg" width="32" he
 								<img src="../../../photos/minis/beziers.jpg" alt="">
 								
 								<div class="overlay 2023 van sud juin Occitanie">Béziers | <br> Hérault 34</div>
-							</a>
+								
+								</a>
 						</li>
 					
 				
@@ -288,7 +296,7 @@ title="retour vers region"><svg xmlns="http://www.w3.org/2000/svg" width="32" he
 					
 				
 					
-						<li class="destination">
+						<li class="destination" id="montpellier">
 
 							
 								<a href="../destinations/montpellier/index.html">
@@ -297,12 +305,13 @@ title="retour vers region"><svg xmlns="http://www.w3.org/2000/svg" width="32" he
 								<img src="../../../photos/minis/montpellier.jpg" alt="">
 								
 								<div class="overlay 2023 van sud juin Occitanie">Montpellier | <br> Hérault 34</div>
-							</a>
+								
+								</a>
 						</li>
 					
 				
 					
-						<li class="destination">
+						<li class="destination" id="sete">
 
 							
 								<a href="../destinations/sete/index.html">
@@ -311,12 +320,13 @@ title="retour vers region"><svg xmlns="http://www.w3.org/2000/svg" width="32" he
 								<img src="../../../photos/minis/sete.jpg" alt="">
 								
 								<div class="overlay 2023 van sud juin Occitanie">Sète | <br> Hérault 34</div>
-							</a>
+								
+								</a>
 						</li>
 					
 				
 					
-						<li class="destination">
+						<li class="destination" id="maguelone">
 
 							
 								<a href="../destinations/maguelone/index.html">
@@ -325,12 +335,13 @@ title="retour vers region"><svg xmlns="http://www.w3.org/2000/svg" width="32" he
 								<img src="../../../photos/minis/maguelone.jpg" alt="">
 								
 								<div class="overlay 2023 van sud juin Occitanie">Maguelone | <br> Hérault 34</div>
-							</a>
+								
+								</a>
 						</li>
 					
 				
 					
-						<li class="destination">
+						<li class="destination" id="pavalas-les-flots">
 
 							
 								<a href="../destinations/pavalas-les-flots/index.html">
@@ -339,12 +350,13 @@ title="retour vers region"><svg xmlns="http://www.w3.org/2000/svg" width="32" he
 								<img src="../../../photos/minis/pavalas-les-flots.jpg" alt="">
 								
 								<div class="overlay 2023 van sud juin Occitanie">Pavalas-les-Flots | <br> Hérault 34</div>
-							</a>
+								
+								</a>
 						</li>
 					
 				
 					
-						<li class="destination">
+						<li class="destination" id="viaduc-de-millau">
 
 							
 								<a href="../destinations/viaduc-de-millau/index.html">
@@ -353,12 +365,13 @@ title="retour vers region"><svg xmlns="http://www.w3.org/2000/svg" width="32" he
 								<img src="../../../photos/minis/viaduc-de-millau.jpg" alt="">
 								
 								<div class="overlay 2023 van sud juin Occitanie">Viaduc de Millau | <br> Aveyron 12</div>
-							</a>
+								
+								</a>
 						</li>
 					
 				
 					
-						<li class="destination">
+						<li class="destination" id="cordes-sur-ciel">
 
 							
 								<a href="../destinations/cordes-sur-ciel/index.html">
@@ -367,12 +380,13 @@ title="retour vers region"><svg xmlns="http://www.w3.org/2000/svg" width="32" he
 								<img src="../../../photos/minis/cordes-sur-ciel.jpg" alt="">
 								
 								<div class="overlay 2023 van sud juin Occitanie">Cordes-sur-ciel | <br> Tarn 81</div>
-							</a>
+								
+								</a>
 						</li>
 					
 				
 					
-						<li class="destination">
+						<li class="destination" id="cahors">
 
 							
 								<a href="../destinations/cahors/index.html">
@@ -381,7 +395,8 @@ title="retour vers region"><svg xmlns="http://www.w3.org/2000/svg" width="32" he
 								<img src="../../../photos/minis/cahors.jpg" alt="">
 								
 								<div class="overlay 2023 van sud juin Occitanie">Cahors | <br> Lot 46</div>
-							</a>
+								
+								</a>
 						</li>
 					
 				
@@ -426,7 +441,7 @@ title="retour vers region"><svg xmlns="http://www.w3.org/2000/svg" width="32" he
 					
 				
 					
-						<li class="destination">
+						<li class="destination" id="tourmalet">
 
 							
 								<a href="../destinations/tourmalet/index.html">
@@ -435,12 +450,13 @@ title="retour vers region"><svg xmlns="http://www.w3.org/2000/svg" width="32" he
 								<img src="../../../photos/minis/tourmalet.jpg" alt="">
 								
 								<div class="overlay mai 2022 Occitanie">Tourmalet | <br> Hautes-Pyrénées 65</div>
-							</a>
+								
+								</a>
 						</li>
 					
 				
 					
-						<li class="destination">
+						<li class="destination" id="bareges">
 
 							
 								<a href="../destinations/bareges/index.html">
@@ -449,12 +465,13 @@ title="retour vers region"><svg xmlns="http://www.w3.org/2000/svg" width="32" he
 								<img src="../../../photos/minis/bareges.jpg" alt="">
 								
 								<div class="overlay mai 2022 Occitanie">Barèges | <br> Hautes-Pyrénées 65</div>
-							</a>
+								
+								</a>
 						</li>
 					
 				
 					
-						<li class="destination">
+						<li class="destination" id="luz-ardiden">
 
 							
 								<a href="../destinations/luz-ardiden/index.html">
@@ -463,12 +480,13 @@ title="retour vers region"><svg xmlns="http://www.w3.org/2000/svg" width="32" he
 								<img src="../../../photos/minis/luz-ardiden.jpg" alt="">
 								
 								<div class="overlay mai 2022 Occitanie">Luz-Ardiden | <br> Hautes-Pyrénées 65</div>
-							</a>
+								
+								</a>
 						</li>
 					
 				
 					
-						<li class="destination">
+						<li class="destination" id="lac-de-gaube">
 
 							
 								<a href="../destinations/lac-de-gaube/index.html">
@@ -477,12 +495,13 @@ title="retour vers region"><svg xmlns="http://www.w3.org/2000/svg" width="32" he
 								<img src="../../../photos/minis/lac-de-gaube.jpg" alt="">
 								
 								<div class="overlay mai 2022 Occitanie">Lac de Gaube | <br> Hautes-Pyrénées 65</div>
-							</a>
+								
+								</a>
 						</li>
 					
 				
 					
-						<li class="destination">
+						<li class="destination" id="pont-d-espagne">
 
 							
 								<a href="../destinations/pont-d-espagne/index.html">
@@ -491,12 +510,13 @@ title="retour vers region"><svg xmlns="http://www.w3.org/2000/svg" width="32" he
 								<img src="../../../photos/minis/pont-d-espagne.jpg" alt="">
 								
 								<div class="overlay mai 2022 Occitanie">Pont d&#39;Espagne | <br> Hautes-Pyrénées 65</div>
-							</a>
+								
+								</a>
 						</li>
 					
 				
 					
-						<li class="destination">
+						<li class="destination" id="cirque-de-gavarnie">
 
 							
 								<a href="../destinations/cirque-de-gavarnie/index.html">
@@ -505,12 +525,13 @@ title="retour vers region"><svg xmlns="http://www.w3.org/2000/svg" width="32" he
 								<img src="../../../photos/minis/cirque-de-gavarnie.jpg" alt="">
 								
 								<div class="overlay mai 2022 Occitanie">Cirque de Gavarnie | <br> Hautes-Pyrénées 65</div>
-							</a>
+								
+								</a>
 						</li>
 					
 				
 					
-						<li class="destination">
+						<li class="destination" id="luz-saint-sauveur">
 
 							
 								<a href="../destinations/luz-saint-sauveur/index.html">
@@ -519,12 +540,13 @@ title="retour vers region"><svg xmlns="http://www.w3.org/2000/svg" width="32" he
 								<img src="../../../photos/minis/luz-saint-sauveur.jpg" alt="">
 								
 								<div class="overlay mai 2022 Occitanie">Luz-Saint-Sauveur | <br> Hautes-Pyrénées 65</div>
-							</a>
+								
+								</a>
 						</li>
 					
 				
 					
-						<li class="destination">
+						<li class="destination" id="lourdes">
 
 							
 								<a href="../destinations/lourdes/index.html">
@@ -533,7 +555,8 @@ title="retour vers region"><svg xmlns="http://www.w3.org/2000/svg" width="32" he
 								<img src="../../../photos/minis/lourdes.jpg" alt="">
 								
 								<div class="overlay mai 2022 Occitanie">Lourdes | <br> Hautes-Pyrénées 65</div>
-							</a>
+								
+								</a>
 						</li>
 					
 				
@@ -548,7 +571,7 @@ title="retour vers region"><svg xmlns="http://www.w3.org/2000/svg" width="32" he
 					
 				
 					
-						<li class="destination">
+						<li class="destination" id="rocamadour">
 
 							
 								<a href="../destinations/rocamadour/index.html">
@@ -557,12 +580,13 @@ title="retour vers region"><svg xmlns="http://www.w3.org/2000/svg" width="32" he
 								<img src="../../../photos/minis/rocamadour.jpg" alt="">
 								
 								<div class="overlay avril 2022 Occitanie">Rocamadour | <br> Lot 46</div>
-							</a>
+								
+								</a>
 						</li>
 					
 				
 					
-						<li class="destination">
+						<li class="destination" id="padirac">
 
 							
 								<a href="../destinations/padirac/index.html">
@@ -571,12 +595,13 @@ title="retour vers region"><svg xmlns="http://www.w3.org/2000/svg" width="32" he
 								<img src="../../../photos/minis/padirac.jpg" alt="">
 								
 								<div class="overlay avril 2022 gouffre Occitanie">Padirac | <br> Lot 46</div>
-							</a>
+								
+								</a>
 						</li>
 					
 				
 					
-						<li class="destination">
+						<li class="destination" id="lacave">
 
 							
 								<a href="../destinations/lacave/index.html">
@@ -585,7 +610,8 @@ title="retour vers region"><svg xmlns="http://www.w3.org/2000/svg" width="32" he
 								<img src="../../../photos/minis/lacave.jpg" alt="">
 								
 								<div class="overlay avril 2022 Occitanie">Lacave | <br> Lot 46</div>
-							</a>
+								
+								</a>
 						</li>
 					
 				
@@ -594,7 +620,7 @@ title="retour vers region"><svg xmlns="http://www.w3.org/2000/svg" width="32" he
 					
 				
 					
-						<li class="destination">
+						<li class="destination" id="toulouse">
 
 							
 								<a href="../destinations/toulouse/index.html">
@@ -603,7 +629,8 @@ title="retour vers region"><svg xmlns="http://www.w3.org/2000/svg" width="32" he
 								<img src="../../../photos/minis/toulouse.jpg" alt="">
 								
 								<div class="overlay mars 2022 rugby Occitanie">Toulouse | <br> Haute-Garonne 31</div>
-							</a>
+								
+								</a>
 						</li>
 					
 				

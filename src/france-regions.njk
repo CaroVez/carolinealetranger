@@ -37,7 +37,7 @@ permalink: "france/regions/{{ regions.region | slugify }}/"
 		{% include "search.njk" %}
 		{% include "alphabeticOrderButton.njk" %}
 
-		<ul class="image-gallery">
+		<ul class="image-gallery" id="villes">
 			<li class="destination-carte">
 				<a href="../../../photos/minis/00_carteFrance.jpg" target="_blank">
 					<img src="../../../photos/minis/{{ regions.region | slugify }}.png" alt="">
@@ -46,7 +46,7 @@ permalink: "france/regions/{{ regions.region | slugify }}/"
 			</li>		
 				{% for destination in destinations %}
 					{% if destination.region === regions.region %}
-						<li class="destination">
+						<li class="destination" id="{{destination.name | slugify}}">
 
 							{% if destination.link === "" %}
 								<a title="à venir" >
@@ -57,7 +57,8 @@ permalink: "france/regions/{{ regions.region | slugify }}/"
 								<img src="../../../photos/minis/{{destination.name | slugify}}.jpg" alt="">
 								
 								<div class="overlay {{destination.keywords}} {{destination.region}}">{{destination.name}} | <br> {{destination.departementProvinceState}}</div>
-							</a>
+								
+								</a>
 						</li>
 					{% endif %}
 				{% endfor %}

@@ -127,11 +127,14 @@ title="retour vers region"><svg xmlns="http://www.w3.org/2000/svg" width="32" he
 </div>
 
 		<div class="alphabeticOrder-button">
-  <button onclick="alphabeticOrder()" id="alphabeticOrderButton" title="">alphabétique</button>
+  <button onclick="alphabeticOrder()" id="alphabeticOrderButton" title="alphabétique"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-sort-alpha-down" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M10.082 5.629 9.664 7H8.598l1.789-5.332h1.234L13.402 7h-1.12l-.419-1.371zm1.57-.785L11 2.687h-.047l-.652 2.157z"/>
+  <path d="M12.96 14H9.028v-.691l2.579-3.72v-.054H9.098v-.867h3.785v.691l-2.567 3.72v.054h2.645zM4.5 2.5a.5.5 0 0 0-1 0v9.793l-1.146-1.147a.5.5 0 0 0-.708.708l2 1.999.007.007a.497.497 0 0 0 .7-.006l2-2a.5.5 0 0 0-.707-.708L4.5 12.293z"/>
+</svg></button>
 </div>
 
 
-		<ul class="image-gallery">
+		<ul class="image-gallery" id="villes">
 			<li class="destination-carte">
 				<a href="../../../photos/minis/00_carteFrance.jpg" target="_blank">
 					<img src="../../../photos/minis/provence-alpes-cote-d-azur.png" alt="">
@@ -202,7 +205,7 @@ title="retour vers region"><svg xmlns="http://www.w3.org/2000/svg" width="32" he
 					
 				
 					
-						<li class="destination">
+						<li class="destination" id="les-baux-de-provence">
 
 							
 								<a href="../destinations/les-baux-de-provence/index.html">
@@ -211,12 +214,13 @@ title="retour vers region"><svg xmlns="http://www.w3.org/2000/svg" width="32" he
 								<img src="../../../photos/minis/les-baux-de-provence.jpg" alt="">
 								
 								<div class="overlay 2023 van sud juin Provence-Alpes-Côte d&#39;Azur">Les Baux-de-Provence | <br> Bouches-du-Rhône 13</div>
-							</a>
+								
+								</a>
 						</li>
 					
 				
 					
-						<li class="destination">
+						<li class="destination" id="aix-en-provence">
 
 							
 								<a href="../destinations/aix-en-provence/index.html">
@@ -225,12 +229,13 @@ title="retour vers region"><svg xmlns="http://www.w3.org/2000/svg" width="32" he
 								<img src="../../../photos/minis/aix-en-provence.jpg" alt="">
 								
 								<div class="overlay 2023 van sud juin Provence-Alpes-Côte d&#39;Azur">Aix-en-Provence | <br> Bouches-du-Rhône 13</div>
-							</a>
+								
+								</a>
 						</li>
 					
 				
 					
-						<li class="destination">
+						<li class="destination" id="lourmarin">
 
 							
 								<a href="../destinations/lourmarin/index.html">
@@ -239,12 +244,13 @@ title="retour vers region"><svg xmlns="http://www.w3.org/2000/svg" width="32" he
 								<img src="../../../photos/minis/lourmarin.jpg" alt="">
 								
 								<div class="overlay 2023 van sud juin Provence-Alpes-Côte d&#39;Azur">Lourmarin | <br> Vaucluse 84</div>
-							</a>
+								
+								</a>
 						</li>
 					
 				
 					
-						<li class="destination">
+						<li class="destination" id="moustiers-sainte-marie">
 
 							
 								<a href="../destinations/moustiers-sainte-marie/index.html">
@@ -253,12 +259,13 @@ title="retour vers region"><svg xmlns="http://www.w3.org/2000/svg" width="32" he
 								<img src="../../../photos/minis/moustiers-sainte-marie.jpg" alt="">
 								
 								<div class="overlay 2023 van sud juin Provence-Alpes-Côte d&#39;Azur">Moustiers-Sainte-Marie | <br> Alpes-de-Haute-Provence 04</div>
-							</a>
+								
+								</a>
 						</li>
 					
 				
 					
-						<li class="destination">
+						<li class="destination" id="les-gorges-du-verdon">
 
 							
 								<a href="../destinations/les-gorges-du-verdon/index.html">
@@ -267,12 +274,13 @@ title="retour vers region"><svg xmlns="http://www.w3.org/2000/svg" width="32" he
 								<img src="../../../photos/minis/les-gorges-du-verdon.jpg" alt="">
 								
 								<div class="overlay 2023 van sud juin Provence-Alpes-Côte d&#39;Azur">les Gorges du Verdon | <br> Alpes-de-Haute-Provence 04</div>
-							</a>
+								
+								</a>
 						</li>
 					
 				
 					
-						<li class="destination">
+						<li class="destination" id="eze">
 
 							
 								<a href="../destinations/eze/index.html">
@@ -281,12 +289,13 @@ title="retour vers region"><svg xmlns="http://www.w3.org/2000/svg" width="32" he
 								<img src="../../../photos/minis/eze.jpg" alt="">
 								
 								<div class="overlay 2023 van sud juin Provence-Alpes-Côte d&#39;Azur">Èze | <br> Alpes-Maritimes 06</div>
-							</a>
+								
+								</a>
 						</li>
 					
 				
 					
-						<li class="destination">
+						<li class="destination" id="nice">
 
 							
 								<a href="../destinations/nice/index.html">
@@ -295,12 +304,13 @@ title="retour vers region"><svg xmlns="http://www.w3.org/2000/svg" width="32" he
 								<img src="../../../photos/minis/nice.jpg" alt="">
 								
 								<div class="overlay 2023 van sud juin Provence-Alpes-Côte d&#39;Azur">Nice | <br> Alpes-Maritimes 06</div>
-							</a>
+								
+								</a>
 						</li>
 					
 				
 					
-						<li class="destination">
+						<li class="destination" id="saint-tropez">
 
 							
 								<a href="../destinations/saint-tropez/index.html">
@@ -309,12 +319,13 @@ title="retour vers region"><svg xmlns="http://www.w3.org/2000/svg" width="32" he
 								<img src="../../../photos/minis/saint-tropez.jpg" alt="">
 								
 								<div class="overlay 2023 van sud juin Provence-Alpes-Côte d&#39;Azur">Saint-Tropez | <br> Var 83</div>
-							</a>
+								
+								</a>
 						</li>
 					
 				
 					
-						<li class="destination">
+						<li class="destination" id="six-fours-les-plages">
 
 							
 								<a href="../destinations/six-fours-les-plages/index.html">
@@ -323,12 +334,13 @@ title="retour vers region"><svg xmlns="http://www.w3.org/2000/svg" width="32" he
 								<img src="../../../photos/minis/six-fours-les-plages.jpg" alt="">
 								
 								<div class="overlay 2023 van sud juin Provence-Alpes-Côte d&#39;Azur">Six-Fours-les-Plages | <br> Var 83</div>
-							</a>
+								
+								</a>
 						</li>
 					
 				
 					
-						<li class="destination">
+						<li class="destination" id="la-route-des-cretes">
 
 							
 								<a href="../destinations/la-route-des-cretes/index.html">
@@ -337,12 +349,13 @@ title="retour vers region"><svg xmlns="http://www.w3.org/2000/svg" width="32" he
 								<img src="../../../photos/minis/la-route-des-cretes.jpg" alt="">
 								
 								<div class="overlay 2023 van sud juin Provence-Alpes-Côte d&#39;Azur">la route des Crêtes | <br> Bouches-du-Rhône 13</div>
-							</a>
+								
+								</a>
 						</li>
 					
 				
 					
-						<li class="destination">
+						<li class="destination" id="cassis">
 
 							
 								<a href="../destinations/cassis/index.html">
@@ -351,12 +364,13 @@ title="retour vers region"><svg xmlns="http://www.w3.org/2000/svg" width="32" he
 								<img src="../../../photos/minis/cassis.jpg" alt="">
 								
 								<div class="overlay 2023 van sud juin Provence-Alpes-Côte d&#39;Azur">Cassis | <br> Bouches-du-Rhône 13</div>
-							</a>
+								
+								</a>
 						</li>
 					
 				
 					
-						<li class="destination">
+						<li class="destination" id="marseille">
 
 							
 								<a href="../destinations/marseille/index.html">
@@ -365,12 +379,13 @@ title="retour vers region"><svg xmlns="http://www.w3.org/2000/svg" width="32" he
 								<img src="../../../photos/minis/marseille.jpg" alt="">
 								
 								<div class="overlay 2023 van sud juin Provence-Alpes-Côte d&#39;Azur">Marseille | <br> Bouches-du-Rhône 13</div>
-							</a>
+								
+								</a>
 						</li>
 					
 				
 					
-						<li class="destination">
+						<li class="destination" id="avignon">
 
 							
 								<a href="../destinations/avignon/index.html">
@@ -379,7 +394,8 @@ title="retour vers region"><svg xmlns="http://www.w3.org/2000/svg" width="32" he
 								<img src="../../../photos/minis/avignon.jpg" alt="">
 								
 								<div class="overlay 2023 van sud juin Provence-Alpes-Côte d&#39;Azur">Avignon | <br> Vaucluse 84</div>
-							</a>
+								
+								</a>
 						</li>
 					
 				
