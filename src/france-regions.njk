@@ -35,7 +35,10 @@ permalink: "france/regions/{{ regions.region | slugify }}/"
 	<div class="container">
 
 		{% include "search.njk" %}
-		{% include "alphabeticOrderButton.njk" %}
+
+		<div class="buttons">
+			{% include "alphabeticOrderButton.njk" %}
+		</div>
 
 		<ul class="image-gallery" id="villes">
 			<li class="destination-carte">

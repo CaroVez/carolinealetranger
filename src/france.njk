@@ -17,13 +17,18 @@ activeExpat: active
 
 		{% include "search.njk" %}
 
-  		{% include "alphabeticOrderButton.njk" %}
+		<div class="buttons">
+			<div class="btn-france">
+				<button class="btn-villes" id="villesButton" title="">villes</button>
 
-  		<button class="villes" id="villesButton" title="">villes</button>
+  			<button class="btn-departements" id="departementsButton" title="">départements</button>
 
-  		<button class="departements" id="departementsButton" title="">départements</button>
+  			<button class="btn-regions" id="regionsButton" title="">régions</button>
+			</div>
 
-  		<button class="regions" id="regionsButton" title="">régions</button>
+			{% include "alphabeticOrderButton.njk" %}
+		</div>
+
 
 		<ul class="image-gallery" id="villes">
 			<li class="destination-carte">

@@ -1,22 +1,44 @@
 // ########### BURGER MENU ########### //
-const hamburger = document.querySelector(".hamburger");
-const navMenu = document.querySelector(".header-right");
+const hamburger = document.querySelector('.hamburger');
+const navMenu = document.querySelector('.header-right');
 
-hamburger.addEventListener("click", () => {
-  hamburger.classList.toggle("active");
-  navMenu.classList.toggle("active");
+hamburger.addEventListener('click', () => {
+  hamburger.classList.toggle('active');
+  navMenu.classList.toggle('active');
 });
 
-document.querySelectorAll("menu-link").forEach(n => n.addEventListener("click", () => {
-  hamburger.classList.remove("active");
-  navMenu.classList.remove("active");
-}));
+document.querySelectorAll('menu-link').forEach((n) =>
+  n.addEventListener('click', () => {
+    hamburger.classList.remove('active');
+    navMenu.classList.remove('active');
+  })
+);
 
+// ########### BLUESKY ICON ########### //
+document.getElementById('bluesky').addEventListener('mouseover', function () {
+  this.src = this.getAttribute('data-hover');
+});
+
+document.getElementById('bluesky').addEventListener('mouseout', function () {
+  this.src = this.getAttribute('data-default');
+});
+
+document
+  .getElementById('blueskyFooter')
+  .addEventListener('mouseover', function () {
+    this.src = this.getAttribute('data-hover');
+  });
+
+document
+  .getElementById('blueskyFooter')
+  .addEventListener('mouseout', function () {
+    this.src = this.getAttribute('data-default');
+  });
 
 // ########### SEARCH BAR ########### //
 function search() {
   const input = document.getElementById('search').value.toLowerCase();
-  const items = document.querySelectorAll(".destination");
+  const items = document.querySelectorAll('.destination');
   for (i = 0; i < items.length; i++) {
     if (!items[i].innerHTML.toLowerCase().includes(input)) {
       items[i].hidden = true;
@@ -26,10 +48,9 @@ function search() {
   }
 }
 
-
 // ########### BUTTON "ordre alphabétique" ########### //
-let alphabeticOrderButton = document.getElementById("alphabeticOrderButton");
-let iconContainer = alphabeticOrderButton.querySelector("svg");
+let alphabeticOrderButton = document.getElementById('alphabeticOrderButton');
+let iconContainer = alphabeticOrderButton.querySelector('svg');
 let originalOrder = {}; // Stocke l'ordre original des éléments
 let isSorting = false; // Empêche les appels multiples rapides
 
@@ -45,23 +66,23 @@ const iconNumeric = `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="
 </svg>`;
 
 alphabeticOrderButton.innerHTML = iconAlpha;
-alphabeticOrderButton.title = "Trier par ordre alphabétique";
+alphabeticOrderButton.title = 'Trier par ordre alphabétique';
 
 function alphabeticOrder() {
   if (isSorting) return;
   isSorting = true;
 
-  const visibleGallery = document.querySelector(".image-gallery:not([hidden])");
-  if (!visibleGallery || visibleGallery.id !== "villes") {
+  const visibleGallery = document.querySelector('.image-gallery:not([hidden])');
+  if (!visibleGallery || visibleGallery.id !== 'villes') {
     console.log("Aucune galerie visible ou la galerie n'est pas 'villes'");
     isSorting = false;
     return;
   }
 
-  const carteItem = visibleGallery.querySelector(".destination-carte");
-  const items = Array.from(visibleGallery.querySelectorAll(".destination"));
+  const carteItem = visibleGallery.querySelector('.destination-carte');
+  const items = Array.from(visibleGallery.querySelectorAll('.destination'));
   if (items.length === 0) {
-    console.log("Aucun élément trouvé dans la galerie");
+    console.log('Aucun élément trouvé dans la galerie');
     isSorting = false;
     return;
   }
@@ -71,74 +92,88 @@ function alphabeticOrder() {
   if (!originalOrder[galleryId]) {
     originalOrder[galleryId] = [
       carteItem.cloneNode(true),
-      ...items.map(item => item.cloneNode(true))
+      ...items.map((item) => item.cloneNode(true)),
     ];
-    visibleGallery.dataset.sorted = "false";
+    visibleGallery.dataset.sorted = 'false';
   }
 
   setTimeout(() => {
-    if (visibleGallery.dataset.sorted === "false") {
-      console.log("Trier les éléments");
+    if (visibleGallery.dataset.sorted === 'false') {
+      console.log('Trier les éléments');
       items.sort((a, b) => {
-        const textA = a.querySelector(".overlay").textContent.split('|')[0].trim().toLowerCase();
-        const textB = b.querySelector(".overlay").textContent.split('|')[0].trim().toLowerCase();
+        const textA = a
+          .querySelector('.overlay')
+          .textContent.split('|')[0]
+          .trim()
+          .toLowerCase();
+        const textB = b
+          .querySelector('.overlay')
+          .textContent.split('|')[0]
+          .trim()
+          .toLowerCase();
         return textA.localeCompare(textB);
       });
-      visibleGallery.innerHTML = "";
+      visibleGallery.innerHTML = '';
       if (carteItem) visibleGallery.appendChild(carteItem);
-      items.forEach(item => visibleGallery.appendChild(item));
-      visibleGallery.dataset.sorted = "true";
+      items.forEach((item) => visibleGallery.appendChild(item));
+      visibleGallery.dataset.sorted = 'true';
       alphabeticOrderButton.innerHTML = iconNumeric;
-      alphabeticOrderButton.title = "Trier par ordre antéchronologique";
+      alphabeticOrderButton.title = 'Trier par ordre antéchronologique';
     } else {
       console.log("Revenir à l'ordre initial");
-      visibleGallery.innerHTML = "";
-      originalOrder[galleryId].forEach(item => visibleGallery.appendChild(item));
-      visibleGallery.dataset.sorted = "false";
+      visibleGallery.innerHTML = '';
+      originalOrder[galleryId].forEach((item) =>
+        visibleGallery.appendChild(item)
+      );
+      visibleGallery.dataset.sorted = 'false';
       alphabeticOrderButton.innerHTML = iconAlpha;
-      alphabeticOrderButton.title = "Trier par ordre alphabétique";
+      alphabeticOrderButton.title = 'Trier par ordre alphabétique';
     }
     isSorting = false;
   }, 50);
 }
 
-alphabeticOrderButton.addEventListener("click", alphabeticOrder);
-
+alphabeticOrderButton.addEventListener('click', alphabeticOrder);
 
 // ########### BUTTON "départements & régions" ########### //
-let villes = document.getElementById("villesButton");
-let departements = document.getElementById("departementsButton");
-let regions = document.getElementById("regionsButton");
+let villes = document.getElementById('villesButton');
+let departements = document.getElementById('departementsButton');
+let regions = document.getElementById('regionsButton');
 
 function sorting(category) {
-  const items = document.querySelectorAll(".image-gallery");
-  items.forEach(item => {
+  const items = document.querySelectorAll('.image-gallery');
+  items.forEach((item) => {
     item.hidden = item.id !== category;
   });
 
   // Gérer la visibilité du bouton alphabétique
-  alphabeticOrderButton.style.display = category === "villes" ? "block" : "none";
+  alphabeticOrderButton.style.display =
+    category === 'villes' ? 'block' : 'none';
 }
 
 villes.addEventListener('click', () => sorting('villes'));
 departements.addEventListener('click', () => sorting('departements'));
 regions.addEventListener('click', () => sorting('regions'));
 
-
 // ########### BUTTON UP ########### //
 // Get the upButton:
-let upButton = document.getElementById("upButton");
+let upButton = document.getElementById('upButton');
 // change nav bar on index page on scroll
-let imgBrandIndex = document.getElementById("img-brand-index");
-let brandPages = document.getElementById("brand-pages");
-let index = document.getElementById("index");
+let imgBrandIndex = document.getElementById('img-brand-index');
+let brandPages = document.getElementById('brand-pages');
+let index = document.getElementById('index');
 // When the user scrolls down 50px from the top of the document
-window.onscroll = function() {scrollFunction()};
+window.onscroll = function () {
+  scrollFunction();
+};
 function scrollFunction() {
-  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-    upButton.style.display = "block";
+  if (
+    document.body.scrollTop > 100 ||
+    document.documentElement.scrollTop > 100
+  ) {
+    upButton.style.display = 'block';
   } else {
-    upButton.style.display = "none";
+    upButton.style.display = 'none';
   }
 }
 // When the user clicks on the button, scroll to the top of the document
@@ -147,8 +182,7 @@ function topFunction() {
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
-
 // ########### disable save image option ########### //
-$(document).on('contextmenu', 'img', function() {
-	return false;
+$(document).on('contextmenu', 'img', function () {
+  return false;
 });
