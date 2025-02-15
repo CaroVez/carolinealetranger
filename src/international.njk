@@ -17,6 +17,10 @@ activeMondial: active
 
 		{% include "search.njk" %}
 
+		<div class="buttons left">
+			{% include "alphabeticOrderButton.njk" %}
+		</div>
+
 		<ul class="image-gallery">	
 			{% for destination in destinations %}
 				{% if destination.title === "international" %}

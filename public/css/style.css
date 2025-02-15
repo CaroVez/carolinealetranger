@@ -30,11 +30,10 @@ footer {
   display: flex;
   justify-content: center;
   text-align: center;
-  align-content: center;
   color: white;
   padding: 1rem;
-  gap: 2rem;
-  flex-wrap: wrap;
+  gap: 1rem;
+  flex-wrap: nowrap;
 }
 footer span {
   font-family: 'Love';
@@ -100,6 +99,10 @@ h6 {
 #index {
   height: 97vh;
   margin: 1.5vh;
+}
+
+.body-index footer {
+  display: none;
 }
 
 .body-index .header {
@@ -293,14 +296,13 @@ header .modal-body textarea {
 }
 .send {
   background-color: #fcaf45;
-  border: none;
+  border: solid 1px #fcaf45;
   border-radius: 5px;
   padding: 5px;
   color: white;
 }
 .send:hover {
   background-color: white;
-  border: solid 1px #fcaf45;
   color: inherit;
 }
 
@@ -383,6 +385,9 @@ header .modal-body textarea {
   justify-content: space-between;
   margin: 2rem 0;
 }
+.left {
+  justify-content: flex-end;
+}
 .buttons .btn-france {
   display: flex;
   gap: 1.5vh;
@@ -392,6 +397,7 @@ header .modal-body textarea {
   border-radius: 5px;
   border: none;
   background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* ########### buttons up + back ########### */
@@ -399,13 +405,13 @@ header .modal-body textarea {
   display: none;
   position: fixed;
   right: -10%;
-  bottom: 10%;
+  bottom: 15%;
   transform: rotate(-90deg);
+  background-color: #333;
 }
 #upButton,
 #backButton {
   color: #fcaf45;
-  background-color: initial;
   border: none;
   outline: none;
   z-index: 999;
@@ -415,6 +421,7 @@ header .modal-body textarea {
   position: absolute;
   left: 5%;
   top: 8%;
+  background-color: initial;
 }
 
 /* #### image gallery on pages: itinerary, expat, international, maison #### */
@@ -699,6 +706,10 @@ section,
     color: white;
   }
 
+  footer {
+    gap: 2rem;
+  }
+
   /* ########### search bar ########### */
   .search {
     margin-top: 2rem;
@@ -710,6 +721,7 @@ section,
   /* ########### buttons up + back ########### */
   #upButton {
     right: 0;
+    bottom: 10%;
   }
   #backButton:hover,
   #upButton:hover {
