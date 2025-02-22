@@ -318,8 +318,6 @@ header .modal-body textarea {
 .ribbon-destinations .heading-text {
   text-align: center;
   width: 90%;
-  margin-left: auto;
-  margin-right: auto;
 }
 .ribbon .heading-text {
   margin-top: 5rem;
@@ -327,11 +325,6 @@ header .modal-body textarea {
 .ribbon-destinations .heading-text {
   margin-top: 7rem;
 }
-/*
-.ribbon-destinations .heading-text h4 {
-	white-space: nowrap;
-}
-*/
 .ribbon-destinations .heading-text p {
   margin-top: -1rem;
 }
@@ -603,9 +596,15 @@ section,
   h4 {
     /* title on pages: destinations */
     font-size: 5rem;
+    text-shadow: rgb(0, 0, 0) 0 0 4px;
   }
   h4 span {
     font-size: 3rem;
+    text-shadow: rgb(0, 0, 0) 0 0 4px;
+  }
+  h6 {
+    /* places on pages: destinations */
+    text-shadow: rgb(0, 0, 0) 0 0 4px;
   }
   h1:hover,
   h2 a:hover {
@@ -734,10 +733,13 @@ section,
   }
 
   /* ########### ribbon ########### */
-  .ribbon,
-  .ribbon-destinations {
+  .ribbon {
     position: relative;
     max-height: 95vh;
+  }
+  .ribbon-destinations {
+    position: relative;
+    max-height: 40vh;
   }
   #index .panel_page_blur,
   .ribbon .panel_page_blur,
@@ -757,11 +759,17 @@ section,
   .ribbon .panel_page_blur {
     width: 50vw;
   }
-  .ribbon-destinations .panel_page img,
   .ribbon .panel_page img {
     display: block;
     object-fit: cover;
     max-height: 95vh;
+    width: 100%;
+    height: 100%;
+  }
+  .ribbon-destinations .panel_page img {
+    display: block;
+    object-fit: cover;
+    max-height: 40vh;
     width: 100%;
     height: 100%;
   }
@@ -771,7 +779,7 @@ section,
   .ribbon .heading-text,
   .ribbon-destinations .heading-text {
     position: absolute;
-    top: 45%;
+    top: 40%;
     z-index: 30;
     color: white;
     margin-top: 5rem;
@@ -785,12 +793,23 @@ section,
     width: 40vw;
   }
   .ribbon-destinations .heading-text {
-    right: 5%;
-    transform: translate(-5%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    right: 2%;
+    transform: translate(-2%, -50%);
     text-align: right;
+    width: 70%;
   }
   .ribbon .heading-text p {
     margin-top: -1rem;
+  }
+
+  .ribbon-destinations .heading-text p {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: fit-content;
+    padding: 0 0.5rem;
+    border-radius: 1rem;
   }
   .ribbon .heading-text a {
     display: block;
@@ -826,11 +845,15 @@ section,
   }
   #destinations .link-destinations .links li {
     margin-bottom: 2rem;
-    background-color: inherit;
-    border-radius: inherit;
-    padding: inherit;
     height: inherit;
     text-align: inherit;
+    background-color: inherit;
+  }
+  .trip-date {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 0 0.5rem;
+    border-radius: 1rem;
+    width: fit-content;
   }
   #destinations .link-destinations .links li a:hover {
     color: #fcaf45;

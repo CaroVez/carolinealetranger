@@ -1,0 +1,62 @@
+{% if destinations.title === "international" %}
+  {% set defaultImage =
+"international-default.jpg" %}
+{% elseif destinations.title === "Québec" %}
+  {%
+set defaultImage = "quebec-default.jpg" %}
+{% else %}
+  {% set defaultImage =
+"france-default.jpg" %}
+{% endif %}
+
+<div class="ribbon-destinations" id="ribbon">
+  <!-- destination's name on the right -->
+  <div class="heading-text">
+    <h4>
+      {{ destinations.name }}
+      <span>{{ destinations.nameSpan }}</span>
+    </h4>
+    <p>
+      {{ destinations.subtitle }}
+      {{ destinations.departementProvinceState }}
+      {% if destinations.title === "itinéraire" %}
+        <br/>
+      {% endif %}
+      {{ destinations.subtitle2 }}
+      {{ destinations.country }}
+    </p>
+  </div>
+
+  <!-- blur on the left (only on desktop) -->
+  <div class="panel_page_blur"></div>
+  <div class="panel_page">
+    <!-- image (only on desktop) -->
+    <img
+      src="../../photos/ribbon/{{ destinations.name | slugify }}.jpg"
+      alt="Destination"
+      onerror="this.onerror=null; this.src='../../photos/category/{{ defaultImage }}';">
+
+    {% include "backButton.njk" %}
+    <div class="link-destinations">
+      <div class="links">
+        <ul>
+          {% for place in destinations.places %}
+            <div class="desktop">
+              <li>
+                <a class="link" href="#{{ place.title | slugify }}">
+                  <!-- places on the left: title and dates -->
+                  <h6 class="date">{{ place.title }}</h6>
+                  <p class="text">
+                    {% for trip in place.trips %}
+                      <span class="trip-date">{{ trip.date }}</span>
+                    {% endfor %}
+                  </p>
+                </a>
+              </li>
+            </div>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

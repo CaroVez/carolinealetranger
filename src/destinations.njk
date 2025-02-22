@@ -13,51 +13,7 @@ permalink: "destinations/{{ destinations.name | slugify }}/"
 <main id="destinations">
 	
 	<!-- ribbon -->
-	<div class="ribbon-destinations" id="ribbon">
-
-		<!-- destination's name on the right -->
-		<div class="heading-text">
-    	<h4>{{destinations.name}} <span>{{destinations.nameSpan}}</span></h4>
-			<p>{{destinations.subtitle}} {{destinations.departementProvinceState}}
-				{% if destinations.title === "itinéraire" %}
-				<br>
-				{% endif %}
-			{{destinations.subtitle2}} {{destinations.country}}</p>		
-		</div>
-		
-		<!-- blur on the left (only on desktop) -->
-		<div class="panel_page_blur" ></div>
-		<div class="panel_page">
-			<!-- image (only on desktop) -->
-			<img src="../../photos/ribbon/{{destinations.name | slugify}}.jpg" 
-     			alt="Destination"
-     			onerror="this.onerror=null; this.src='../../photos/ribbon/default.jpg';">
-			{% include "backButton.njk" %}
-			<div class="link-destinations">
-				<div class="links">
-					<ul>
-						{% for place in destinations.places %}
-						<div class="desktop">
-							<li>
-								<a class="link" href="#{{place.title | slugify}}">
-									<!-- places on the left: title and dates -->
-									<h6 class="date">{{place.title}}</h6>
-									<p class="text">
-										{% set comma = joiner() %}
-										{% for trip in place.trips %}
-										{{ comma() }} {{trip.date}}
-										{% endfor %}
-									</p>
-      					</a>
-							</li>
-						</div>
-						{% endfor %}
-					</ul>
-				</div>
-			</div>
-		</div>
-	
-	</div>
+	{% include "ribbon-destinations.njk" %}
 
 	<!-- accordion (only on mobile) -->
 	<div class="accordion" id="accordionMobile">
