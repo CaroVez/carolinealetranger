@@ -19,12 +19,21 @@ set defaultImage = "quebec-default.jpg" %}
     <p>
       {{ destinations.subtitle }}
       {{ destinations.departementProvinceState }}
-      {% if destinations.title === "itinéraire" %}
-        <br/>
+
+      {% if destinations.title === "international" %}
+
+        {{ destinations.subtitle2 }}
+        {{ destinations.country }}
+
       {% endif %}
-      {{ destinations.subtitle2 }}
-      {{ destinations.country }}
     </p>
+    {% if destinations.title === "itinéraire" %}
+      <p>
+        {{ destinations.subtitle2 }}
+        {{ destinations.country }}
+      </p>
+    {% endif %}
+
   </div>
   <span class="photo-note">
     <i>photo de {{ destinations.name }} à venir</i>
@@ -41,6 +50,7 @@ set defaultImage = "quebec-default.jpg" %}
       onerror="this.onerror=null; this.src='../../photos/category/{{ defaultImage }}';">
 
     {% include "backButton.njk" %}
+
     <div class="link-destinations">
       <div class="links">
         <ul>

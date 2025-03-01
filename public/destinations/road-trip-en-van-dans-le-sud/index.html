@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content=""
+      content="testVan"
     />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
@@ -21,7 +21,7 @@
       href="../../images/favicon_gold.png"
     />
     <title>
-      Caroline à l'étranger - 
+      Caroline à l'étranger - itinéraire
     </title>
   </head>
   <body class="">
@@ -55,7 +55,7 @@
           </li>
           <li class="menu-item">
             <a
-              class="menu-link "
+              class="menu-link active"
               href="../../itineraires/index.html"
               >itinéraires</a
             >
@@ -156,24 +156,46 @@
 <main id="destinations">
 	
 	<!-- ribbon -->
-	<div class="ribbon-destinations" id="ribbon">
+	
+  
 
-		<!-- destination's name on the right -->
-		<div class="heading-text">
-    	<h4>au pays Basque <span></span></h4>
-			<p> 
-				
-				<br>
-				
-			en France &amp; España</p>		
-		</div>
-		
-		<!-- blur on the left (only on desktop) -->
-		<div class="panel_page_blur" ></div>
-		<div class="panel_page">
-			<!-- image (only on desktop) -->
-			<img src="../../photos/ribbon/au-pays-basque.jpg" alt="">
-			<a
+
+<div class="ribbon-destinations" id="ribbon">
+  <!-- destination's name on the right -->
+  <div class="heading-text">
+    <h4>
+      road trip en van dans le sud
+      <span></span>
+    </h4>
+    <p>
+      15 départements traversés
+      
+
+      
+    </p>
+    
+      <p>
+        en
+        France
+      </p>
+    
+
+  </div>
+  <span class="photo-note">
+    <i>photo de road trip en van dans le sud à venir</i>
+  </span>
+
+  <!-- blur on the left (only on desktop) -->
+  <div class="panel_page_blur"></div>
+  <div class="panel_page">
+    <!-- image (only on desktop) -->
+    <img
+      id="destination-image"
+      src="../../photos/ribbon/road-trip-en-van-dans-le-sud.jpg"
+      alt="Destination"
+      onerror="this.onerror=null; this.src='../../photos/category/france-default.jpg';">
+
+    <a
   class="back"
   id="backButton"
   href="../../itineraires/index.html
@@ -192,34 +214,34 @@
   >
     <path
       d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z"
-/>
+    />
   </svg>
 </a>
-			<div class="link-destinations">
-				<div class="links">
-					<ul>
-						
-						<div class="desktop">
-							<li>
-								<a class="link" href="#au-pays-basque">
-									<!-- places on the left: title and dates -->
-									<h6 class="date">au pays Basque</h6>
-									<p class="text">
-										
-										
-										 10-12 février 2023
-										
-									</p>
-      					</a>
-							</li>
-						</div>
-						
-					</ul>
-				</div>
-			</div>
-		</div>
-	
-	</div>
+
+
+    <div class="link-destinations">
+      <div class="links">
+        <ul>
+          
+            <div class="desktop">
+              <li>
+                <a class="link" href="#route">
+                  <!-- places on the left: title and dates -->
+                  <h6 class="date">Route</h6>
+                  <p class="text">
+                    
+                      <span class="trip-date">16 juin-2 juillet 2023</span>
+                    
+                  </p>
+                </a>
+              </li>
+            </div>
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
 
 	<!-- accordion (only on mobile) -->
 	<div class="accordion" id="accordionMobile">
@@ -228,25 +250,22 @@
 		  <h6 class="accordion-header">
 		    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
 					<!-- places: title -->
-					<h6 class="date">au pays Basque</h6>
+					<h6 class="date">Route</h6>
 		    </button>
 		  </h6>
 		  <div id="collapse1" class="accordion-collapse collapse" data-bs-parent="#accordionMobile">
 		    <div class="accordion-body">
-					<div class="date_section" id="au-pays-basque">
+					<div class="date_section" id="route">
 						<div class="mobile">
 							<!-- places: descriptions and dates -->
 							
-							<p>weekend au pays Basque<br><i>10-12 février 2023</i></p>
+							<p>2500 km parcourus en van, 15 départements traversés, 180 Litres de diesel, 116,70€ de péages, 16 nuits en van (11 sur camping, 3 sur aire de camping car, 2 sauvages), 52 vins goutés (dont 4 Cahors, 3 Muscat, 3 Languedoc, 2 Pic Saint Loup, 1 Corbières, 3 Cassis, 5 Collioure, 4 Banyuls, 1 Champagne et de nombreux vins maisons (13 blanc, 8 rosé, 5 rouge), 14 bières goutées (surtout en Occitanie/Catalogne du nord), 1 Pastis (pcq il fallait bien au moins une fois!)<br><i>16 juin-2 juillet 2023</i></p>
 							
 						</div>
 					</div>
 					<!-- places: photos -->
 					<div class="container">
 		    		<div class="image-gallery-destination">
-		    		  
-		    		    <img src="../../photos/" alt="...">
-								<p>texte à venir</p>
 		    		  
 		    		</div>
 					</div>
@@ -284,31 +303,38 @@
   <section class="container-destinations" id="sectionDesktop">
   	
 		<!-- places: title, descriptions and dates -->
-		<div class="date_section" id="au-pays-basque">
+		<div class="date_section" id="route">
 			<div class="desktop">
-				<h6>au pays Basque</b></h6>
+				<h6>Route</b></h6>
 				
-				<p>weekend au pays Basque<br><i>10-12 février 2023</i></p>
+				<span class="trip-date">16 juin-2 juillet 2023</span>
+					
+					<p>2500 km parcourus en van, 15 départements traversés, 180 Litres de diesel, 116,70€ de péages, 16 nuits en van (11 sur camping, 3 sur aire de camping car, 2 sauvages), 52 vins goutés (dont 4 Cahors, 3 Muscat, 3 Languedoc, 2 Pic Saint Loup, 1 Corbières, 3 Cassis, 5 Collioure, 4 Banyuls, 1 Champagne et de nombreux vins maisons (13 blanc, 8 rosé, 5 rouge), 14 bières goutées (surtout en Occitanie/Catalogne du nord), 1 Pastis (pcq il fallait bien au moins une fois!)</p>
+					
 				
 			</div>
-			<a type="button" class="btn" data-bs-toggle="modal" data-bs-target="#1">voir le carousel de photos</a>
+			
+			<p class="else"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-image-fill" viewBox="0 0 16 16">
+  			<path d="M.002 3a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-12a2 2 0 0 1-2-2zm1 9v1a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V9.5l-3.777-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062zm5-6.5a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0"/>
+				</svg> <i> photos à venir !!</i> </p>
+			
     </div>
 
 		<!-- places: photos -->
+		
 		<div class="container">
       <div class="image-gallery-destination">
         
-          <img src="../../photos/" alt="..." title="texte à venir">
-        
       </div>
     </div>
+		
     
     <!-- modal for the carousel (only on desktop) -->
 		<div class="modal fade" id="1" tabindex="-1" aria-labelledby="1Label" aria-hidden="true">
   		<div class="modal-dialog modal-xl">
   			<div class="modal-content">
   				<div class="modal-header">
-  					<h5 class="modal-title" id="1Label">au pays Basque</h5>
+  					<h5 class="modal-title" id="1Label">road trip en van dans le sud</h5>
   					<button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
       		</div>
 
@@ -319,17 +345,8 @@
 
 							<div class="carousel-indicators">
 							  
-									<button type="button" data-bs-target="#carousel1Captions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 0"></button>
-								
 							</div>
 							<div class="carousel-inner">
-								
-									<div class="carousel-item active">
-										<img src="../photos/../../photos/" class="d-block " alt="...">
-										<div class="carousel-caption d-none d-md-block">
-											<p>texte à venir</p>
-										</div>
-									</div>
 								
 						  </div>										
 

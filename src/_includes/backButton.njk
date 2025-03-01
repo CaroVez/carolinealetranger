@@ -1,7 +1,7 @@
 <a
   class="back"
   id="backButton"
-  href="{% if itineraires.title === 'itinéraire' %}../../itineraires/index.html
+  href="{% if destinations.title === 'itinéraire' %}../../itineraires/index.html
         {% elif destinations.title === 'France' %}../../france/index.html#{{
     destinations.name | slugify
   }}
@@ -12,7 +12,7 @@
     destinations.name | slugify
   }}
         {% else %}#{% endif %}"
-  data-default-href="{% if itineraires.title === 'itinéraire' %}../../itineraires/index.html
+  data-default-href="{% if destinations.title === 'itinéraire' %}../../itineraires/index.html
         {% elif destinations.title === 'France' %}../../france/index.html#{{
     destinations.name | slugify
   }}
@@ -37,6 +37,6 @@
   >
     <path
       d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z"
-/>
+    />
   </svg>
 </a>

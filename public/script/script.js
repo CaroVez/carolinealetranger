@@ -37,35 +37,54 @@ document
 
 // ########### RIBBON DESTINATION IMAGE ########### //
 
-// ########### BACK BUTTON ########### //
+// ########### BUTTON "départements & régions & pays" ########### //
 document.addEventListener('DOMContentLoaded', function () {
-  let regionLinks = document.querySelectorAll('.image-gallery#regions a');
-  let departementLinks = document.querySelectorAll(
-    '.image-gallery#departements a'
-  );
+  function sorting(category) {
+    const items = document.querySelectorAll('.image-gallery');
+    items.forEach((item) => {
+      item.hidden = item.id !== category;
+    });
 
-  function saveHistory(category, slug) {
-    let visitedHistory =
-      JSON.parse(sessionStorage.getItem('visitedHistory')) || [];
-    visitedHistory.push({ category, slug });
-    sessionStorage.setItem('visitedHistory', JSON.stringify(visitedHistory));
+    // Gérer la visibilité du bouton alphabétique
+    let alphabeticOrderButton = document.getElementById(
+      'alphabeticOrderButton'
+    );
+    if (alphabeticOrderButton) {
+      alphabeticOrderButton.style.display =
+        category === 'villes' ? 'block' : 'none';
+    }
   }
 
-  regionLinks.forEach((link) => {
-    link.addEventListener('click', function () {
-      let regionSlug = this.closest('li').id;
-      saveHistory('regions', regionSlug);
-    });
-  });
+  let villes = document.getElementById('villesButton');
+  let departements = document.getElementById('departementsButton');
+  let regions = document.getElementById('regionsButton');
+  let regionsQc = document.getElementById('regionsQcButton');
+  let pays = document.getElementById('countryButton');
 
-  departementLinks.forEach((link) => {
-    link.addEventListener('click', function () {
-      let departementSlug = this.closest('li').id;
-      saveHistory('departements', departementSlug);
-    });
-  });
+  if (villes) villes.addEventListener('click', () => sorting('villes'));
+  if (departements)
+    departements.addEventListener('click', () => sorting('departements'));
+  if (regions) regions.addEventListener('click', () => sorting('regions'));
+  if (regionsQc)
+    regionsQc.addEventListener('click', () => sorting('regionsQc'));
+  if (pays) pays.addEventListener('click', () => sorting('pays'));
+
+  // gestion des filtres, pour le backButton //
+  let urlParams = new URLSearchParams(window.location.search);
+  let filter = urlParams.get('filter');
+
+  if (filter === 'regions') {
+    sorting('regions');
+  } else if (filter === 'departements') {
+    sorting('departements');
+  } else if (filter === 'regionsQc') {
+    sorting('regionsQc');
+  } else if (filter === 'pays') {
+    sorting('pays');
+  }
 });
 
+// ########### BACK BUTTON ########### //
 document.addEventListener('DOMContentLoaded', function () {
   let backButton = document.getElementById('backButton');
 
@@ -80,11 +99,17 @@ document.addEventListener('DOMContentLoaded', function () {
 
       let francePageRegions = `../../index.html?filter=regions#${lastVisit.slug}`;
       let francePageDepartements = `../../index.html?filter=departements#${lastVisit.slug}`;
+      let quebecPageRegions = `../../index.html?filter=regionsQc#${lastVisit.slug}`;
+      let internationalPagePays = `../../index.html?filter=pays#${lastVisit.slug}`;
 
       if (lastVisit.category === 'regions') {
         backButton.setAttribute('href', francePageRegions);
       } else if (lastVisit.category === 'departements') {
         backButton.setAttribute('href', francePageDepartements);
+      } else if (lastVisit.category === 'regionsQc') {
+        backButton.setAttribute('href', quebecPageRegions);
+      } else if (lastVisit.category === 'pays') {
+        backButton.setAttribute('href', internationalPagePays);
       } else {
         backButton.setAttribute('href', defaultHref);
       }
@@ -94,15 +119,49 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 });
 
+// historique de navigation //
 document.addEventListener('DOMContentLoaded', function () {
-  let urlParams = new URLSearchParams(window.location.search);
-  let filter = urlParams.get('filter');
-
-  if (filter === 'regions') {
-    sorting('regions'); // Applique le tri sur les régions
-  } else if (filter === 'departements') {
-    sorting('departements'); // Applique le tri sur les départements
+  function saveHistory(category, slug) {
+    let visitedHistory =
+      JSON.parse(sessionStorage.getItem('visitedHistory')) || [];
+    visitedHistory.push({ category, slug });
+    sessionStorage.setItem('visitedHistory', JSON.stringify(visitedHistory));
   }
+
+  let regionLinks = document.querySelectorAll('.image-gallery#regions a');
+  let departementLinks = document.querySelectorAll(
+    '.image-gallery#departements a'
+  );
+  let regionQcLinks = document.querySelectorAll('.image-gallery#regionsQc a');
+  let paysLinks = document.querySelectorAll('.image-gallery#pays a');
+
+  regionLinks.forEach((link) => {
+    link.addEventListener('click', function () {
+      let regionSlug = this.closest('li').id;
+      saveHistory('regions', regionSlug);
+    });
+  });
+
+  departementLinks.forEach((link) => {
+    link.addEventListener('click', function () {
+      let departementSlug = this.closest('li').id;
+      saveHistory('departements', departementSlug);
+    });
+  });
+
+  regionQcLinks.forEach((link) => {
+    link.addEventListener('click', function () {
+      let regionQcSlug = this.closest('li').id;
+      saveHistory('regionsQc', regionQcSlug);
+    });
+  });
+
+  paysLinks.forEach((link) => {
+    link.addEventListener('click', function () {
+      let paysSlug = this.closest('li').id;
+      saveHistory('pays', paysSlug);
+    });
+  });
 });
 
 // ########### SEARCH BAR ########### //
@@ -222,39 +281,6 @@ function alphabeticOrder() {
 }
 
 alphabeticOrderButton.addEventListener('click', alphabeticOrder);
-
-// ########### BUTTON "départements & régions & pays" ########### //
-document.addEventListener('DOMContentLoaded', function () {
-  let villes = document.getElementById('villesButton');
-  let departements = document.getElementById('departementsButton');
-  let regions = document.getElementById('regionsButton');
-  let regionsQc = document.getElementById('regionsQcButton');
-  let pays = document.getElementById('countryButton');
-
-  function sorting(category) {
-    const items = document.querySelectorAll('.image-gallery');
-    items.forEach((item) => {
-      item.hidden = item.id !== category;
-    });
-
-    // Gérer la visibilité du bouton alphabétique
-    let alphabeticOrderButton = document.getElementById(
-      'alphabeticOrderButton'
-    );
-    if (alphabeticOrderButton) {
-      alphabeticOrderButton.style.display =
-        category === 'villes' ? 'block' : 'none';
-    }
-  }
-
-  if (villes) villes.addEventListener('click', () => sorting('villes'));
-  if (departements)
-    departements.addEventListener('click', () => sorting('departements'));
-  if (regions) regions.addEventListener('click', () => sorting('regions'));
-  if (regionsQc)
-    regionsQc.addEventListener('click', () => sorting('regionsQc'));
-  if (pays) pays.addEventListener('click', () => sorting('pays'));
-});
 
 // ########### BUTTON UP ########### //
 // Get the upButton:

@@ -8,27 +8,36 @@ activeItinerary: active
 ---
 
 <main>
-  {% include "ribbon.njk" %} {% include "upButton.njk" %}
+
+  {% include "ribbon.njk" %} 
+  
+  {% include "upButton.njk" %}
 
   <div class="container">
+
     {% include "search.njk" %}
 
-    <div class="buttons left">{% include "alphabeticOrderButton.njk" %}</div>
+    <div class="buttons left"></div>
 
     <ul class="image-gallery">
-      {% for itineraire in itineraires %}
-      <li class="destination">
-        <a title="à venir">
-          <!--href="../itineraires/{{itineraire.name | slugify}}/index.html"-->
-          <img
-            src="../photos/minis/{{ itineraire.name | slugify }}.jpg"
-            alt=""
-          />
-          <div class="overlay {{ itineraire.keywords }}">
-            {{ itineraire.name }} | {{ itineraire.country }}
+      {% for destination in destinations %}
+      {% if destination.title === "itinéraire" %}
+      <li class="destination" id="{{destination.name | slugify}}">
+
+        {% if destination.link === "" %}
+							<a title="à venir" >
+						{% else %}
+							<a href="../destinations/{{destination.name | slugify}}/index.html">
+						{% endif %}
+
+							<img src="../photos/minis/{{destination.name | slugify}}.jpg" alt="">
+
+          <div class="overlay {{ destination.keywords }}">
+            {{ destination.name }} | {{ destination.country }}
           </div>
         </a>
       </li>
+      {% endif %}
       {% endfor %}
     </ul>
   </div>

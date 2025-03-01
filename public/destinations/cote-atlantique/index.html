@@ -21,7 +21,7 @@
       href="../../images/favicon_gold.png"
     />
     <title>
-      Caroline à l'étranger - 
+      Caroline à l'étranger - itinéraire
     </title>
   </head>
   <body class="">
@@ -55,7 +55,7 @@
           </li>
           <li class="menu-item">
             <a
-              class="menu-link "
+              class="menu-link active"
               href="../../itineraires/index.html"
               >itinéraires</a
             >
@@ -156,24 +156,46 @@
 <main id="destinations">
 	
 	<!-- ribbon -->
-	<div class="ribbon-destinations" id="ribbon">
+	
+  
 
-		<!-- destination's name on the right -->
-		<div class="heading-text">
-    	<h4>traversée vers l&#39;est <span></span></h4>
-			<p>départements de Dordogne 24, Puy-de-Dôme 63 &amp; Rhône 69
-				
-				<br>
-				
-			en France</p>		
-		</div>
-		
-		<!-- blur on the left (only on desktop) -->
-		<div class="panel_page_blur" ></div>
-		<div class="panel_page">
-			<!-- image (only on desktop) -->
-			<img src="../../photos/ribbon/traversee-vers-l-est.jpg" alt="">
-			<a
+
+<div class="ribbon-destinations" id="ribbon">
+  <!-- destination's name on the right -->
+  <div class="heading-text">
+    <h4>
+      Côte Atlantique
+      <span></span>
+    </h4>
+    <p>
+      départements de
+      Charente-Maritime 17, Vendée 85, Morbihan 56 &amp; Finistère 29 
+
+      
+    </p>
+    
+      <p>
+        en
+        France
+      </p>
+    
+
+  </div>
+  <span class="photo-note">
+    <i>photo de Côte Atlantique à venir</i>
+  </span>
+
+  <!-- blur on the left (only on desktop) -->
+  <div class="panel_page_blur"></div>
+  <div class="panel_page">
+    <!-- image (only on desktop) -->
+    <img
+      id="destination-image"
+      src="../../photos/ribbon/cote-atlantique.jpg"
+      alt="Destination"
+      onerror="this.onerror=null; this.src='../../photos/category/france-default.jpg';">
+
+    <a
   class="back"
   id="backButton"
   href="../../itineraires/index.html
@@ -192,34 +214,34 @@
   >
     <path
       d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z"
-/>
+    />
   </svg>
 </a>
-			<div class="link-destinations">
-				<div class="links">
-					<ul>
-						
-						<div class="desktop">
-							<li>
-								<a class="link" href="#traversee-vers-l-est">
-									<!-- places on the left: title and dates -->
-									<h6 class="date">traversée vers l&#39;est</h6>
-									<p class="text">
-										
-										
-										 3-5 décembre 2022
-										
-									</p>
-      					</a>
-							</li>
-						</div>
-						
-					</ul>
-				</div>
-			</div>
-		</div>
-	
-	</div>
+
+
+    <div class="link-destinations">
+      <div class="links">
+        <ul>
+          
+            <div class="desktop">
+              <li>
+                <a class="link" href="#route">
+                  <!-- places on the left: title and dates -->
+                  <h6 class="date">Route</h6>
+                  <p class="text">
+                    
+                      <span class="trip-date">20-29 août 2021</span>
+                    
+                  </p>
+                </a>
+              </li>
+            </div>
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
 
 	<!-- accordion (only on mobile) -->
 	<div class="accordion" id="accordionMobile">
@@ -228,25 +250,22 @@
 		  <h6 class="accordion-header">
 		    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
 					<!-- places: title -->
-					<h6 class="date">traversée vers l&#39;est</h6>
+					<h6 class="date">Route</h6>
 		    </button>
 		  </h6>
 		  <div id="collapse1" class="accordion-collapse collapse" data-bs-parent="#accordionMobile">
 		    <div class="accordion-body">
-					<div class="date_section" id="traversee-vers-l-est">
+					<div class="date_section" id="route">
 						<div class="mobile">
 							<!-- places: descriptions and dates -->
 							
-							<p>traversée vers l&#39;est<br><i>3-5 décembre 2022</i></p>
+							<p><br><i>20-29 août 2021</i></p>
 							
 						</div>
 					</div>
 					<!-- places: photos -->
 					<div class="container">
 		    		<div class="image-gallery-destination">
-		    		  
-		    		    <img src="../../photos/" alt="...">
-								<p>texte à venir</p>
 		    		  
 		    		</div>
 					</div>
@@ -284,31 +303,36 @@
   <section class="container-destinations" id="sectionDesktop">
   	
 		<!-- places: title, descriptions and dates -->
-		<div class="date_section" id="traversee-vers-l-est">
+		<div class="date_section" id="route">
 			<div class="desktop">
-				<h6>traversée vers l&#39;est</b></h6>
+				<h6>Route</b></h6>
 				
-				<p>traversée vers l&#39;est<br><i>3-5 décembre 2022</i></p>
+				<span class="trip-date">20-29 août 2021</span>
+					
 				
 			</div>
-			<a type="button" class="btn" data-bs-toggle="modal" data-bs-target="#1">voir le carousel de photos</a>
+			
+			<p class="else"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-image-fill" viewBox="0 0 16 16">
+  			<path d="M.002 3a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-12a2 2 0 0 1-2-2zm1 9v1a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V9.5l-3.777-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062zm5-6.5a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0"/>
+				</svg> <i> photos à venir !!</i> </p>
+			
     </div>
 
 		<!-- places: photos -->
+		
 		<div class="container">
       <div class="image-gallery-destination">
         
-          <img src="../../photos/" alt="..." title="texte à venir">
-        
       </div>
     </div>
+		
     
     <!-- modal for the carousel (only on desktop) -->
 		<div class="modal fade" id="1" tabindex="-1" aria-labelledby="1Label" aria-hidden="true">
   		<div class="modal-dialog modal-xl">
   			<div class="modal-content">
   				<div class="modal-header">
-  					<h5 class="modal-title" id="1Label">traversée vers l&#39;est</h5>
+  					<h5 class="modal-title" id="1Label">Côte Atlantique</h5>
   					<button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
       		</div>
 
@@ -319,17 +343,8 @@
 
 							<div class="carousel-indicators">
 							  
-									<button type="button" data-bs-target="#carousel1Captions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 0"></button>
-								
 							</div>
 							<div class="carousel-inner">
-								
-									<div class="carousel-item active">
-										<img src="../photos/../../photos/" class="d-block " alt="...">
-										<div class="carousel-caption d-none d-md-block">
-											<p>texte à venir</p>
-										</div>
-									</div>
 								
 						  </div>										
 
