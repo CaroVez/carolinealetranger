@@ -17,11 +17,17 @@ activeMaison: active
 
 		{% include "search.njk" %}	
 
-		<div class="buttons left">
+		<div class="buttons">
+			<div class="btn-france">
+				<button class="btn-villes" id="villesButton" title="">villes</button>
+
+  			<button class="btn-regions" id="regionsQcButton" title="">régions</button>
+			</div>
+
 			{% include "alphabeticOrderButton.njk" %}
 		</div>
 
-		<ul class="image-gallery">
+		<ul class="image-gallery" id="villes">
 			<li class="destination">
 				<a href="../photos/minis/00_carteQuebec.jpg" target="_blank">
 					<img src="../photos/minis/00_carteQuebec.jpg" alt="">
@@ -46,6 +52,25 @@ activeMaison: active
 							{% endif %}
 								</a>
 						</li>
+					{% endif %}
+				{% endfor %}
+		</ul>
+
+		<ul class="image-gallery" id="regionsQc" hidden>
+			<li class="destination">
+				<a href="../photos/minis/00_carteQuebec.jpg" target="_blank">
+					<img src="../photos/minis/00_carteQuebec.jpg" alt="">
+					<div class="overlay">carte des régions</div>
+				</a>
+			</li>
+				{% for region in regions %}
+					{% if region.activeMaison === "active" %}
+					<li class="destination" id="{{region.region | slugify}}">
+						<a href="../quebec/regions/{{region.region | slugify}}/index.html">
+							<img src="../photos/minis/{{region.region | slugify}}.png" alt="">
+							<div class="overlay">{{region.region}}</div>
+						</a>
+					</li>
 					{% endif %}
 				{% endfor %}
 		</ul>

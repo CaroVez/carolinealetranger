@@ -1,4 +1,4 @@
-[    
+[
   {
     "order": "001",
     "title": "region",
@@ -59,7 +59,57 @@
     "order": "009",
     "title": "region",
     "activeExpat": "active",
-    
+
     "region": "Provence-Alpes-Côte d'Azur"
+  },
+
+  {
+    "order": "001",
+    "title": "region",
+    "activeMaison": "active",
+
+    "region": "Bas-Saint-Laurent"
+  },
+  {
+    "order": "002",
+    "title": "region",
+    "activeMaison": "active",
+
+    "region": "Capitale-Nationale"
+  },
+  {
+    "order": "003",
+    "title": "region",
+    "activeMaison": "active",
+
+    "region": "Chaudière-Appalaches"
+  },
+  {
+    "order": "004",
+    "title": "region",
+    "activeMaison": "active",
+
+    "region": "Gaspésie-Îles-de-la-Madelaine"
+  },
+  {
+    "order": "005",
+    "title": "region",
+    "activeMaison": "active",
+
+    "region": "Laurentides"
+  },
+  {
+    "order": "006",
+    "title": "region",
+    "activeMaison": "active",
+
+    "region": "Montérégie"
+  },
+  {
+    "order": "007",
+    "title": "region",
+    "activeMaison": "active",
+
+    "region": "Montréal"
   }
 ]

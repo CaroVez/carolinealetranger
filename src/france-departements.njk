@@ -2,6 +2,7 @@
 layout: layout.njk 
 dot: ../../.
 nav: pages
+activeExpat: active
 
 pagination:
     data: departements
@@ -18,14 +19,18 @@ permalink: "france/departements/{{ departements.departementProvinceState | slugi
 		<!-- destination's name on the right -->
 		<div class="heading-text">
     		<h4>{{departements.departementProvinceState}}</h4>
-			<p>dans la région {{departements.region}}</p>		
+			<p>dans la région {{departements.region}}</p>
 		</div>
 		
 		<!-- blur on the left (only on desktop) -->
 		<div class="panel_page_blur" ></div>
 		<div class="panel_page">
 			<!-- image (only on desktop) -->
-			<img src="../../photos/ribbon/{{ departements.departementProvinceState | slugify }}.jpg" alt="">
+			<img
+      src="../../../photos/ribbon/{{ departements.departementProvinceState | slugify }}.jpg"
+      alt="Departement"
+      onerror="this.onerror=null; this.src='../../../photos/category/france-default.jpg';">
+
 			{% include "backButton.njk" %}
 		</div>
 	

@@ -20,7 +20,9 @@
       type="image/x-icon"
       href="../../images/favicon_gold.png"
     />
-    <title>Caroline à l'étranger - Québec</title>
+    <title>
+      Caroline à l'étranger - Québec
+    </title>
   </head>
   <body class="">
     <header>
@@ -173,26 +175,42 @@
       
     </p>
   </div>
+  <span class="photo-note">
+    <i>photo de Québec à venir</i>
+  </span>
 
   <!-- blur on the left (only on desktop) -->
   <div class="panel_page_blur"></div>
   <div class="panel_page">
     <!-- image (only on desktop) -->
     <img
+      id="destination-image"
       src="../../photos/ribbon/quebec.jpg"
       alt="Destination"
       onerror="this.onerror=null; this.src='../../photos/category/quebec-default.jpg';">
 
-    <a class="back" id="backButton"
-
-
-  href="../../quebec/index.html#quebec"
-
-
-
-title="retour vers Québec"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-caret-left-fill" viewBox="0 0 16 16"><path d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z"/></svg></a>
-
-
+    <a
+  class="back"
+  id="backButton"
+  href="../../quebec/index.html#quebec
+        "
+  data-default-href="../../quebec/index.html#quebec
+        "
+  title="retour vers Québec"
+>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="32"
+    height="32"
+    fill="currentColor"
+    class="bi bi-caret-left-fill"
+    viewBox="0 0 16 16"
+  >
+    <path
+      d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z"
+/>
+  </svg>
+</a>
     <div class="link-destinations">
       <div class="links">
         <ul>
@@ -256,7 +274,25 @@ title="retour vers Québec"><svg xmlns="http://www.w3.org/2000/svg" width="32" h
 	</div>
 
 	<div class="up-button">
-  <button onclick="topFunction()" class="up" id="upButton" title="haut de la page">haut de la page <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16"><path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/></svg></button>
+  <button
+    onclick="topFunction()"
+    class="up"
+    id="upButton"
+    title="haut de la page"
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="32"
+      height="32"
+      fill="currentColor"
+      class="bi bi-caret-right-fill"
+      viewBox="0 0 16 16"
+    >
+      <path
+        d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"
+      />
+    </svg>
+  </button>
 </div>
 
 
@@ -269,13 +305,19 @@ title="retour vers Québec"><svg xmlns="http://www.w3.org/2000/svg" width="32" h
 			<div class="desktop">
 				<h6>Ville</b></h6>
 				
-				<p>plusieurs escapades<br><i>2012 à 2005</i></p>
+				<span class="trip-date">2012 à 2005</span>
+					
+					<p>plusieurs escapades</p>
+					
 				
 			</div>
+			
 			<a type="button" class="btn" data-bs-toggle="modal" data-bs-target="#1">voir le carousel de photos</a>
+			
     </div>
 
 		<!-- places: photos -->
+		
 		<div class="container">
       <div class="image-gallery-destination">
         
@@ -285,6 +327,7 @@ title="retour vers Québec"><svg xmlns="http://www.w3.org/2000/svg" width="32" h
         
       </div>
     </div>
+		
     
     <!-- modal for the carousel (only on desktop) -->
 		<div class="modal fade" id="1" tabindex="-1" aria-labelledby="1Label" aria-hidden="true">

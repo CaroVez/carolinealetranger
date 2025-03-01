@@ -20,7 +20,9 @@
       type="image/x-icon"
       href="../../images/favicon_gold.png"
     />
-    <title>Caroline à l'étranger - France</title>
+    <title>
+      Caroline à l'étranger - France
+    </title>
   </head>
   <body class="">
     <header>
@@ -173,25 +175,42 @@
       
     </p>
   </div>
+  <span class="photo-note">
+    <i>photo de Médoc viticole à venir</i>
+  </span>
 
   <!-- blur on the left (only on desktop) -->
   <div class="panel_page_blur"></div>
   <div class="panel_page">
     <!-- image (only on desktop) -->
     <img
+      id="destination-image"
       src="../../photos/ribbon/medoc-viticole.jpg"
       alt="Destination"
       onerror="this.onerror=null; this.src='../../photos/category/france-default.jpg';">
 
-    <a class="back" id="backButton"
-
-
-  href="../../france/index.html#medoc-viticole" 
-
-
-title="retour vers France"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-caret-left-fill" viewBox="0 0 16 16"><path d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z"/></svg></a>
-
-
+    <a
+  class="back"
+  id="backButton"
+  href="../../france/index.html#medoc-viticole
+        "
+  data-default-href="../../france/index.html#medoc-viticole
+        "
+  title="retour vers France"
+>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="32"
+    height="32"
+    fill="currentColor"
+    class="bi bi-caret-left-fill"
+    viewBox="0 0 16 16"
+  >
+    <path
+      d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z"
+/>
+  </svg>
+</a>
     <div class="link-destinations">
       <div class="links">
         <ul>
@@ -386,7 +405,25 @@ title="retour vers France"><svg xmlns="http://www.w3.org/2000/svg" width="32" he
 	</div>
 
 	<div class="up-button">
-  <button onclick="topFunction()" class="up" id="upButton" title="haut de la page">haut de la page <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16"><path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/></svg></button>
+  <button
+    onclick="topFunction()"
+    class="up"
+    id="upButton"
+    title="haut de la page"
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="32"
+      height="32"
+      fill="currentColor"
+      class="bi bi-caret-right-fill"
+      viewBox="0 0 16 16"
+    >
+      <path
+        d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"
+      />
+    </svg>
+  </button>
 </div>
 
 
@@ -399,13 +436,19 @@ title="retour vers France"><svg xmlns="http://www.w3.org/2000/svg" width="32" he
 			<div class="desktop">
 				<h6>Portes ouvertes des vignobles</b></h6>
 				
-				<p>Visite de 11 domaines et dégustation de 41 vins (+ 1 champagne) : Château Fonréaud, Château Chasse-Spleen, Château la Bridane, Château Doyac, Château Loudenne, Château Larrieu-Terrefort, Château Siran, Domaine les Sadons, Château Haut-Bages Libéral, Château Lamothe-Bergeron, Château Prieuré Lichine.<br><i>1-2 avril 2023</i></p>
+				<span class="trip-date">1-2 avril 2023</span>
+					
+					<p>Visite de 11 domaines et dégustation de 41 vins (+ 1 champagne) : Château Fonréaud, Château Chasse-Spleen, Château la Bridane, Château Doyac, Château Loudenne, Château Larrieu-Terrefort, Château Siran, Domaine les Sadons, Château Haut-Bages Libéral, Château Lamothe-Bergeron, Château Prieuré Lichine.</p>
+					
 				
 			</div>
+			
 			<a type="button" class="btn" data-bs-toggle="modal" data-bs-target="#2">voir le carousel de photos</a>
+			
     </div>
 
 		<!-- places: photos -->
+		
 		<div class="container">
       <div class="image-gallery-destination">
         
@@ -449,6 +492,7 @@ title="retour vers France"><svg xmlns="http://www.w3.org/2000/svg" width="32" he
         
       </div>
     </div>
+		
     
     <!-- modal for the carousel (only on desktop) -->
 		<div class="modal fade" id="2" tabindex="-1" aria-labelledby="2Label" aria-hidden="true">
@@ -667,13 +711,19 @@ title="retour vers France"><svg xmlns="http://www.w3.org/2000/svg" width="32" he
 			<div class="desktop">
 				<h6>Château du Taillan</b></h6>
 				
-				<p>Première visite et dégustation<br><i>30 mai 2021</i></p>
+				<span class="trip-date">30 mai 2021</span>
+					
+					<p>Première visite et dégustation</p>
+					
 				
 			</div>
+			
 			<a type="button" class="btn" data-bs-toggle="modal" data-bs-target="#1">voir le carousel de photos</a>
+			
     </div>
 
 		<!-- places: photos -->
+		
 		<div class="container">
       <div class="image-gallery-destination">
         
@@ -705,6 +755,7 @@ title="retour vers France"><svg xmlns="http://www.w3.org/2000/svg" width="32" he
         
       </div>
     </div>
+		
     
     <!-- modal for the carousel (only on desktop) -->
 		<div class="modal fade" id="1" tabindex="-1" aria-labelledby="1Label" aria-hidden="true">

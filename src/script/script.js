@@ -35,6 +35,76 @@ document
     this.src = this.getAttribute('data-default');
   });
 
+// ########### RIBBON DESTINATION IMAGE ########### //
+
+// ########### BACK BUTTON ########### //
+document.addEventListener('DOMContentLoaded', function () {
+  let regionLinks = document.querySelectorAll('.image-gallery#regions a');
+  let departementLinks = document.querySelectorAll(
+    '.image-gallery#departements a'
+  );
+
+  function saveHistory(category, slug) {
+    let visitedHistory =
+      JSON.parse(sessionStorage.getItem('visitedHistory')) || [];
+    visitedHistory.push({ category, slug });
+    sessionStorage.setItem('visitedHistory', JSON.stringify(visitedHistory));
+  }
+
+  regionLinks.forEach((link) => {
+    link.addEventListener('click', function () {
+      let regionSlug = this.closest('li').id;
+      saveHistory('regions', regionSlug);
+    });
+  });
+
+  departementLinks.forEach((link) => {
+    link.addEventListener('click', function () {
+      let departementSlug = this.closest('li').id;
+      saveHistory('departements', departementSlug);
+    });
+  });
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+  let backButton = document.getElementById('backButton');
+
+  if (backButton) {
+    let defaultHref = backButton.getAttribute('data-default-href');
+    let visitedHistory =
+      JSON.parse(sessionStorage.getItem('visitedHistory')) || [];
+
+    if (visitedHistory.length > 0) {
+      let lastVisit = visitedHistory.pop(); // Récupère la dernière visite et la retire de l'historique
+      sessionStorage.setItem('visitedHistory', JSON.stringify(visitedHistory)); // Mise à jour de l'historique
+
+      let francePageRegions = `../../index.html?filter=regions#${lastVisit.slug}`;
+      let francePageDepartements = `../../index.html?filter=departements#${lastVisit.slug}`;
+
+      if (lastVisit.category === 'regions') {
+        backButton.setAttribute('href', francePageRegions);
+      } else if (lastVisit.category === 'departements') {
+        backButton.setAttribute('href', francePageDepartements);
+      } else {
+        backButton.setAttribute('href', defaultHref);
+      }
+    } else {
+      backButton.setAttribute('href', defaultHref);
+    }
+  }
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+  let urlParams = new URLSearchParams(window.location.search);
+  let filter = urlParams.get('filter');
+
+  if (filter === 'regions') {
+    sorting('regions'); // Applique le tri sur les régions
+  } else if (filter === 'departements') {
+    sorting('departements'); // Applique le tri sur les départements
+  }
+});
+
 // ########### SEARCH BAR ########### //
 function search() {
   const input = document.getElementById('search').value.toLowerCase();
@@ -47,6 +117,24 @@ function search() {
     }
   }
 }
+
+document.addEventListener('DOMContentLoaded', function () {
+  document
+    .getElementById('searchButton')
+    .addEventListener('click', function (event) {
+      event.preventDefault(); // Empêche l'ancre par défaut
+
+      let searchBar = document.getElementById('search');
+      let navbarHeight = document.querySelector('.header').offsetHeight || 80; // Ajustez 80px si la navbar n'a pas de classe
+      let searchBarPosition =
+        searchBar.getBoundingClientRect().top + window.scrollY;
+
+      window.scrollTo({
+        top: searchBarPosition - navbarHeight - 10, // 10px pour ajouter un petit espace
+        behavior: 'smooth',
+      });
+    });
+});
 
 // ########### BUTTON "ordre alphabétique" ########### //
 let alphabeticOrderButton = document.getElementById('alphabeticOrderButton');
@@ -135,25 +223,38 @@ function alphabeticOrder() {
 
 alphabeticOrderButton.addEventListener('click', alphabeticOrder);
 
-// ########### BUTTON "départements & régions" ########### //
-let villes = document.getElementById('villesButton');
-let departements = document.getElementById('departementsButton');
-let regions = document.getElementById('regionsButton');
+// ########### BUTTON "départements & régions & pays" ########### //
+document.addEventListener('DOMContentLoaded', function () {
+  let villes = document.getElementById('villesButton');
+  let departements = document.getElementById('departementsButton');
+  let regions = document.getElementById('regionsButton');
+  let regionsQc = document.getElementById('regionsQcButton');
+  let pays = document.getElementById('countryButton');
 
-function sorting(category) {
-  const items = document.querySelectorAll('.image-gallery');
-  items.forEach((item) => {
-    item.hidden = item.id !== category;
-  });
+  function sorting(category) {
+    const items = document.querySelectorAll('.image-gallery');
+    items.forEach((item) => {
+      item.hidden = item.id !== category;
+    });
 
-  // Gérer la visibilité du bouton alphabétique
-  alphabeticOrderButton.style.display =
-    category === 'villes' ? 'block' : 'none';
-}
+    // Gérer la visibilité du bouton alphabétique
+    let alphabeticOrderButton = document.getElementById(
+      'alphabeticOrderButton'
+    );
+    if (alphabeticOrderButton) {
+      alphabeticOrderButton.style.display =
+        category === 'villes' ? 'block' : 'none';
+    }
+  }
 
-villes.addEventListener('click', () => sorting('villes'));
-departements.addEventListener('click', () => sorting('departements'));
-regions.addEventListener('click', () => sorting('regions'));
+  if (villes) villes.addEventListener('click', () => sorting('villes'));
+  if (departements)
+    departements.addEventListener('click', () => sorting('departements'));
+  if (regions) regions.addEventListener('click', () => sorting('regions'));
+  if (regionsQc)
+    regionsQc.addEventListener('click', () => sorting('regionsQc'));
+  if (pays) pays.addEventListener('click', () => sorting('pays'));
+});
 
 // ########### BUTTON UP ########### //
 // Get the upButton:
@@ -178,8 +279,22 @@ function scrollFunction() {
 }
 // When the user clicks on the button, scroll to the top of the document
 function topFunction() {
-  document.body.scrollTop = 0; // For Safari
-  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  let searchBar = document.getElementById('search'); // ID de la barre de recherche
+  let navbar = document.querySelector('.header'); // Classe de la navbar
+
+  if (searchBar) {
+    let searchBarPosition =
+      searchBar.getBoundingClientRect().top + window.scrollY;
+    let navbarHeight = navbar ? navbar.offsetHeight : 80; // Hauteur de la navbar, 0 si introuvable
+
+    window.scrollTo({
+      top: searchBarPosition - navbarHeight - 10, // Ajustement pour éviter qu'elle soit collée
+      behavior: 'smooth',
+    });
+  } else {
+    console.warn('⚠️ SearchBar introuvable, scroll en haut de page.');
+    window.scrollTo({ top: 0, behavior: 'smooth' }); // Fallback si searchBar introuvable
+  }
 }
 
 // ########### disable save image option ########### //

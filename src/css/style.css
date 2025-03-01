@@ -197,6 +197,10 @@ h6 {
 }
 
 /* ########### header nav ########### */
+nav {
+  z-index: 1000;
+}
+
 li {
   list-style: none;
 }
@@ -214,7 +218,6 @@ a {
   padding: 0 24px;
   height: 50px;
   background-image: url(../images/header.png);
-  z-index: 50;
 }
 .header a.active {
   font-family: 'Love';
@@ -318,6 +321,7 @@ header .modal-body textarea {
 .ribbon-destinations .heading-text {
   text-align: center;
   width: 90%;
+  margin: 0 auto;
 }
 .ribbon .heading-text {
   margin-top: 5rem;
@@ -327,6 +331,9 @@ header .modal-body textarea {
 }
 .ribbon-destinations .heading-text p {
   margin-top: -1rem;
+}
+.photo-note {
+  display: none;
 }
 .ribbon .heading-text a {
   display: none;
@@ -397,10 +404,10 @@ header .modal-body textarea {
 #upButton {
   display: none;
   position: fixed;
-  right: -10%;
-  bottom: 15%;
+  right: 2%;
+  bottom: 6%;
   transform: rotate(-90deg);
-  background-color: #333;
+  background: none;
 }
 #upButton,
 #backButton {
@@ -411,7 +418,7 @@ header .modal-body textarea {
   cursor: pointer;
 }
 #backButton {
-  position: absolute;
+  position: fixed;
   left: 5%;
   top: 8%;
   background-color: initial;
@@ -496,14 +503,16 @@ section,
   margin-bottom: 1rem;
 }
 .date_section {
-  padding-top: 50px;
+  padding-top: 10px;
   width: 90%;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   text-align: center;
 }
 .date_section a {
   display: none;
+}
+.date_section .else {
+  color: #fcaf45;
 }
 
 .image-gallery-destination {
@@ -719,17 +728,15 @@ section,
 
   /* ########### buttons up + back ########### */
   #upButton {
-    right: 0;
-    bottom: 10%;
+    bottom: 4%;
   }
   #backButton:hover,
   #upButton:hover {
     color: white;
   }
   #backButton {
-    position: absolute;
     left: 1%;
-    top: 2%;
+    top: 8%;
   }
 
   /* ########### ribbon ########### */
@@ -739,7 +746,8 @@ section,
   }
   .ribbon-destinations {
     position: relative;
-    max-height: 40vh;
+    margin-top: inherit;
+    max-height: 60vh;
   }
   #index .panel_page_blur,
   .ribbon .panel_page_blur,
@@ -769,7 +777,7 @@ section,
   .ribbon-destinations .panel_page img {
     display: block;
     object-fit: cover;
-    max-height: 40vh;
+    max-height: 60vh;
     width: 100%;
     height: 100%;
   }
@@ -784,7 +792,6 @@ section,
     color: white;
     margin-top: 5rem;
     width: inherit;
-    margin-top: inherit;
   }
   .ribbon .heading-text {
     left: 25%;
@@ -805,11 +812,19 @@ section,
     margin-top: -1rem;
   }
 
-  .ribbon-destinations .heading-text p {
+  .ribbon-destinations .heading-text p,
+  .photo-note {
     background-color: rgba(0, 0, 0, 0.5);
     width: fit-content;
     padding: 0 0.5rem;
     border-radius: 1rem;
+  }
+  .photo-note {
+    display: block;
+    color: #fcaf45;
+    position: absolute;
+    bottom: 0;
+    right: 3%;
   }
   .ribbon .heading-text a {
     display: block;
@@ -823,12 +838,13 @@ section,
   #destinations .link-destinations {
     position: absolute;
     top: 50%;
-    left: 2%;
-    transform: translate(-2%, -50%);
+    left: 5%;
+    transform: translate(-5%, -50%);
     z-index: 30;
   }
   #destinations .link-destinations {
-    width: 40vw;
+    width: 30vw;
+    margin-top: 30px;
   }
   #destinations .mobile {
     display: none;
@@ -837,23 +853,25 @@ section,
     display: block;
   }
   #destinations .link-destinations .links ul {
-    margin-left: -2rem;
     display: inherit;
     flex-wrap: inherit;
     gap: inherit;
     justify-content: inherit;
   }
   #destinations .link-destinations .links li {
-    margin-bottom: 2rem;
     height: inherit;
+    padding: inherit;
     text-align: inherit;
     background-color: inherit;
   }
   .trip-date {
     background-color: rgba(0, 0, 0, 0.7);
     padding: 0 0.5rem;
+    margin-top: 0.5rem;
     border-radius: 1rem;
     width: fit-content;
+    white-space: nowrap;
+    display: inline-block;
   }
   #destinations .link-destinations .links li a:hover {
     color: #fcaf45;

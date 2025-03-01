@@ -61,13 +61,23 @@ permalink: "destinations/{{ destinations.name | slugify }}/"
 			<div class="desktop">
 				<h6>{{place.title}}</b></h6>
 				{% for trip in place.trips %}
-				<p>{{trip.description}}<br><i>{{trip.date}}</i></p>
+				<span class="trip-date">{{trip.date}}</span>
+					{% if trip.description %}
+					<p>{{trip.description}}</p>
+					{% endif %}
 				{% endfor %}
 			</div>
+			{% if place.photos | length > 0 %}
 			<a type="button" class="btn" data-bs-toggle="modal" data-bs-target="#{{place.modal}}">voir le carousel de photos</a>
+			{% else %}
+			<p class="else"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-image-fill" viewBox="0 0 16 16">
+  			<path d="M.002 3a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-12a2 2 0 0 1-2-2zm1 9v1a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V9.5l-3.777-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062zm5-6.5a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0"/>
+				</svg> <i>photos à venir !!</i> </p>
+			{% endif %}
     </div>
 
 		<!-- places: photos -->
+		{% if place.photos %}
 		<div class="container">
       <div class="image-gallery-destination">
         {% for photo in place.photos %}
@@ -75,6 +85,7 @@ permalink: "destinations/{{ destinations.name | slugify }}/"
         {% endfor %}
       </div>
     </div>
+		{% endif %}
     
     <!-- modal for the carousel (only on desktop) -->
 		<div class="modal fade" id="{{place.modal}}" tabindex="-1" aria-labelledby="{{place.modal}}Label" aria-hidden="true">

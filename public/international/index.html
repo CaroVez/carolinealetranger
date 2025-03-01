@@ -20,7 +20,9 @@
       type="image/x-icon"
       href="../images/favicon_gold.png"
     />
-    <title>Caroline à l'étranger - international</title>
+    <title>
+      Caroline à l'étranger - international
+    </title>
   </head>
   <body class="">
     <header>
@@ -166,7 +168,25 @@
 </div>
 
 	<div class="up-button">
-  <button onclick="topFunction()" class="up" id="upButton" title="haut de la page">haut de la page <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16"><path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/></svg></button>
+  <button
+    onclick="topFunction()"
+    class="up"
+    id="upButton"
+    title="haut de la page"
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="32"
+      height="32"
+      fill="currentColor"
+      class="bi bi-caret-right-fill"
+      viewBox="0 0 16 16"
+    >
+      <path
+        d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"
+      />
+    </svg>
+  </button>
 </div>
 
 
@@ -178,7 +198,11 @@
 </div>
 
 
-		<div class="buttons left">
+		<div class="buttons">
+			<div class="btn-france">
+				<button class="btn-villes" id="villesButton" title="">villes</button>
+  			<button class="btn-pays" id="countryButton" title="">pays</button>
+			</div>
 			<button
   class="btn-alphabetic-order"
   onclick="alphabeticOrder()"
@@ -205,7 +229,13 @@
 
 		</div>
 
-		<ul class="image-gallery">	
+		<ul class="image-gallery" id="villes">	
+			<li class="destination">
+				<a href="../photos/minis/00_carteQuebec.jpg" target="_blank">
+					<img src="../photos/minis/00_carteQuebec.jpg" alt="">
+					<div class="overlay">carte du monde</div>
+				</a>
+			</li>
 			
 				
 			
@@ -803,7 +833,7 @@
 							<img src="../photos/minis/principaute-de-monaco.jpg" alt="">
 
 						
-							<div class="overlay juin 2023 van">principauté de Monaco</div>
+							<div class="overlay juin 2023 van">principauté de Monaco  | </div>
 						
 							</a>
 					</li>
@@ -1539,7 +1569,7 @@
 							<img src="../photos/minis/citta-del-vaticano.jpg" alt="">
 
 						
-							<div class="overlay juin 2017 pape">Citta&#39; Del Vaticano</div>
+							<div class="overlay juin 2017 pape">Citta&#39; Del Vaticano  | </div>
 						
 							</a>
 					</li>
@@ -2697,6 +2727,149 @@
 			
 				
 					
+		</ul>
+
+		<ul class="image-gallery" id="pays" hidden>
+			<li class="destination">
+				<a href="../photos/minis/00_carteQuebec.jpg" target="_blank">
+					<img src="../photos/minis/00_carteQuebec.jpg" alt="">
+					<div class="overlay">carte du monde</div>
+				</a>
+			</li>
+				
+					<li class="destination" id="belgie">
+						<a href="../international/pays/belgie/index.html">
+							<img src="../photos/minis/belgie.png" alt="">
+							<div class="overlay">België</div>
+						</a>
+					</li>
+				
+					<li class="destination" id="canada">
+						<a href="../international/pays/canada/index.html">
+							<img src="../photos/minis/canada.png" alt="">
+							<div class="overlay">Canada</div>
+						</a>
+					</li>
+				
+					<li class="destination" id="citta-del-vaticano">
+						<a href="../international/pays/citta-del-vaticano/index.html">
+							<img src="../photos/minis/citta-del-vaticano.png" alt="">
+							<div class="overlay">Citta&#39; Del Vaticano</div>
+						</a>
+					</li>
+				
+					<li class="destination" id="danmark">
+						<a href="../international/pays/danmark/index.html">
+							<img src="../photos/minis/danmark.png" alt="">
+							<div class="overlay">Danmark</div>
+						</a>
+					</li>
+				
+					<li class="destination" id="eesti">
+						<a href="../international/pays/eesti/index.html">
+							<img src="../photos/minis/eesti.png" alt="">
+							<div class="overlay">Eesti</div>
+						</a>
+					</li>
+				
+					<li class="destination" id="england-uk">
+						<a href="../international/pays/england-uk/index.html">
+							<img src="../photos/minis/england-uk.png" alt="">
+							<div class="overlay">England, UK</div>
+						</a>
+					</li>
+				
+					<li class="destination" id="espana">
+						<a href="../international/pays/espana/index.html">
+							<img src="../photos/minis/espana.png" alt="">
+							<div class="overlay">España</div>
+						</a>
+					</li>
+				
+					<li class="destination" id="ireland">
+						<a href="../international/pays/ireland/index.html">
+							<img src="../photos/minis/ireland.png" alt="">
+							<div class="overlay">Ireland</div>
+						</a>
+					</li>
+				
+					<li class="destination" id="italia">
+						<a href="../international/pays/italia/index.html">
+							<img src="../photos/minis/italia.png" alt="">
+							<div class="overlay">Italia</div>
+						</a>
+					</li>
+				
+					<li class="destination" id="japon">
+						<a href="../international/pays/japon/index.html">
+							<img src="../photos/minis/japon.png" alt="">
+							<div class="overlay">Japon 日本</div>
+						</a>
+					</li>
+				
+					<li class="destination" id="nederland">
+						<a href="../international/pays/nederland/index.html">
+							<img src="../photos/minis/nederland.png" alt="">
+							<div class="overlay">Nederland</div>
+						</a>
+					</li>
+				
+					<li class="destination" id="northen-ireland-uk">
+						<a href="../international/pays/northen-ireland-uk/index.html">
+							<img src="../photos/minis/northen-ireland-uk.png" alt="">
+							<div class="overlay">Northen Ireland, UK</div>
+						</a>
+					</li>
+				
+					<li class="destination" id="portugal">
+						<a href="../international/pays/portugal/index.html">
+							<img src="../photos/minis/portugal.png" alt="">
+							<div class="overlay">Portugal</div>
+						</a>
+					</li>
+				
+					<li class="destination" id="principaute-de-monaco">
+						<a href="../international/pays/principaute-de-monaco/index.html">
+							<img src="../photos/minis/principaute-de-monaco.png" alt="">
+							<div class="overlay">principauté de Monaco</div>
+						</a>
+					</li>
+				
+					<li class="destination" id="schweiz">
+						<a href="../international/pays/schweiz/index.html">
+							<img src="../photos/minis/schweiz.png" alt="">
+							<div class="overlay">Schweiz</div>
+						</a>
+					</li>
+				
+					<li class="destination" id="scotland-uk">
+						<a href="../international/pays/scotland-uk/index.html">
+							<img src="../photos/minis/scotland-uk.png" alt="">
+							<div class="overlay">Scotland, UK</div>
+						</a>
+					</li>
+				
+					<li class="destination" id="suomi">
+						<a href="../international/pays/suomi/index.html">
+							<img src="../photos/minis/suomi.png" alt="">
+							<div class="overlay">Suomi</div>
+						</a>
+					</li>
+				
+					<li class="destination" id="sverige">
+						<a href="../international/pays/sverige/index.html">
+							<img src="../photos/minis/sverige.png" alt="">
+							<div class="overlay">Sverige</div>
+						</a>
+					</li>
+				
+					<li class="destination" id="usa">
+						<a href="../international/pays/usa/index.html">
+							<img src="../photos/minis/usa.png" alt="">
+							<div class="overlay">USA</div>
+						</a>
+					</li>
+				
 		</ul>
 	
 	</div>

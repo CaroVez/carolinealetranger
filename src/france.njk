@@ -82,12 +82,14 @@ activeExpat: active
 				</a>
 			</li>
 				{% for region in regions %}
-				<li class="destination" id="{{region.region | slugify}}">
-					<a href="../france/regions/{{region.region | slugify}}/index.html">
-						<img src="../photos/minis/{{region.region | slugify}}.png" alt="">
-						<div class="overlay">{{region.region}}</div>
-					</a>
-				</li>
+					{% if region.activeExpat === "active" %}
+					<li class="destination" id="{{region.region | slugify}}">
+						<a href="../france/regions/{{region.region | slugify}}/index.html">
+							<img src="../photos/minis/{{region.region | slugify}}.png" alt="">
+							<div class="overlay">{{region.region}}</div>
+						</a>
+					</li>
+					{% endif %}
 				{% endfor %}
 		</ul>
 

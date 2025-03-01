@@ -1,0 +1,82 @@
+---
+layout: layout.njk 
+dot: ../../.
+nav: pages
+activeMondial: active
+
+pagination:
+    data: pays
+    size: 1
+    alias: pays
+permalink: "international/pays/{{ pays.pays | slugify }}/"
+---
+
+<main>
+
+	<!-- ribbon -->
+	<div class="ribbon-destinations" id="ribbon">
+
+		<!-- destination's name on the right -->
+		<div class="heading-text">
+			<h4>{{pays.pays}}</h4>
+		</div>
+		<span class="photo-note">
+			<i>photo de {{pays.pays}} à venir</i>
+		</span>
+
+		<!-- blur on the left (only on desktop) -->
+		<div class="panel_page_blur" ></div>
+		<div class="panel_page">
+			<!-- image (only on desktop) -->
+			<img
+      src="../../../photos/ribbon/{{ pays.pays | slugify }}.jpg"
+      alt="pays"
+      onerror="this.onerror=null; this.src='../../../photos/category/international-default.jpg';">
+
+			{% include "backButton.njk" %}
+		</div>
+
+	</div>
+
+	{% include "upButton.njk" %}
+
+	<div class="container">
+
+		{% include "search.njk" %}
+
+		<div class="buttons">
+			{% include "alphabeticOrderButton.njk" %}
+		</div>
+
+		<ul class="image-gallery" id="villes">
+			<li class="destination-carte">
+				<a href="../../../photos/minis/00_carteQuebec.jpg" target="_blank">
+					<img src="../../../photos/minis/00_carteQuebec.jpg" alt="">
+					<div class="overlay">carte du monde</div>
+				</a>
+			</li>
+			{% for destination in destinations %}
+				{% if destination.country == pays.pays or destination.countryShort == pays.pays %}
+					<li class="destination" id="{{destination.name | slugify}}">
+
+						{% if destination.link === "" %}
+							<a title="à venir" >
+							{% else %}
+								<a href="../../../destinations/{{destination.name | slugify}}/index.html">
+								{% endif %}
+
+								<img src="../../../photos/minis/{{destination.name | slugify}}.jpg" alt="">
+
+								<div class="overlay {{destination.keywords}} {{destination.region}}">{{destination.name}} | <br>
+									{{destination.departementProvinceState}} | <br>
+									{{destination.country}}</div>
+
+							</a>
+						</li>
+					{% endif %}
+				{% endfor %}
+			</ul>
+
+		</div>
+
+	</main>

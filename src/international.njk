@@ -17,11 +17,21 @@ activeMondial: active
 
 		{% include "search.njk" %}
 
-		<div class="buttons left">
+		<div class="buttons">
+			<div class="btn-france">
+				<button class="btn-villes" id="villesButton" title="">villes</button>
+  			<button class="btn-pays" id="countryButton" title="">pays</button>
+			</div>
 			{% include "alphabeticOrderButton.njk" %}
 		</div>
 
-		<ul class="image-gallery">	
+		<ul class="image-gallery" id="villes">	
+			<li class="destination">
+				<a href="../photos/minis/00_carteQuebec.jpg" target="_blank">
+					<img src="../photos/minis/00_carteQuebec.jpg" alt="">
+					<div class="overlay">carte du monde</div>
+				</a>
+			</li>
 			{% for destination in destinations %}
 				{% if destination.title === "international" %}
 					<li class="destination" id="{{destination.name | slugify}}">
@@ -45,6 +55,23 @@ activeMondial: active
 					</li>
 				{% endif %}
 			{% endfor %}		
+		</ul>
+
+		<ul class="image-gallery" id="pays" hidden>
+			<li class="destination">
+				<a href="../photos/minis/00_carteQuebec.jpg" target="_blank">
+					<img src="../photos/minis/00_carteQuebec.jpg" alt="">
+					<div class="overlay">carte du monde</div>
+				</a>
+			</li>
+				{% for pays in pays %}
+					<li class="destination" id="{{pays.pays | slugify}}">
+						<a href="../international/pays/{{pays.pays | slugify}}/index.html">
+							<img src="../photos/minis/{{pays.pays | slugify}}.png" alt="">
+							<div class="overlay">{{pays.pays}}</div>
+						</a>
+					</li>
+				{% endfor %}
 		</ul>
 	
 	</div>

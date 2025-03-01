@@ -20,7 +20,9 @@
       type="image/x-icon"
       href="../../images/favicon_gold.png"
     />
-    <title>Caroline à l'étranger - France</title>
+    <title>
+      Caroline à l'étranger - France
+    </title>
   </head>
   <body class="">
     <header>
@@ -173,34 +175,51 @@
       
     </p>
   </div>
+  <span class="photo-note">
+    <i>photo de Arcachon à venir</i>
+  </span>
 
   <!-- blur on the left (only on desktop) -->
   <div class="panel_page_blur"></div>
   <div class="panel_page">
     <!-- image (only on desktop) -->
     <img
+      id="destination-image"
       src="../../photos/ribbon/arcachon.jpg"
       alt="Destination"
       onerror="this.onerror=null; this.src='../../photos/category/france-default.jpg';">
 
-    <a class="back" id="backButton"
-
-
-  href="../../france/index.html#arcachon" 
-
-
-title="retour vers France"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-caret-left-fill" viewBox="0 0 16 16"><path d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z"/></svg></a>
-
-
+    <a
+  class="back"
+  id="backButton"
+  href="../../france/index.html#arcachon
+        "
+  data-default-href="../../france/index.html#arcachon
+        "
+  title="retour vers France"
+>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="32"
+    height="32"
+    fill="currentColor"
+    class="bi bi-caret-left-fill"
+    viewBox="0 0 16 16"
+  >
+    <path
+      d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z"
+/>
+  </svg>
+</a>
     <div class="link-destinations">
       <div class="links">
         <ul>
           
             <div class="desktop">
               <li>
-                <a class="link" href="#arcachon">
+                <a class="link" href="#ville-et-plage">
                   <!-- places on the left: title and dates -->
-                  <h6 class="date">Arcachon</h6>
+                  <h6 class="date">Ville et plage</h6>
                   <p class="text">
                     
                       <span class="trip-date">13 septembre 2022</span>
@@ -225,18 +244,18 @@ title="retour vers France"><svg xmlns="http://www.w3.org/2000/svg" width="32" he
 		  <h6 class="accordion-header">
 		    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
 					<!-- places: title -->
-					<h6 class="date">Arcachon</h6>
+					<h6 class="date">Ville et plage</h6>
 		    </button>
 		  </h6>
 		  <div id="collapse1" class="accordion-collapse collapse" data-bs-parent="#accordionMobile">
 		    <div class="accordion-body">
-					<div class="date_section" id="arcachon">
+					<div class="date_section" id="ville-et-plage">
 						<div class="mobile">
 							<!-- places: descriptions and dates -->
 							
-							<p>description à venir<br><i>13 septembre 2022</i></p>
+							<p><br><i>13 septembre 2022</i></p>
 							
-							<p>description à venir<br><i>5 juin 2021</i></p>
+							<p><br><i>5 juin 2021</i></p>
 							
 						</div>
 					</div>
@@ -289,7 +308,25 @@ title="retour vers France"><svg xmlns="http://www.w3.org/2000/svg" width="32" he
 	</div>
 
 	<div class="up-button">
-  <button onclick="topFunction()" class="up" id="upButton" title="haut de la page">haut de la page <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16"><path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/></svg></button>
+  <button
+    onclick="topFunction()"
+    class="up"
+    id="upButton"
+    title="haut de la page"
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="32"
+      height="32"
+      fill="currentColor"
+      class="bi bi-caret-right-fill"
+      viewBox="0 0 16 16"
+    >
+      <path
+        d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"
+      />
+    </svg>
+  </button>
 </div>
 
 
@@ -298,19 +335,24 @@ title="retour vers France"><svg xmlns="http://www.w3.org/2000/svg" width="32" he
   <section class="container-destinations" id="sectionDesktop">
   	
 		<!-- places: title, descriptions and dates -->
-		<div class="date_section" id="arcachon">
+		<div class="date_section" id="ville-et-plage">
 			<div class="desktop">
-				<h6>Arcachon</b></h6>
+				<h6>Ville et plage</b></h6>
 				
-				<p>description à venir<br><i>13 septembre 2022</i></p>
+				<span class="trip-date">13 septembre 2022</span>
+					
 				
-				<p>description à venir<br><i>5 juin 2021</i></p>
+				<span class="trip-date">5 juin 2021</span>
+					
 				
 			</div>
+			
 			<a type="button" class="btn" data-bs-toggle="modal" data-bs-target="#1">voir le carousel de photos</a>
+			
     </div>
 
 		<!-- places: photos -->
+		
 		<div class="container">
       <div class="image-gallery-destination">
         
@@ -340,6 +382,7 @@ title="retour vers France"><svg xmlns="http://www.w3.org/2000/svg" width="32" he
         
       </div>
     </div>
+		
     
     <!-- modal for the carousel (only on desktop) -->
 		<div class="modal fade" id="1" tabindex="-1" aria-labelledby="1Label" aria-hidden="true">

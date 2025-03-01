@@ -1,0 +1,77 @@
+---
+layout: layout.njk 
+dot: ../../.
+nav: pages
+activeMaison: active
+
+pagination:
+    data: regions
+    size: 1
+    alias: regions
+permalink: "quebec/regions/{{ regions.region | slugify }}/"
+---
+
+<main>
+
+	<!-- ribbon -->
+	<div class="ribbon-destinations" id="ribbon">
+
+		<!-- destination's name on the right -->
+		<div class="heading-text">
+    		<h4>{{regions.region}}</h4>
+		</div>
+		
+		<!-- blur on the left (only on desktop) -->
+		<div class="panel_page_blur" ></div>
+		<div class="panel_page">
+			<!-- image (only on desktop) -->
+			<img
+      src="../../../photos/ribbon/{{ regions.region | slugify }}.jpg"
+      alt="Region"
+      onerror="this.onerror=null; this.src='../../../photos/category/quebec-default.jpg';">
+
+			{% include "backButton.njk" %}
+		</div>
+	
+	</div>
+
+	{% include "upButton.njk" %}
+
+	<div class="container">
+
+		{% include "search.njk" %}
+
+		<div class="buttons">
+			{% include "alphabeticOrderButton.njk" %}
+		</div>
+
+		<ul class="image-gallery" id="villes">
+			<li class="destination-carte">
+				<a href="../../../photos/minis/00_carteQuebec.jpg" target="_blank">
+					<img src="../../../photos/minis/00_carteQuebec.jpg" alt="">
+					<div class="overlay">carte des régions</div>
+				</a>
+			</li>		
+				{% for destination in destinations %}
+					{% if destination.departementProvinceState === regions.region %}
+						<li class="destination" id="{{destination.name | slugify}}">
+
+							{% if destination.link === "" %}
+								<a title="à venir" >
+							{% else %}
+								<a href="../../../destinations/{{destination.name | slugify}}/index.html">
+							{% endif %}
+
+								<img src="../../../photos/minis/{{destination.name | slugify}}.jpg" alt="">
+								
+								<div class="overlay {{destination.keywords}} {{destination.region}}">{{destination.name}} | <br> {{destination.departementProvinceState}}</div>
+								
+								</a>
+						</li>
+					{% endif %}
+				{% endfor %}
+		</ul>
+
+	</div>
+
+</main>

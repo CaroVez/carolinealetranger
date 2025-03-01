@@ -20,7 +20,9 @@
       type="image/x-icon"
       href="../images/favicon_gold.png"
     />
-    <title>Caroline à l'étranger - Québec</title>
+    <title>
+      Caroline à l'étranger - Québec
+    </title>
   </head>
   <body class="">
     <header>
@@ -166,7 +168,25 @@
 </div>
 
 	<div class="up-button">
-  <button onclick="topFunction()" class="up" id="upButton" title="haut de la page">haut de la page <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16"><path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/></svg></button>
+  <button
+    onclick="topFunction()"
+    class="up"
+    id="upButton"
+    title="haut de la page"
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="32"
+      height="32"
+      fill="currentColor"
+      class="bi bi-caret-right-fill"
+      viewBox="0 0 16 16"
+    >
+      <path
+        d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"
+      />
+    </svg>
+  </button>
 </div>
 
 
@@ -178,7 +198,13 @@
 </div>
 	
 
-		<div class="buttons left">
+		<div class="buttons">
+			<div class="btn-france">
+				<button class="btn-villes" id="villesButton" title="">villes</button>
+
+  			<button class="btn-regions" id="regionsQcButton" title="">régions</button>
+			</div>
+
 			<button
   class="btn-alphabetic-order"
   onclick="alphabeticOrder()"
@@ -205,7 +231,7 @@
 
 		</div>
 
-		<ul class="image-gallery">
+		<ul class="image-gallery" id="villes">
 			<li class="destination">
 				<a href="../photos/minis/00_carteQuebec.jpg" target="_blank">
 					<img src="../photos/minis/00_carteQuebec.jpg" alt="">
@@ -859,6 +885,97 @@
 							
 								</a>
 						</li>
+					
+				
+		</ul>
+
+		<ul class="image-gallery" id="regionsQc" hidden>
+			<li class="destination">
+				<a href="../photos/minis/00_carteQuebec.jpg" target="_blank">
+					<img src="../photos/minis/00_carteQuebec.jpg" alt="">
+					<div class="overlay">carte des régions</div>
+				</a>
+			</li>
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+					<li class="destination" id="bas-saint-laurent">
+						<a href="../quebec/regions/bas-saint-laurent/index.html">
+							<img src="../photos/minis/bas-saint-laurent.png" alt="">
+							<div class="overlay">Bas-Saint-Laurent</div>
+						</a>
+					</li>
+					
+				
+					
+					<li class="destination" id="capitale-nationale">
+						<a href="../quebec/regions/capitale-nationale/index.html">
+							<img src="../photos/minis/capitale-nationale.png" alt="">
+							<div class="overlay">Capitale-Nationale</div>
+						</a>
+					</li>
+					
+				
+					
+					<li class="destination" id="chaudiere-appalaches">
+						<a href="../quebec/regions/chaudiere-appalaches/index.html">
+							<img src="../photos/minis/chaudiere-appalaches.png" alt="">
+							<div class="overlay">Chaudière-Appalaches</div>
+						</a>
+					</li>
+					
+				
+					
+					<li class="destination" id="gaspesie-iles-de-la-madelaine">
+						<a href="../quebec/regions/gaspesie-iles-de-la-madelaine/index.html">
+							<img src="../photos/minis/gaspesie-iles-de-la-madelaine.png" alt="">
+							<div class="overlay">Gaspésie-Îles-de-la-Madelaine</div>
+						</a>
+					</li>
+					
+				
+					
+					<li class="destination" id="laurentides">
+						<a href="../quebec/regions/laurentides/index.html">
+							<img src="../photos/minis/laurentides.png" alt="">
+							<div class="overlay">Laurentides</div>
+						</a>
+					</li>
+					
+				
+					
+					<li class="destination" id="monteregie">
+						<a href="../quebec/regions/monteregie/index.html">
+							<img src="../photos/minis/monteregie.png" alt="">
+							<div class="overlay">Montérégie</div>
+						</a>
+					</li>
+					
+				
+					
+					<li class="destination" id="montreal">
+						<a href="../quebec/regions/montreal/index.html">
+							<img src="../photos/minis/montreal.png" alt="">
+							<div class="overlay">Montréal</div>
+						</a>
+					</li>
 					
 				
 		</ul>
