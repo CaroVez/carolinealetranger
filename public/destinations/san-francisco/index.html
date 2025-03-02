@@ -181,7 +181,7 @@
     
 
   </div>
-  <span class="photo-note">
+  <span class="photo-note" style="display: none;">
     <i>photo de San Francisco à venir</i>
   </span>
 
@@ -190,10 +190,10 @@
   <div class="panel_page">
     <!-- image (only on desktop) -->
     <img
-      id="destination-image"
-      src="../../photos/ribbon/san-francisco.jpg"
-      alt="Destination"
-      onerror="this.onerror=null; this.src='../../photos/category/international-default.jpg';">
+			id="ribbon-image"
+			src="../../photos/ribbon/san-francisco.jpg"
+			alt="Destination"
+			onerror="this.onerror=null; this.src='../../photos/category/international-default.jpg'; document.querySelector('.photo-note').style.display = 'block';">
 
     <a
   class="back"

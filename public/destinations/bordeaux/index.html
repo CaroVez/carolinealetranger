@@ -176,7 +176,7 @@
     
 
   </div>
-  <span class="photo-note">
+  <span class="photo-note" style="display: none;">
     <i>photo de Bordeaux à venir</i>
   </span>
 
@@ -185,10 +185,10 @@
   <div class="panel_page">
     <!-- image (only on desktop) -->
     <img
-      id="destination-image"
-      src="../../photos/ribbon/bordeaux.jpg"
-      alt="Destination"
-      onerror="this.onerror=null; this.src='../../photos/category/france-default.jpg';">
+			id="ribbon-image"
+			src="../../photos/ribbon/bordeaux.jpg"
+			alt="Destination"
+			onerror="this.onerror=null; this.src='../../photos/category/france-default.jpg'; document.querySelector('.photo-note').style.display = 'block';">
 
     <a
   class="back"
@@ -254,7 +254,7 @@
 						<div class="mobile">
 							<!-- places: descriptions and dates -->
 							
-							<p>balade en ville<br><i>2021 à 2025</i></p>
+							<p><br><i>2021 à 2025</i></p>
 							
 						</div>
 					</div>
@@ -306,8 +306,6 @@
 				<h6>Ville</b></h6>
 				
 				<span class="trip-date">2021 à 2025</span>
-					
-					<p>balade en ville</p>
 					
 				
 			</div>

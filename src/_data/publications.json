@@ -35,6 +35,44 @@
     "title": "escapade en Champagne",
     "category": "france",
     "link": "hautvillers"
-  }
+  },
 
+  {
+    "id": "FR001",
+    "title": "France",
+    "activeExpat": "active",
+
+    "name": "Bordeaux",
+    "subtitle": "département de la",
+    "departementProvinceState": "Gironde 33",
+    "region": "Nouvelle-Aquitaine",
+
+    "keywords": "2021 2022 2023 2024",
+
+    "link": "active",
+    "places": [
+      {
+        "title": "Ville",
+        "modal": "1",
+        "modalTitle": "Balade en ville",
+
+        "trips": [
+          {
+            "date": "2021 à 2025",
+            "description": ""
+          }
+        ],
+        "photos": [
+          {
+            "slide": "0",
+            "active": "active",
+            "ariaCurrent": "true",
+            "src": "../../photos/destinations/france/2024.10_Bordeaux/photo01.png",
+            "alt": "...",
+            "text": "texte à venir"
+          }
+        ]
+      }
+    ]
+  }
 ]

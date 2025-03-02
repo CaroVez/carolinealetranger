@@ -18,22 +18,26 @@ permalink: "france/departements/{{ departements.departementProvinceState | slugi
 
 		<!-- destination's name on the right -->
 		<div class="heading-text">
-    		<h4>{{departements.departementProvinceState}}</h4>
+			<h4>{{departements.departementProvinceState}}</h4>
 			<p>dans la région {{departements.region}}</p>
 		</div>
-		
+		<span class="photo-note" style="display: none;">
+			<i>photo de {{departements.departementProvinceState}} à venir</i>
+		</span>
+
 		<!-- blur on the left (only on desktop) -->
 		<div class="panel_page_blur" ></div>
 		<div class="panel_page">
 			<!-- image (only on desktop) -->
 			<img
-      src="../../../photos/ribbon/{{ departements.departementProvinceState | slugify }}.jpg"
-      alt="Departement"
-      onerror="this.onerror=null; this.src='../../../photos/category/france-default.jpg';">
+				id="ribbon-image"
+				src="../../../photos/ribbon/{{ departements.departementProvinceState | slugify }}.jpg"
+				alt="Destination"
+				onerror="this.onerror=null; this.src='../../../photos/category/france-default.jpg'; document.querySelector('.photo-note').style.display = 'block';">
 
 			{% include "backButton.njk" %}
 		</div>
-	
+
 	</div>
 
 	{% include "upButton.njk" %}
@@ -41,8 +45,8 @@ permalink: "france/departements/{{ departements.departementProvinceState | slugi
 	<div class="container">
 
 		{% include "search.njk" %}
-		
-		<div class="buttons">
+
+		<div class="buttons left">
 			{% include "alphabeticOrderButton.njk" %}
 		</div>
 
@@ -52,27 +56,27 @@ permalink: "france/departements/{{ departements.departementProvinceState | slugi
 					<img src="../../../photos/minis/{{ departements.departementProvinceState | slugify }}.png" alt="">
 					<div class="overlay 2021 2022 2023">carte de {{ departements.departementProvinceState }}</div>
 				</a>
-			</li>		
-				{% for destination in destinations %}
-					{% if destination.departementProvinceState === departements.departementProvinceState %}
-						<li class="destination" id="{{destination.name | slugify}}">
+			</li>
+			{% for destination in destinations %}
+				{% if destination.departementProvinceState === departements.departementProvinceState %}
+					<li class="destination" id="{{destination.name | slugify}}">
 
-							{% if destination.link === "" %}
-								<a title="à venir" >
+						{% if destination.link === "" %}
+							<a title="à venir" >
 							{% else %}
 								<a href="../../../destinations/{{destination.name | slugify}}/index.html">
-							{% endif %}
+								{% endif %}
 
 								<img src="../../../photos/minis/{{destination.name | slugify}}.jpg" alt="">
-								
+
 								<div class="overlay {{destination.keywords}} {{destination.departementProvinceState}} {{destination.region}}">{{destination.name}}</div>
-								
-								</a>
+
+							</a>
 						</li>
 					{% endif %}
 				{% endfor %}
-		</ul>
+			</ul>
 
-	</div>
+		</div>
 
-</main>
+	</main>

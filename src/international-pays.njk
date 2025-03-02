@@ -20,7 +20,7 @@ permalink: "international/pays/{{ pays.pays | slugify }}/"
 		<div class="heading-text">
 			<h4>{{pays.pays}}</h4>
 		</div>
-		<span class="photo-note">
+		<span class="photo-note" style="display: none;">
 			<i>photo de {{pays.pays}} à venir</i>
 		</span>
 
@@ -29,9 +29,10 @@ permalink: "international/pays/{{ pays.pays | slugify }}/"
 		<div class="panel_page">
 			<!-- image (only on desktop) -->
 			<img
-      src="../../../photos/ribbon/{{ pays.pays | slugify }}.jpg"
-      alt="pays"
-      onerror="this.onerror=null; this.src='../../../photos/category/international-default.jpg';">
+				id="ribbon-image"
+				src="../../../photos/ribbon/{{ pays.pays | slugify }}.jpg"
+				alt="pays"
+				onerror="this.onerror=null; this.src='../../../photos/category/international-default.jpg'; document.querySelector('.photo-note').style.display = 'block';">
 
 			{% include "backButton.njk" %}
 		</div>
@@ -44,7 +45,7 @@ permalink: "international/pays/{{ pays.pays | slugify }}/"
 
 		{% include "search.njk" %}
 
-		<div class="buttons">
+		<div class="buttons left">
 			{% include "alphabeticOrderButton.njk" %}
 		</div>
 

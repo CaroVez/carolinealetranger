@@ -124,7 +124,7 @@ h6 {
   background-color: rgba(0, 0, 0, 0.3);
   width: 100vw;
   height: 6vh;
-  z-index: 70;
+  z-index: 999;
   position: fixed;
   bottom: 0;
   left: 0;
@@ -150,7 +150,6 @@ h6 {
 }
 .col-one .offcanvas {
   background-color: rgba(0, 0, 0, 0.3);
-
   height: 94vh;
   margin-bottom: 6vh;
 }
@@ -197,8 +196,9 @@ h6 {
 }
 
 /* ########### header nav ########### */
+header,
 nav {
-  z-index: 1000;
+  z-index: 800;
 }
 
 li {
@@ -414,7 +414,7 @@ header .modal-body textarea {
   color: #fcaf45;
   border: none;
   outline: none;
-  z-index: 999;
+  z-index: 500;
   cursor: pointer;
 }
 #backButton {

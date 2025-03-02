@@ -35,7 +35,7 @@ set defaultImage = "quebec-default.jpg" %}
     {% endif %}
 
   </div>
-  <span class="photo-note">
+  <span class="photo-note" style="display: none;">
     <i>photo de {{ destinations.name }} à venir</i>
   </span>
 
@@ -44,10 +44,10 @@ set defaultImage = "quebec-default.jpg" %}
   <div class="panel_page">
     <!-- image (only on desktop) -->
     <img
-      id="destination-image"
-      src="../../photos/ribbon/{{ destinations.name | slugify }}.jpg"
-      alt="Destination"
-      onerror="this.onerror=null; this.src='../../photos/category/{{ defaultImage }}';">
+			id="ribbon-image"
+			src="../../photos/ribbon/{{ destinations.name | slugify }}.jpg"
+			alt="Destination"
+			onerror="this.onerror=null; this.src='../../photos/category/{{ defaultImage }}'; document.querySelector('.photo-note').style.display = 'block';">
 
     {% include "backButton.njk" %}
 

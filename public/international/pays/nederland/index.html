@@ -162,7 +162,7 @@
 		<div class="heading-text">
 			<h4>Nederland</h4>
 		</div>
-		<span class="photo-note">
+		<span class="photo-note" style="display: none;">
 			<i>photo de Nederland à venir</i>
 		</span>
 
@@ -171,9 +171,10 @@
 		<div class="panel_page">
 			<!-- image (only on desktop) -->
 			<img
-      src="../../../photos/ribbon/nederland.jpg"
-      alt="pays"
-      onerror="this.onerror=null; this.src='../../../photos/category/international-default.jpg';">
+				id="ribbon-image"
+				src="../../../photos/ribbon/nederland.jpg"
+				alt="pays"
+				onerror="this.onerror=null; this.src='../../../photos/category/international-default.jpg'; document.querySelector('.photo-note').style.display = 'block';">
 
 			<a
   class="back"
@@ -231,7 +232,7 @@
 </div>
 
 
-		<div class="buttons">
+		<div class="buttons left">
 			<button
   class="btn-alphabetic-order"
   onclick="alphabeticOrder()"

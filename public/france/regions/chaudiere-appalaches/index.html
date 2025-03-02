@@ -162,15 +162,19 @@
 		<div class="heading-text">
     		<h4>Chaudière-Appalaches</h4>
 		</div>
+		<span class="photo-note" style="display: none;">
+			<i>photo de Chaudière-Appalaches à venir</i>
+		</span>
 		
 		<!-- blur on the left (only on desktop) -->
 		<div class="panel_page_blur" ></div>
 		<div class="panel_page">
 			<!-- image (only on desktop) -->
 			<img
-      src="../../../photos/ribbon/chaudiere-appalaches.jpg"
-      alt="Region"
-      onerror="this.onerror=null; this.src='../../../photos/category/france-default.jpg';">
+				id="ribbon-image"
+				src="../../../photos/ribbon/chaudiere-appalaches.jpg"
+				alt="Destination"
+				onerror="this.onerror=null; this.src='../../../photos/category/france-default.jpg'; document.querySelector('.photo-note').style.display = 'block';">
 
 			<a
   class="back"
@@ -228,7 +232,7 @@
 </div>
 
 
-		<div class="buttons">
+		<div class="buttons left">
 			<button
   class="btn-alphabetic-order"
   onclick="alphabeticOrder()"

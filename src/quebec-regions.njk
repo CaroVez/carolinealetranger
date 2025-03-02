@@ -20,15 +20,19 @@ permalink: "quebec/regions/{{ regions.region | slugify }}/"
 		<div class="heading-text">
     		<h4>{{regions.region}}</h4>
 		</div>
+		<span class="photo-note" style="display: none;">
+			<i>photo de {{regions.region}} à venir</i>
+		</span>
 		
 		<!-- blur on the left (only on desktop) -->
 		<div class="panel_page_blur" ></div>
 		<div class="panel_page">
 			<!-- image (only on desktop) -->
 			<img
-      src="../../../photos/ribbon/{{ regions.region | slugify }}.jpg"
-      alt="Region"
-      onerror="this.onerror=null; this.src='../../../photos/category/quebec-default.jpg';">
+				id="ribbon-image"
+				src="../../../photos/ribbon/{{ regions.region | slugify }}.jpg"
+				alt="Destination"
+				onerror="this.onerror=null; this.src='../../../photos/category/quebec-default.jpg'; document.querySelector('.photo-note').style.display = 'block';">
 
 			{% include "backButton.njk" %}
 		</div>
@@ -41,7 +45,7 @@ permalink: "quebec/regions/{{ regions.region | slugify }}/"
 
 		{% include "search.njk" %}
 
-		<div class="buttons">
+		<div class="buttons left">
 			{% include "alphabeticOrderButton.njk" %}
 		</div>
 

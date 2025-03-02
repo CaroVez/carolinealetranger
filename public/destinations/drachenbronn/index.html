@@ -176,7 +176,7 @@
     
 
   </div>
-  <span class="photo-note">
+  <span class="photo-note" style="display: none;">
     <i>photo de Drachenbronn à venir</i>
   </span>
 
@@ -185,10 +185,10 @@
   <div class="panel_page">
     <!-- image (only on desktop) -->
     <img
-      id="destination-image"
-      src="../../photos/ribbon/drachenbronn.jpg"
-      alt="Destination"
-      onerror="this.onerror=null; this.src='../../photos/category/france-default.jpg';">
+			id="ribbon-image"
+			src="../../photos/ribbon/drachenbronn.jpg"
+			alt="Destination"
+			onerror="this.onerror=null; this.src='../../photos/category/france-default.jpg'; document.querySelector('.photo-note').style.display = 'block';">
 
     <a
   class="back"
