@@ -47,9 +47,9 @@ permalink: "quebec/regions/{{ regions.region | slugify }}/"
 
 		<ul class="image-gallery" id="villes">
 			<li class="destination-carte">
-				<a href="../../../photos/minis/00_carteQuebec.jpg" target="_blank">
-					<img src="../../../photos/minis/00_carteQuebec.jpg" alt="">
-					<div class="overlay">carte des régions</div>
+				<a href="../../../photos/minis/{{ regions.region | slugify }}.png" target="_blank">
+					<img src="../../../photos/minis/{{ regions.region | slugify }}.png" alt="">
+					<div class="overlay">carte de {{regions.region}}</div>
 				</a>
 			</li>		
 				{% for destination in destinations %}

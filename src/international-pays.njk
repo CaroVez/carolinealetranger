@@ -50,9 +50,9 @@ permalink: "international/pays/{{ pays.pays | slugify }}/"
 
 		<ul class="image-gallery" id="villes">
 			<li class="destination-carte">
-				<a href="../../../photos/minis/00_carteQuebec.jpg" target="_blank">
-					<img src="../../../photos/minis/00_carteQuebec.jpg" alt="">
-					<div class="overlay">carte du monde</div>
+				<a href="../../../photos/minis/{{ pays.pays | slugify }}.png" target="_blank">
+					<img src="../../../photos/minis/{{ pays.pays | slugify }}.png" alt="">
+					<div class="overlay">{{ pays.pays }}</div>
 				</a>
 			</li>
 			{% for destination in destinations %}
