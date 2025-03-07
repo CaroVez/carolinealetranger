@@ -1,11 +1,12 @@
 # BUILD COMMAND
-npx @11ty/eleventy
 
+npx @11ty/eleventy
 
 # DATA
 
 "id": "IN128",
-"title": "",  
+"title": "",
+
 #### France, international, Québec
 
 "activeExpat": "active",
@@ -21,17 +22,22 @@ npx @11ty/eleventy
 
 "subtitle2": "",
 "country": "",
-"countryShort": "USA",  
+"countryShort": "USA",
+
 #### if no short, put long name
 
-"keywords": "",  
+"keywords": "",
+
 #### dates, régions, etc. : tous mots qui n'apparaîent pas dans "name" et "departementProvinceState"
 
-"link": "", 
+"link": "",
+
 #### active
+
 "places": [
-  {
-    "title": "weekend de rugby",  
+{
+"title": "weekend de rugby",
+
 #### titre sur la gauche + titre au dessus de la description
 
     "modal": "1",
@@ -48,16 +54,17 @@ npx @11ty/eleventy
         "slide": "0",
         "active": "active",
         "ariaCurrent": "true",
-        "src": "../../photos/", 
+        "src": "../../photos/",
         "alt": "...",
         "text": "texte à venir 0"
       },
       {
         "slide": "1",
-        "src": "../../photos/", 
+        "src": "../../photos/",
         "alt": "...",
         "text": "texte à venir 1"
       }
     ]
-  }
+
+}
 ]

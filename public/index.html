@@ -155,168 +155,571 @@
     
 <main id="index">
 
-	<div class="col-one mobile">
+	<div class="up-button">
+  <button
+    onclick="topFunction()"
+    class="up"
+    id="upButton"
+    title="haut de la page"
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="32"
+      height="32"
+      fill="currentColor"
+      class="bi bi-caret-right-fill"
+      viewBox="0 0 16 16"
+    >
+      <path
+        d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"
+      />
+    </svg>
+  </button>
+</div>
 
-		<a class="btn btn-offcanvas" data-bs-toggle="offcanvas" href="#offcanvasIndexMobile" role="button" aria-controls="offcanvasIndexMobile">dernières publications</a>
 
-		<div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasIndexMobile" aria-labelledby="offcanvasIndexMobileLabel">
-  		<div class="offcanvas-header">
-				<h5 class="offcanvas-title" id="offcanvasIndexMobileLabel"></h5>
-    		<button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-  		</div>
-  		<div class="offcanvas-body">
-				<div>
-					<ul class="image-gallery-index">
-						
-						<li>
-							<!-- ./destinations/teguise/index.html#16-23-novembre-2024 -->
-							<a href="">
-								<img src="./photos/minis/teguise.jpg" alt="">
-								<div class="overlay">16-23 novembre 2024 | voyage à Lanzarote</div>
-							</a>
-						</li>
-						
-						<li>
-							<!-- ./destinations/helsinki/index.html#1-5-octobre-2024 -->
-							<a href="">
-								<img src="./photos/minis/helsinki.jpg" alt="">
-								<div class="overlay">1-5 octobre 2024 | séjour à Helsinki &amp; Tallinn</div>
-							</a>
-						</li>
-						
-						<li>
-							<!-- ./destinations/brugge/index.html#21-29-septembre-2024 -->
-							<a href="">
-								<img src="./photos/minis/brugge.jpg" alt="">
-								<div class="overlay">21-29 septembre 2024 | voyage en Belgique</div>
-							</a>
-						</li>
-						
-						<li>
-							<!-- ./destinations/meschers-sur-gironde/index.html#15-18-aout -->
-							<a href="">
-								<img src="./photos/minis/meschers-sur-gironde.jpg" alt="">
-								<div class="overlay">15-18 août | escapade en van</div>
-							</a>
-						</li>
-						
-						<li>
-							<!-- ./destinations/anglet/index.html#13-14-juillet-2024 -->
-							<a href="">
-								<img src="./photos/minis/anglet.jpg" alt="">
-								<div class="overlay">13-14 juillet 2024 | Fêtes de Bayonne &amp; marche sur les plages à Anglet</div>
-							</a>
-						</li>
-						
-						<li>
-							<!-- ./destinations/hautvillers/index.html#27-29-juin-2024 -->
-							<a href="">
-								<img src="./photos/minis/hautvillers.jpg" alt="">
-								<div class="overlay">27-29 juin 2024 | escapade en Champagne</div>
-							</a>
-						</li>
-						
-						<li>
-							<!-- ./destinations/active/index.html#undefined -->
-							<a href="">
-								<img src="./photos/minis/active.jpg" alt="">
-								<div class="overlay"> | France</div>
-							</a>
-						</li>
-								
-					</ul>
+	<section class="row-one">
+		<div class="col-two">
+			<div class="background_v">
+				<img class="" src="./images/background_v.jpg" alt="">
+			</div>
+			<div class="background_h">
+				<img class="" src="./images/background_h.jpg" alt="">
+			</div>
+			<div class="brand-index">
+				<img src="./images/logo_white.png" alt="logo" class="logo"/>
+				<p>blogue de photos</p>
+			</div>
+			<div class="text-arrows">
+				<p>les publications</p>
+				<a href="#rowTwo">
+					<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16"><path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/></svg><br>
+					<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16"><path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/></svg><br>
+					<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16"><path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/></svg>
+				</a>
+			</div>
+		</div>
+
+	</section>
+
+	<section class="row-two" id="rowTwo">
+		
+			<div class="publication">
+				<div class="publication-header">
+					<p class="title">voyage à Lanzarote</p>
 				</div>
-  		</div>
-		</div>
 
-	</div>
+				<div class="body">
+					<div class="lieux">
+						
+							<p>Islas Canarias | España</p>
 
-	<div class="col-one desktop">
+						
+					</div>
 
-		<a class="btn btn-offcanvas" data-bs-toggle="offcanvas" href="#offcanvasIndexDesktop" role="button" aria-controls="offcanvasIndexDesktop"> 
-			<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16"><path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/></svg> dernières publications <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16"><path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/></svg>
-		</a>
+					<div class="text">
+						<p class="date">16 au 23 novembre 2024</p>
+						<p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+					</div>
 
-		<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasIndexDesktop" aria-labelledby="offcanvasIndexDesktopLabel">
-  		<div class="offcanvas-header">
-				<h5 class="offcanvas-title" id="offcanvasIndexDesktopLabel"></h5>
-    		<button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-  		</div>
-  		<div class="offcanvas-body">
-				<div>
-					<ul class="image-gallery-index">
+					<div class="links-destinations">
 						
-						<li>
-							<!-- ./destinations/teguise/index.html#16-23-novembre-2024 -->
-							<a href="">
-								<img src="./photos/minis/teguise.jpg" alt="">
-								<div class="overlay">16-23 novembre 2024 | voyage à Lanzarote</div>
-							</a>
-						</li>
+						<ul>
+							
+								<li>
+									<a class="link" href="./destinations/yaiza/index.html" title="Découvrir Yaiza">
+										<span class="trip-date">Yaiza</span>
+									</a>
+								</li>
+							
+								<li>
+									<a class="link" href="./destinations/tinajo/index.html" title="Découvrir Tinajo">
+										<span class="trip-date">Tinajo</span>
+									</a>
+								</li>
+							
+								<li>
+									<a class="link" href="./destinations/teguise/index.html" title="Découvrir Teguise">
+										<span class="trip-date">Teguise</span>
+									</a>
+								</li>
+							
+								<li>
+									<a class="link" href="./destinations/tias/index.html" title="Découvrir Tías">
+										<span class="trip-date">Tías</span>
+									</a>
+								</li>
+							
+								<li>
+									<a class="link" href="./destinations/haria/index.html" title="Découvrir Haría">
+										<span class="trip-date">Haría</span>
+									</a>
+								</li>
+							
+								<li>
+									<a class="link" href="./destinations/arrecife/index.html" title="Découvrir Arrecife">
+										<span class="trip-date">Arrecife</span>
+									</a>
+								</li>
+							
+								<li>
+									<a class="link" href="./destinations/san-bartolome/index.html" title="Découvrir San Bartolomé">
+										<span class="trip-date">San Bartolomé</span>
+									</a>
+								</li>
+							
+						</ul>
+						<p class="keywords">ou tapez le(s) mot(s)-clé(s) <span>lanzarote</span> sur la page <a href="./international/index.html#search">international</a>
+						</p>
+					</div>
+
+					<div class="photos">
 						
-						<li>
-							<!-- ./destinations/helsinki/index.html#1-5-octobre-2024 -->
-							<a href="">
-								<img src="./photos/minis/helsinki.jpg" alt="">
-								<div class="overlay">1-5 octobre 2024 | séjour à Helsinki &amp; Tallinn</div>
-							</a>
-						</li>
-						
-						<li>
-							<!-- ./destinations/brugge/index.html#21-29-septembre-2024 -->
-							<a href="">
-								<img src="./photos/minis/brugge.jpg" alt="">
-								<div class="overlay">21-29 septembre 2024 | voyage en Belgique</div>
-							</a>
-						</li>
-						
-						<li>
-							<!-- ./destinations/meschers-sur-gironde/index.html#15-18-aout -->
-							<a href="">
-								<img src="./photos/minis/meschers-sur-gironde.jpg" alt="">
-								<div class="overlay">15-18 août | escapade en van</div>
-							</a>
-						</li>
-						
-						<li>
-							<!-- ./destinations/anglet/index.html#13-14-juillet-2024 -->
-							<a href="">
-								<img src="./photos/minis/anglet.jpg" alt="">
-								<div class="overlay">13-14 juillet 2024 | Fêtes de Bayonne &amp; marche sur les plages à Anglet</div>
-							</a>
-						</li>
-						
-						<li>
-							<!-- ./destinations/hautvillers/index.html#27-29-juin-2024 -->
-							<a href="">
-								<img src="./photos/minis/hautvillers.jpg" alt="">
-								<div class="overlay">27-29 juin 2024 | escapade en Champagne</div>
-							</a>
-						</li>
-						
-						<li>
-							<!-- ./destinations/active/index.html#undefined -->
-							<a href="">
-								<img src="./photos/minis/active.jpg" alt="">
-								<div class="overlay"> | France</div>
-							</a>
-						</li>
+							<div class="gallery mobile">
+								<img
+  						    src="./photos/destinations/france/2023.08_bassin-d-arcachon/01.jpg"
+  						    alt="..."
+  						    title="texte à venir 1"
+  						/>
+							</div>
+							<div class="gallery desktop">
 								
-					</ul>
+									<img
+  						      src="./photos/destinations/france/2023.08_bassin-d-arcachon/01.jpg"
+  						      alt="..."
+  						      title="texte à venir 1"
+  						/>
+								
+									<img
+  						      src="./photos/destinations/france/2023.08_bassin-d-arcachon/02.jpg"
+  						      alt="..."
+  						      title="texte à venir 2"
+  						/>
+								
+									<img
+  						      src="./photos/destinations/france/2023.08_bassin-d-arcachon/06.jpg"
+  						      alt="..."
+  						      title="texte à venir 3"
+  						/>
+								
+							</div>
+						
+					</div>
 				</div>
-  		</div>
-		</div>
+			</div>
+		
+			<div class="publication">
+				<div class="publication-header">
+					<p class="title">séjour à Helsinki &amp; Tallinn</p>
+				</div>
 
-	</div>
+				<div class="body">
+					<div class="lieux">
+						
+							
+							<p>Suomi &amp; Eesti</p>
 
-	<div class="col-two">
+						
+					</div>
 
-		<div class="brand-index">
-			<img src="./images/logo_white.png" alt="logo" class="logo">
-			<p>blogue de photos d'escapades</p>
-		</div>
+					<div class="text">
+						<p class="date">1er au 5 octobre 2024</p>
+						<p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+					</div>
 
-	</div>
+					<div class="links-destinations">
+						
+						<ul>
+							
+								<li>
+									<a class="link" href="./destinations/helsinki/index.html" title="Découvrir Helsinki">
+										<span class="trip-date">Helsinki</span>
+									</a>
+								</li>
+							
+								<li>
+									<a class="link" href="./destinations/tallinn/index.html" title="Découvrir Tallinn">
+										<span class="trip-date">Tallinn</span>
+									</a>
+								</li>
+							
+						</ul>
+						<p class="keywords">ou tapez le(s) mot(s)-clé(s) <span>helsinki ou tallinn</span> sur la page <a href="./international/index.html#search">international</a>
+						</p>
+					</div>
+
+					<div class="photos">
+						
+							<div class="gallery mobile">
+								<img
+  						    src="./photos/destinations/france/2023.08_bassin-d-arcachon/01.jpg"
+  						    alt="..."
+  						    title="texte à venir 1"
+  						/>
+							</div>
+							<div class="gallery desktop">
+								
+									<img
+  						      src="./photos/destinations/france/2023.08_bassin-d-arcachon/01.jpg"
+  						      alt="..."
+  						      title="texte à venir 1"
+  						/>
+								
+									<img
+  						      src="./photos/destinations/france/2023.08_bassin-d-arcachon/02.jpg"
+  						      alt="..."
+  						      title="texte à venir 2"
+  						/>
+								
+									<img
+  						      src="./photos/destinations/france/2023.08_bassin-d-arcachon/06.jpg"
+  						      alt="..."
+  						      title="texte à venir 3"
+  						/>
+								
+							</div>
+						
+					</div>
+				</div>
+			</div>
+		
+			<div class="publication">
+				<div class="publication-header">
+					<p class="title">voyage en Belgique</p>
+				</div>
+
+				<div class="body">
+					<div class="lieux">
+						
+							
+							<p>België</p>
+
+						
+					</div>
+
+					<div class="text">
+						<p class="date">21 au 29 septembre 2024</p>
+						<p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+					</div>
+
+					<div class="links-destinations">
+						
+						<ul>
+							
+								<li>
+									<a class="link" href="./destinations/brussel/index.html" title="Découvrir Brussel">
+										<span class="trip-date">Brussel</span>
+									</a>
+								</li>
+							
+								<li>
+									<a class="link" href="./destinations/brugge/index.html" title="Découvrir Brugge">
+										<span class="trip-date">Brugge</span>
+									</a>
+								</li>
+							
+								<li>
+									<a class="link" href="./destinations/gent/index.html" title="Découvrir Gent">
+										<span class="trip-date">Gent</span>
+									</a>
+								</li>
+							
+						</ul>
+						<p class="keywords">ou tapez le(s) mot(s)-clé(s) <span>belgique</span> sur la page <a href="./international/index.html#search">international</a>
+						</p>
+					</div>
+
+					<div class="photos">
+						
+							<div class="gallery mobile">
+								<img
+  						    src="./photos/destinations/france/2023.08_bassin-d-arcachon/01.jpg"
+  						    alt="..."
+  						    title="texte à venir 1"
+  						/>
+							</div>
+							<div class="gallery desktop">
+								
+									<img
+  						      src="./photos/destinations/france/2023.08_bassin-d-arcachon/01.jpg"
+  						      alt="..."
+  						      title="texte à venir 1"
+  						/>
+								
+									<img
+  						      src="./photos/destinations/france/2023.08_bassin-d-arcachon/02.jpg"
+  						      alt="..."
+  						      title="texte à venir 2"
+  						/>
+								
+									<img
+  						      src="./photos/destinations/france/2023.08_bassin-d-arcachon/06.jpg"
+  						      alt="..."
+  						      title="texte à venir 3"
+  						/>
+								
+							</div>
+						
+					</div>
+				</div>
+			</div>
+		
+			<div class="publication">
+				<div class="publication-header">
+					<p class="title">escapade en van</p>
+				</div>
+
+				<div class="body">
+					<div class="lieux">
+						
+							<p>Charente, Haute-Vienne, Charente-Maritime, Gironde | Nouvelle-Aquitaine | France</p>
+						
+					</div>
+
+					<div class="text">
+						<p class="date">15 au 18 août 2024</p>
+						<p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+					</div>
+
+					<div class="links-destinations">
+						
+						<ul>
+							
+								<li>
+									<a class="link" href="./destinations/guizengeard/index.html" title="Découvrir Guizengeard">
+										<span class="trip-date">Guizengeard</span>
+									</a>
+								</li>
+							
+								<li>
+									<a class="link" href="./destinations/bellac/index.html" title="Découvrir Bellac">
+										<span class="trip-date">Bellac</span>
+									</a>
+								</li>
+							
+								<li>
+									<a class="link" href="./destinations/meschers-sur-gironde/index.html" title="Découvrir Meschers-sur-Gironde">
+										<span class="trip-date">Meschers-sur-Gironde</span>
+									</a>
+								</li>
+							
+								<li>
+									<a class="link" href="./destinations/verdons-sur-mer/index.html" title="Découvrir Verdons-sur-mer">
+										<span class="trip-date">Verdons-sur-mer</span>
+									</a>
+								</li>
+							
+								<li>
+									<a class="link" href="./destinations/soulac-sur-mer/index.html" title="Découvrir Soulac-sur-Mer">
+										<span class="trip-date">Soulac-sur-Mer</span>
+									</a>
+								</li>
+							
+						</ul>
+						<p class="keywords">ou tapez le(s) mot(s)-clé(s) <span>bellac</span> sur la page <a href="./france/index.html#search">france</a>
+						</p>
+					</div>
+
+					<div class="photos">
+						
+							<div class="gallery mobile">
+								<img
+  						    src="./photos/destinations/france/2023.08_bassin-d-arcachon/01.jpg"
+  						    alt="..."
+  						    title="texte à venir 1"
+  						/>
+							</div>
+							<div class="gallery desktop">
+								
+									<img
+  						      src="./photos/destinations/france/2023.08_bassin-d-arcachon/01.jpg"
+  						      alt="..."
+  						      title="texte à venir 1"
+  						/>
+								
+									<img
+  						      src="./photos/destinations/france/2023.08_bassin-d-arcachon/02.jpg"
+  						      alt="..."
+  						      title="texte à venir 2"
+  						/>
+								
+									<img
+  						      src="./photos/destinations/france/2023.08_bassin-d-arcachon/06.jpg"
+  						      alt="..."
+  						      title="texte à venir 3"
+  						/>
+								
+							</div>
+						
+					</div>
+				</div>
+			</div>
+		
+			<div class="publication">
+				<div class="publication-header">
+					<p class="title">Fêtes de Bayonne &amp; plages à Anglet</p>
+				</div>
+
+				<div class="body">
+					<div class="lieux">
+						
+							<p>Pyrénées-Atlantiques | Nouvelle-Aquitaine | France</p>
+						
+					</div>
+
+					<div class="text">
+						<p class="date">13 et 14 juillet 2024</p>
+						<p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+					</div>
+
+					<div class="links-destinations">
+						
+						<ul>
+							
+								<li>
+									<a class="link" href="./destinations/bayonne/index.html" title="Découvrir Bayonne">
+										<span class="trip-date">Bayonne</span>
+									</a>
+								</li>
+							
+								<li>
+									<a class="link" href="./destinations/anglet/index.html" title="Découvrir Anglet">
+										<span class="trip-date">Anglet</span>
+									</a>
+								</li>
+							
+						</ul>
+						<p class="keywords">ou tapez le(s) mot(s)-clé(s) <span>bayonne ou anglet</span> sur la page <a href="./france/index.html#search">france</a>
+						</p>
+					</div>
+
+					<div class="photos">
+						
+							<div class="gallery mobile">
+								<img
+  						    src="./photos/destinations/france/2023.08_bassin-d-arcachon/01.jpg"
+  						    alt="..."
+  						    title="texte à venir 1"
+  						/>
+							</div>
+							<div class="gallery desktop">
+								
+									<img
+  						      src="./photos/destinations/france/2023.08_bassin-d-arcachon/01.jpg"
+  						      alt="..."
+  						      title="texte à venir 1"
+  						/>
+								
+									<img
+  						      src="./photos/destinations/france/2023.08_bassin-d-arcachon/02.jpg"
+  						      alt="..."
+  						      title="texte à venir 2"
+  						/>
+								
+									<img
+  						      src="./photos/destinations/france/2023.08_bassin-d-arcachon/06.jpg"
+  						      alt="..."
+  						      title="texte à venir 3"
+  						/>
+								
+							</div>
+						
+					</div>
+				</div>
+			</div>
+		
+			<div class="publication">
+				<div class="publication-header">
+					<p class="title">escapade en Champagne</p>
+				</div>
+
+				<div class="body">
+					<div class="lieux">
+						
+							<p>Marne | Nouvelle-Aquitaine | France</p>
+						
+					</div>
+
+					<div class="text">
+						<p class="date">27 au 29 juin 2024</p>
+						<p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+					</div>
+
+					<div class="links-destinations">
+						
+						<ul>
+							
+								<li>
+									<a class="link" href="./destinations/hautvillers/index.html" title="Découvrir Hautvillers">
+										<span class="trip-date">Hautvillers</span>
+									</a>
+								</li>
+							
+								<li>
+									<a class="link" href="./destinations/epernay/index.html" title="Découvrir Epernay">
+										<span class="trip-date">Epernay</span>
+									</a>
+								</li>
+							
+								<li>
+									<a class="link" href="./destinations/reims/index.html" title="Découvrir Reims">
+										<span class="trip-date">Reims</span>
+									</a>
+								</li>
+							
+								<li>
+									<a class="link" href="./destinations/verzenay/index.html" title="Découvrir Verzenay">
+										<span class="trip-date">Verzenay</span>
+									</a>
+								</li>
+							
+								<li>
+									<a class="link" href="./destinations/chalons-en-champagne/index.html" title="Découvrir Châlons-en-Champagne">
+										<span class="trip-date">Châlons-en-Champagne</span>
+									</a>
+								</li>
+							
+						</ul>
+						<p class="keywords">ou tapez le(s) mot(s)-clé(s) <span>champagne</span> sur la page <a href="./france/index.html#search">france</a>
+						</p>
+					</div>
+
+					<div class="photos">
+						
+							<div class="gallery mobile">
+								<img
+  						    src="./photos/destinations/france/2023.08_bassin-d-arcachon/01.jpg"
+  						    alt="..."
+  						    title="texte à venir 1"
+  						/>
+							</div>
+							<div class="gallery desktop">
+								
+									<img
+  						      src="./photos/destinations/france/2023.08_bassin-d-arcachon/01.jpg"
+  						      alt="..."
+  						      title="texte à venir 1"
+  						/>
+								
+									<img
+  						      src="./photos/destinations/france/2023.08_bassin-d-arcachon/02.jpg"
+  						      alt="..."
+  						      title="texte à venir 2"
+  						/>
+								
+									<img
+  						      src="./photos/destinations/france/2023.08_bassin-d-arcachon/06.jpg"
+  						      alt="..."
+  						      title="texte à venir 3"
+  						/>
+								
+							</div>
+						
+					</div>
+				</div>
+			</div>
+		
+	</section>
 
 	<!-- Modal -->
 	<div class="modal fade" id="formModal" tabindex="-1" aria-labelledby="formModalLabel" aria-hidden="true">
@@ -349,12 +752,10 @@
 	  </div>
 	</div>
 
-	
 </main>
 
     <footer>
       <p>2025</p>
-      <img src="./images/favicon_gold.png" width="24" height="24" />
       <p><span>Caroline à l'étranger</span></p>
       <a
         class="menu-link"

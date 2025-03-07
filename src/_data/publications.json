@@ -1,77 +1,256 @@
 [
   {
-    "date": "16-23 novembre 2024",
-    "title": "voyage à Lanzarote",
-    "category": "international",
-    "link": "teguise"
+    "id": "PUB006",
+    "title": "international",
+
+    "name": "voyage à Lanzarote",
+
+    "subtitle": "",
+    "departementProvinceState": "Islas Canarias",
+    "region": "",
+
+    "subtitle2": "",
+    "country": "España",
+
+    "subtitle3": "",
+    "villes": [
+      "Yaiza",
+      "Tinajo",
+      "Teguise",
+      "Tías",
+      "Haría",
+      "Arrecife",
+      "San Bartolomé"
+    ],
+
+    "keywords": "lanzarote",
+
+    "date": "16 au 23 novembre 2024",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+
+    "photos": [
+      {
+        "src": "./photos/destinations/france/2023.08_bassin-d-arcachon/01.jpg",
+        "alt": "...",
+        "text": "texte à venir 1"
+      },
+      {
+        "src": "./photos/destinations/france/2023.08_bassin-d-arcachon/02.jpg",
+        "alt": "...",
+        "text": "texte à venir 2"
+      },
+      {
+        "src": "./photos/destinations/france/2023.08_bassin-d-arcachon/06.jpg",
+        "alt": "...",
+        "text": "texte à venir 3"
+      }
+    ]
   },
   {
-    "date": "1-5 octobre 2024",
-    "title": "séjour à Helsinki & Tallinn",
-    "category": "international",
-    "link": "helsinki"
+    "id": "PUB005",
+    "title": "international",
+
+    "name": "séjour à Helsinki & Tallinn",
+
+    "subtitle": "",
+    "departementProvinceState": "",
+    "region": "",
+
+    "subtitle2": "",
+    "country": "Suomi & Eesti",
+
+    "subtitle3": "",
+    "villes": ["Helsinki", "Tallinn"],
+
+    "keywords": "helsinki ou tallinn",
+
+    "date": "1er au 5 octobre 2024",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+
+    "photos": [
+      {
+        "src": "./photos/destinations/france/2023.08_bassin-d-arcachon/01.jpg",
+        "alt": "...",
+        "text": "texte à venir 1"
+      },
+      {
+        "src": "./photos/destinations/france/2023.08_bassin-d-arcachon/02.jpg",
+        "alt": "...",
+        "text": "texte à venir 2"
+      },
+      {
+        "src": "./photos/destinations/france/2023.08_bassin-d-arcachon/06.jpg",
+        "alt": "...",
+        "text": "texte à venir 3"
+      }
+    ]
   },
   {
-    "date": "21-29 septembre 2024",
-    "title": "voyage en Belgique",
-    "category": "international",
-    "link": "brugge"
+    "id": "PUB004",
+    "title": "international",
+
+    "name": "voyage en Belgique",
+
+    "subtitle": "",
+    "departementProvinceState": "",
+    "region": "",
+
+    "subtitle2": "",
+    "country": "België",
+
+    "subtitle3": "",
+    "villes": ["Brussel", "Brugge", "Gent"],
+
+    "keywords": "belgique",
+
+    "date": "21 au 29 septembre 2024",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+
+    "photos": [
+      {
+        "src": "./photos/destinations/france/2023.08_bassin-d-arcachon/01.jpg",
+        "alt": "...",
+        "text": "texte à venir 1"
+      },
+      {
+        "src": "./photos/destinations/france/2023.08_bassin-d-arcachon/02.jpg",
+        "alt": "...",
+        "text": "texte à venir 2"
+      },
+      {
+        "src": "./photos/destinations/france/2023.08_bassin-d-arcachon/06.jpg",
+        "alt": "...",
+        "text": "texte à venir 3"
+      }
+    ]
   },
 
   {
-    "date": "15-18 août",
-    "title": "escapade en van",
-    "category": "france",
-    "link": "meschers-sur-gironde"
-  },
-  {
-    "date": "13-14 juillet 2024",
-    "title": "Fêtes de Bayonne & marche sur les plages à Anglet",
-    "category": "france",
-    "link": "anglet"
-  },
-  {
-    "date": "27-29 juin 2024",
-    "title": "escapade en Champagne",
-    "category": "france",
-    "link": "hautvillers"
-  },
+    "id": "PUB003",
+    "title": "france",
 
-  {
-    "id": "FR001",
-    "title": "France",
-    "activeExpat": "active",
+    "name": "escapade en van",
 
-    "name": "Bordeaux",
-    "subtitle": "département de la",
-    "departementProvinceState": "Gironde 33",
+    "subtitle3": "",
+    "villes": [
+      "Guizengeard",
+      "Bellac",
+      "Meschers-sur-Gironde",
+      "Verdons-sur-mer",
+      "Soulac-sur-Mer"
+    ],
+
+    "subtitle": "",
+    "departementProvinceState": "Charente, Haute-Vienne, Charente-Maritime, Gironde",
     "region": "Nouvelle-Aquitaine",
 
-    "keywords": "2021 2022 2023 2024",
+    "subtitle2": "",
+    "country": "France",
 
-    "link": "active",
-    "places": [
+    "keywords": "bellac",
+
+    "date": "15 au 18 août 2024",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+
+    "photos": [
       {
-        "title": "Ville",
-        "modal": "1",
-        "modalTitle": "Balade en ville",
+        "src": "./photos/destinations/france/2023.08_bassin-d-arcachon/01.jpg",
+        "alt": "...",
+        "text": "texte à venir 1"
+      },
+      {
+        "src": "./photos/destinations/france/2023.08_bassin-d-arcachon/02.jpg",
+        "alt": "...",
+        "text": "texte à venir 2"
+      },
+      {
+        "src": "./photos/destinations/france/2023.08_bassin-d-arcachon/06.jpg",
+        "alt": "...",
+        "text": "texte à venir 3"
+      }
+    ]
+  },
+  {
+    "id": "PUB002",
+    "title": "france",
 
-        "trips": [
-          {
-            "date": "2021 à 2025",
-            "description": ""
-          }
-        ],
-        "photos": [
-          {
-            "slide": "0",
-            "active": "active",
-            "ariaCurrent": "true",
-            "src": "../../photos/destinations/france/2024.10_Bordeaux/photo01.png",
-            "alt": "...",
-            "text": "texte à venir"
-          }
-        ]
+    "name": "Fêtes de Bayonne & plages à Anglet",
+
+    "subtitle": "",
+    "departementProvinceState": "Pyrénées-Atlantiques",
+    "region": "Nouvelle-Aquitaine",
+
+    "subtitle2": "",
+    "country": "France",
+
+    "subtitle3": "",
+    "villes": ["Bayonne", "Anglet"],
+
+    "keywords": "bayonne ou anglet",
+
+    "date": "13 et 14 juillet 2024",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+
+    "photos": [
+      {
+        "src": "./photos/destinations/france/2023.08_bassin-d-arcachon/01.jpg",
+        "alt": "...",
+        "text": "texte à venir 1"
+      },
+      {
+        "src": "./photos/destinations/france/2023.08_bassin-d-arcachon/02.jpg",
+        "alt": "...",
+        "text": "texte à venir 2"
+      },
+      {
+        "src": "./photos/destinations/france/2023.08_bassin-d-arcachon/06.jpg",
+        "alt": "...",
+        "text": "texte à venir 3"
+      }
+    ]
+  },
+  {
+    "id": "PUB001",
+    "title": "france",
+
+    "name": "escapade en Champagne",
+
+    "subtitle": "",
+    "departementProvinceState": "Marne",
+    "region": "Nouvelle-Aquitaine",
+
+    "subtitle2": "",
+    "country": "France",
+
+    "subtitle3": "",
+    "villes": [
+      "Hautvillers",
+      "Epernay",
+      "Reims",
+      "Verzenay",
+      "Châlons-en-Champagne"
+    ],
+
+    "keywords": "champagne",
+
+    "date": "27 au 29 juin 2024",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+
+    "photos": [
+      {
+        "src": "./photos/destinations/france/2023.08_bassin-d-arcachon/01.jpg",
+        "alt": "...",
+        "text": "texte à venir 1"
+      },
+      {
+        "src": "./photos/destinations/france/2023.08_bassin-d-arcachon/02.jpg",
+        "alt": "...",
+        "text": "texte à venir 2"
+      },
+      {
+        "src": "./photos/destinations/france/2023.08_bassin-d-arcachon/06.jpg",
+        "alt": "...",
+        "text": "texte à venir 3"
       }
     ]
   }

@@ -19,14 +19,17 @@ set defaultImage = "quebec-default.jpg" %}
     <p>
       {{ destinations.subtitle }}
       {{ destinations.departementProvinceState }}
-
-      {% if destinations.title === "international" %}
-
-        {{ destinations.subtitle2 }}
-        {{ destinations.country }}
-
-      {% endif %}
     </p>
+    <p>
+      {{ destinations.region }}
+    </p>
+
+    {% if destinations.title === "international" %}
+      <p>
+        {{ destinations.country }}
+      </p>
+    {% endif %}
+
     {% if destinations.title === "itinéraire" %}
       <p>
         {{ destinations.subtitle2 }}
