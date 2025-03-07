@@ -324,3 +324,24 @@ function topFunction() {
 $(document).on('contextmenu', 'img', function () {
   return false;
 });
+
+// ########### # ########### //
+document.addEventListener('DOMContentLoaded', function () {
+  if (window.location.hash) {
+    let hash = window.location.hash.substring(1); // Récupère l'ID sans le #
+    let element = document.getElementById(hash);
+
+    if (element) {
+      setTimeout(() => {
+        let navbarHeight = document.querySelector('.header').offsetHeight || 80; // Hauteur de la navbar (par défaut 80px)
+        let elementPosition =
+          element.getBoundingClientRect().top + window.scrollY;
+
+        window.scrollTo({
+          top: elementPosition - navbarHeight - 10, // Ajustement pour éviter qu'elle soit collée
+          behavior: 'smooth',
+        });
+      }, 100); // Petite attente pour que la page charge bien avant le scroll
+    }
+  }
+});

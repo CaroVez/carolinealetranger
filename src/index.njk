@@ -47,7 +47,7 @@ body: body-index
 							<p>{{ publication.region }}</p>
 
 						{% elif publication.departementProvinceState === "" %}
-							{% if plublication.region | length > 0 %}}
+							{% if plublication.region | length > 0 %}
 								<p>{{ publication.region }}</p>
 							{% endif %}
 							<p>{{ publication.country }}</p>
@@ -70,13 +70,13 @@ body: body-index
 						<ul>
 							{% for ville in publication.villes %}
 								<li>
-									<a class="link" href="./destinations/{{ville | slugify}}/index.html" title="Découvrir {{ ville }}">
+									<a class="link" href="./destinations/{{ville | slugify}}/index.html" title="découvrir {{ ville }}">
 										<span class="trip-date">{{ ville }}</span>
 									</a>
 								</li>
 							{% endfor %}
 						</ul>
-						<p class="keywords">ou tapez le(s) mot(s)-clé(s) <span>{{ publication.keywords }}</span> sur la page <a href="./{{ publication.title | slugify }}/index.html#search">{{ publication.title }}</a>
+						<p class="keywords">ou tapez le(s) mot(s)-clé(s) <span>{{ publication.keywords }}</span> sur la page <a href="./{{ publication.title | slugify }}/index.html#search" title="aller sur la page {{ publication.title }}">{{ publication.title }}</a>
 						</p>
 					</div>
 

@@ -383,6 +383,7 @@ header .modal-body textarea {
 .ribbon-destinations .heading-text p {
   margin-top: -1rem;
 }
+#ribbon-image,
 .photo-note {
   display: none;
 }
@@ -531,9 +532,14 @@ ul {
 #sectionDesktop {
   display: none;
 }
+#accordionMobile {
+  width: 95%;
+  margin: 0 auto;
+}
 
 #accordionMobile .accordion-item {
   border: none;
+  margin: 0.5rem 0;
 }
 #accordionMobile .accordion-button {
   background: white;
@@ -927,6 +933,9 @@ section,
     width: fit-content;
     padding: 0 0.5rem;
     border-radius: 1rem;
+  }
+  #ribbon-image {
+    display: block;
   }
   .photo-note {
     display: block;
