@@ -1,5 +1,41 @@
 [
   {
+    "id": "PUB007",
+    "title": "québec",
+
+    "name": "les fêtes au Québec",
+
+    "subtitle": "",
+    "departementProvinceState": "Québec",
+    "region": "Montréal, Lanaudière, Laurentides",
+
+    "subtitle2": "",
+    "country": "Canada",
+
+    "subtitle3": "",
+    "villes": ["Montréal", "Terrebonne", "Mont-Tremblant"],
+
+    "keywords": "2025",
+
+    "date": "23 décembre 2024 au 12 janvier 2025",
+    "description": "Retour à la maison pour le temps de fêtes. Marche à l'île des Moulins, balade à Montréal, escapade au Parc du Mont-Tremblant et promenade sur le Mont-Royal.",
+
+    "photos": [
+      {
+        "src": "./photos/minis/montreal.jpg",
+        "alt": "..."
+      },
+      {
+        "src": "./photos/minis/terrebonne.jpg",
+        "alt": "..."
+      },
+      {
+        "src": "./photos/minis/Mont-Tremblant.jpg",
+        "alt": "..."
+      }
+    ]
+  },
+  {
     "id": "PUB006",
     "title": "international",
 
@@ -30,19 +66,16 @@
 
     "photos": [
       {
-        "src": "./photos/destinations/france/2023.08_bassin-d-arcachon/01.jpg",
-        "alt": "...",
-        "text": "texte à venir 1"
+        "src": "./photos/minis/yaiza.jpg",
+        "alt": "..."
       },
       {
-        "src": "./photos/destinations/france/2023.08_bassin-d-arcachon/02.jpg",
-        "alt": "...",
-        "text": "texte à venir 2"
+        "src": "./photos/minis/tinajo.jpg",
+        "alt": "..."
       },
       {
-        "src": "./photos/destinations/france/2023.08_bassin-d-arcachon/06.jpg",
-        "alt": "...",
-        "text": "texte à venir 3"
+        "src": "./photos/minis/teguise.jpg",
+        "alt": "..."
       }
     ]
   },
@@ -69,19 +102,12 @@
 
     "photos": [
       {
-        "src": "./photos/destinations/france/2023.08_bassin-d-arcachon/01.jpg",
-        "alt": "...",
-        "text": "texte à venir 1"
+        "src": "./photos/minis/helsinki.jpg",
+        "alt": "..."
       },
       {
-        "src": "./photos/destinations/france/2023.08_bassin-d-arcachon/02.jpg",
-        "alt": "...",
-        "text": "texte à venir 2"
-      },
-      {
-        "src": "./photos/destinations/france/2023.08_bassin-d-arcachon/06.jpg",
-        "alt": "...",
-        "text": "texte à venir 3"
+        "src": "./photos/minis/tallinn.jpg",
+        "alt": "..."
       }
     ]
   },
@@ -108,23 +134,19 @@
 
     "photos": [
       {
-        "src": "./photos/destinations/france/2023.08_bassin-d-arcachon/01.jpg",
-        "alt": "...",
-        "text": "texte à venir 1"
+        "src": "./photos/minis/brussel.jpg",
+        "alt": "..."
       },
       {
-        "src": "./photos/destinations/france/2023.08_bassin-d-arcachon/02.jpg",
-        "alt": "...",
-        "text": "texte à venir 2"
+        "src": "./photos/minis/brugge.jpg",
+        "alt": "..."
       },
       {
-        "src": "./photos/destinations/france/2023.08_bassin-d-arcachon/06.jpg",
-        "alt": "...",
-        "text": "texte à venir 3"
+        "src": "./photos/minis/gent.jpg",
+        "alt": "..."
       }
     ]
   },
-
   {
     "id": "PUB003",
     "title": "france",
@@ -150,23 +172,20 @@
     "keywords": "bellac",
 
     "date": "15 au 18 août 2024",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "description": "escapade pour un long weekend",
 
     "photos": [
       {
-        "src": "./photos/destinations/france/2023.08_bassin-d-arcachon/01.jpg",
-        "alt": "...",
-        "text": "texte à venir 1"
+        "src": "./photos/minis/guizengeard.jpg",
+        "alt": "..."
       },
       {
-        "src": "./photos/destinations/france/2023.08_bassin-d-arcachon/02.jpg",
-        "alt": "...",
-        "text": "texte à venir 2"
+        "src": "./photos/minis/bellac.jpg",
+        "alt": "..."
       },
       {
-        "src": "./photos/destinations/france/2023.08_bassin-d-arcachon/06.jpg",
-        "alt": "...",
-        "text": "texte à venir 3"
+        "src": "./photos/minis/meschers-sur-gironde.jpg",
+        "alt": "..."
       }
     ]
   },
@@ -193,19 +212,12 @@
 
     "photos": [
       {
-        "src": "./photos/destinations/france/2023.08_bassin-d-arcachon/01.jpg",
-        "alt": "...",
-        "text": "texte à venir 1"
+        "src": "./photos/minis/bayonne.jpg",
+        "alt": "..."
       },
       {
-        "src": "./photos/destinations/france/2023.08_bassin-d-arcachon/02.jpg",
-        "alt": "...",
-        "text": "texte à venir 2"
-      },
-      {
-        "src": "./photos/destinations/france/2023.08_bassin-d-arcachon/06.jpg",
-        "alt": "...",
-        "text": "texte à venir 3"
+        "src": "./photos/minis/anglet.jpg",
+        "alt": "..."
       }
     ]
   },
@@ -238,19 +250,16 @@
 
     "photos": [
       {
-        "src": "./photos/destinations/france/2023.08_bassin-d-arcachon/01.jpg",
-        "alt": "...",
-        "text": "texte à venir 1"
+        "src": "./photos/minis/verzenay.jpg",
+        "alt": "..."
       },
       {
-        "src": "./photos/destinations/france/2023.08_bassin-d-arcachon/02.jpg",
-        "alt": "...",
-        "text": "texte à venir 2"
+        "src": "./photos/minis/epernay.jpg",
+        "alt": "..."
       },
       {
-        "src": "./photos/destinations/france/2023.08_bassin-d-arcachon/06.jpg",
-        "alt": "...",
-        "text": "texte à venir 3"
+        "src": "./photos/minis/reims.jpg",
+        "alt": "..."
       }
     ]
   }

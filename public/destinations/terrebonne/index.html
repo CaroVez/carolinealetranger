@@ -14,47 +14,47 @@
       integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="../../../css/style.css" />
+    <link rel="stylesheet" href="../../css/style.css" />
     <link
       rel="icon"
       type="image/x-icon"
-      href="../../../images/favicon_gold.png"
+      href="../../images/favicon_gold.png"
     />
-    <title>Caroline à l'étranger - France</title>
+    <title>Caroline à l'étranger - Québec</title>
   </head>
   <body class="">
     <header>
       <nav class="fixed-top header">
-        <a class="brand" id="brand-pages" href="../../../index.html"
+        <a class="brand" id="brand-pages" href="../../index.html"
           ><h1>Caroline à l'étranger</h1></a
         >
 
         <ul class="header-right">
           <li class="menu-item">
             <a
-              class="menu-link active"
-              href="../../../france/index.html"
+              class="menu-link "
+              href="../../france/index.html"
               >france</a
             >
           </li>
           <li class="menu-item">
             <a
               class="menu-link "
-              href="../../../international/index.html"
+              href="../../international/index.html"
               >international</a
             >
           </li>
           <li class="menu-item">
             <a
-              class="menu-link "
-              href="../../../quebec/index.html"
+              class="menu-link active"
+              href="../../quebec/index.html"
               >québec</a
             >
           </li>
           <li class="menu-item">
             <a
               class="menu-link "
-              href="../../../itineraires/index.html"
+              href="../../itineraires/index.html"
               >itinéraires</a
             >
           </li>
@@ -82,9 +82,9 @@
               href="https://bsky.app/profile/carolinealetranger.bsky.social"
               target="_blank"
               ><img
-                src="../../../images/bluesky_white.svg"
-                data-hover="../../../images/bluesky_fcaf45.svg"
-                data-default="../../../images/bluesky_white.svg"
+                src="../../images/bluesky_white.svg"
+                data-hover="../../images/bluesky_fcaf45.svg"
+                data-default="../../images/bluesky_white.svg"
                 alt="bluesky logo"
                 class="logo bluesky"
                 id="bluesky"
@@ -151,36 +151,55 @@
     </header>
 
     
-<main>
-
+<main id="destinations">
+	
 	<!-- ribbon -->
-	<div class="ribbon-destinations" id="ribbon">
+	
+  
 
-		<!-- destination's name on the right -->
-		<div class="heading-text">
-			<h4>Finistère 29</h4>
-			<p>dans la région Bretagne</p>
-		</div>
-		<span class="photo-note" style="display: none;">
-			<i>photo de Finistère 29 à venir</i>
-		</span>
 
-		<!-- blur on the left (only on desktop) -->
-		<div class="panel_page_blur" ></div>
-		<div class="panel_page">
-			<!-- image (only on desktop) -->
-			<img
-				id="ribbon-image"
-				src="../../../photos/ribbon/finistere-29.jpg"
-				alt="Destination"
-				onerror="this.onerror=null; this.src='../../../photos/category/france-default.jpg'; document.querySelector('.photo-note').style.display = 'block';">
+<div class="ribbon-destinations" id="ribbon">
+  <!-- destination's name on the right -->
+  <div class="heading-text">
+    <h4>
+      Terrebonne
+      <span></span>
+    </h4>
+    <p>
+      région de 
+      Lanaudière
+    </p>
+    <p>
+      
+    </p>
 
-			<a
+    
+
+    
+
+  </div>
+  <span class="photo-note" style="display: none;">
+    <i>photo de Terrebonne à venir</i>
+  </span>
+
+  <!-- blur on the left (only on desktop) -->
+  <div class="panel_page_blur"></div>
+  <div class="panel_page">
+    <!-- image (only on desktop) -->
+    <img
+			id="ribbon-image"
+			src="../../photos/ribbon/terrebonne.jpg"
+			alt="Destination"
+			onerror="this.onerror=null; this.src='../../photos/category/quebec-default.jpg'; document.querySelector('.photo-note').style.display = 'block';">
+
+    <a
   class="back"
   id="backButton"
-  href="#"
-  data-default-href="#"
-  title="retour vers departement"
+  href="../../quebec/index.html#terrebonne
+        "
+  data-default-href="../../quebec/index.html#terrebonne
+        "
+  title="retour vers Québec"
 >
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -196,8 +215,61 @@
   </svg>
 </a>
 
-		</div>
 
+    <div class="link-destinations">
+      <div class="links">
+        <ul>
+          
+            <div class="desktop">
+              <li>
+                <a class="link" href="#ile-des-moulins">
+                  <!-- places on the left: title and dates -->
+                  <h6 class="date">île des Moulins</h6>
+                  <p class="text">
+                    
+                      <span class="trip-date">25 décembre 2024</span>
+                    
+                  </p>
+                </a>
+              </li>
+            </div>
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+	<!-- accordion (only on mobile) -->
+	<div class="accordion" id="accordionMobile">
+		
+		<div class="accordion-item">
+		  <h6 class="accordion-header">
+		    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
+					<!-- places: title -->
+					<h6 class="date">île des Moulins</h6>
+		    </button>
+		  </h6>
+		  <div id="collapse1" class="accordion-collapse collapse" data-bs-parent="#accordionMobile">
+		    <div class="accordion-body">
+					<div class="date_section" id="ile-des-moulins">
+						<div class="mobile">
+							<!-- places: descriptions and dates -->
+							
+							<p><br><i>25 décembre 2024</i></p>
+							
+						</div>
+					</div>
+					<!-- places: photos -->
+					<div class="container">
+		    		<div class="image-gallery-destination">
+		    		  
+		    		</div>
+					</div>
+		    </div>
+		  </div>
+		</div>
+		
 	</div>
 
 	<div class="up-button">
@@ -223,727 +295,78 @@
 </div>
 
 
-	<div class="container">
-
-		<div class="search">
-  <label for="search" alt="nom" ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16"><path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/></svg></label>
-  <input type="text" name="search" id="search" placeholder="lieu, ville, département, région, pays, date, etc." onkeyup="search()"/>
-</div>
-
-
-		<div class="buttons left">
-			<button
-  class="btn-alphabetic-order"
-  onclick="alphabeticOrder()"
-  id="alphabeticOrderButton"
-  title="alphabétique"
->
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="16"
-    height="16"
-    fill="currentColor"
-    class="bi bi-sort-alpha-down"
-    viewBox="0 0 16 16"
-  >
-    <path
-      fill-rule="evenodd"
-      d="M10.082 5.629 9.664 7H8.598l1.789-5.332h1.234L13.402 7h-1.12l-.419-1.371zm1.57-.785L11 2.687h-.047l-.652 2.157z"
-    />
-    <path
-      d="M12.96 14H9.028v-.691l2.579-3.72v-.054H9.098v-.867h3.785v.691l-2.567 3.72v.054h2.645zM4.5 2.5a.5.5 0 0 0-1 0v9.793l-1.146-1.147a.5.5 0 0 0-.708.708l2 1.999.007.007a.497.497 0 0 0 .7-.006l2-2a.5.5 0 0 0-.707-.708L4.5 12.293z"
-    />
-  </svg>
-</button>
-
-		</div>
-
-		<ul class="image-gallery" id="villes">
-			<li class="destination-carte">
-				<a href="../../../photos/minis/finistere-29.png" target="_blank">
-					<img src="../../../photos/minis/finistere-29.png" alt="">
-					<div class="overlay 2021 2022 2023">carte de Finistère 29</div>
-				</a>
-			</li>
+	<!-- section -->
+	
+  <section class="container-destinations" id="sectionDesktop">
+  	
+		<!-- places: title, descriptions and dates -->
+		<div class="date_section" id="ile-des-moulins">
+			<div class="desktop">
+				<h6>île des Moulins</b></h6>
+				
+				<span class="trip-date">25 décembre 2024</span>
+					
+				
+			</div>
 			
 				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-					<li class="destination" id="camaret-sur-mer">
+				<p class="else"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-image-fill" viewBox="0 0 16 16">
+  				<path d="M.002 3a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-12a2 2 0 0 1-2-2zm1 9v1a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V9.5l-3.777-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062zm5-6.5a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0"/>
+					</svg> <i> photos à venir !!</i> </p>
+				
+			
+    </div>
 
-						
-								<a href="../../../destinations/camaret-sur-mer/index.html">
+		<!-- places: photos -->
+		
+		<div class="container">
+      <div class="image-gallery-destination">
+        
+      </div>
+    </div>
+		
+    
+    <!-- modal for the carousel (only on desktop) -->
+		<div class="modal fade" id="1" tabindex="-1" aria-labelledby="1Label" aria-hidden="true">
+  		<div class="modal-dialog modal-xl">
+  			<div class="modal-content">
+  				<div class="modal-header">
+  					<h5 class="modal-title" id="1Label">île des Moulins</h5>
+  					<button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      		</div>
+
+      		<div class="modal-body">
+       						
+						<!-- carousel of photos -->
+						<div id="carousel1Captions" class="carousel destinations slide">	
+
+							<div class="carousel-indicators">
+							  
+							</div>
+							<div class="carousel-inner">
 								
+						  </div>										
 
-								<img src="../../../photos/minis/camaret-sur-mer.jpg" alt="">
+							<button class="carousel-control-prev" type="button" data-bs-target="#carousel1Captions" data-bs-slide="prev">
+								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+								<span class="visually-hidden">Previous</span>
+							</button>
+							<button class="carousel-control-next" type="button" data-bs-target="#carousel1Captions" data-bs-slide="next">
+								<span class="carousel-control-next-icon" aria-hidden="true"></span>
+								<span class="visually-hidden">Next</span>
+							</button>
 
-								<div class="overlay aout 2021 Finistère 29 Bretagne">Camaret-sur-Mer</div>
+						</div>							
 
-							</a>
-						</li>
-					
-				
-				
-					<li class="destination" id="fort-de-kerviniou">
+      		</div>
+    		</div>
+  		</div>
+		</div>	
 
-						
-								<a href="../../../destinations/fort-de-kerviniou/index.html">
-								
+  </section>
+	
 
-								<img src="../../../photos/minis/fort-de-kerviniou.jpg" alt="">
-
-								<div class="overlay aout 2021 Finistère 29 Bretagne">Fort de Kerviniou</div>
-
-							</a>
-						</li>
-					
-				
-				
-					<li class="destination" id="pointe-des-espagnols">
-
-						
-								<a href="../../../destinations/pointe-des-espagnols/index.html">
-								
-
-								<img src="../../../photos/minis/pointe-des-espagnols.jpg" alt="">
-
-								<div class="overlay aout 2021 Finistère 29 Bretagne">Pointe des Espagnols</div>
-
-							</a>
-						</li>
-					
-				
-				
-					<li class="destination" id="kermorvan">
-
-						
-								<a href="../../../destinations/kermorvan/index.html">
-								
-
-								<img src="../../../photos/minis/kermorvan.jpg" alt="">
-
-								<div class="overlay aout 2021 Finistère 29 Bretagne">Kermorvan</div>
-
-							</a>
-						</li>
-					
-				
-				
-					<li class="destination" id="saint-mathieu">
-
-						
-								<a href="../../../destinations/saint-mathieu/index.html">
-								
-
-								<img src="../../../photos/minis/saint-mathieu.jpg" alt="">
-
-								<div class="overlay aout 2021 Finistère 29 Bretagne">Saint-Mathieu</div>
-
-							</a>
-						</li>
-					
-				
-				
-					<li class="destination" id="bertheaume">
-
-						
-								<a href="../../../destinations/bertheaume/index.html">
-								
-
-								<img src="../../../photos/minis/bertheaume.jpg" alt="">
-
-								<div class="overlay aout 2021 Finistère 29 Bretagne">Bertheaume</div>
-
-							</a>
-						</li>
-					
-				
-				
-					<li class="destination" id="cote-du-petit-minou">
-
-						
-								<a href="../../../destinations/cote-du-petit-minou/index.html">
-								
-
-								<img src="../../../photos/minis/cote-du-petit-minou.jpg" alt="">
-
-								<div class="overlay aout 2021 Finistère 29 Bretagne">Côte du petit Minou</div>
-
-							</a>
-						</li>
-					
-				
-				
-					<li class="destination" id="brest">
-
-						
-								<a href="../../../destinations/brest/index.html">
-								
-
-								<img src="../../../photos/minis/brest.jpg" alt="">
-
-								<div class="overlay aout 2021 Finistère 29 Bretagne">Brest</div>
-
-							</a>
-						</li>
-					
-				
-				
-					<li class="destination" id="ile-tudy">
-
-						
-								<a href="../../../destinations/ile-tudy/index.html">
-								
-
-								<img src="../../../photos/minis/ile-tudy.jpg" alt="">
-
-								<div class="overlay aout 2021 Finistère 29 Bretagne">Île Tudy</div>
-
-							</a>
-						</li>
-					
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-			</ul>
-
-		</div>
-
-	</main>
+</main>
 
     <footer>
       <p>2025</p>
@@ -969,9 +392,9 @@
         href="https://bsky.app/profile/carolinealetranger.bsky.social"
         target="_blank"
         ><img
-          src="../../../images/bluesky_white.svg"
-          data-hover="../../../images/bluesky_fcaf45.svg"
-          data-default="../../../images/bluesky_white.svg"
+          src="../../images/bluesky_white.svg"
+          data-hover="../../images/bluesky_fcaf45.svg"
+          data-default="../../images/bluesky_white.svg"
           alt="bluesky logo"
           class="logo bluesky"
           id="blueskyFooter"
@@ -1001,6 +424,6 @@
       integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
       crossorigin="anonymous"
     ></script>
-    <script src="../../../script/script.js"></script>
+    <script src="../../script/script.js"></script>
   </body>
 </html>

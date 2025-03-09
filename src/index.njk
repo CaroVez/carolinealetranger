@@ -6,105 +6,159 @@ body: body-index
 ---
 
 <main id="index">
+  {% include "upButton.njk" %}
 
-	{% include "upButton.njk" %}
+  <section class="row-one">
+    <div class="col-two">
+      <div class="background_v">
+        <img class="" src="./images/background_v.jpg" alt="" />
+      </div>
+      <div class="background_h">
+        <img class="" src="./images/background_h.jpg" alt="" />
+      </div>
+      <div class="brand-index">
+        <img src="./images/logo_white.png" alt="logo" class="logo" />
+        <p>blogue de photos</p>
+      </div>
+      <div class="text-arrows">
+        <p class="description">
+          Je partage ici mes aventures en images, des ruelles animées aux
+          paysages sauvages. Découvre le monde à travers mon objectif !
+        </p>
+        <p class="title">les publications</p>
+        <a href="#rowTwo">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-caret-down-fill"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"
+            /></svg
+          ><br />
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-caret-down-fill"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"
+            /></svg
+          ><br />
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-caret-down-fill"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"
+            />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
 
-	<section class="row-one">
-		<div class="col-two">
-			<div class="background_v">
-				<img class="" src="./images/background_v.jpg" alt="">
-			</div>
-			<div class="background_h">
-				<img class="" src="./images/background_h.jpg" alt="">
-			</div>
-			<div class="brand-index">
-				<img src="./images/logo_white.png" alt="logo" class="logo"/>
-				<p>blogue de photos</p>
-			</div>
-			<div class="text-arrows">
-				<p>les publications</p>
-				<a href="#rowTwo">
-					<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16"><path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/></svg><br>
-					<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16"><path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/></svg><br>
-					<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16"><path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/></svg>
-				</a>
-			</div>
-		</div>
+  <section class="row-two" id="rowTwo">
+    {% for publication in publications %}
+    <div class="publication">
+      <div class="publication-header">
+        <p class="title">{{ publication.name }}</p>
+      </div>
 
-	</section>
+      <div class="body">
+        <div class="lieux">
+          {% if publication.country === "" %}
+          <p>{{ publication.departementProvinceState }}</p>
+          <p>{{ publication.region }}</p>
 
-	<section class="row-two" id="rowTwo">
-		{% for publication in publications %}
-			<div class="publication">
-				<div class="publication-header">
-					<p class="title">{{ publication.name }}</p>
-				</div>
+          {% elif publication.departementProvinceState === "" %} {% if
+          plublication.region | length > 0 %}
+          <p>{{ publication.region }}</p>
+          {% endif %}
+          <p>{{ publication.country }}</p>
 
-				<div class="body">
-					<div class="lieux">
-						{% if publication.country === "" %}
-							<p>{{ publication.departementProvinceState }}</p>
-							<p>{{ publication.region }}</p>
+          {% elif publication.region === "" %}
+          <p>
+            {{ publication.departementProvinceState }} |
+            {{ publication.country }}
+          </p>
 
-						{% elif publication.departementProvinceState === "" %}
-							{% if plublication.region | length > 0 %}
-								<p>{{ publication.region }}</p>
-							{% endif %}
-							<p>{{ publication.country }}</p>
+          {% else %}
+          <p>
+            {{ publication.departementProvinceState }} |
+            {{ publication.region }} | {{ publication.country }}
+          </p>
+          {% endif %}
+        </div>
 
-						{% elif publication.region === "" %}
-							<p>{{ publication.departementProvinceState }} | {{ publication.country }}</p>
+        <div class="text">
+          <p class="date">{{ publication.date }}</p>
+          <p class="description">{{ publication.description }}</p>
+        </div>
 
-						{% else %}
-							<p>{{ publication.departementProvinceState }} | {{ publication.region }} | {{ publication.country }}</p>
-						{% endif %}
-					</div>
+        <div class="links-destinations">
+          {#
+          <p>consultez les photos de chaque lieux :</p>
+          #}
+          <ul>
+            {% for ville in publication.villes %}
+            <li>
+              <a
+                class="link"
+                href="./destinations/{{ ville | slugify }}/index.html"
+                title="découvrir {{ ville }}"
+              >
+                <span class="trip-date">{{ ville }}</span>
+              </a>
+            </li>
+            {% endfor %}
+          </ul>
+          <p class="keywords">
+            ou tapez le(s) mot(s)-clé(s)
+            <span>{{ publication.keywords }}</span> sur la page
+            <a
+              href="./{{ publication.title | slugify }}/index.html#search"
+              title="aller sur la page {{ publication.title }}"
+              >{{ publication.title }}</a
+            >
+          </p>
+        </div>
 
-					<div class="text">
-						<p class="date">{{ publication.date }}</p>
-						<p class="description">{{ publication.description }}</p>
-					</div>
+        <div class="photos">
+          {% if publication.photos | length > 0 %}
+          <div class="gallery mobile">
+            <img
+              src="{{ publication.photos[0].src }}"
+              alt="{{ publication.photos[0].alt }}"
+              title="{{ publication.photos[0].text }}"
+            />
+          </div>
+          <div class="gallery desktop">
+            {% for photo in publication.photos %}
+            <img
+              src="{{ photo.src }}"
+              alt="{{ photo.alt }}"
+              title="{{ photo.text }}"
+            />
+            {% endfor %}
+          </div>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </section>
 
-					<div class="links-destinations">
-						{# <p>consultez les photos de chaque lieux :</p> #}
-						<ul>
-							{% for ville in publication.villes %}
-								<li>
-									<a class="link" href="./destinations/{{ville | slugify}}/index.html" title="découvrir {{ ville }}">
-										<span class="trip-date">{{ ville }}</span>
-									</a>
-								</li>
-							{% endfor %}
-						</ul>
-						<p class="keywords">ou tapez le(s) mot(s)-clé(s) <span>{{ publication.keywords }}</span> sur la page <a href="./{{ publication.title | slugify }}/index.html#search" title="aller sur la page {{ publication.title }}">{{ publication.title }}</a>
-						</p>
-					</div>
-
-					<div class="photos">
-						{% if publication.photos | length > 0 %}
-							<div class="gallery mobile">
-								<img
-  						    src="{{ publication.photos[0].src }}"
-  						    alt="{{ publication.photos[0].alt }}"
-  						    title="{{ publication.photos[0].text }}"
-  						/>
-							</div>
-							<div class="gallery desktop">
-								{% for photo in publication.photos %}
-									<img
-  						      src="{{ photo.src }}"
-  						      alt="{{ photo.alt }}"
-  						      title="{{ photo.text }}"
-  						/>
-								{% endfor %}
-							</div>
-						{% endif %}
-					</div>
-				</div>
-			</div>
-		{% endfor %}
-	</section>
-
-	<!-- Modal -->
-	{% include "modalContact.njk" %}
+  <!-- Modal -->
+  {% include "modalContact.njk" %}
 </main>

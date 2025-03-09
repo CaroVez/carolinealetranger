@@ -155,14 +155,23 @@ h6 {
   border-radius: 1.15rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+
 .col-two .text-arrows {
   text-align: center;
   position: absolute;
   bottom: 3%;
   left: 50%;
   transform: translate(-50%, -10%);
+  width: 100%;
 }
-.col-two .text-arrows p,
+.col-two .text-arrows .description {
+  width: 80%;
+  margin: 0 auto 8rem auto;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 5px;
+  color: black;
+}
+.col-two .text-arrows .title,
 .col-two .text-arrows svg {
   text-shadow: rgba(0, 0, 0, 1) 4px 4px 4px;
   font-family: 'Love';
@@ -756,6 +765,15 @@ section,
     height: 50vh;
     width: inherit;
   }
+  .col-two .text-arrows .description {
+    display: none;
+    width: 40%;
+    margin: 0 auto 1rem auto;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 5px;
+    color: black;
+  }
+
   .hamburger {
     display: none;
   }
