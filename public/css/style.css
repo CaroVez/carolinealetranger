@@ -27,6 +27,9 @@ main {
   flex-grow: 1;
 }
 
+.body-index footer {
+  display: none;
+}
 footer {
   display: flex;
   justify-content: center;
@@ -44,7 +47,6 @@ footer span {
 }
 
 body,
-.body-index,
 .accordion-body {
   background-image: url(../images/header.png);
   /*background-color: lightgray;*/
@@ -92,7 +94,7 @@ h6 {
 
 /* ########### page index ########### */
 .body-index .header {
-  background-image: url(../images/header.png);
+  background-image: none;
 }
 .body-index .header .brand {
   display: none;
@@ -110,7 +112,6 @@ h6 {
 .row-one {
   height: 97vh;
 }
-
 .col-two {
   position: relative;
   height: 100vh;
@@ -564,7 +565,6 @@ ul {
   border: none;
 }
 
-section,
 .image-gallery-destination {
   margin-top: 1rem;
   margin-bottom: 1rem;

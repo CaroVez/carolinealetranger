@@ -185,6 +185,30 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 });
 
+const normalize = (str) =>
+  str
+    .normalize('NFD') // décompose les lettres accentuées
+    .replace(/[\u0300-\u036f]/g, '') // supprime les diacritiques
+    .toLowerCase(); // minuscule
+
+function search() {
+  const input = document.getElementById('search');
+  const filter = normalize(input.value.trim());
+
+  document
+    .querySelectorAll('.image-gallery:not([hidden])')
+    .forEach((gallery) => {
+      gallery.querySelectorAll('.destination').forEach((item) => {
+        const overlay = item.querySelector('.overlay');
+        const text = normalize(overlay.textContent);
+        const keywords = normalize(overlay.className);
+
+        item.style.display =
+          text.includes(filter) || keywords.includes(filter) ? '' : 'none';
+      });
+    });
+}
+
 // ########### BUTTON "ordre alphabétique" ########### //
 let alphabeticOrderButton = document.getElementById('alphabeticOrderButton');
 
